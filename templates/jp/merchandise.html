@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="jp">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>Dash merchandise &mdash; Dash</title>
+		<meta name="description" content="Buy our merchandise from our partner">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/dist/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+
+		<script type="text/javascript">
+			/*<![CDATA[*/
+			(function() {
+				var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+				if (window.ShopifyBuy) {
+					if (window.ShopifyBuy.UI) {
+						ShopifyBuyInit();
+					} else {
+						loadScript();
+					}
+				} else {
+					loadScript();
+				}
+
+				function loadScript() {
+					var script = document.createElement('script');
+					script.async = true;
+					script.src = scriptURL;
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+					script.onload = ShopifyBuyInit;
+				}
+
+				function ShopifyBuyInit() {
+					var client = ShopifyBuy.buildClient({
+						domain: 'alwayshodling.myshopify.com',
+						apiKey: '1b6ae06e6f2b1dea97857c4527f13264',
+						appId: '6',
+					});
+
+					ShopifyBuy.UI.onReady(client).then(function(ui) {
+						ui.createComponent('collection', {
+							id: 491978754,
+							node: document.getElementById('collection-component-b45d35cbf74'),
+							moneyFormat: '%24%7B%7Bamount%7D%7D',
+							options: {
+								"product": {
+									"buttonDestination": "modal",
+									"variantId": "all",
+									"contents": {
+										"imgWithCarousel": false,
+										"variantTitle": false,
+										"options": false,
+										"description": false,
+										"buttonWithQuantity": false,
+										"quantity": false
+									},
+									"text": {
+										"button": "VIEW PRODUCT"
+									},
+									"styles": {
+										"product": {
+											"@media (min-width: 601px)": {
+												"max-width": "calc(50% - 40px)",
+												"margin-left": "40px",
+												"margin-bottom": "50px"
+											}
+										},
+										"button": {
+											"background-color": "#1c75bc",
+											"font-family": "Montserrat, sans-serif",
+											":hover": {
+												"background-color": "#1969a9"
+											},
+											"font-weight": "normal",
+											":focus": {
+												"background-color": "#1969a9"
+											}
+										},
+										"variantTitle": {
+											"font-family": "Montserrat, sans-serif",
+											"font-weight": "normal"
+										},
+										"title": {
+											"font-family": "Montserrat, sans-serif",
+											"font-size": "20px"
+										},
+										"description": {
+											"font-family": "Montserrat, sans-serif",
+											"font-weight": "normal"
+										},
+										"price": {
+											"font-family": "Montserrat, sans-serif",
+											"font-size": "16px",
+											"font-weight": "normal"
+										},
+										"compareAt": {
+											"font-family": "Montserrat, sans-serif",
+											"font-weight": "normal",
+											"font-size": "13.6px"
+										}
+									},
+									"googleFonts": [
+										"Montserrat",
+										"Montserrat",
+										"Montserrat",
+										"Montserrat",
+										"Montserrat",
+										"Montserrat"
+									]
+								},
+								"cart": {
+									"contents": {
+										"button": true
+									},
+									"styles": {
+										"button": {
+											"background-color": "#1c75bc",
+											"font-family": "Montserrat, sans-serif",
+											":hover": {
+												"background-color": "#1969a9"
+											},
+											"font-weight": "normal",
+											":focus": {
+												"background-color": "#1969a9"
+											}
+										},
+										"footer": {
+											"background-color": "#ffffff"
+										}
+									},
+									"googleFonts": [
+										"Montserrat"
+									]
+								},
+								"modalProduct": {
+									"contents": {
+										"img": false,
+										"imgWithCarousel": true,
+										"variantTitle": false,
+										"buttonWithQuantity": true,
+										"button": false,
+										"quantity": false
+									},
+									"styles": {
+										"product": {
+											"@media (min-width: 601px)": {
+												"max-width": "100%",
+												"margin-left": "0px",
+												"margin-bottom": "0px"
+											}
+										},
+										"button": {
+											"background-color": "#1c75bc",
+											"font-family": "Montserrat, sans-serif",
+											":hover": {
+												"background-color": "#1969a9"
+											},
+											"font-weight": "normal",
+											":focus": {
+												"background-color": "#1969a9"
+											}
+										},
+										"variantTitle": {
+											"font-family": "Montserrat, sans-serif",
+											"font-weight": "normal"
+										},
+										"title": {
+											"font-family": "Montserrat, sans-serif"
+										},
+										"description": {
+											"font-family": "Montserrat, sans-serif",
+											"font-weight": "normal"
+										},
+										"price": {
+											"font-family": "Montserrat, sans-serif",
+											"font-weight": "normal"
+										},
+										"compareAt": {
+											"font-family": "Montserrat, sans-serif",
+											"font-weight": "normal"
+										}
+									},
+									"googleFonts": [
+										"Montserrat",
+										"Montserrat",
+										"Montserrat",
+										"Montserrat",
+										"Montserrat",
+										"Montserrat"
+									]
+								},
+								"toggle": {
+									"styles": {
+										"toggle": {
+											"font-family": "Montserrat, sans-serif",
+											"background-color": "#1c75bc",
+											":hover": {
+												"background-color": "#1969a9"
+											},
+											"font-weight": "normal",
+											":focus": {
+												"background-color": "#1969a9"
+											}
+										}
+									},
+									"googleFonts": [
+										"Montserrat"
+									]
+								},
+								"option": {
+									"styles": {
+										"label": {
+											"font-family": "Montserrat, sans-serif"
+										},
+										"select": {
+											"font-family": "Montserrat, sans-serif"
+										}
+									},
+									"googleFonts": [
+										"Montserrat",
+										"Montserrat"
+									]
+								},
+								"productSet": {
+									"styles": {
+										"products": {
+											"@media (min-width: 601px)": {
+												"margin-left": "-40px"
+											}
+										}
+									}
+								}
+							}
+						});
+					});
+				}
+			})();
+			/*]]>*/
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero" id="hero">
+	<div class="hero__background">
+		<img src="/assets/img/resized/hero/merch.jpeg-b21042e/800x533.jpeg" srcset="/assets/img/resized/hero/merch.jpeg-b21042e/1920x1280.jpeg 1920w, /assets/img/resized/hero/merch.jpeg-b21042e/1280x853.jpeg 1280w, /assets/img/resized/hero/merch.jpeg-b21042e/1024x683.jpeg 1024w, /assets/img/resized/hero/merch.jpeg-b21042e/1600x1067.jpeg 1600w, /assets/img/resized/hero/merch.jpeg-b21042e/800x533.jpeg 800w" sizes="100vw, 100vw, 100vw, 100vw" class="hero__background-image" />
+
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/jp/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/jp/get-dash/" class="nav__link">DASHについて</a></li>
+			<li class="nav__item"><a href="/jp/merchants/" class="nav__link">店舗</a></li>
+			<li class="nav__item"><a href="/jp/network/" class="nav__link">ネットワーク</a></li>
+			<li class="nav__item"><a href="/jp/community/" class="nav__link">コミュニティ</a></li>
+			<li class="nav__item"><a href="/jp/team/" class="nav__link">チーム</a></li>
+			<li class="nav__item"><a href="/jp/blog/" class="nav__link">ブログ</a></li>
+			<li class="nav__item"><a href="/jp/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag jp"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/merchandise/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/merchandise/" class="nav__link ">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/merchandise/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/merchandise/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/merchandise/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/merchandise/" class="nav__link ">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/merchandise/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/merchandise/" class="nav__link is-active">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/merchandise/" class="nav__link ">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/merchandise/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/jp" class="nav__link" title="検索">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+			<h1 class="hero__title">Our merchandise</h1>
+			<p class="hero__lead">HODL is now the official merchandise partner of Dash. Visit them here <a href='https://alwayshodl.com/' target='_blank'>www.alwayshodl.com</a>
+</p>
+	</div>
+	<section class="section">
+		<div class="section__content">
+			<p class="warning-bg"><a href='https://alwayshodl.com/' target='_blank'>alwayshodl.com</a> is an independent merchandise outlet, Dash.org has no responsibility for orders, delivery in time and such
+</p>
+		</div>
+	</section>
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+
+<div class="page">
+	<section class="section">
+		<div class="section__content text-center">
+			<div id='collection-component-b45d35cbf74'></div>
+			<a href="https://alwayshodl.com/collections/all" class="btn-large btn-gray" target="_blank">All Items in Store</a>
+		</div>
+	</section>
+	<section class="section">
+		<div class="section__content">
+			<p class="warning-bg"><a href='https://alwayshodl.com/' target='_blank'>alwayshodl.com</a> is an independent merchandise outlet, Dash.org has no responsibility for orders, delivery in time and such
+</p>
+		</div>
+	</section>
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    DASHについて
+    <ul>
+        <li><a href="/jp/get-dash/">ウォレットをダウンロードする</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">DASHを購入する</a></li>
+        <li><a href="/jp/merchants/">DASHで支払う</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">DASHデポジットカード</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    ガイドをサポートする
+    <ul>
+        <li><a href="/jp/mining/" >マイニングを始める</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">マスターノードの設置</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">ウォレットを作る</a></li>
+        <li><a href="/jp/governance/">予算を申し込む</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    ネットワーク
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">取引データ</a></li>
+        <li><a href="/jp/governance/">管理</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">ブロック研究開発</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">ネットワークデータ</a></li>
+        <li><a href="/jp/exchanges/" >Full list of Exchanges</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    コミュニティ
+    <ul>
+        <li><a href="/jp/community/#discussion">ディスカッション</a></li>
+        <li><a href="/jp/community/#social">SNSアプリ</a></li>
+        <li><a href="/jp/community/#news">ニュース &amp; メッセージ</a></li>
+        <li><a href="/jp/community/#development">開発ツール</a></li>
+        <li><a href="/jp/community/#masternodes">マスターノードツール</a></li>
+        <li><a href="/jp/legal/">Legal</a></li>
+        <li><a href="/jp/graphics/">Graphics</a></li>
+        <li><a href="/jp/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    プロジェクト
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">ヘルプ &amp; サポート</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">プロジェクト情報</a></li>
+        <li><a href="/jp/team/">チーム</a></li>
+        <li><a href="/jp/update/">アップグレード</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">基金会</a></li>
+        <li><a href="/jp/contact/">連絡先</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">ウィキペディア</a></li>
+        <li><a href="/jp/school/">School</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    SNS
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash forums</a></li>
+        <li><a href="/jp/blog/">ブログ</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">ツイッター</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">YouTube</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">グーグル</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">Linkedin</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">Facebook</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/jp/terms-of-use/">使用条例</a>
+  <a href="/sitemap.xml">ウェブサイト案内</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">ソースコード</a>
+  <a href="/jp/contact/">連絡先</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2018 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/jp/get-dash/" class="overlay-menu__link">DASHについて</a></li>
+            <li class="overlay-menu__item"><a href="/jp/merchants/" class="overlay-menu__link">店舗</a></li>
+            <li class="overlay-menu__item"><a href="/jp/network/" class="overlay-menu__link">ネットワーク</a></li>
+            <li class="overlay-menu__item"><a href="/jp/community/" class="overlay-menu__link">コミュニティ</a></li>
+            <li class="overlay-menu__item"><a href="/jp/team/" class="overlay-menu__link">チーム</a></li>
+            <li class="overlay-menu__item"><a href="/jp/blog/" class="overlay-menu__link">ブログ</a></li>
+            <li class="overlay-menu__item"><a href="/jp/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/merchandise/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/merchandise/" class="overlay-menu__link "><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/merchandise/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/merchandise/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/merchandise/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/merchandise/" class="overlay-menu__link "><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/merchandise/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/merchandise/" class="overlay-menu__link is-active"><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/merchandise/" class="overlay-menu__link "><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/merchandise/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/dist/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

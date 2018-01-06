@@ -1,0 +1,3803 @@
+<!doctype html>
+<html lang="jp">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>DASHウォレット &mdash; Dash</title>
+		<meta name="description" content="あなたのプラットフォームにぴったりなDASHウォレットをインストール">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/dist/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<!-- Update 20170224_1549MST @chuckwilliams37 -->
+<div class="hero hero--space" id="hero">
+
+	<!--div class="hero__background">
+		
+		<img src="/assets/img/resized/hero/get-dash-n.jpg-8befab2/960x606.jpg" srcset="/assets/img/resized/hero/get-dash-n.jpg-8befab2/1532x967.jpg 1532w, /assets/img/resized/hero/get-dash-n.jpg-8befab2/960x606.jpg 960w" sizes="100vw, 100vw" class="hero__background-image" />
+
+	</div-->
+
+	<div class="hero__background">
+
+		<img src="/assets/img/hero/expecto_patronum.png" alt="" class="hero__background-image">
+
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/jp/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/jp/get-dash/" class="nav__link">DASHについて</a></li>
+			<li class="nav__item"><a href="/jp/merchants/" class="nav__link">店舗</a></li>
+			<li class="nav__item"><a href="/jp/network/" class="nav__link">ネットワーク</a></li>
+			<li class="nav__item"><a href="/jp/community/" class="nav__link">コミュニティ</a></li>
+			<li class="nav__item"><a href="/jp/team/" class="nav__link">チーム</a></li>
+			<li class="nav__item"><a href="/jp/blog/" class="nav__link">ブログ</a></li>
+			<li class="nav__item"><a href="/jp/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag jp"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/wallets/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/wallets/" class="nav__link ">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/wallets/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/wallets/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/wallets/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/wallets/" class="nav__link ">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/wallets/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/wallets/" class="nav__link is-active">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/wallets/" class="nav__link ">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/wallets/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/jp" class="nav__link" title="検索">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">DASHウォレットを取得する</h1>
+		<p class="hero__lead">ウォレットはDASHの発送、受け取りと保存を実現したソフトです。手軽に使用できます。匿名送信機能を通して、匿名のお支払いが実現できます。</p>
+
+		<div class="hero__buttons">
+			<a href="#wallets" class="btn-white-solid">ウォレット</a>
+			<a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank" class="btn-white-solid">ガイド</a>
+			<a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=31326247" target="_blank" class="btn-white-solid">セキュリティ</a>
+		</div>
+	</div>
+
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+<!-- Modal -->
+<div id="winDashCore" class="modal fade" role="dialog" tabindex="-1">
+  <div class="modal-dialog modal-lg" role="document">
+
+    <!-- Modal content-->
+    <div class="modal-content b-modal__content">
+      <div class="modal-header b-modal__header">
+        <span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+        <h4 class="modal-title text-left b-modal__title">Dash Coreをダウンロード</h4>
+      </div>
+      <div class="modal-body b-modal__body">
+        <div class="row">
+          <div class="col-xs-8">
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="bottom-space b-modal__descr">Brief Description&#58; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="bottom-space">
+                <span class="b-modal__accent">セキュリティ: </span>.&#40;full node/spv/hosted&#41; <a href="#" data-toggle="tooltip" title="security tooltip">?</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="bottom-space">
+                     <span class="b-modal__accent">ソースコード: </span>
+                    .&#40;link/ closed source&#41; <a href="#" data-toggle="tooltip" title="source code tooltip">?</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <select name="" id="" class="bottom-space b-modal__select">
+                  <option value="win32">Windows 32-bit</option>
+                  <option value="win64">Windows 64-bit</option>
+                </select>
+              </div>
+            </div>
+            <div class="row bottom-space">
+              <div class="col-xs-4"><a href="#">Hash</a></div>
+              <div class="col-xs-4"><a href="#">PGP</a></div>
+              <div class="col-xs-4"><a href="#">VERIFY</a></div>
+            </div>
+            <div class="row bottom-space">
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-white-solid">Installer</button>
+              </div>
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-white-solid">
+                  Portable
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="b-modal__sidebar">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="b-modal__accent bottom-space">
+                        <h5>一般ユーザー</h5>
+                        <p class="bottom-space">0.12.2.2</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="b-modal__accent bottom-space">
+                        <h5>マスターノード運営者</h5>
+                        <p class="bottom-space">0.12.2.2</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="b-modal__accent bottom-space">
+                        <h5>マイニングプール運営者</h5>
+                        <p class="bottom-space">0.12.2.2</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	var walletsCollectionByOs = [{"name":"win64","items":[{"name":"Dash Core Win/64 Installer","description":"Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features","logo_url":"/assets/img/dash_circle_normal.png","os":"win64","type":"desktop","vendor_id":"dash_core","vendor_label":"Dash Core","control_type":"full","validation_type":"full","access_type":"p2p","product_id":"dash_core_win_64_install","product_label":"Dash Core","product_website_label":"Dash.org","product_website_url":"https://www.dash.org","product_source_url":"https://github.com/dashpay/dash","links":[{"label":"Download Installer","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win64-setup.exe"},{"label":"Hash File","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc"},{"label":"PGP","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win64-setup.exe.asc"}]},{"name":"Dash Core Win/64 ZIP","description":"Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features","logo_url":"/assets/img/dash_circle_normal.png","os":"win64","type":"desktop","vendor_id":"dash_core","vendor_label":"Dash Core","control_type":"full","validation_type":"full","access_type":"p2p","product_id":"dash_core_win_64_zip","product_label":"Dash Core","product_website_label":"Dash.org","product_website_url":"https://www.dash.org","product_source_url":"https://github.com/dashpay/dash","links":[{"label":"Download ZIP","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win64.zip"},{"label":"Hash File","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc"},{"label":"PGP","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win64.zip.asc"}]},{"name":"Jaxx","description":"All keys are created on your local device and never sent to any servers. This means you have full control of your wallet and Jaxx neither holds nor has access to your funds.\n","logo_url":"/assets/img/wallets/jaxx-logo.ico","os":"win64","type":"desktop","vendor_id":"jaxx","vendor_label":"Jaxx","control_type":"semi","validation_type":"hosted","access_type":"vendor","product_id":"jaxx","product_label":"Jaxx","product_source_url":"https://jaxx.io/support.html","links":[{"label":"Jaxx Downloads","url":"https://jaxx.io/support.html"}]},{"name":"Exodus","description":"Exodus is the first desktop multi-asset wallet with ShapeShift built in. Exodus encrypts private keys and transaction data locally for your eyes only - no accounts, no servers, no data sharing. Track the value of your blockchain asset portfolio, in real time, as market conditions change.","logo_url":"/assets/img/wallets/exodus.png","os":"win64","type":"desktop","vendor_id":"exodus","vendor_label":"Exodus","control_type":"semi","validation_type":"hosted","access_type":"p2p","product_id":"exodus","product_label":"Exodus Wallet","links":[{"label":"Exodus Downloads","url":"https://www.exodus.io/releases/"}]}],"size":4},{"name":"win32","items":[{"name":"Dash Core Win/32 Installer","description":"Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features","logo_url":"/assets/img/dash_circle_normal.png","os":"win32","type":"desktop","vendor_id":"dash_core","vendor_label":"Dash Core","control_type":"full","validation_type":"full","access_type":"p2p","product_id":"dash_core_win_32_install","product_label":"Dash Core","product_website_label":"Dash.org","product_website_url":"https://www.dash.org","product_source_url":"https://github.com/dashpay/dash","links":[{"label":"Download Installer","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win32-setup.exe"},{"label":"Hash File","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc"},{"label":"PGP","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win32-setup.exe.asc"}]},{"name":"Dash Core Win/32 ZIP","description":"Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features","logo_url":"/assets/img/dash_circle_normal.png","os":"win32","type":"desktop","vendor_id":"dash_core","vendor_label":"Dash Core","control_type":"full","validation_type":"full","access_type":"p2p","product_id":"dash_core_win_32_zip","product_label":"Dash Core Win/32 ZIP","product_website_label":"Dash.org","product_website_url":"https://www.dash.org","product_source_url":"https://github.com/dashpay/dash","links":[{"label":"Download ZIP","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win32.zip"},{"label":"Hash File","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc"},{"label":"PGP","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win32.zip.asc"}]},{"name":"Jaxx","description":"All keys are created on your local device and never sent to any servers. This means you have full control of your wallet and Jaxx neither holds nor has access to your funds.\n","logo_url":"/assets/img/wallets/jaxx-logo.ico","os":"win32","type":"desktop","vendor_id":"jaxx","vendor_label":"Jaxx","control_type":"semi","validation_type":"hosted","access_type":"vendor","product_id":"jaxx","product_label":"Jaxx","product_source_url":"https://jaxx.io/support.html","links":[{"label":"Jaxx Downloads","url":"https://jaxx.io/support.html"}]}],"size":3},{"name":"linux","items":[{"name":"Dash Core Linux 32 Bit","description":"Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features","logo_url":"/assets/img/dash_circle_normal.png","os":"linux","type":"desktop","vendor_id":"dash_core","vendor_label":"Dash Core","product_id":"dash_core_linux_32","product_label":"Dash Core","control_type":"full","validation_type":"full","access_type":"p2p","product_security_label":"https://www.dash.org","product_security_url":"https://www.dash.org","product_website_label":"Dash.org","product_website_url":"https://www.dash.org","product_source_url":"https://github.com/dashpay/dash","links":[{"label":"Download TGZ","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-linux32.tar.gz"},{"label":"Hash File","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc"},{"label":"PGP","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-linux32.tar.gz.asc"}]},{"name":"Dash Core Linux 64 Bit","description":"Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features","logo_url":"/assets/img/dash_circle_normal.png","os":"linux","type":"desktop","vendor_id":"dash_core","vendor_label":"Dash Core","control_type":"full","validation_type":"full","access_type":"p2p","product_id":"dash_core_linux_64","product_label":"Dash Core","product_website_label":"Dash.org","product_website_url":"https://www.dash.org","product_source_url":"https://github.com/dashpay/dash","links":[{"label":"Download TGZ","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-linux64.tar.gz"},{"label":"Hash File","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc"},{"label":"PGP","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-linux64.tar.gz.asc"}]},{"name":"Dash Core Raspberry Pi 2","description":"Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features","logo_url":"/assets/img/dash_circle_normal.png","os":"linux","type":"desktop","vendor_id":"dash_core","vendor_label":"Dash Core","product_id":"dash_core_linux_64","product_label":"Dash Core","control_type":"full","validation_type":"full","access_type":"p2p","product_website_label":"Dash.org","product_website_url":"https://www.dash.org","product_source_url":"https://github.com/dashpay/dash","links":[{"label":"Download TGZ","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-RPi2.tar.gz"},{"label":"Hash File","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc"},{"label":"PGP","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-RPi2.tar.gz.asc"}]},{"name":"Jaxx","description":"All keys are created on your local device and never sent to any servers. This means you have full control of your wallet and Jaxx neither holds nor has access to your funds.\n","logo_url":"/assets/img/wallets/jaxx-logo.ico","os":"linux","type":"desktop","vendor_id":"jaxx","vendor_label":"Jaxx","control_type":"semi","validation_type":"hosted","access_type":"vendor","product_id":"jaxx","product_label":"Jaxx","product_source_url":"https://jaxx.io/support.html","links":[{"label":"Jaxx Downloads","url":"https://jaxx.io/support.html"}]},{"name":"Exodus","description":"Exodus is the first desktop multi-asset wallet with ShapeShift built in. Exodus encrypts private keys and transaction data locally for your eyes only - no accounts, no servers, no data sharing. Track the value of your blockchain asset portfolio, in real time, as market conditions change.","logo_url":"/assets/img/wallets/exodus.png","os":"linux","type":"desktop","vendor_id":"exodus","vendor_label":"Exodus","control_type":"semi","validation_type":"hosted","access_type":"p2p","product_id":"exodus","product_label":"Exodus Wallet","links":[{"label":"Exodus Downloads","url":"https://www.exodus.io/releases/"}]}],"size":5},{"name":"osx","items":[{"name":"Dash Core","description":"Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features","logo_url":"/assets/img/dash_circle_normal.png","os":"osx","type":"desktop","vendor_id":"dash_core","vendor_label":"Dash Core","product_id":"dash_core","control_type":"full","validation_type":"full","access_type":"p2p","product_label":"Dash Core","product_source_url":"https://github.com/dashpay/dash","links":[{"label":"Download DMG","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-osx.dmg"},{"label":"Hash File","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc"},{"label":"PGP","url":"https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-osx.dmg.asc"}]},{"name":"Jaxx","description":"All keys are created on your local device and never sent to any servers. This means you have full control of your wallet and Jaxx neither holds nor has access to your funds.\n","logo_url":"/assets/img/wallets/jaxx-logo.ico","os":"osx","type":"desktop","vendor_id":"jaxx","vendor_label":"Jaxx","control_type":"semi","validation_type":"hosted","access_type":"vendor","product_id":"jaxx","product_label":"Jaxx","product_source_url":"https://jaxx.io/support.html","links":[{"label":"Jaxx Downloads","url":"https://jaxx.io/support.html"}]},{"name":"Exodus","description":"Exodus is the first desktop multi-asset wallet with ShapeShift built in. Exodus encrypts private keys and transaction data locally for your eyes only - no accounts, no servers, no data sharing. Track the value of your blockchain asset portfolio, in real time, as market conditions change.","logo_url":"/assets/img/wallets/exodus.png","os":"osx","type":"desktop","vendor_id":"exodus","vendor_label":"Exodus","control_type":"semi","validation_type":"hosted","access_type":"p2p","product_id":"exodus","product_label":"Exodus Wallet","links":[{"label":"Exodus Downloads","url":"https://www.exodus.io/releases/"}]}],"size":3},{"name":"android","items":[{"name":"Dash Wallet by Hash Engineering","description":"Have your Dash always with you, in your pocket! You pay by quickly scanning a QR code. As a merchant, you receive payments reliably and instantly. Dash Wallet is the first mobile Dash app, and arguably also the most secure! (Requires Android 4 or higher)\n FEATURES\n• InstantSend available\n• No registration, web service or cloud needed! This wallet is de-centralized and peer to peer.\n• Display of Dash amount in DASH, mDASH and µDASH.\n• Conversion to and from national currencies.\n• Sending and receiving of Dash via NFC, QR codes or Dash URLs.\n• Address book for regularly used Dash addresses.\n• When you're offline, you can still pay via Bluetooth.\n• System notification for received coins.\n• Sweeping of paper wallets (e.g. those used for cold storage).\n• App widget for Dash balance.\n","logo_url":"/assets/img/dash_circle_normal.png","os":"android","type":"mobile","vendor_id":"hash_engineering_solutions","vendor_label":"Hash Engineering Solutions","control_type":"full","validation_type":"spv","access_type":"p2p","product_id":"dash_android_wallet","product_label":"Dash Wallet","product_source_url":"https://github.com/HashEngineering/dash-wallet","links":[{"label":"Google Play Download","url":"https://play.google.com/store/apps/details?id=hashengineering.darkcoin.wallet"}]},{"name":"Coinomi","description":"MultiCurrency Wallet, securely with our cross-chain enabled mobile hybrid wallet.\n• Superb Security\n  Your private keys never leave your device. Strong wallet encryption and cryptography guarantee that your funds will remain safe under your ultimate control.\n• Enhanced Privacy &amp; Anonymity\n  No KYC bureaucracy to access your funds, no IP association, no identity linking, no transactions tracking. Our servers anonymize your requests by hiding your IP from prying eyes.\n• Exchange Inside\n  Convert between altcoins instantly from within the app, through our strategic partner ShapeShift.\n• One-time Backup\n  Hierarchical Deterministic Wallet (BIP44) enables you to keep everything accessible and secure with just one super-passphrase which you only have to back-up once and for all.\n• Open Source &amp; Transparent\n  No hidden code, no malicious modules, no exploits, no small letters. Our code is publicly available and publicly reviewed.\n","logo_url":"/assets/img/wallets/coinomi-logo-medium.png","os":"android","type":"mobile","vendor_id":"coinomi","vendor_label":"Coinomi","control_type":"full","validation_type":"hosted","access_type":"vendor","product_id":"coinomi_wallet","product_label":"Coinomi Wallet","product_source_url":"https://coinomi.com/downloads/","links":[{"label":"Google Play Download","url":"https://play.google.com/store/apps/details?id=com.coinomi.wallet"},{"label":"Download APK","url":"https://coinomi.com/downloads/"}]},{"name":"Jaxx","description":"<p>\nJaxx Blockchain Interface &amp; Wallet\n</p>\nAll keys are created on your local device and never sent to any servers. This means you have full control of your wallet and Jaxx neither holds nor has access to your funds.\n","logo_url":"/assets/img/wallets/jaxx-logo.ico","os":"android","type":"mobile","vendor_id":"jaxx","vendor_label":"Jaxx","control_type":"semi","validation_type":"hosted","access_type":"vendor","product_id":"jaxx","product_label":"Jaxx Wallet","product_source_label":"Github","product_source_url":"https://jaxx.io/support.html","links":[{"label":"Google Play Download","url":"https://play.google.com/store/apps/details?id=com.kryptokit.jaxx"}]}],"size":3},{"name":"ios","items":[{"name":"Jaxx","description":"<p>\nJaxx Blockchain Interface &amp; Wallet\n</p>\nAll keys are created on your local device and never sent to any servers. This means you have full control of your wallet and Jaxx neither holds nor has access to your funds.\n","logo_url":"/assets/img/wallets/jaxx-logo.ico","os":"ios","type":"mobile","vendor_id":"jaxx","vendor_label":"Jaxx","control_type":"semi","validation_type":"hosted","access_type":"vendor","product_id":"jaxx","product_label":"Jaxx Wallet","product_source_label":"Github","product_source_url":"https://jaxx.io/support.html","links":[{"label":"AppStore","url":"https://itunes.apple.com/us/app/jaxx-blockchain-wallet/id1084514516?mt=8"}]},{"name":"Dash Core iOS","description":"<p>\nOfficial Dash Core \n</p>\nDashwallet is the first and only iPhone wallet which connects directly to the dash network. This means that there are no servers to get hacked or go down - your funds are always safe. Even if your phone is lost, damaged or stolen, you can easily recover your funds using your personal recovery phrase. \n","logo_url":"/assets/img/wallets/dash-ios.jpeg","os":"ios","type":"mobile","vendor_id":"dash_core","vendor_label":"Dash Core","control_type":"semi","validation_type":"hosted","access_type":"vendor","product_id":"dash_core_ios","product_label":"Dash Core iOS","product_website_label":"Dash.org","product_website_url":"https://www.dash.org","product_source_url":"https://github.com/dashpay/dash","links":[{"label":"AppStore","url":"http://itunes.apple.com/us/app/dash-wallet/id1206647026"}]}],"size":2},{"name":"","items":[{"name":"Dash Core Paper Wallet","description":"Paper wallets are a form of cold wallet and essentially a bearer instrument – whoever holds them has access to both the Dash private key and therefore the address.","logo_url":"/assets/img/dash_circle_normal.png","type":"paper","vendor_id":"dash_core","vendor_label":"Dash Core","product_id":"dash_paper","product_label":"Dash Core Paper Wallet","product_source_url":"https://github.com/dashpay/paper.dash.org","links":[{"label":"Setup Instructions","url":"https://dashpay.atlassian.net/wiki/display/DOC/Paper+Wallet"}]},{"name":"KeepKey Hardware Wallet","description":"KeepKey is a hardware wallet that secures Dash (and other cryptocurrencies). Your assets are protected from hackers and thieves. KeepKey works with the wallet software on your computer by taking over the management of private key generation, private key storage, and transaction signing.","logo_url":"https://avatars3.githubusercontent.com/u/73358?v=3&s=400","type":"hardware","vendor_id":"keepkey","vendor_label":"KeepKey","product_id":"keepkey","product_label":"KeepKey Hardware Wallet","product_source_url":"https://github.com/dstanchfield/trezor-mcu/commits/master","links":[{"label":"Purchase Options","url":"https://www.keepkey.com"}]},{"name":"Ledger Nano S","description":"Ledger Nano S is a Dash (Bitcoin, Ethereum and Altcoins) hardware wallet, based on robust safety features for storing cryptographic assets and securing digital payments. It connects to any computer (USB) and embeds a secure OLED display to double-check and confirm each transaction with a single tap on its side buttons.","logo_url":"/assets/img/wallets/ledger-nano-s-fold-medium.png","type":"hardware","vendor_id":"ledger","vendor_label":"Ledger","product_id":"ledger_nano_s","product_label":"Ledger Nano S","product_source_url":"https://github.com/LedgerHQ/ledger-nano-s","links":[{"label":"Purchase Options","url":"https://www.ledgerwallet.com/products/ledger-nano-s"}]},{"name":"Trezor","description":"TREZOR is a hardware wallet providing advanced security for handling bitcoin private keys. Unlike traditional cold storage methods (offline storage or paper wallet), TREZOR is able to make secure payments without exposing your private keys to a potentially compromised computer","logo_url":"/assets/img/wallets/trezor-logo.png","type":"hardware","vendor_id":"trezor","vendor_label":"Trezor","product_id":"trezor","product_label":"Trezor Hardware Wallet","product_source_url":"https://github.com/trezor","links":[{"label":"Purchase Options","url":"https://shop.trezor.io"},{"label":"Usage Instructions","url":"https://dashpay.atlassian.net/wiki/display/DOC/Using+Trezor+with+Dash"}]}],"size":4}];
+	console.log('walletsCollectionByOs : ' , walletsCollectionByOs  );
+</script>
+
+
+
+<!-- Modal -->
+
+<div id="win64-dash_core--dash_core_win_64_install-modal"
+	 
+		class="modal fade wallet-modal-container dash-core"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Dash Core for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="b-modal__accent bottom-space">
+										<h5>最低限のバージョンが要求されます:</h5>
+									</div>
+								</div>
+							</div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>一般ユーザー</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マスターノード運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マイニングプール運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットでDASHを完全にコントロールできます。また、ソースコードや二進法によって表示されるファイルの検証を許可できます。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											完全な検証プロセスはお支払いの送信また受信状況を確認する必要がありますが、一番安全な検証プロセスとしてディスクの使用量も一番多いです。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											直接DASH P2Pサイトに接続できます。これは世界中で審査されない分散化ネットワーク接続モデルです。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/dashpay/dash" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Download Installer" data-url="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win64-setup.exe" ><span
+                                    aria-hidden="true">Download Installer</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="win64-dash_core--dash_core_win_64_zip-modal"
+	 
+		class="modal fade wallet-modal-container dash-core"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Dash Core for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="b-modal__accent bottom-space">
+										<h5>最低限のバージョンが要求されます:</h5>
+									</div>
+								</div>
+							</div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>一般ユーザー</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マスターノード運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マイニングプール運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットでDASHを完全にコントロールできます。また、ソースコードや二進法によって表示されるファイルの検証を許可できます。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											完全な検証プロセスはお支払いの送信また受信状況を確認する必要がありますが、一番安全な検証プロセスとしてディスクの使用量も一番多いです。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											直接DASH P2Pサイトに接続できます。これは世界中で審査されない分散化ネットワーク接続モデルです。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/dashpay/dash" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Download ZIP" data-url="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win64.zip" ><span
+                                    aria-hidden="true">Download ZIP</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="win32-dash_core--dash_core_win_32_install-modal"
+	 
+		class="modal fade wallet-modal-container dash-core"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Dash Core for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="b-modal__accent bottom-space">
+										<h5>最低限のバージョンが要求されます:</h5>
+									</div>
+								</div>
+							</div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>一般ユーザー</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マスターノード運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マイニングプール運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットでDASHを完全にコントロールできます。また、ソースコードや二進法によって表示されるファイルの検証を許可できます。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											完全な検証プロセスはお支払いの送信また受信状況を確認する必要がありますが、一番安全な検証プロセスとしてディスクの使用量も一番多いです。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											直接DASH P2Pサイトに接続できます。これは世界中で審査されない分散化ネットワーク接続モデルです。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/dashpay/dash" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Download Installer" data-url="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win32-setup.exe" ><span
+                                    aria-hidden="true">Download Installer</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="win32-dash_core--dash_core_win_32_zip-modal"
+	 
+		class="modal fade wallet-modal-container dash-core"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Dash Core Win/32 ZIP for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="b-modal__accent bottom-space">
+										<h5>最低限のバージョンが要求されます:</h5>
+									</div>
+								</div>
+							</div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>一般ユーザー</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マスターノード運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マイニングプール運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットでDASHを完全にコントロールできます。また、ソースコードや二進法によって表示されるファイルの検証を許可できます。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											完全な検証プロセスはお支払いの送信また受信状況を確認する必要がありますが、一番安全な検証プロセスとしてディスクの使用量も一番多いです。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											直接DASH P2Pサイトに接続できます。これは世界中で審査されない分散化ネットワーク接続モデルです。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/dashpay/dash" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Download ZIP" data-url="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win32.zip" ><span
+                                    aria-hidden="true">Download ZIP</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="linux-dash_core--dash_core_linux_32-modal"
+	 
+		class="modal fade wallet-modal-container dash-core"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Dash Core for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="b-modal__accent bottom-space">
+										<h5>最低限のバージョンが要求されます:</h5>
+									</div>
+								</div>
+							</div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>一般ユーザー</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マスターノード運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マイニングプール運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットでDASHを完全にコントロールできます。また、ソースコードや二進法によって表示されるファイルの検証を許可できます。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											完全な検証プロセスはお支払いの送信また受信状況を確認する必要がありますが、一番安全な検証プロセスとしてディスクの使用量も一番多いです。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											直接DASH P2Pサイトに接続できます。これは世界中で審査されない分散化ネットワーク接続モデルです。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/dashpay/dash" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Download TGZ" data-url="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-linux32.tar.gz" ><span
+                                    aria-hidden="true">Download TGZ</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="linux-dash_core--dash_core_linux_64-modal"
+	 
+		class="modal fade wallet-modal-container dash-core"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Dash Core for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="b-modal__accent bottom-space">
+										<h5>最低限のバージョンが要求されます:</h5>
+									</div>
+								</div>
+							</div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>一般ユーザー</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マスターノード運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マイニングプール運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットでDASHを完全にコントロールできます。また、ソースコードや二進法によって表示されるファイルの検証を許可できます。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											完全な検証プロセスはお支払いの送信また受信状況を確認する必要がありますが、一番安全な検証プロセスとしてディスクの使用量も一番多いです。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											直接DASH P2Pサイトに接続できます。これは世界中で審査されない分散化ネットワーク接続モデルです。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/dashpay/dash" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Download TGZ" data-url="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-linux64.tar.gz" ><span
+                                    aria-hidden="true">Download TGZ</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="linux-dash_core--dash_core_linux_64-modal"
+	 
+		class="modal fade wallet-modal-container dash-core"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Dash Core for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="b-modal__accent bottom-space">
+										<h5>最低限のバージョンが要求されます:</h5>
+									</div>
+								</div>
+							</div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>一般ユーザー</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マスターノード運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マイニングプール運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットでDASHを完全にコントロールできます。また、ソースコードや二進法によって表示されるファイルの検証を許可できます。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											完全な検証プロセスはお支払いの送信また受信状況を確認する必要がありますが、一番安全な検証プロセスとしてディスクの使用量も一番多いです。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											直接DASH P2Pサイトに接続できます。これは世界中で審査されない分散化ネットワーク接続モデルです。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/dashpay/dash" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Download TGZ" data-url="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-RPi2.tar.gz" ><span
+                                    aria-hidden="true">Download TGZ</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="osx-dash_core--dash_core-modal"
+	 
+		class="modal fade wallet-modal-container dash-core"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Dash Core for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="b-modal__accent bottom-space">
+										<h5>最低限のバージョンが要求されます:</h5>
+									</div>
+								</div>
+							</div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>一般ユーザー</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マスターノード運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マイニングプール運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットでDASHを完全にコントロールできます。また、ソースコードや二進法によって表示されるファイルの検証を許可できます。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											完全な検証プロセスはお支払いの送信また受信状況を確認する必要がありますが、一番安全な検証プロセスとしてディスクの使用量も一番多いです。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											直接DASH P2Pサイトに接続できます。これは世界中で審査されない分散化ネットワーク接続モデルです。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/dashpay/dash" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Download DMG" data-url="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-osx.dmg" ><span
+                                    aria-hidden="true">Download DMG</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="ios-dash_core--dash_core_ios-modal"
+	 
+		class="modal fade wallet-modal-container dash-core"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Dash Core iOS for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="b-modal__accent bottom-space">
+										<h5>最低限のバージョンが要求されます:</h5>
+									</div>
+								</div>
+							</div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>一般ユーザー</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マスターノード運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マイニングプール運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										モバイルウォレット(モバイル端末でご利用いただける財布)
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットによってDASHに対して全面的に制御することができます。ただし、それは不要コードをダウンロードしないことを前提とした話です。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											プロキシサーバーでお支払い送信また受信状況を確認する必要があります。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											サプライヤーのプロキシサーバーによりDASHのP2Pサイトに接続できます。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/dashpay/dash" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="AppStore" data-url="http://itunes.apple.com/us/app/dash-wallet/id1206647026" ><span
+                                    aria-hidden="true">AppStore</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="-dash_core--dash_paper-modal"
+	 
+		class="modal fade wallet-modal-container dash-core"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Dash Core Paper Wallet for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="b-modal__accent bottom-space">
+										<h5>最低限のバージョンが要求されます:</h5>
+									</div>
+								</div>
+							</div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>一般ユーザー</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マスターノード運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="row">
+			                  <div class="col-xs-12">
+			                    <div class="b-modal__accent bottom-space">
+			                        <h5>マイニングプール運営者</h5>
+			                        <p class="bottom-space">0.12.2.2</p>
+			                    </div>
+			                  </div>
+			                </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										ペーパーウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+
+								
+
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/dashpay/paper.dash.org" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Setup Instructions" data-url="https://dashpay.atlassian.net/wiki/display/DOC/Paper+Wallet" ><span
+                                    aria-hidden="true">Setup Instructions</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+
+<div id="linux-jaxx--jaxx-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Jaxx for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="/assets/img/wallets/jaxx-logo.ico"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットによってDASHに対して全面的に制御することができます。ただし、それは不要コードをダウンロードしないことを前提とした話です。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											プロキシサーバーでお支払い送信また受信状況を確認する必要があります。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											サプライヤーのプロキシサーバーによりDASHのP2Pサイトに接続できます。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://jaxx.io/support.html" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Jaxx Downloads" data-url="https://jaxx.io/support.html" ><span
+                                    aria-hidden="true">Jaxx Downloads</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="win32-jaxx--jaxx-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Jaxx for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="/assets/img/wallets/jaxx-logo.ico"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットによってDASHに対して全面的に制御することができます。ただし、それは不要コードをダウンロードしないことを前提とした話です。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											プロキシサーバーでお支払い送信また受信状況を確認する必要があります。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											サプライヤーのプロキシサーバーによりDASHのP2Pサイトに接続できます。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://jaxx.io/support.html" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Jaxx Downloads" data-url="https://jaxx.io/support.html" ><span
+                                    aria-hidden="true">Jaxx Downloads</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="win64-jaxx--jaxx-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Jaxx for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="/assets/img/wallets/jaxx-logo.ico"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットによってDASHに対して全面的に制御することができます。ただし、それは不要コードをダウンロードしないことを前提とした話です。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											プロキシサーバーでお支払い送信また受信状況を確認する必要があります。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											サプライヤーのプロキシサーバーによりDASHのP2Pサイトに接続できます。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://jaxx.io/support.html" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Jaxx Downloads" data-url="https://jaxx.io/support.html" ><span
+                                    aria-hidden="true">Jaxx Downloads</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="osx-jaxx--jaxx-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Jaxx for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="/assets/img/wallets/jaxx-logo.ico"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットによってDASHに対して全面的に制御することができます。ただし、それは不要コードをダウンロードしないことを前提とした話です。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											プロキシサーバーでお支払い送信また受信状況を確認する必要があります。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											サプライヤーのプロキシサーバーによりDASHのP2Pサイトに接続できます。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://jaxx.io/support.html" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Jaxx Downloads" data-url="https://jaxx.io/support.html" ><span
+                                    aria-hidden="true">Jaxx Downloads</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="android-jaxx--jaxx-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Jaxx Wallet for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="/assets/img/wallets/jaxx-logo.ico"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										モバイルウォレット(モバイル端末でご利用いただける財布)
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットによってDASHに対して全面的に制御することができます。ただし、それは不要コードをダウンロードしないことを前提とした話です。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											プロキシサーバーでお支払い送信また受信状況を確認する必要があります。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											サプライヤーのプロキシサーバーによりDASHのP2Pサイトに接続できます。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://jaxx.io/support.html" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Google Play Download" data-url="https://play.google.com/store/apps/details?id=com.kryptokit.jaxx" ><span
+                                    aria-hidden="true">Google Play Download</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="ios-jaxx--jaxx-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Jaxx Wallet for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="/assets/img/wallets/jaxx-logo.ico"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										モバイルウォレット(モバイル端末でご利用いただける財布)
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットによってDASHに対して全面的に制御することができます。ただし、それは不要コードをダウンロードしないことを前提とした話です。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											プロキシサーバーでお支払い送信また受信状況を確認する必要があります。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											サプライヤーのプロキシサーバーによりDASHのP2Pサイトに接続できます。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://jaxx.io/support.html" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="AppStore" data-url="https://itunes.apple.com/us/app/jaxx-blockchain-wallet/id1084514516?mt=8" ><span
+                                    aria-hidden="true">AppStore</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+
+<div id="android-hash_engineering_solutions--dash_android_wallet-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Dash Wallet for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="/assets/img/dash_circle_normal.png"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										モバイルウォレット(モバイル端末でご利用いただける財布)
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットでDASHを完全にコントロールできます。また、ソースコードや二進法によって表示されるファイルの検証を許可できます。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											より簡単な検証プロセスはより短い時間でお支払いの送信と受信状況を確認できます。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											直接DASH P2Pサイトに接続できます。これは世界中で審査されない分散化ネットワーク接続モデルです。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/HashEngineering/dash-wallet" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Google Play Download" data-url="https://play.google.com/store/apps/details?id=hashengineering.darkcoin.wallet" ><span
+                                    aria-hidden="true">Google Play Download</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+
+<div id="android-coinomi--coinomi_wallet-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Coinomi Wallet for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="/assets/img/wallets/coinomi-logo-medium.png"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										モバイルウォレット(モバイル端末でご利用いただける財布)
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットでDASHを完全にコントロールできます。また、ソースコードや二進法によって表示されるファイルの検証を許可できます。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											プロキシサーバーでお支払い送信また受信状況を確認する必要があります。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											サプライヤーのプロキシサーバーによりDASHのP2Pサイトに接続できます。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://coinomi.com/downloads/" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Google Play Download" data-url="https://play.google.com/store/apps/details?id=com.coinomi.wallet" ><span
+                                    aria-hidden="true">Google Play Download</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+
+<div id="win64-exodus--exodus-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Exodus Wallet for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="/assets/img/wallets/exodus.png"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットによってDASHに対して全面的に制御することができます。ただし、それは不要コードをダウンロードしないことを前提とした話です。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											プロキシサーバーでお支払い送信また受信状況を確認する必要があります。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											直接DASH P2Pサイトに接続できます。これは世界中で審査されない分散化ネットワーク接続モデルです。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										特許
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Exodus Downloads" data-url="https://www.exodus.io/releases/" ><span
+                                    aria-hidden="true">Exodus Downloads</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="osx-exodus--exodus-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Exodus Wallet for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="/assets/img/wallets/exodus.png"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットによってDASHに対して全面的に制御することができます。ただし、それは不要コードをダウンロードしないことを前提とした話です。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											プロキシサーバーでお支払い送信また受信状況を確認する必要があります。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											直接DASH P2Pサイトに接続できます。これは世界中で審査されない分散化ネットワーク接続モデルです。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										特許
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Exodus Downloads" data-url="https://www.exodus.io/releases/" ><span
+                                    aria-hidden="true">Exodus Downloads</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="linux-exodus--exodus-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Exodus Wallet for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="/assets/img/wallets/exodus.png"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										デスクトップウォレット
+									
+								</p>
+							</h5>
+
+							
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										コントロール:
+
+										
+											このウォレットによってDASHに対して全面的に制御することができます。ただし、それは不要コードをダウンロードしないことを前提とした話です。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										確認:
+
+										
+											プロキシサーバーでお支払い送信また受信状況を確認する必要があります。
+										
+									</p>
+								</h5>
+								
+
+								
+								<h5 class="bottom-space">
+									<p class="bottom-space b-modal__accent">
+										サイトにアクセス:
+
+										
+											直接DASH P2Pサイトに接続できます。これは世界中で審査されない分散化ネットワーク接続モデルです。
+										
+									</p>
+								</h5>
+								
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										特許
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Exodus Downloads" data-url="https://www.exodus.io/releases/" ><span
+                                    aria-hidden="true">Exodus Downloads</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+
+<div id="-keepkey--keepkey-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">KeepKey Hardware Wallet for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="https://avatars3.githubusercontent.com/u/73358?v=3&s=400"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										ハードウェアウォレット(専用財布端末)
+									
+								</p>
+							</h5>
+
+							
+								<p class="bottom-space b-modal__descr">KeepKey is a hardware wallet that secures Dash (and other cryptocurrencies). Your assets are protected from hackers and thieves. KeepKey works with the wallet software on your computer by taking over the management of private key generation, private key storage, and transaction signing.</p>
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/dstanchfield/trezor-mcu/commits/master" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Purchase Options" data-url="https://www.keepkey.com" ><span
+                                    aria-hidden="true">Purchase Options</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+
+<div id="-ledger--ledger_nano_s-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Ledger Nano S for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="/assets/img/wallets/ledger-nano-s-fold-medium.png"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										ハードウェアウォレット(専用財布端末)
+									
+								</p>
+							</h5>
+
+							
+								<p class="bottom-space b-modal__descr">Ledger Nano S is a Dash (Bitcoin, Ethereum and Altcoins) hardware wallet, based on robust safety features for storing cryptographic assets and securing digital payments. It connects to any computer (USB) and embeds a secure OLED display to double-check and confirm each transaction with a single tap on its side buttons.</p>
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/LedgerHQ/ledger-nano-s" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Purchase Options" data-url="https://www.ledgerwallet.com/products/ledger-nano-s" ><span
+                                    aria-hidden="true">Purchase Options</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+
+<div id="-trezor--trezor-modal"
+	 
+     	class="modal fade wallet-modal-container"
+	
+	 role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content b-modal__content">
+            <div class="modal-header">
+        		<span class="close b-modal__close pull-right" data-dismiss="modal" aria-hidden="true"></span>
+                <h1 class="modal-title b-modal__title">Trezor Hardware Wallet for Dash</h1>
+            </div>
+            <div class="modal-body b-modal__body">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8 col-xs-12 text-left b-modal__sidebar">
+						
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <img src="/assets/img/wallets/trezor-logo.png"/>
+                                </div>
+                            </div>
+						
+                    </div>
+
+                    <div class="col-md-8 col-md-pull-4 col-xs-12">
+                        <div>
+							<h5 class="bottom-space">
+								<p class="bottom-space b-modal__accent">
+									プラットフォーム:
+
+									
+										ハードウェアウォレット(専用財布端末)
+									
+								</p>
+							</h5>
+
+							
+								<p class="bottom-space b-modal__descr">TREZOR is a hardware wallet providing advanced security for handling bitcoin private keys. Unlike traditional cold storage methods (offline storage or paper wallet), TREZOR is able to make secure payments without exposing your private keys to a potentially compromised computer</p>
+							
+
+                            <h5 class="bottom-space">
+                                <span class="b-modal__accent">
+                                    ソースコード: &nbsp;
+									
+										<a href="https://github.com/trezor" target="_blank">ビュー</a>
+									
+                                </span>
+                            </h5>
+
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Purchase Options" data-url="https://shop.trezor.io" ><span
+                                    aria-hidden="true">Purchase Options</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="page page--wallets">
+
+	<section class="section clearfix">
+		<div class="section__content">
+			<h3>セキュリティ</h3>
+			<p>あなたのウォレットを保護するため、安全性の高いパスワードを設定し、そのパスワードを安全な場所に保管してください。盗難に遭った場合は、なくしたお金を取り返せませんので、ウォレットやあらゆるバックアップを暗号化してください。ペーパーウォレットやKeepassのようなハードウェアウォレットをご利用になる場合は、普通のウォレットパスワードを保管するように、最初のウォレットファイルをきちんと保管してください。それはウォレットファイルを元に戻す唯一の方法です。パスワードのセキュリティの追加情報はこちらへ：
+				<a href="https://www.keepassx.org" target="_blank">keepassx.org</a>
+			</p>
+			<div class="row">
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="section__content">
+			<h3 id="wallets">デスクトップウォレット</h3>
+			<p>
+				デスクトップウォレットは様々な機能と高い安全性を実現できます。
+			</p>
+			<p>Latest: 19th Dec 2017
+&nbsp;&nbsp;v0.12.2.2</p>
+			<ul id="wallet-os-tabs" class="nav2 nav-tabs">
+				
+				
+				
+				<li role="tab" class="active" >
+					<a data-toggle="pill" href="#win64">
+						
+						Windows (64bit)
+						
+					</a>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li role="tab" >
+					<a data-toggle="pill" href="#win32">
+						
+						Windows (32bit)
+						
+					</a>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li role="tab" >
+					<a data-toggle="pill" href="#osx">
+						
+						OSX
+						
+					</a>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li role="tab" >
+					<a data-toggle="pill" href="#linux">
+						
+						Linux
+						
+					</a>
+				</li>
+				
+				
+				
+				
+				
+			</ul>
+			<div class="tab-content">
+				
+				
+				
+				<div id="win64"
+	 role="tab-panel"
+	 class="tab-pane fade in out active">
+  <div class="row">
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#win64-dash_core--dash_core_win_64_install-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/dash_circle_normal.png"/>
+            </div>
+            <div class="caption">
+                <h4>Dash Core Win/64 Installer</h4>
+                <div class="fine-print">
+                    Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win64-setup.exe" target="_blank">Download Installer </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc" target="_blank">Hash File </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win64-setup.exe.asc" target="_blank">PGP </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#win64-dash_core--dash_core_win_64_zip-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/dash_circle_normal.png"/>
+            </div>
+            <div class="caption">
+                <h4>Dash Core Win/64 ZIP</h4>
+                <div class="fine-print">
+                    Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win64.zip" target="_blank">Download ZIP </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc" target="_blank">Hash File </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win64.zip.asc" target="_blank">PGP </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#win64-jaxx--jaxx-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/wallets/jaxx-logo.ico"/>
+            </div>
+            <div class="caption">
+                <h4>Jaxx</h4>
+                <div class="fine-print">
+                    All keys are created on your local device and never sent to any servers. This means you have full control of your wallet and Jaxx neither holds nor has access to your funds.
+
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://jaxx.io/support.html" target="_blank">Jaxx Downloads </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#win64-exodus--exodus-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/wallets/exodus.png"/>
+            </div>
+            <div class="caption">
+                <h4>Exodus</h4>
+                <div class="fine-print">
+                    Exodus is the first desktop multi-asset wallet with ShapeShift built in. Exodus encrypts private keys and transaction data locally for your eyes only - no accounts, no servers, no data sharing. Track the value of your blockchain asset portfolio, in real time, as market conditions change.
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://www.exodus.io/releases/" target="_blank">Exodus Downloads </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+  </div>
+</div>
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<div id="win32"
+	 role="tab-panel"
+	 class="tab-pane fade in out ">
+  <div class="row">
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#win32-dash_core--dash_core_win_32_install-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/dash_circle_normal.png"/>
+            </div>
+            <div class="caption">
+                <h4>Dash Core Win/32 Installer</h4>
+                <div class="fine-print">
+                    Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win32-setup.exe" target="_blank">Download Installer </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc" target="_blank">Hash File </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win32-setup.exe.asc" target="_blank">PGP </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#win32-dash_core--dash_core_win_32_zip-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/dash_circle_normal.png"/>
+            </div>
+            <div class="caption">
+                <h4>Dash Core Win/32 ZIP</h4>
+                <div class="fine-print">
+                    Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win32.zip" target="_blank">Download ZIP </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc" target="_blank">Hash File </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-win32.zip.asc" target="_blank">PGP </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#win32-jaxx--jaxx-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/wallets/jaxx-logo.ico"/>
+            </div>
+            <div class="caption">
+                <h4>Jaxx</h4>
+                <div class="fine-print">
+                    All keys are created on your local device and never sent to any servers. This means you have full control of your wallet and Jaxx neither holds nor has access to your funds.
+
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://jaxx.io/support.html" target="_blank">Jaxx Downloads </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+  </div>
+</div>
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<div id="osx"
+	 role="tab-panel"
+	 class="tab-pane fade in out ">
+  <div class="row">
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#osx-dash_core--dash_core-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/dash_circle_normal.png"/>
+            </div>
+            <div class="caption">
+                <h4>Dash Core</h4>
+                <div class="fine-print">
+                    Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-osx.dmg" target="_blank">Download DMG </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc" target="_blank">Hash File </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-osx.dmg.asc" target="_blank">PGP </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#osx-jaxx--jaxx-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/wallets/jaxx-logo.ico"/>
+            </div>
+            <div class="caption">
+                <h4>Jaxx</h4>
+                <div class="fine-print">
+                    All keys are created on your local device and never sent to any servers. This means you have full control of your wallet and Jaxx neither holds nor has access to your funds.
+
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://jaxx.io/support.html" target="_blank">Jaxx Downloads </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#osx-exodus--exodus-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/wallets/exodus.png"/>
+            </div>
+            <div class="caption">
+                <h4>Exodus</h4>
+                <div class="fine-print">
+                    Exodus is the first desktop multi-asset wallet with ShapeShift built in. Exodus encrypts private keys and transaction data locally for your eyes only - no accounts, no servers, no data sharing. Track the value of your blockchain asset portfolio, in real time, as market conditions change.
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://www.exodus.io/releases/" target="_blank">Exodus Downloads </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+  </div>
+</div>
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<div id="linux"
+	 role="tab-panel"
+	 class="tab-pane fade in out ">
+  <div class="row">
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#linux-dash_core--dash_core_linux_32-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/dash_circle_normal.png"/>
+            </div>
+            <div class="caption">
+                <h4>Dash Core Linux 32 Bit</h4>
+                <div class="fine-print">
+                    Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-linux32.tar.gz" target="_blank">Download TGZ </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc" target="_blank">Hash File </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-linux32.tar.gz.asc" target="_blank">PGP </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#linux-dash_core--dash_core_linux_64-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/dash_circle_normal.png"/>
+            </div>
+            <div class="caption">
+                <h4>Dash Core Linux 64 Bit</h4>
+                <div class="fine-print">
+                    Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-linux64.tar.gz" target="_blank">Download TGZ </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc" target="_blank">Hash File </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-linux64.tar.gz.asc" target="_blank">PGP </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#linux-dash_core--dash_core_linux_64-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/dash_circle_normal.png"/>
+            </div>
+            <div class="caption">
+                <h4>Dash Core Raspberry Pi 2</h4>
+                <div class="fine-print">
+                    Official Dash Core fully featured Wallet and P2P Client, including InstantSend, PrivateSend, Governance and Masternode management features
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-RPi2.tar.gz" target="_blank">Download TGZ </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/SHA256SUMS.asc" target="_blank">Hash File </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://github.com/dashpay/dash/releases/download/v0.12.2.2/dashcore-0.12.2.2-RPi2.tar.gz.asc" target="_blank">PGP </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#linux-jaxx--jaxx-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/wallets/jaxx-logo.ico"/>
+            </div>
+            <div class="caption">
+                <h4>Jaxx</h4>
+                <div class="fine-print">
+                    All keys are created on your local device and never sent to any servers. This means you have full control of your wallet and Jaxx neither holds nor has access to your funds.
+
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://jaxx.io/support.html" target="_blank">Jaxx Downloads </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#linux-exodus--exodus-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/wallets/exodus.png"/>
+            </div>
+            <div class="caption">
+                <h4>Exodus</h4>
+                <div class="fine-print">
+                    Exodus is the first desktop multi-asset wallet with ShapeShift built in. Exodus encrypts private keys and transaction data locally for your eyes only - no accounts, no servers, no data sharing. Track the value of your blockchain asset portfolio, in real time, as market conditions change.
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://www.exodus.io/releases/" target="_blank">Exodus Downloads </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+  </div>
+</div>
+
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="section__content">
+			<h3>モバイルウォレット(モバイル端末でご利用いただける財布)</h3>
+			<p>DASHモバイルウォレットはスマートフォンやタブレットなどのモバイル端末で操作できます。様々な機能と高い安全性を実現したアプリです。</p>
+			<ul id="wallet-mobile-os-tabs" class="nav2 nav-tabs " role="">
+				
+				<li class="active"  role="tab">
+					<a data-toggle="pill" href="#android">
+						
+						Android
+						
+					</a>
+				</li>
+				
+				<li  role="tab">
+					<a data-toggle="pill" href="#ios">
+						
+						iOS
+						
+					</a>
+				</li>
+				
+			</ul>
+			<div class="tab-content well">
+				
+				<div id="android"
+	 role="tab-panel"
+	 class="tab-pane fade in out active">
+  <div class="row">
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#android-hash_engineering_solutions--dash_android_wallet-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/dash_circle_normal.png"/>
+            </div>
+            <div class="caption">
+                <h4>Dash Wallet by Hash Engineering</h4>
+                <div class="fine-print">
+                    Have your Dash always with you, in your pocket! You pay by quickly scanning a QR code. As a merchant, you receive payments reliably and instantly. Dash Wallet is the first mobile Dash app, and arguably also the most secure! (Requires Android 4 or higher)
+ FEATURES
+• InstantSend available
+• No registration, web service or cloud needed! This wallet is de-centralized and peer to peer.
+• Display of Dash amount in DASH, mDASH and µDASH.
+• Conversion to and from national currencies.
+• Sending and receiving of Dash via NFC, QR codes or Dash URLs.
+• Address book for regularly used Dash addresses.
+• When you're offline, you can still pay via Bluetooth.
+• System notification for received coins.
+• Sweeping of paper wallets (e.g. those used for cold storage).
+• App widget for Dash balance.
+
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://play.google.com/store/apps/details?id=hashengineering.darkcoin.wallet" target="_blank">Google Play Download </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#android-coinomi--coinomi_wallet-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/wallets/coinomi-logo-medium.png"/>
+            </div>
+            <div class="caption">
+                <h4>Coinomi</h4>
+                <div class="fine-print">
+                    MultiCurrency Wallet, securely with our cross-chain enabled mobile hybrid wallet.
+• Superb Security
+  Your private keys never leave your device. Strong wallet encryption and cryptography guarantee that your funds will remain safe under your ultimate control.
+• Enhanced Privacy &amp; Anonymity
+  No KYC bureaucracy to access your funds, no IP association, no identity linking, no transactions tracking. Our servers anonymize your requests by hiding your IP from prying eyes.
+• Exchange Inside
+  Convert between altcoins instantly from within the app, through our strategic partner ShapeShift.
+• One-time Backup
+  Hierarchical Deterministic Wallet (BIP44) enables you to keep everything accessible and secure with just one super-passphrase which you only have to back-up once and for all.
+• Open Source &amp; Transparent
+  No hidden code, no malicious modules, no exploits, no small letters. Our code is publicly available and publicly reviewed.
+
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://play.google.com/store/apps/details?id=com.coinomi.wallet" target="_blank">Google Play Download </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://coinomi.com/downloads/" target="_blank">Download APK </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#android-jaxx--jaxx-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/wallets/jaxx-logo.ico"/>
+            </div>
+            <div class="caption">
+                <h4>Jaxx</h4>
+                <div class="fine-print">
+                    <p>
+Jaxx Blockchain Interface &amp; Wallet
+</p>
+All keys are created on your local device and never sent to any servers. This means you have full control of your wallet and Jaxx neither holds nor has access to your funds.
+
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://play.google.com/store/apps/details?id=com.kryptokit.jaxx" target="_blank">Google Play Download </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+  </div>
+</div>
+
+				
+				<div id="ios"
+	 role="tab-panel"
+	 class="tab-pane fade in out ">
+  <div class="row">
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#ios-jaxx--jaxx-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/wallets/jaxx-logo.ico"/>
+            </div>
+            <div class="caption">
+                <h4>Jaxx</h4>
+                <div class="fine-print">
+                    <p>
+Jaxx Blockchain Interface &amp; Wallet
+</p>
+All keys are created on your local device and never sent to any servers. This means you have full control of your wallet and Jaxx neither holds nor has access to your funds.
+
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://itunes.apple.com/us/app/jaxx-blockchain-wallet/id1084514516?mt=8" target="_blank">AppStore </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#ios-dash_core--dash_core_ios-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/wallets/dash-ios.jpeg"/>
+            </div>
+            <div class="caption">
+                <h4>Dash Core iOS</h4>
+                <div class="fine-print">
+                    <p>
+Official Dash Core 
+</p>
+Dashwallet is the first and only iPhone wallet which connects directly to the dash network. This means that there are no servers to get hacked or go down - your funds are always safe. Even if your phone is lost, damaged or stolen, you can easily recover your funds using your personal recovery phrase. 
+
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="http://itunes.apple.com/us/app/dash-wallet/id1206647026" target="_blank">AppStore </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+  </div>
+</div>
+
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="section clearfix">
+		<div class="section__content">
+			<h3>ハードウェアウォレット(専用財布端末)</h3>
+			<p>ハードウェアウォレットは安全な設備であり、ハッキングや窃盗を防ぐことができます。インストールしたウォレットを通して秘密鍵の作成と管理及び取引承認を引き継ぐことができます。</p>
+			<div class="row">
+				
+				<div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#-keepkey--keepkey-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="https://avatars3.githubusercontent.com/u/73358?v=3&s=400"/>
+            </div>
+            <div class="caption">
+                <h4>KeepKey Hardware Wallet</h4>
+                <div class="fine-print">
+                    KeepKey is a hardware wallet that secures Dash (and other cryptocurrencies). Your assets are protected from hackers and thieves. KeepKey works with the wallet software on your computer by taking over the management of private key generation, private key storage, and transaction signing.
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://www.keepkey.com" target="_blank">Purchase Options </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#-ledger--ledger_nano_s-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/wallets/ledger-nano-s-fold-medium.png"/>
+            </div>
+            <div class="caption">
+                <h4>Ledger Nano S</h4>
+                <div class="fine-print">
+                    Ledger Nano S is a Dash (Bitcoin, Ethereum and Altcoins) hardware wallet, based on robust safety features for storing cryptographic assets and securing digital payments. It connects to any computer (USB) and embeds a secure OLED display to double-check and confirm each transaction with a single tap on its side buttons.
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://www.ledgerwallet.com/products/ledger-nano-s" target="_blank">Purchase Options </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#-trezor--trezor-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/wallets/trezor-logo.png"/>
+            </div>
+            <div class="caption">
+                <h4>Trezor</h4>
+                <div class="fine-print">
+                    TREZOR is a hardware wallet providing advanced security for handling bitcoin private keys. Unlike traditional cold storage methods (offline storage or paper wallet), TREZOR is able to make secure payments without exposing your private keys to a potentially compromised computer
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://shop.trezor.io" target="_blank">Purchase Options </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://dashpay.atlassian.net/wiki/display/DOC/Using+Trezor+with+Dash" target="_blank">Usage Instructions </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+				
+			</div>
+		</div>
+	</section>
+	<section class="section clearfix">
+		<div class="section__content">
+			<h3>ペーパーウォレット</h3>
+			<p>ペーパーウォレットは「コールドストレージ」(cold storage)の一種で、本質は無記名証券です。</p>
+
+			<div class="row">
+				
+				<div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="wallet-tile" data-toggle="modal" data-target="#-dash_core--dash_paper-modal">
+        <div class="thumbnail">
+            <div class="logo-container">
+                <img src="/assets/img/dash_circle_normal.png"/>
+            </div>
+            <div class="caption">
+                <h4>Dash Core Paper Wallet</h4>
+                <div class="fine-print">
+                    Paper wallets are a form of cold wallet and essentially a bearer instrument – whoever holds them has access to both the Dash private key and therefore the address.
+                </div>
+            </div>
+            <div class="wallet-links-container">
+                
+                <div class="link">
+                    <a href="https://dashpay.atlassian.net/wiki/display/DOC/Paper+Wallet" target="_blank">Setup Instructions </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+				
+			</div>
+		</div>
+	</section>
+
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    DASHについて
+    <ul>
+        <li><a href="/jp/get-dash/">ウォレットをダウンロードする</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">DASHを購入する</a></li>
+        <li><a href="/jp/merchants/">DASHで支払う</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">DASHデポジットカード</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    ガイドをサポートする
+    <ul>
+        <li><a href="/jp/mining/" >マイニングを始める</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">マスターノードの設置</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">ウォレットを作る</a></li>
+        <li><a href="/jp/governance/">予算を申し込む</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    ネットワーク
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">取引データ</a></li>
+        <li><a href="/jp/governance/">管理</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">ブロック研究開発</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">ネットワークデータ</a></li>
+        <li><a href="/jp/exchanges/" >Full list of Exchanges</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    コミュニティ
+    <ul>
+        <li><a href="/jp/community/#discussion">ディスカッション</a></li>
+        <li><a href="/jp/community/#social">SNSアプリ</a></li>
+        <li><a href="/jp/community/#news">ニュース &amp; メッセージ</a></li>
+        <li><a href="/jp/community/#development">開発ツール</a></li>
+        <li><a href="/jp/community/#masternodes">マスターノードツール</a></li>
+        <li><a href="/jp/legal/">Legal</a></li>
+        <li><a href="/jp/graphics/">Graphics</a></li>
+        <li><a href="/jp/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    プロジェクト
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">ヘルプ &amp; サポート</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">プロジェクト情報</a></li>
+        <li><a href="/jp/team/">チーム</a></li>
+        <li><a href="/jp/update/">アップグレード</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">基金会</a></li>
+        <li><a href="/jp/contact/">連絡先</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">ウィキペディア</a></li>
+        <li><a href="/jp/school/">School</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    SNS
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash forums</a></li>
+        <li><a href="/jp/blog/">ブログ</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">ツイッター</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">YouTube</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">グーグル</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">Linkedin</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">Facebook</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/jp/terms-of-use/">使用条例</a>
+  <a href="/sitemap.xml">ウェブサイト案内</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">ソースコード</a>
+  <a href="/jp/contact/">連絡先</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2018 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/jp/get-dash/" class="overlay-menu__link">DASHについて</a></li>
+            <li class="overlay-menu__item"><a href="/jp/merchants/" class="overlay-menu__link">店舗</a></li>
+            <li class="overlay-menu__item"><a href="/jp/network/" class="overlay-menu__link">ネットワーク</a></li>
+            <li class="overlay-menu__item"><a href="/jp/community/" class="overlay-menu__link">コミュニティ</a></li>
+            <li class="overlay-menu__item"><a href="/jp/team/" class="overlay-menu__link">チーム</a></li>
+            <li class="overlay-menu__item"><a href="/jp/blog/" class="overlay-menu__link">ブログ</a></li>
+            <li class="overlay-menu__item"><a href="/jp/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/wallets/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/wallets/" class="overlay-menu__link "><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/wallets/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/wallets/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/wallets/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/wallets/" class="overlay-menu__link "><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/wallets/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/wallets/" class="overlay-menu__link is-active"><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/wallets/" class="overlay-menu__link "><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/wallets/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/dist/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

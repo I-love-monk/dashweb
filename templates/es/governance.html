@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>Sitio Web Oficial de Dash | Dash Criptodivisa &mdash; Dash</title>
+		<meta name="description" content="La DGBB también provee a Dash de los medios para fondear su propio desarrollo. Mientras otros proyectos tienen que depender de donaciones o promesas de regalías, Dash utiliza el 10% de la recompensa de los bloques para fondear su propio desarrollo. Cada vez que un bloque es minado, 45% de la recompensa va para el minero, 45% va para los Nodos Maestros, y el 10% restante no es creado hasta el final del mes. Durante cada mes, cualquiera puede hacer una propuesta presupuestal a la red. Si esa propuesta es aprobada por al menos el 10% de la red de Nodos Maestros, entonces para final de mes se crearán una serie de "super bloques". Para ese momento, las recompensas de bloques que no hayan sido cobradas (el 10% de cada bloque) serán usadas para fondear las propuestas aprobadas. La red se financia a sí misma al reservar 10% de la recompensa del blockchain para proyectos del presupuesto.
+">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/dist/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero" id="hero">
+	<div class="hero__background">
+		<img src="/assets/img/resized/hero/community.jpg-cb6c9e7/960x640.jpg" srcset="/assets/img/resized/hero/community.jpg-cb6c9e7/1920x1280.jpg 1920w, /assets/img/resized/hero/community.jpg-cb6c9e7/960x640.jpg 960w" sizes="100vw, 100vw" class="hero__background-image" />
+
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/es/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/es/get-dash/" class="nav__link">Obtenga Dash</a></li>
+			<li class="nav__item"><a href="/es/merchants/" class="nav__link">Comercios</a></li>
+			<li class="nav__item"><a href="/es/network/" class="nav__link">Moneda</a></li>
+			<li class="nav__item"><a href="/es/community/" class="nav__link">Comunidad</a></li>
+			<li class="nav__item"><a href="/es/team/" class="nav__link">Equipo</a></li>
+			<li class="nav__item"><a href="/es/blog/" class="nav__link">Blog</a></li>
+			<li class="nav__item"><a href="/es/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag es"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/governance/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/governance/" class="nav__link is-active">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/governance/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/governance/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/governance/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/governance/" class="nav__link ">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/governance/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/governance/" class="nav__link ">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/governance/" class="nav__link ">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/governance/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/es" class="nav__link" title="Buscar">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">Sistema de Gobierno Decentralizado</h1>
+		<p class="hero__lead">Gobierno Decentralizado por el Blockchain, o DGBB por sus siglas en inglés, es el intento de Dash para resolver dos problemáticas en las criptodivisas: gobierno y financiamiento.
+</p>
+
+		<div class="hero__buttons">
+			<a href="https://dashpay.atlassian.net/wiki/x/GACD" class="btn-white-solid" target="_blank">Qué es DGBB</a>
+			<a href="https://dashpay.atlassian.net/wiki/x/CIBuAQ" class="btn-white-solid" target="_blank">Herramientas</a>
+		</div>
+	</div>
+
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+
+<div class="page page--home">
+
+	<!--
+		WHAT IS PLUGIN?
+	-->
+	<section class="section">
+		<div class="section__content">
+			<div class="section__lead"><p>La gobernanza en un proyecto decentralizado es difícil, porque por definición no existen autoridades centrales para tomar decisiones para el proyecto. En Dash, esas decisiones son tomadas por la red, esto es, por los dueños de Nodos Maestros. El sistema DGBB permite a los Nodos Maestros votar a favor o en contra de las propuestas, que luego pueden ser implementadas (o no) por los desarrolladores de Dash. Un claro ejemplo es al inicio del 2016, cuando el Equipo Central de Dash subió una propuesta a la red preguntando si los bloques debían incrementar su tamaño a 2 MB. En 24 horas, se había llegado a un consenso para aprobar este cambio. Compare esto con Bitcoin, donde el debate acerca del tamaño de los bloques ha estado discutiéndose por casi tres años.</p>
+</div>
+			<br>
+			<p>La DGBB también provee a Dash de los medios para fondear su propio desarrollo. Mientras otros proyectos tienen que depender de donaciones o promesas de regalías, Dash utiliza el 10% de la recompensa de los bloques para fondear su propio desarrollo. Cada vez que un bloque es minado, 45% de la recompensa va para el minero, 45% va para los Nodos Maestros, y el 10% restante no es creado hasta el final del mes. Durante cada mes, cualquiera puede hacer una propuesta presupuestal a la red. Si esa propuesta es aprobada por al menos el 10% de la red de Nodos Maestros, entonces para final de mes se crearán una serie de "super bloques". Para ese momento, las recompensas de bloques que no hayan sido cobradas (el 10% de cada bloque) serán usadas para fondear las propuestas aprobadas. La red se financia a sí misma al reservar 10% de la recompensa del blockchain para proyectos del presupuesto.
+</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="section__content">
+			<h2 class="section__title">Qué es la gobernanza y qué significa para Dash</h2>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/jHsVU1LBuAY" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="">
+		<div class="content">
+			<h2 class="section__title">Cómo votar</h2>
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>Voto Automatizado</h2>
+					<p>Uno de los mayores retos de construir una plataforma de criptodivisas es asegurarte de crear un sistema decentralizado de gobernanza para administrar, financiar, mantener y  expandir el proyecto. Este elemento clave esta ausente en todas las demás criptodivisas hasta la fecha, la respuesta natural es crear una fundación sin fines de lucro que tiene el          objetivo de mantener el protocolo central y promover la moneda, pero que no tiene realmente una conexión significativa con ninguno  de los dueños de las monedas. Esta aproximación tiene algunos errores que han sido evidentes en plataformas de criptodivisas más viejas.
+</p>
+					<a href="https://youtu.be/52TzOgq15h8" class="btn-blue" target="_blank">
+						Guía - Amanda B.
+					</a>
+					<a href="https://dashpay.atlassian.net/wiki/x/DIBGB" class="btn-blue" target="_blank">
+						Voto Manual (en QT Wallet)
+					</a>
+					<a href="https://dashpay.atlassian.net/wiki/x/EIBGB" class="btn-blue" target="_blank">
+						DashCentral
+					</a>
+				</div>
+				<div class="col-sm-6">
+					<h2>Herramientas de Gobernanza</h2>
+					<p>El sistema funcionará como un mecanismo de votación decentralizado configurado en el software, donde están las propuestas específicas al presupuesto, entonces los Nodos Maestros en conjunto votan por ellas. Cada proyecto, si es aprobado, es añadido al presupuesto total y pagado directamente desde el blockchain a la persona que hace el trabajo. Con esto, podemos contratar desarrolladores y pagarles directamente después de la aprobación de su trabajo de una forma decentralizada.
+</p>
+					<a href="https://proposal.dash.org" class="btn-blue" target="_blank">Generador de Propuestas al Presupuesto</a>
+					<a href="https://www.dashcentral.org/" class="btn-blue" target="_blank">DashCentral</a>
+					<a href="http://dashvotetracker.com" class="btn-blue" target="_blank">VoteTracker</a>
+					<a href="https://www.dashninja.pl/budgets.html" class="btn-blue" target="_blank">Seguimiento del Presupuesto</a>
+					<a href="#" class="btn-blue" target="_blank">Estado de las Propuestas</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="content">
+			<div>
+				<h2 class="section__title">Servicio Automatizado de Propuestas</h2>
+				<img src="/assets/img/update/Voting.png" alt="">
+			</div>
+			<div>
+				<a href="https://proposal.dash.org/" target="_blank" class="btn-blue">Propuestas</a>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Obtenga Dash
+    <ul>
+        <li><a href="/es/get-dash/">Descargue el Monedero</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">Adquiera Dash</a></li>
+        <li><a href="/es/merchants/">Compre con Dash</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">Tarjeta de Débito</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Participar
+    <ul>
+        <li><a href="/es/mining/" >Comience a Minar</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">Configure un Nodo Maestro</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">Configure un Monedero</a></li>
+        <li><a href="/es/governance/">Solicite Financiamiento</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Moneda
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">Mercados de Intercambio</a></li>
+        <li><a href="/es/governance/">Gobernanza</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">Exploradores de Bloques</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">Estadísticas de la Red</a></li>
+        <li><a href="/es/exchanges/" >Lista completa de Exchanges</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Comunidad
+    <ul>
+        <li><a href="/es/community/#discussion">Discusión</a></li>
+        <li><a href="/es/community/#social">Apps sociales</a></li>
+        <li><a href="/es/community/#news">Noticias &amp; Información</a></li>
+        <li><a href="/es/community/#development">Herramientas de desarrollo</a></li>
+        <li><a href="/es/community/#masternodes">Herramientas de los Nodos Maestros</a></li>
+        <li><a href="/es/legal/">Legal</a></li>
+        <li><a href="/es/graphics/">Gráficos</a></li>
+        <li><a href="/es/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Proyecto
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">Ayuda</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">Información</a></li>
+        <li><a href="/es/team/">Equipo</a></li>
+        <li><a href="/es/update/">Update</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">Fundación</a></li>
+        <li><a href="/es/contact/">Contacto</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">Wiki</a></li>
+        <li><a href="/es/school/">Escuela</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Redes Sociales
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash forums</a></li>
+        <li><a href="/es/blog/">Blog</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">Twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">YouTube</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">Google+</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">LinkedIn</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">Facebook</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/es/terms-of-use/">Términos de uso</a>
+  <a href="/sitemap.xml">Mapa del sitio web</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">Source code</a>
+  <a href="/es/contact/">Contacto</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2018 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/es/get-dash/" class="overlay-menu__link">Obtenga Dash</a></li>
+            <li class="overlay-menu__item"><a href="/es/merchants/" class="overlay-menu__link">Comercios</a></li>
+            <li class="overlay-menu__item"><a href="/es/network/" class="overlay-menu__link">Moneda</a></li>
+            <li class="overlay-menu__item"><a href="/es/community/" class="overlay-menu__link">Comunidad</a></li>
+            <li class="overlay-menu__item"><a href="/es/team/" class="overlay-menu__link">Equipo</a></li>
+            <li class="overlay-menu__item"><a href="/es/blog/" class="overlay-menu__link">Blog</a></li>
+            <li class="overlay-menu__item"><a href="/es/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/governance/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/governance/" class="overlay-menu__link is-active"><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/governance/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/governance/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/governance/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/governance/" class="overlay-menu__link "><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/governance/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/governance/" class="overlay-menu__link "><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/governance/" class="overlay-menu__link "><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/governance/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/dist/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

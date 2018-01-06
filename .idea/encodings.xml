@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/static/assets" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/static/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/static/img" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/static/js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/blog.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/community.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/contact.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/evolution.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/exchanges.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/forum.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/get-dash.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/governance.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/graphics.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/index.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/legal.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/merchandise.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/merchants.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/mining.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/network.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/school.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/team.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/terms-of-use.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/update.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/cn/wallets.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/de" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/blog.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/community.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/contact.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/evolution.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/exchanges.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/forum.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/get-dash.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/governance.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/graphics.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/index.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/legal.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/merchandise.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/merchants.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/mining.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/network.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/school.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/team.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/terms-of-use.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/update.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/en/wallets.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/es" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/fr" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/jp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/kr" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/pt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/templates/ru" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

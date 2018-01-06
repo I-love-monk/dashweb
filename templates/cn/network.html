@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="cn">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>达世币网络 &mdash; Dash</title>
+		<meta name="description" content="达世币货币">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero" id="hero">
+	<div class="hero__background">
+		<img src="/assets/img/resized/hero/network.jpg-65cbae3/960x480.jpg" srcset="/assets/img/resized/hero/network.jpg-65cbae3/2400x1200.jpg 2400w, /assets/img/resized/hero/network.jpg-65cbae3/1920x960.jpg 1920w, /assets/img/resized/hero/network.jpg-65cbae3/960x480.jpg 960w" sizes="100vw, 100vw" class="hero__background-image" />
+
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/cn/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/cn/get-dash/" class="nav__link">了解达世币</a></li>
+			<li class="nav__item"><a href="/cn/merchants/" class="nav__link">商家</a></li>
+			<li class="nav__item"><a href="/cn/network/" class="nav__link">网络</a></li>
+			<li class="nav__item"><a href="/cn/community/" class="nav__link">社区</a></li>
+			<li class="nav__item"><a href="/cn/team/" class="nav__link">团队</a></li>
+			<li class="nav__item"><a href="/cn/blog/" class="nav__link">博客</a></li>
+			<li class="nav__item"><a href="/cn/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag cn"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/network/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/network/" class="nav__link ">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/network/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/network/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/network/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/network/" class="nav__link is-active">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/network/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/network/" class="nav__link ">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/network/" class="nav__link ">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/network/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/cn" class="nav__link" title="搜索">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">网络状态</h1>
+		<p class="hero__lead">最新的达世币交易、预算资金、主节点、和区块链动态数据</p>
+<!--		<p class="hero__lead">Visualizer Goes Here</p>-->
+
+		<div class="hero__buttons">
+			<a href="#section-exchanges" class="btn-white-solid">交易数据</a>
+			<a href="#section-governance" class="btn-white-solid">预算资金</a>
+			<a href="#section-network" class="btn-white-solid">主节点</a>
+			<a href="#section-blockchain" class="btn-white-solid">区块链</a>
+			<a href="#section-mining" class="btn-white-solid">挖矿</a>
+		</div>
+	</div>
+
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+
+<div class="content page page--currency">
+	<section class="section section--currency" id="section-exchanges">
+		<div class="section__content">
+			<div class="row">
+				<div class="col-md-6">
+					<h2 class="bottom-space">交易数据</h2>
+					<span id="marketcap_count" class="big-accent bottom-space"></span>
+					<p class="bottom-space">
+						
+					</p>
+					<div class="hero__buttons">
+						<a href="http://coinmarketcap.com/currencies/dash/#markets" target="_blank" class="btn-blue-solid">CoinMarketCap</a>
+						<a href="https://www.worldcoinindex.com/" target="_blank" class="btn-blue-solid">WorldCoinIndex</a>
+						<a href="http://coincap.io/" target="_blank" class="btn-blue-solid">CoinCap</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2>Exchanges</h2>
+					<table id="exchanges">
+						<thead>
+							<tr>
+								<th>Exchange</th>
+								<th>Volume (24h)</th>
+								<th>Price</th>
+								<th>Volume (%)</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section--currency" id="section-network">
+		<div class="section__content">
+			<h2 class="section__title bottom-space">主节点</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row bottom-space">
+						<div class="col-md-6">
+							<p>Current masternodes:</p>
+							 <span id="masternodes_count" class="big-accent"></span>
+						</div>
+						<div class="col-md-6">
+							<p>Maximum masternodes so far:</p>
+							<span id="masternodes_max" class="big-accent"></span>
+						</div>
+					</div>
+					<p>
+						
+					</p>
+					<div class="hero__buttons">
+						<a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank" class="btn-blue-solid">DashInfo</a>
+						<a href="https://www.dashninja.pl/masternodes.html" target="_blank" class="btn-blue-solid">DashNinja</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<p>
+						<img src="/assets/img/masternode_count-crop-813x525.png" width="100%">
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section--currency" id="section-blockchain">
+		<div class="section__content">
+			<h2 class="section__title">区块链</h2>
+			<p class="section__lead">
+				Block Explorers
+			</p>
+			<div class="hero__buttons">
+				<a href="https://chainz.cryptoid.info/dash/" target="_blank" class="btn-blue-solid">CryptoID</a>
+				<a href="https://explorer.coinpayments.net/index.php?chain=7" target="_blank" class="btn-blue-solid">CoinPayments</a>
+				<a href="https://explorer.dashninja.pl/chain/Dash" target="_blank" class="btn-blue-solid">DashNinja</a>
+				<a href="https://bitinfocharts.com/darkcoin/explorer/" target="_blank" class="btn-blue-solid">BitInfoCharts</a>
+			</div>
+			<table id="blocks" width="100%">
+				<thead>
+					<tr>
+						<th>Height</th>
+						<th>Block Time</th>
+						<th>Transactions</th>
+						<th>Value Out</th>
+						<th>Difficulty</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="section section--currency" id="section-governance">
+		<div class="section__content">
+			<h2 class="section__title">预算资金</h2>
+			<p class="section__lead">
+				Governance Tools
+			</p>
+			<div class="hero__buttons">
+				<a href="http://dashvotetracker.com/" target="_blank" class="btn-blue-solid">DashVoteTracker</a>
+				<a href="https://www.dashcentral.org/" target="_blank" class="btn-blue-solid">DashCentral</a>
+				<a href="https://www.dashninja.pl/budgets.html" target="_blank" class="btn-blue-solid">DashNinja</a>
+				<a href="https://proposal.dash.org/" target="_blank" class="btn-blue-solid">Proposal Generator</a>
+			</div>
+			<table id="budgets">
+				<thead>
+					<tr>
+						<th>Title</th>
+						<th>Owner</th>
+						<th>Votes (yes/no)</th>
+						<th>Votes Required</th>
+						<th>Monthly Amount</th>
+						<th>Will be Funded</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="section section--currency" id="section-mining">
+		<div class="section__content">
+			<h2 class="section__title">挖矿</h2>
+			<p class="section__lead">
+				Mining Information
+			</p>
+			<div class="hero__buttons">
+				<a href="https://dashpay.atlassian.net/wiki/display/DOC/Pools" target="_blank" class="btn-blue-solid">Pools</a>
+				<a href="https://dashpay.atlassian.net/wiki/x/CQD7Ag" target="_blank" class="btn-blue-solid">ASICs</a>
+				<a href="https://www.coinwarz.com/calculators/dash-mining-calculator" target="_blank" class="btn-blue-solid">Calculation</a>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    了解达世币
+    <ul>
+        <li><a href="/cn/get-dash/">下载钱包</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">购买达世币</a></li>
+        <li><a href="/cn/merchants/">达世币消费</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">达世币借记卡</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    帮助教程
+    <ul>
+        <li><a href="/cn/mining/" >开始挖矿</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">架设主节点</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">创建钱包</a></li>
+        <li><a href="/cn/governance/">申请预算资金</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    网络
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">交易数据</a></li>
+        <li><a href="/cn/governance/">管理</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">区块研发</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">网络数据</a></li>
+        <li><a href="/cn/exchanges/" >Full list of Exchanges</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    社区
+    <ul>
+        <li><a href="/cn/community/#discussion">讨论</a></li>
+        <li><a href="/cn/community/#social">社交应用</a></li>
+        <li><a href="/cn/community/#news">新闻 &amp; 信息</a></li>
+        <li><a href="/cn/community/#development">开发工具</a></li>
+        <li><a href="/cn/community/#masternodes">主节点工具</a></li>
+        <li><a href="/cn/legal/">Legal</a></li>
+        <li><a href="/cn/graphics/">Graphics</a></li>
+        <li><a href="/cn/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    项目
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">帮助 &amp; 支持</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">项目信息</a></li>
+        <li><a href="/cn/team/">团队</a></li>
+        <li><a href="/cn/update/">升级</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">基金会</a></li>
+        <li><a href="/cn/contact/">联系方式</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">维基</a></li>
+        <li><a href="/cn/school/">School</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    社交
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash forums</a></li>
+        <li><a href="/cn/blog/">博客</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">推特</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">YouTube</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">谷歌</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">领英</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">脸书</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/cn/terms-of-use/">使用条款</a>
+  <a href="/sitemap.xml">网站导览</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">源代码</a>
+  <a href="/cn/contact/">联系方式</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2017 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/cn/get-dash/" class="overlay-menu__link">了解达世币</a></li>
+            <li class="overlay-menu__item"><a href="/cn/merchants/" class="overlay-menu__link">商家</a></li>
+            <li class="overlay-menu__item"><a href="/cn/network/" class="overlay-menu__link">网络</a></li>
+            <li class="overlay-menu__item"><a href="/cn/community/" class="overlay-menu__link">社区</a></li>
+            <li class="overlay-menu__item"><a href="/cn/team/" class="overlay-menu__link">团队</a></li>
+            <li class="overlay-menu__item"><a href="/cn/blog/" class="overlay-menu__link">博客</a></li>
+            <li class="overlay-menu__item"><a href="/cn/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/network/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/network/" class="overlay-menu__link "><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/network/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/network/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/network/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/network/" class="overlay-menu__link is-active"><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/network/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/network/" class="overlay-menu__link "><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/network/" class="overlay-menu__link "><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/network/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/assets/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

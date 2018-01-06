@@ -1,0 +1,8511 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+	
+		
+	
+	
+	
+		
+	
+
+
+<html id="XenForo" lang="en-US" dir="LTR" class="Public NoJs uix_javascriptNeedsInit LoggedOut Sidebar Responsive pageIsLtr hasWelcomeBlock  hasTabLinks  hasSearch   is-sidebarOpen hasRightSidebar is-fullWidth navStyle_0 pageStyle_0 hasFlexbox" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+		<base href="https://www.dash.org/forum/" />
+		<script>
+			var _b = document.getElementsByTagName('base')[0], _bH = "https://www.dash.org/forum/";
+			if (_b && _b.href != _bH) _b.href = _bH;
+		</script>
+	
+
+	<title>Dash Forum</title>
+	<noscript><style>.JsOnly, .jsOnly { display: none !important; }</style></noscript>
+	<link rel="stylesheet" href="css.php?css=xenforo,form,public&amp;style=10&amp;dir=LTR&amp;d=1515033277" />
+	<link rel="stylesheet" href="css.php?css=bb_code,login_bar,moderator_bar,node_category,node_forum,node_list,profile_post_list_simple,sidebar_share_page,thread_list_simple,uix_welcomeBlock,xcfw_copyright&amp;style=10&amp;dir=LTR&amp;d=1515033277" />
+
+	<link rel="stylesheet" href="css.php?css=uix,uix_style&amp;style=10&amp;dir=LTR&amp;d=1515033277" />
+	<style>
+	/*** UIX -- PER USER STYLES ***/
+
+	
+
+	
+
+
+	
+
+</style>
+	<link rel="stylesheet" href="css.php?css=EXTRA&amp;style=10&amp;dir=LTR&amp;d=1515033277" />
+
+	
+	<style>
+/* Node Styling */
+
+</style>
+
+	
+
+	
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="styles/uix/uix/css/font-awesome.min.css" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700,600' rel='stylesheet' type='text/css'>
+
+
+<script src="js/jquery/jquery-1.11.0.min.js"></script>
+
+
+
+<script src="js/xenforo/xenforo.js?_v=adcfecd2"></script>
+
+
+
+
+<!--[if lt IE 9]>
+	
+		 
+        	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	        
+	        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+	        
+	        <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+	
+
+<![endif]-->
+
+
+
+<script>
+	uix = {
+		elm: {},
+		fn:{},
+		init: function(){
+			if (uix.betaMode) {
+				console.group('uix.%cinit()', 'color:#3498DB');
+			}
+			for(var x=0;x<uix.events.init.length;x++){
+				uix.events.init[x]()
+		  	}
+		  	console.groupEnd('uix.%cinit()','color:#3498DB')
+		},
+	  	events: {init:[]},
+	  	on: function(event, fn){
+	  		if(event=='init'){
+	  			uix.events.init.push(fn)
+	  		}
+	  	},
+
+		betaMode				: parseInt('0'),
+		jsPathUsed				: 'uix_style',
+		jsGlobal				: parseInt('0'),
+
+
+	  	version					: '1.5.12.0',
+	  	jsHeadVersion				: '1.5.12.0',
+	  	addonVersion				: '1010174',
+	  	jsCacheBust				: '1',
+	  	contentTemplate				: 'forum_list',
+
+		javascriptInitHide			: parseInt('1'),
+		globalPadding 				: parseInt('16px'),
+		sidebarWidth				: parseInt('250px'),
+		mainContainerMargin  	        	: '266px',
+		maxResponsiveWideWidth   		: parseInt('800px'),
+		maxResponsiveMediumWidth 		: parseInt('610px'),
+		maxResponsiveNarrowWidth 		: parseInt('480px'),
+		sidebarMaxResponsiveWidth		: parseInt('800px'),
+		
+			responsiveMessageBreakpoint		: parseInt('610px'),
+		
+		sidebarMaxResponsiveWidthStr		: '800px',
+
+		
+			offCanvasRightTriggerWidth	: parseInt('800px'),
+		
+
+		
+			offCanvasLeftTriggerWidth	: parseInt('800px'),
+		
+
+		
+			
+				offCanvasNavTriggerWidth	: parseInt('800px'),
+			
+		
+		
+			
+				offCanvasVisitorTriggerWidth	: parseInt('800px'),
+			
+		
+
+		offcanvasTriggerAnimationDuration	: parseInt('300ms'),
+
+
+
+
+		dropdownMenuAnimationSpeed		: parseInt('0ms'),
+		inlineAlertBalloons			: (parseInt('1') && !parseInt('1')) || parseInt('1'),
+
+		jumpToFixedDelayHide			: parseInt('1'),
+
+		stickyNavigationMinWidth 		: parseInt('0'),
+		stickyNavigationMinHeight		: parseInt('600'),
+		stickyNavigationMaxWidth 		: parseInt('0'),
+		stickyNavigationMaxHeight		: parseInt('0'),
+		stickyNavigationPortraitMinWidth 	: parseInt('320'),
+		stickyNavigationPortraitMinHeight	: parseInt('500'),
+		stickyNavigationPortraitMaxWidth 	: parseInt('0'),
+		stickyNavigationPortraitMaxHeight	: parseInt('0'),
+		stickySidebar 				: 1,
+		
+			sidebarInnerFloat		: "right",
+		
+		RTL					: 0,
+		stickyItems 				: {},
+		stickyGlobalMinimumPosition		: parseInt('200px'),
+		stickyGlobalScrollUp			: parseInt('0'),
+		stickyDisableIOSThirdParty		: parseInt('1'),
+		preventAlwaysSticky			: parseInt('0'),
+
+		searchMinimalSize			: parseInt('610px'),
+
+		searchPosition				: parseInt('1'),
+
+		nodeStyle				: parseInt('3'),
+		pageStyle				: parseInt('0'),
+
+		enableBorderCheck			: parseInt('1'),
+		enableULManager				: parseInt('1'),
+
+		threadSlidingAvatar			: parseInt('0'),
+		threadSlidingExtra			: parseInt('0'),
+		threadSlidingHover			: parseInt('0'),
+		threadSlidingStaffShow			: parseInt('0'),
+		threadSlidingGlobalEnable		: parseInt('1'),
+
+		signatureHidingEnabled			: parseInt('0'),
+		signatureHidingEnabledAddon		: parseInt('1'),
+		signatureMaxHeight			: parseInt('100px'),
+		signatureHoverEnabled			: parseInt('0'),
+
+		enableStickyFooter 			: parseInt('1'),
+		stickyFooterBottomOffset 		: parseInt('16px') * 2,
+
+		
+			sidebarStickyBottomOffset	: parseInt('4'),
+		
+
+	  	
+			offCanvasSidebar			: 1,
+
+			
+				offCanvasSidebarVisitorTabs		: 1,
+			
+
+		
+
+		offcanvasLeftStatic			: 1 && parseInt('0') && parseInt('1'),
+		offcanvasRightStatic			: 0 && parseInt('0') && parseInt('1'),
+		offcanvasLeftStaticBreakpoint		: parseInt('1300px'),
+		offcanvasRightStaticBreakpoint		: parseInt('1300px'),
+
+		reinsertWelcomeBlock			: parseInt('0'),
+
+		sidebarCookieExpire			: '',
+		canCollapseSidebar			: '',
+
+		cookiePrefix				: 'xf_',
+		sidebarLocation 			: parseInt('0'),
+
+		collapsibleSidebar			: parseInt('1'),
+		collapsedNodesDefault			: '',
+		nodeGridCollapseEnabled			: parseInt('1'),			
+		widthToggleUpper			: '100%',
+		widthToggleLower			: '1170px',
+		
+			toggleWidthEnabled		: parseInt('1'),
+		
+		toggleWidthBreakpoint			: parseInt('1170'),
+		collapsibleNodes			: parseInt('1'),
+		collapsibleSticky			: parseInt('1'),
+		ajaxWidthToggleLink			: 'uix/toggle-width',
+		ajaxStickyThreadToggleLink		: 'uix/toggle-sticky-threads',
+		ajaxStickyThreadExpandLink		: 'uix/expand-sticky-threads',
+		ajaxStickyThreadCollapseLink		: 'uix/collapse-sticky-threads',
+		ajaxSidebarToggleLink			: 'uix/toggle-sidebar',
+
+		stickySidebarDelayInit			: parseInt('1'),
+		stickySidebarLegacy			: parseInt('0'),
+		stickySidebarDisableIOS			: parseInt('1'),
+
+		user					: {
+								'themeName'		: 'Dash Forum - Right Sidebar',
+								'-themeParents'		: '10,9,8,2,0',
+								'-themeModified'	: '1515033277',
+								'-themeSelectable'	: '1',
+								languageName		: 'English (US)',
+								stickyEnableUserbar	: (parseInt('') == parseInt('')) ? parseInt('') : true,
+								stickyEnableNav		: (parseInt('') == parseInt('')) ? parseInt('') : true,
+								stickyEnableSidebar	: (parseInt('') == parseInt('')) ? parseInt('') : true,
+								widthToggleState	: (parseInt('1') == parseInt('1')) ? parseInt('1') : parseInt('1'),
+								stickyThreadsState	: (parseInt('') == parseInt('')) ? (parseInt('') > 0) : 0,
+								
+									sidebarState	: 0,
+								
+								
+									collapseUserInfo : 1,
+								
+								
+									signatureHiding : 1,
+								
+								isAdmin			: parseInt('0"')
+							}
+	};
+
+	if(uix.stickyNavigationMaxWidth == 0){uix.stickyNavigationMaxWidth = 999999}
+	if(uix.stickyNavigationMaxHeight == 0){uix.stickyNavigationMaxHeight = 999999}
+	if(uix.stickyNavigationPortraitMaxWidth == 0){uix.stickyNavigationPortraitMaxWidth = 999999}
+	if(uix.stickyNavigationPortraitMaxHeight == 0){uix.stickyNavigationPortraitMaxHeight = 999999}
+
+	
+		uix.stickyItems['#navigation'] = {normalHeight:parseInt('42'), stickyHeight:parseInt('42')}
+
+		var subElement = null;
+		
+			//if tablinks are visible
+			uix.stickyItems['#navigation'].options = {subElement: '#navigation .tabLinks', subNormalHeight: parseInt('41'), subStickyHeight: parseInt('40'), subStickyHide: 1 == 1 , scrollSticky: uix.stickyGlobalScrollUp }
+		
+
+	
+
+	
+	$(document).ready(function() {
+		if ( $('#userBar').length ) {
+			uix.stickyItems['#userBar']= {normalHeight:parseInt('30'), stickyHeight:parseInt('30')}
+
+			uix.stickyItems['#userBar'].options = {scrollSticky: uix.stickyGlobalScrollUp }
+		}
+	});
+	
+
+	$(document).ready(function(){
+
+	//put jquery code here
+
+
+});
+
+	uix.debug = function() {
+		result = "\n\n############============   Begin Copying Here   ============############\n\n";
+		result += "Error: the functions file was not found.";
+		result += "\n\n############============   End Copying Here   ============############\n\n";
+
+		uix.fixJsVisibility();
+
+		console.log(result);
+	}
+
+</script>
+
+<script src="js/audentio/uix_style/functions.min.js?_v=adcfecd2_1.5.12.0_1"></script>
+
+<script>
+	uix.adminJsError = function(errMsg) {
+		console.error(errMsg);
+
+		
+	}
+
+	uix.fixJsVisibility = function() {
+		var userBar = $('.hasJs #userBar');
+		var nodeList = $('.hasJs #forums, .hasJs .category_view .nodeList, .hasJs .watch_forums .nodeList');
+		var panels = $('.js-uix_panels')
+		if (userBar.length) userBar.css('display', 'block');
+		if (nodeList.length) nodeList.css('visibility', 'visible');
+		if (panels.length) $('.js-uix_panels').removeClass('needsInit');
+		$('html').removeClass('uix_javascriptNeedsInit');
+	}
+
+	uix.catchJsError = function(err) {
+		console.log("\n\n############============   Begin Copying Here   ============############\n\n")
+		var errMsg = "Uh Oh!  It looks like there's an error in your page's javascript.  There will likely be significant issues with the use of the forum until this is corrected.  If you are unable to resolve this and believe it is due to a bug in your Audentio Design theme, contact Audentio support and include a copy of the text between the designated areas from your javascript console.  This is the error: \n\n" + err ;
+		uix.fixJsVisibility();
+		uix.adminJsError(errMsg);
+		console.log("\n\n");
+		console.log(err);
+		console.log("\n\n");
+		try {
+			uix.debug(true);
+		} catch (err) {
+			console.log("Unable to include uix.debug();");
+		}
+
+		console.log("\n\n############============   End Copying Here   ============############\n\n");
+	}
+
+	$(document).ready(function(){
+		if (typeof(audentio) === 'undefined' || typeof(uix.jsVersion) === 'undefined') {
+			var errMsg = 'Uh Oh!  It looks like the javascript for your theme was not found in /js/audentio/uix_style/.\n\n';
+			if (uix.jsGlobal) {
+				errMsg += 'Your forum is set to use the same javascript directory for all your themes.  Consider disabling this or modifying the directory.  Options are located under Options > [UI.X] General.\n\n'
+			} else {
+				errMsg += 'Your theme has set the location of its javascript directory.  You may need to modify the javascript directory location style property located under [UI.X] Global Settings > Javascript Path.\n\n'
+			}
+			errMsg += 'If your files are in the directory specified, ensure that your file permissions allow them to be read.  There will likely be significant issues with the use of the forum until this is corrected.  If you are unable to resolve this, contact Audentio support.  This error has also been logged to the javascript console.';
+
+			uix.fixJsVisibility();
+
+			uix.adminJsError(errMsg);
+		} else if (uix.jsHeadVersion.split('_')[0] != uix.jsVersion.split('_')[0]) {
+			var errMsg = 'Uh Oh! It looks like the version of your javascript functions file does not match the version of your page_container_js_head template.  \n\nYour javascript functions file is version "' + uix.jsVersion + '". \nYour page_container_js_head is version "' + uix.jsHeadVersion + '".  \n\nIf your functions file version number is higher, ensure that you have merged all templates (especially page_container_js_head).  If your page_container_js_head version number is higher, ensure that you have correctly uploaded the latest version of the javascript functions file and that you have cleared anything that could cache an old version of the javascript (CDN / Cloudflare / etc.). \n\nThis issue could cause parts of your forum to not display or function correctly.  If this does not resolve the issue contact Audentio support.  This error has also been logged to the javascript console.';
+			
+			uix.fixJsVisibility();
+			
+			uix.adminJsError(errMsg);
+		}
+	});
+</script>
+
+<script>
+	try {
+		uix.dateHelper.phrase = {
+			now: 'now',
+			second: 's',
+			minute: 'm',
+			hour: 'h',
+			day: 'd',
+			week: 'w',
+			year: 'y',
+			century: 'c',
+			ago: '{time} ago',
+			future: 'in {time}'
+		}
+
+
+		uix.sticky.stickyMinDist = parseInt('50');
+
+		$(document).ready(function(){
+			try {
+				
+					audentio.grid.parse('{"default":{"maximum_columns":{"value":"1"},"minimum_column_width":{"value":"330"},"fill_last_row":{"value":"0"},"column_widths":{"value":"0"},"custom_column_widths":{"count":""},"separator":true,"separator_type":"grid","separator_max_width":0},"category":{"maximum_columns":{"value":"1"},"minimum_column_width":{"value":""},"fill_last_row":{"value":"0"},"column_widths":{"value":"0"},"custom_column_widths":{"count":"","layouts":{"1":{"1":""}}},"separator":true,"separator_type":"grid","separator_max_width":0}}');
+					
+
+audentio.grid.addSizeListener('global', 'audentio_grid_xs', 200, 0);
+audentio.grid.addSizeListener('global', 'audentio_grid_sm', 300, 0);
+audentio.grid.addSizeListener('global', 'audentio_grid_md', 400, 0);
+audentio.grid.addSizeListener('global', 'audentio_grid_lg', 600, 0);
+audentio.grid.addSizeListener('global', 'audentio_grid_xl', 10000, 0);
+
+audentio.grid.addSizeListener('global', 'below-xs', 200, 0);
+audentio.grid.addSizeListener('global', 'below-sm', 300, 0);
+audentio.grid.addSizeListener('global', 'below-md', 400, 0);
+audentio.grid.addSizeListener('global', 'below-lg', 600, 0);
+audentio.grid.addSizeListener('global', 'below-xl', 10000, 0);
+
+audentio.grid.addSizeListener('global', 'above-xs', 99999, 201);
+audentio.grid.addSizeListener('global', 'above-sm', 99999, 301);
+audentio.grid.addSizeListener('global', 'above-md', 99999, 401);
+audentio.grid.addSizeListener('global', 'above-lg', 99999, 601);
+audentio.grid.addSizeListener('global', 'above-xl', 99999, 10001);
+
+audentio.grid.addSizeListener('global', 'node--xs', 300, 0);
+audentio.grid.addSizeListener('global', 'node--sm', 400, 301);
+audentio.grid.addSizeListener('global', 'node--md', 600, 401);
+audentio.grid.addSizeListener('global', 'node--lg', 10000, 601);
+audentio.grid.addSizeListener('global', 'node--xl', 99999, 10001);
+				
+				
+					audentio.pagination.enabled = true;
+					
+						audentio.grid.parentEle = 'navigation';
+					
+					audentio.pagination.outOfPhrase = '<span id="audentio_postPaginationCurrent" class="uix_postPagination_x"></span> / <span id="audentio_postPaginationTotal" class="uix_postPagination_y"></span>';
+					audentio.pagination.enterIndexPhrase = 'Enter Index';
+					audentio.pagination.offset = parseInt('0px');
+				
+
+				uix.initFunc();
+			} catch (err) {
+				uix.catchJsError(err);
+			}
+		});
+	} catch (err) {
+		uix.catchJsError(err);
+	}
+</script>
+
+
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.dash.org/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.dash.org/piwik.php?idsite=2&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+
+
+	
+	
+<link rel="apple-touch-icon" href="https://www.dash.org/forum/styles/default/xenforo/logo.og.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS feed for Dash Forum" href="topic/-/index.rss" />
+	
+	<link rel="canonical" href="https://www.dash.org/forum/" />
+	<meta name="description" content="Official Dash Cryptocurrency Forums" />
+		<meta property="og:site_name" content="Dash Forum" />
+	
+	<meta property="og:image" content="https://www.dash.org/forum/styles/default/xenforo/logo.og.png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.dash.org/forum/" />
+	<meta property="og:title" content="Dash Forum" />
+	<meta property="og:description" content="Official Dash Cryptocurrency Forums" />
+	
+	
+	
+
+        <!-- App Indexing for Google Search -->
+        <link href="android-app://com.quoord.tapatalkpro.activity/tapatalk/www.dash.org/forum?location=index&amp;channel=google-indexing" rel="alternate" />
+        <link href="ios-app://307880732/tapatalk/www.dash.org/forum?location=index&amp;channel=google-indexing" rel="alternate" />
+        
+        <meta property="al:android:package" content="com.quoord.tapatalkpro.activity" />
+        <meta property="al:android:url" content="tapatalk://www.dash.org/forum?location=index&amp;channel=facebook-indexing" />
+        <meta property="al:android:app_name" content="Tapatalk" />
+        <meta property="al:ios:url" content="tapatalk://www.dash.org/forum?location=index&amp;channel=facebook-indexing" />
+        <meta property="al:ios:app_store_id" content="307880732" />
+        <meta property="al:ios:app_name" content="Tapatalk" />
+        
+        <!-- twitter app card start-->
+        <!-- https://dev.twitter.com/docs/cards/types/app-card -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@tapatalk" />
+        <meta name="twitter:title" content="Dash Forum" />
+        <meta name="twitter:description" content="Dash Forum" />
+        
+        <meta name="twitter:app:id:iphone" content="307880732" />
+        <meta name="twitter:app:url:iphone" content="tapatalk://www.dash.org/forum?location=index&amp;channel=twitter-indexing" />
+        <meta name="twitter:app:id:ipad" content="307880732" />
+        <meta name="twitter:app:url:ipad" content="tapatalk://www.dash.org/forum?location=index&amp;channel=twitter-indexing" />
+        <meta name="twitter:app:id:googleplay" content="com.quoord.tapatalkpro.activity" />
+        <meta name="twitter:app:url:googleplay" content="tapatalk://www.dash.org/forum?location=index&amp;channel=twitter-indexing" />
+        <!-- twitter app card -->
+        <!-- Tapatalk Detect style start -->
+<style type="text/css">
+.ui-mobile [data-role="page"], .ui-mobile [data-role="dialog"], .ui-page
+{
+top:auto;
+}
+</style>
+<!-- Tapatalk Detect banner style end -->
+                
+
+
+
+	
+		<meta name="theme-color" content="rgb(106, 179, 225)">
+		<meta name="msapplication-TileColor" content="rgb(106, 179, 225)">
+	
+
+	<link rel="shortcut icon" href="https://www.dash.org/forum/favicon.ico" />
+
+</head>
+
+<body>
+
+	
+	
+		
+
+<div id="loginBar">
+	<div class="pageContent">
+		<span class="helper"></span>
+	</div>
+	<div class="pageWidth">
+
+		
+
+	</div>
+</div>
+	
+	
+		
+		<div class="js-uix_panels uix_panels ">
+			
+				
+
+<aside class="js-sidePanelWrapper sidePanelWrapper  sidePanelWrapper--left">
+	<a href="#" class="js-panelMask uix_panelMask"></a>
+	
+		<div class="sidePanel sidePanel--nav">
+			<nav>
+<ul class="sidePanel__navTabs">
+	
+							<!-- home -->
+							
+								
+								<li class="navTab home"><a href="https://www.dash.org/forum" class="navLink">Home</a></li>
+								
+							
+
+
+								<!-- extra tabs: home -->
+								
+
+
+								<!-- forums -->
+								
+									
+										<li class="navTab forums selected">
+											<a href="https://www.dash.org/forum/" class="navLink">Forums</a>
+											<a href="https://www.dash.org/forum/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+								
+											<div class="tabLinks">
+									
+													<ul class="secondaryContent blockLinksList">
+													
+														
+														<li><a href="search/?type=post">Search Forums</a></li>
+														
+														<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+													
+													</ul>
+									
+											</div>
+										</li>
+								
+								
+
+								<!-- extra tabs: middle -->
+								
+
+
+								<!-- members -->
+								
+									
+											<li class="navTab members ">
+
+												<a href="https://www.dash.org/forum/members/" class="navLink">Members</a>
+												<a href="https://www.dash.org/forum/members/" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+									
+												<div class="tabLinks">
+									
+													<ul class="secondaryContent blockLinksList">
+													
+														<li><a href="members/">Notable Members</a></li>
+														<li><a href="members/list">Registered Members</a></li>
+														<li><a href="online/">Current Visitors</a></li>
+														
+														<li><a href="find-new/profile-posts">New Profile Posts</a></li>
+													
+													</ul>
+									
+											</div>
+										</li>
+								
+
+								<!-- extra tabs: end -->
+								
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-3 ">
+								
+											<a href="javascript:void(0);" class="navLink">New User Tips</a>
+											<a href="javascript:void(0);" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+								
+											<div class="tabLinks">
+												<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=29360130" class=" Tooltip" title="New User Explanations and Safety Details" target="_blank">New User Explanations and Safety Details</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" class=" Tooltip" title="What is Dash?" target="_blank">What is Dash?</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Glossary" class=" Tooltip" title="Glossary" target="_blank">Glossary</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" class=" Tooltip" title="Wallets (What, Where, How,...)" target="_blank">Wallets</a></li>
+		
+	
+		
+			<li><a href="https://medium.com/dash-for-newbies" class=" Tooltip" title="Good Tips for Newcommers" target="_blank">Dash for Newbies</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/display/DOC/How+to+buy+Dash" class=" Tooltip" title="How to buy Dash" target="_blank">How to buy Dash</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=8585246" class=" Tooltip" title="Budget System (Funding / Voting / DGBB)" target="_blank">Budget System /DGBB</a></li>
+		
+	
+</ul>
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-2 ">
+								
+											<a href="javascript:void(0);" class="navLink">Merchants</a>
+											<a href="javascript:void(0);" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+								
+											<div class="tabLinks">
+												<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="https://www.dash.org/forum/threads/merchant-directory-listing.3445/" class="" target="_blank">Dash Business Directory</a></li>
+		
+	
+		
+			<li><a href="https://www.zeemaps.com/map?group=2357566#" class=" Tooltip" title="Merchants Map" target="_blank">Merchants Map</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Dash+Payment+Processor+Overview" class=" Tooltip" title="Payment Processors to accept Dash payments" target="_blank">Payment Processors</a></li>
+		
+	
+		
+			<li><a href="http://blockpay.ch" class=" Tooltip" title="BlockPay is an easy, fast & cost-efficient platform that supports all of the new digital currencies (like Bitcoin, Dash, Ethereum ...) plus loyalty points and gift cards.
+BlockPay runs standalone (App) or integrated (e.g. Odoo) with existing systems, and is available worldwide in 44 languages." target="_blank">BlockPay - Point of Sale Platform</a></li>
+		
+	
+</ul>
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-5 ">
+												<a href="https://cryptowat.ch/poloniex/dashbtc" class="navLink Tooltip" title="Trading Charts" target="_blank">Charts</a>
+											</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-13 ">
+								
+											<a href="javascript:void(0);" class="navLink">MarketCap</a>
+											<a href="javascript:void(0);" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+								
+											<div class="tabLinks">
+												<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="https://coinmarketcap.com" class=" Tooltip" title="Crypto-Currency Market Capitalizations" target="_blank">CoinMarketCap</a></li>
+		
+	
+		
+			<li><a href="https://coinmarketcap.com/currencies/dash/#markets" class=" Tooltip" title="Listing of Dash Exchanges by Trade Volume" target="_blank">Dash Exchanges</a></li>
+		
+	
+</ul>
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-1 ">
+												<a href="https://dashpay.atlassian.net/wiki/x/RYAR" class="navLink Tooltip" title="Official Dash Wiki" target="_blank" style="font-weight: bold;">Wiki</a>
+											</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-10 ">
+								
+											<a href="javascript:void(0);" class="navLink">Masternode</a>
+											<a href="javascript:void(0);" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+								
+											<div class="tabLinks">
+												<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="http://dashmasternode.org" class=" Tooltip" title="General Info about MN's (What, How, Where,...)" target="_blank">Masternode Information</a></li>
+		
+	
+		
+			<li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" class=" Tooltip" title="Masternode network statistics" target="_blank">Masternode Statistics</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1867885" class=" Tooltip" title="Masternode Hosting (+Pooling) Services" target="_blank">Hosting Services</a></li>
+		
+	
+		
+			<li><a href="https://dash-news.de/dashtv/#value=1000" class="">Masternode Stats TV</a></li>
+		
+	
+</ul>
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-27 ">
+												<a href="https://dashpay.atlassian.net/wiki/display/DOC/Mining" class="navLink Tooltip" title="Mining (Details, Hardware, Guides)" target="_blank">Mining</a>
+											</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-6 ">
+												<a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" class="navLink Tooltip" title="All Dash Facts and Numbers" target="_blank">Stats</a>
+											</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-9 ">
+												<a href="http://explorer.dash.org/chain/Dash" class="navLink Tooltip" title="Block Explorer" target="_blank">Explorer</a>
+											</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-7 ">
+								
+											<a href="javascript:void(0);" class="navLink">Vote</a>
+											<a href="javascript:void(0);" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+								
+											<div class="tabLinks">
+												<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="http://dashvotetracker.com" class="" target="_blank">Vote Tracker</a></li>
+		
+	
+		
+			<li><a href="https://www.dashcentral.org" class="">DashCentral</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=70516865" class=" Tooltip" title="How to vote Manual (QT Wallet) + on Dashcentral" target="_blank">How to ....</a></li>
+		
+	
+</ul>
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-33 ">
+								
+											<a href="javascript:void(0);" class="navLink Tooltip" title="Dash News from around the World" target="_blank">Dash News</a>
+											<a href="javascript:void(0);" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+								
+											<div class="tabLinks">
+												<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="https://www.dash.org/news/" class="" target="_blank">Dash.org Newsfeed</a></li>
+		
+	
+		
+			<li><a href="https://twitter.com/Dashpay" class="" target="_blank">Twitter</a></li>
+		
+	
+		
+			<li><a href="https://www.facebook.com/DashPay/" class="" target="_blank">Facebook</a></li>
+		
+	
+		
+			<li><a href="https://www.minds.com/Dashpay" class="" target="_blank">Minds</a></li>
+		
+	
+		
+			<li><a href="http://www.youtube.com/c/DashOrg" class="" target="_blank">YouTube</a></li>
+		
+	
+</ul>
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-38 ">
+								
+											<a href="javascript:void(0);" class="navLink Tooltip" title="Dash Chat Groups" target="_blank">Dash Chats</a>
+											<a href="javascript:void(0);" class="SplitCtrl"><i class="uix_icon js-offcanvasIcon uix_icon-expandDropdown"></i></a>
+								
+											<div class="tabLinks">
+												<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="https://discord.gg/9z8zX5j" class=" Tooltip" title="Discord: DashNation invite Link">DashNation on Discord</a></li>
+		
+	
+		
+			<li><a href="https://telegram.me/DashDigitalCash" class="" target="_blank">Telegram: Dash Group</a></li>
+		
+	
+		
+			<li><a href="https://telegram.me/dashbrasil" class="" target="_blank">Telegram: Brazil/Portuguese Group</a></li>
+		
+	
+		
+			<li><a href="https://telegram.me/joinchat/Ab_ThglrWXAtw4mJMVc4pQ" class="" target="_blank">Telegram: Spanish Group</a></li>
+		
+	
+		
+			<li><a href="https://telegram.me/Dash_Ru" class="" target="_blank">Telegram: Russian Group</a></li>
+		
+	
+		
+			<li><a href="http://shang.qq.com/wpa/qunwpa?idkey=67d3ede53880597f04e06be1d73d251ee7e900a25270f6b8ad937e2132929732" class="" target="_blank">达世币官方群/DASH.China</a></li>
+		
+	
+</ul>
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-8 ">
+												<a href="https://www.dash.org" class="navLink" target="_blank">Dash.org</a>
+											</li>
+										
+									
+								
+								
+
+	
+
+</ul>
+</nav>
+		</div>
+	
+</aside>
+			
+			
+				
+
+<aside class="js-sidePanelWrapper sidePanelWrapper  sidePanelWrapper--right">
+	<a href="#" class="js-panelMask uix_panelMask"></a>
+	
+		
+			<div class="sidePanel sidePanel--login">
+				<form action="login/login" method="post" class="xenForm--uixLoginForm xenForm">
+
+	<dl class="ctrlUnit fullWidth">
+		<dt><label for="ctrl_pageLogin_login">Your name or email address:</label></dt>
+		<dd><input type="text" name="login" value="" id="ctrl_pageLogin_login" class="textCtrl uix_fixIOSClickInput" tabindex="21" /></dd>
+	</dl>
+
+	<dl class="ctrlUnit fullWidth">
+		<dt><label for="ctrl_pageLogin_password">Password:</label></dt>
+		<dd>
+			<input type="password" name="password" class="textCtrl uix_fixIOSClickInput" id="ctrl_pageLogin_password" tabindex="22" />
+			<div><a href="lost-password/" class="OverlayTrigger OverlayCloser" tabindex="26">Forgot your password?</a></div>
+		</dd>
+	</dl>
+
+	
+
+	<dl class="ctrlUnit submitUnit">
+		<dd>
+			<input type="submit" class="button primary" value="Log in" data-loginPhrase="Log in" data-signupPhrase="Sign up" tabindex="24" />
+			<label class="rememberPassword"><input type="checkbox" name="remember" value="1" id="ctrl_pageLogin_remember" tabindex="23" /> Stay logged in</label>
+		</dd>
+	</dl>
+
+	
+
+	<input type="hidden" name="cookie_check" value="1" />
+	<input type="hidden" name="_xfToken" value="" />
+	<input type="hidden" name="redirect" value="/forum/" />
+	
+
+</form>
+			</div>
+		
+	
+</aside>
+			
+			<div class="mainPanelWrapper">
+				<a href="#" class="js-panelMask uix_panelMask"></a>
+	
+
+	
+<div class="uix_wrapperFix" style="height: 1px; margin-bottom: -1px;"></div>
+
+<div id="uix_wrapper">
+<div class="uix_wrapperFix" style="height: 1px; margin-bottom: -1px;"></div>
+
+<div id="headerMover">
+	<div id="headerProxy"></div>
+<header>
+	
+
+
+<div id="header">
+	
+
+
+
+	
+
+	
+		<div id="logoBlock" class="header__blockItem withSearch">
+
+	
+	<div class="pageWidth">
+	
+
+		<div class="pageContent">
+
+		
+
+		
+		<div id="logo"><a href="https://www.dash.org/forum">
+			<span></span>
+			<img src="styles/uix/uix/dash_logo_m-light.png" alt="Dash Forum" usemap="#logomap"/>
+			
+		</a></div>
+		<map name="logomap">
+ 		 <area shape="rect" coords="0,0,237,66" href="https://www.dash.org/" title="Dash.org home page" alt="Dash.org home page">
+ 		 <area shape="rect" coords="238,0,430,66" href="https://www.dash.org/forum" title="Dash forum home" alt="Dash forum home">
+		</map>	
+		<script src="/forum/js/jquery/imageMapResizer.min.js"></script>
+		
+
+		
+			
+
+<div id="searchBar" class="hasSearchButton">
+	
+	<i id="QuickSearchPlaceholder" class="uix_icon uix_icon-search" title="Search"></i>
+
+	
+		
+
+	
+
+	<div id="uix_searchMinimal">
+		<form action="search/search" method="post">
+			<i id="uix_searchMinimalClose" class="uix_icon uix_icon-close"  title="Close"></i>
+			<i id="uix_searchMinimalOptions" class="uix_icon uix_icon-cog" title="Options"></i>
+			<div id="uix_searchMinimalInput" >
+				<input type="search" name="keywords" value="" placeholder="Search..." results="0" />
+			</div>
+			<input type="hidden" name="_xfToken" value="" />
+		</form>
+	</div>
+
+
+
+
+
+	
+
+
+	<fieldset id="QuickSearch">
+		<form action="search/search" method="post" class="formPopup">
+
+			<div class="primaryControls">
+				<!-- block: primaryControls -->
+				<i class="uix_icon uix_icon-search" onclick='$("#QuickSearch form").submit()'></i>
+				<input type="search" name="keywords" value="" class="textCtrl" placeholder="Search..." results="0" title="Enter your search and hit enter" id="QuickSearchQuery" />
+				<!-- end block: primaryControls -->
+			</div>
+
+			<div class="secondaryControls">
+				<div class="controlsWrapper">
+
+					<!-- block: secondaryControls -->
+					<dl class="ctrlUnit">
+						<dt></dt>
+						<dd><ul>
+							<li><label><input type="checkbox" name="title_only" value="1"
+								id="search_bar_title_only" class="AutoChecker"
+								data-uncheck="#search_bar_thread" /> Search titles only</label></li>
+						</ul></dd>
+					</dl>
+
+					<dl class="ctrlUnit">
+						<dt><label for="searchBar_users">Posted by Member:</label></dt>
+						<dd>
+							<input type="text" name="users" value="" class="textCtrl AutoComplete" id="searchBar_users" />
+							<p class="explain">Separate names with a comma.</p>
+						</dd>
+					</dl>
+
+					<dl class="ctrlUnit">
+						<dt><label for="searchBar_date">Newer Than:</label></dt>
+						<dd><input type="date" name="date" value="" class="textCtrl" id="searchBar_date" /></dd>
+					</dl>
+
+					
+				</div>
+				<!-- end block: secondaryControls -->
+
+				<dl class="ctrlUnit submitUnit">
+					<dt></dt>
+					<dd>
+						<input type="submit" value="Search" class="button primary Tooltip" title="Find Now" />
+						<a href="search/" class="button moreOptions Tooltip" title="Advanced Search">More...</a>
+						<div class="Popup" id="commonSearches">
+							<a rel="Menu" class="button NoPopupGadget Tooltip" title="Useful Searches" data-tipclass="flipped"><span class="arrowWidget"></span></a>
+							<div class="Menu">
+								<div class="primaryContent menuHeader">
+									<h3>Useful Searches</h3>
+								</div>
+								<ul class="secondaryContent blockLinksList">
+									<!-- block: useful_searches -->
+									<li><a href="find-new/posts?recent=1" rel="nofollow">Recent Posts</a></li>
+									
+									<!-- end block: useful_searches -->
+								</ul>
+							</div>
+						</div>
+					</dd>
+				</dl>
+
+			</div>
+
+			<input type="hidden" name="_xfToken" value="" />
+		</form>
+	</fieldset>
+	
+
+</div>
+		
+
+		<span class="helper"></span>
+		</div>
+	</div>
+</div>
+	
+
+	
+
+
+
+<div id="navigation" class="header__blockItem  stickyTop">
+	<div class="sticky_wrapper">
+		<div class="uix_navigationWrapper">
+		
+		<div class="pageWidth">
+		
+			<div class="pageContent">
+				<nav>
+					<div class="navTabs">
+						
+							<ul class="publicTabs navLeft">
+
+							
+
+							
+
+
+
+
+
+	
+
+	
+		
+	
+
+
+	
+
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<li class="navTab  navTab--panelTrigger navTab--navPanelTrigger PopupClosed">
+		<a class="navLink js-leftPanelTrigger" href="#">
+			<i class="uix_icon uix_icon-menu"></i><span class="trigger__phrase">Menu</span>
+		</a>
+	</li>
+
+
+
+							<!-- home -->
+							
+								
+								<li class="navTab home PopupClosed"><a href="https://www.dash.org/forum" class="navLink"><i class="uix_icon uix_icon-home" title="Home"></i></a></li>
+								
+							
+
+
+								<!-- extra tabs: home -->
+								
+
+
+								<!-- forums -->
+								
+									
+										<li class="navTab forums selected">
+											<a href="https://www.dash.org/forum/" class="navLink">Forums</a>
+											<a href="https://www.dash.org/forum/" class="SplitCtrl" rel="Menu"></a>
+	
+											<div class="tabLinks forumsTabLinks">
+												
+													<div class="primaryContent menuHeader">
+														<h3>Forums</h3>
+														<div class="muted">Quick Links</div>
+													</div>
+									
+													<ul class="secondaryContent blockLinksList">
+													
+														
+														<li><a href="search/?type=post">Search Forums</a></li>
+														
+														<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+													
+													</ul>
+									
+													
+												
+									
+											</div>
+										</li>
+								
+								
+
+								<!-- extra tabs: middle -->
+								
+
+
+								<!-- members -->
+								
+									
+										<li class="navTab members Popup PopupControl PopupClosed">
+	
+											<a href="https://www.dash.org/forum/members/" class="navLink">Members</a>
+											<a href="https://www.dash.org/forum/members/" class="SplitCtrl" rel="Menu"></a>
+	
+											<div class="Menu JsOnly tabMenu membersTabLinks">
+												
+													<div class="primaryContent menuHeader">
+														<h3>Members</h3>
+														<div class="muted">Quick Links</div>
+													</div>
+									
+													<ul class="secondaryContent blockLinksList">
+													
+														<li><a href="members/">Notable Members</a></li>
+														<li><a href="members/list">Registered Members</a></li>
+														<li><a href="online/">Current Visitors</a></li>
+														
+														<li><a href="find-new/profile-posts">New Profile Posts</a></li>
+													
+													</ul>
+									
+													
+												
+									
+											</div>
+										</li>
+								
+
+								<!-- extra tabs: end -->
+								
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-3 Popup PopupControl PopupClosed">
+	
+											<a href="javascript:void(0);" class="navLink">New User Tips</a>
+											<a href="javascript:void(0);" class="SplitCtrl" rel="Menu"></a>
+	
+											<div class="Menu JsOnly tabMenu siropuCustomTab custom-tab-3TabLinks">
+												
+													<div class="primaryContent menuHeader">
+														<h3>New User Tips</h3>
+														<div class="muted">Quick Links</div>
+													</div>
+													<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=29360130" class=" Tooltip" title="New User Explanations and Safety Details" target="_blank">New User Explanations and Safety Details</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" class=" Tooltip" title="What is Dash?" target="_blank">What is Dash?</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Glossary" class=" Tooltip" title="Glossary" target="_blank">Glossary</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" class=" Tooltip" title="Wallets (What, Where, How,...)" target="_blank">Wallets</a></li>
+		
+	
+		
+			<li><a href="https://medium.com/dash-for-newbies" class=" Tooltip" title="Good Tips for Newcommers" target="_blank">Dash for Newbies</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/display/DOC/How+to+buy+Dash" class=" Tooltip" title="How to buy Dash" target="_blank">How to buy Dash</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=8585246" class=" Tooltip" title="Budget System (Funding / Voting / DGBB)" target="_blank">Budget System /DGBB</a></li>
+		
+	
+</ul>
+													
+												
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-2 Popup PopupControl PopupClosed">
+	
+											<a href="javascript:void(0);" class="navLink">Merchants</a>
+											<a href="javascript:void(0);" class="SplitCtrl" rel="Menu"></a>
+	
+											<div class="Menu JsOnly tabMenu siropuCustomTab custom-tab-2TabLinks">
+												
+													<div class="primaryContent menuHeader">
+														<h3>Merchants</h3>
+														<div class="muted">Quick Links</div>
+													</div>
+													<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="https://www.dash.org/forum/threads/merchant-directory-listing.3445/" class="" target="_blank">Dash Business Directory</a></li>
+		
+	
+		
+			<li><a href="https://www.zeemaps.com/map?group=2357566#" class=" Tooltip" title="Merchants Map" target="_blank">Merchants Map</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Dash+Payment+Processor+Overview" class=" Tooltip" title="Payment Processors to accept Dash payments" target="_blank">Payment Processors</a></li>
+		
+	
+		
+			<li><a href="http://blockpay.ch" class=" Tooltip" title="BlockPay is an easy, fast & cost-efficient platform that supports all of the new digital currencies (like Bitcoin, Dash, Ethereum ...) plus loyalty points and gift cards.
+BlockPay runs standalone (App) or integrated (e.g. Odoo) with existing systems, and is available worldwide in 44 languages." target="_blank">BlockPay - Point of Sale Platform</a></li>
+		
+	
+</ul>
+													
+												
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-5 PopupClosed">
+												<a href="https://cryptowat.ch/poloniex/dashbtc" class="navLink Tooltip" title="Trading Charts" target="_blank">Charts</a>
+												
+											</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-13 Popup PopupControl PopupClosed">
+	
+											<a href="javascript:void(0);" class="navLink">MarketCap</a>
+											<a href="javascript:void(0);" class="SplitCtrl" rel="Menu"></a>
+	
+											<div class="Menu JsOnly tabMenu siropuCustomTab custom-tab-13TabLinks">
+												
+													<div class="primaryContent menuHeader">
+														<h3>MarketCap</h3>
+														<div class="muted">Quick Links</div>
+													</div>
+													<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="https://coinmarketcap.com" class=" Tooltip" title="Crypto-Currency Market Capitalizations" target="_blank">CoinMarketCap</a></li>
+		
+	
+		
+			<li><a href="https://coinmarketcap.com/currencies/dash/#markets" class=" Tooltip" title="Listing of Dash Exchanges by Trade Volume" target="_blank">Dash Exchanges</a></li>
+		
+	
+</ul>
+													
+												
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-1 PopupClosed">
+												<a href="https://dashpay.atlassian.net/wiki/x/RYAR" class="navLink Tooltip" title="Official Dash Wiki" target="_blank" style="font-weight: bold;">Wiki</a>
+												
+											</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-10 Popup PopupControl PopupClosed">
+	
+											<a href="javascript:void(0);" class="navLink">Masternode</a>
+											<a href="javascript:void(0);" class="SplitCtrl" rel="Menu"></a>
+	
+											<div class="Menu JsOnly tabMenu siropuCustomTab custom-tab-10TabLinks">
+												
+													<div class="primaryContent menuHeader">
+														<h3>Masternode</h3>
+														<div class="muted">Quick Links</div>
+													</div>
+													<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="http://dashmasternode.org" class=" Tooltip" title="General Info about MN's (What, How, Where,...)" target="_blank">Masternode Information</a></li>
+		
+	
+		
+			<li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" class=" Tooltip" title="Masternode network statistics" target="_blank">Masternode Statistics</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1867885" class=" Tooltip" title="Masternode Hosting (+Pooling) Services" target="_blank">Hosting Services</a></li>
+		
+	
+		
+			<li><a href="https://dash-news.de/dashtv/#value=1000" class="">Masternode Stats TV</a></li>
+		
+	
+</ul>
+													
+												
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-27 PopupClosed">
+												<a href="https://dashpay.atlassian.net/wiki/display/DOC/Mining" class="navLink Tooltip" title="Mining (Details, Hardware, Guides)" target="_blank">Mining</a>
+												
+											</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-6 PopupClosed">
+												<a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" class="navLink Tooltip" title="All Dash Facts and Numbers" target="_blank">Stats</a>
+												
+											</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-9 PopupClosed">
+												<a href="http://explorer.dash.org/chain/Dash" class="navLink Tooltip" title="Block Explorer" target="_blank">Explorer</a>
+												
+											</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-7 Popup PopupControl PopupClosed">
+	
+											<a href="javascript:void(0);" class="navLink">Vote</a>
+											<a href="javascript:void(0);" class="SplitCtrl" rel="Menu"></a>
+	
+											<div class="Menu JsOnly tabMenu siropuCustomTab custom-tab-7TabLinks">
+												
+													<div class="primaryContent menuHeader">
+														<h3>Vote</h3>
+														<div class="muted">Quick Links</div>
+													</div>
+													<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="http://dashvotetracker.com" class="" target="_blank">Vote Tracker</a></li>
+		
+	
+		
+			<li><a href="https://www.dashcentral.org" class="">DashCentral</a></li>
+		
+	
+		
+			<li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=70516865" class=" Tooltip" title="How to vote Manual (QT Wallet) + on Dashcentral" target="_blank">How to ....</a></li>
+		
+	
+</ul>
+													
+												
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-33 Popup PopupControl PopupClosed">
+	
+											<a href="javascript:void(0);" class="navLink Tooltip" title="Dash News from around the World" target="_blank">Dash News</a>
+											<a href="javascript:void(0);" class="SplitCtrl" rel="Menu"></a>
+	
+											<div class="Menu JsOnly tabMenu siropuCustomTab custom-tab-33TabLinks">
+												
+													<div class="primaryContent menuHeader">
+														<h3>Dash News</h3>
+														<div class="muted">Quick Links</div>
+													</div>
+													<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="https://www.dash.org/news/" class="" target="_blank">Dash.org Newsfeed</a></li>
+		
+	
+		
+			<li><a href="https://twitter.com/Dashpay" class="" target="_blank">Twitter</a></li>
+		
+	
+		
+			<li><a href="https://www.facebook.com/DashPay/" class="" target="_blank">Facebook</a></li>
+		
+	
+		
+			<li><a href="https://www.minds.com/Dashpay" class="" target="_blank">Minds</a></li>
+		
+	
+		
+			<li><a href="http://www.youtube.com/c/DashOrg" class="" target="_blank">YouTube</a></li>
+		
+	
+</ul>
+													
+												
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-38 Popup PopupControl PopupClosed">
+	
+											<a href="javascript:void(0);" class="navLink Tooltip" title="Dash Chat Groups" target="_blank">Dash Chats</a>
+											<a href="javascript:void(0);" class="SplitCtrl" rel="Menu"></a>
+	
+											<div class="Menu JsOnly tabMenu siropuCustomTab custom-tab-38TabLinks">
+												
+													<div class="primaryContent menuHeader">
+														<h3>Dash Chats</h3>
+														<div class="muted">Quick Links</div>
+													</div>
+													<ul class="secondaryContent blockLinksList">
+	
+		
+			<li><a href="https://discord.gg/9z8zX5j" class=" Tooltip" title="Discord: DashNation invite Link">DashNation on Discord</a></li>
+		
+	
+		
+			<li><a href="https://telegram.me/DashDigitalCash" class="" target="_blank">Telegram: Dash Group</a></li>
+		
+	
+		
+			<li><a href="https://telegram.me/dashbrasil" class="" target="_blank">Telegram: Brazil/Portuguese Group</a></li>
+		
+	
+		
+			<li><a href="https://telegram.me/joinchat/Ab_ThglrWXAtw4mJMVc4pQ" class="" target="_blank">Telegram: Spanish Group</a></li>
+		
+	
+		
+			<li><a href="https://telegram.me/Dash_Ru" class="" target="_blank">Telegram: Russian Group</a></li>
+		
+	
+		
+			<li><a href="http://shang.qq.com/wpa/qunwpa?idkey=67d3ede53880597f04e06be1d73d251ee7e900a25270f6b8ad937e2132929732" class="" target="_blank">达世币官方群/DASH.China</a></li>
+		
+	
+</ul>
+													
+												
+											</div>
+										</li>
+										
+									
+								
+									
+										
+											<li class="navTab siropuCustomTab custom-tab-8 PopupClosed">
+												<a href="https://www.dash.org" class="navLink" target="_blank">Dash.org</a>
+												
+											</li>
+										
+									
+								
+								
+
+								<!-- responsive popup -->
+								<li class="navTab navigationHiddenTabs navTab--justIcon Popup PopupControl PopupClosed" style="display:none">
+
+									<a rel="Menu" class="navLink NoPopupGadget uix_dropdownDesktopMenu"><i class="uix_icon uix_icon-navOverflow"></i><span class="uix_hide menuIcon">Menu</span></a>
+
+									<div class="Menu JsOnly blockLinksList primaryContent" id="NavigationHiddenMenu"></div>
+								</li>
+
+								
+								<!-- no selection -->
+								
+								
+
+								
+									
+									
+								
+
+							</ul>
+
+
+							
+
+
+								<ul class="navRight visitorTabs">
+
+								
+
+									
+
+									
+
+									
+
+									
+										
+
+	<li class="navTab login PopupClosed">
+		
+			<a href="login/" class="navLink uix_dropdownDesktopMenu OverlayTrigger" data-cacheOverlay="false">
+				
+				<strong class="loginText">Log in</strong>
+			</a>
+		
+
+		
+
+	</li>
+
+	
+	<li class="navTab register PopupClosed">
+		<a href="register/" class="navLink">
+			
+			<strong>Sign up</strong>
+		</a>
+	</li>
+	
+
+
+									
+
+									
+
+									
+
+
+
+
+
+	
+
+	
+		
+	
+
+
+	
+
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+									
+
+								
+
+								</ul>
+
+							
+
+							
+
+
+						
+					</div>
+
+				<span class="helper"></span>
+
+				</nav>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+
+	
+</div>
+
+	
+	
+</header>
+
+<div id="content" class="forum_list">
+	
+	<div class="pageWidth">
+		<div class="pageContent">
+	
+			<!-- main content area -->
+			
+			
+
+			
+			
+			<div class="breadBoxTop  ">
+				
+				
+
+<nav>
+
+	
+
+	
+
+	<fieldset class="breadcrumb">
+		<a href="misc/quick-navigation-menu" class="OverlayTrigger jumpMenuTrigger" data-cacheOverlay="true" title="Open quick navigation"><i class="uix_icon uix_icon-sitemap"></i><!--Jump to...--></a>
+
+		<div class="boardTitle"><strong>Dash Forum</strong></div>
+
+		<span class="crumbs">
+			
+				<span class="crust homeCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="https://www.dash.org/forum" class="crumb" rel="up" itemprop="url"><span itemprop="title"><i class="uix_icon uix_icon-home" title="Home"></i><span class="uix_breadcrumb__home__title">Home</span></span></a>
+					<span class="arrow"><span></span></span>
+				</span>
+			
+
+			
+				<span class="crust selectedTabCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="https://www.dash.org/forum/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Forums</span></a>
+					<span class="arrow"><span>&gt;</span></span>
+				</span>
+			
+
+			
+		</span>
+	</fieldset>
+</nav>
+				
+			</div>
+			
+			
+			
+			
+
+			
+			
+
+
+	
+	
+	
+	
+	
+
+	
+
+
+
+	
+	<div id="uix_welcomeBlock" class="">
+		
+			<span class="uix_welcomeBlock__icon"><i class="uix_icon fa fa-info-circle"></i></span>
+
+<a href="#" class="close"><i class="uix_icon uix_icon-close"></i></a>
+
+<div class="uix_welcomeBlock__content">
+
+	<h3 class="uix_welcomeBlock__header">Welcome to the Dash Forum!</h3>
+
+	<p class="uix_welcomeBlock__message">Please sign up to discuss the most innovative cryptocurrency!</p>
+
+	<div class="uix_welcomeBlock__button"><a href="index.php?register" class="signupButton"><span>Sign Up</span></a></div>
+
+</div>
+		
+	</div>
+	
+			
+				<div class="uix_contentFix">
+					<div class="mainContainer">
+			
+					<div class="mainContent">
+						<!--[if lt IE 8]>
+							<p class="importantMessage">You are using an out of date browser. It  may not display this or other websites correctly.<br />You should upgrade or use an <a href="https://www.google.com/chrome/browser/" target="_blank">alternative browser</a>.</p>
+						<![endif]-->
+						
+						
+						
+
+
+
+						
+						
+						
+
+						
+						
+							
+						
+						
+						
+						<!-- main template -->
+						
+	
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	<ol class="nodeList section uix_nodeStyle_3" id="forums">
+	
+		
+
+
+<li class="node category level_1 node_55" id="official-development-news-and-information.55">
+
+	<div class="nodeInfo categoryNodeInfo categoryStrip ">
+		<span class="js-collapseNodeTrigger categoryStrip__collapseToggle" title="Toggle Visibility"><i class="uix_icon js-collapseIcon uix_icon-collapse uix_icon--fixedWidth"></i></span>
+		
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="categoryStripIcon hasGlyph" title="Unread messages"><i class="fa fa-folder"></i></span>
+
+		
+		<div class="categoryText">
+			<h3 class="nodeTitle"><a href="#official-development-news-and-information.55" data-description="#nodeDescription-55">Official Development News and Information.</a></h3>
+			<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-55">Announcements and Development status of Dash.</blockquote>
+		</div>
+	</div>
+
+	
+		<ol class="nodeList">
+			
+
+
+<li class="node forum level_2  node_54">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/official-announcements.54/" data-description="#nodeDescription-54">Official Announcements</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-54">Official Announcements from the Dash Developers.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>163</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>13,970</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/tungfa.269/" class="avatar Av269s" data-avatarhtml="true"><img src="data/avatars/s/0/269.jpg?1410754385" width="48" height="48" alt="tungfa" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/157102/" title="Version 12.2 release">Version 12.2 release</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/tungfa.269/" class="username" dir="auto">tungfa</a>,</span>
+					
+						<a href="posts/157102/" title="Version 12.2 release"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 25, 2017 at 7:52 PM">Dec 25, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/official-announcements.54/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_123">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/project-updates.123/" data-description="#nodeDescription-123">Project Updates</a>
+				
+			</h3>
+
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>20</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>43</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/kot.3244/" class="avatar Av3244s" data-avatarhtml="true"><img src="data/avatars/s/3/3244.jpg?1509796940" width="48" height="48" alt="kot" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/159689/" title="Project Portfolio Report">Project Portfolio Report</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/kot.3244/" class="username" dir="auto">kot</a>,</span>
+					
+						<a href="posts/159689/" title="Project Portfolio Report"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514882994" data-diff="154652" data-datestring="Jan 2, 2018" data-timestring="8:49 AM">Jan 2, 2018 at 8:49 AM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/project-updates.123/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_15">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/official-developer-thread.15/" data-description="#nodeDescription-15">Official Developer Thread</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-15">Only Dash Developers may start a thread here.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>60</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>15,118</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+			<ol class="subForumList">
+			
+				<li class="node forum level-n node_53">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/testing.53/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Testing</a></h4>
+	</div>
+	
+</li>
+			
+			</ol>
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/udjinm6.811/" class="avatar Av811s" data-avatarhtml="true"><img src="data/avatars/s/0/811.jpg?1439085471" width="48" height="48" alt="UdjinM6" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/151341/" title="v12.2 Testing">v12.2 Testing</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/udjinm6.811/" class="username" dir="auto">UdjinM6</a>,</span>
+					
+						<a href="posts/151341/" title="v12.2 Testing"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 6, 2017 at 7:18 PM">Dec 6, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/official-developer-thread.15/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_111">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/dash-jobs.111/" data-description="#nodeDescription-111">Dash Jobs</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-111">Opportunities within Dash</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>11</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>84</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/jebanskiy.21158/" class="avatar Av21158s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="jebanskiy" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/156302/" title="Dash is hiring!! DevOps, BizDev Director, Infrastructure Manager, Integrations Engineer, UX Designer">Dash is hiring!! DevOps, BizDev Director, Infrastructure Manager, Integrations Engineer, UX Designer</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/jebanskiy.21158/" class="username" dir="auto">jebanskiy</a>,</span>
+					
+						<a href="posts/156302/" title="Dash is hiring!! DevOps, BizDev Director, Infrastructure Manager, Integrations Engineer, UX Designer"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 23, 2017 at 12:00 AM">Dec 23, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/dash-jobs.111/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+			
+			
+			<div class="uix_nodeGridCollapseWrap">
+				<div class="uix_nodeGridCollapseInner"></div>
+			</div>
+			
+			
+			
+			<div class="uix_nodeGridCollapse__triggerWrap">
+				<div class="uix_nodeGridCollapse__trigger uix_nodeGridCollapse__trigger--expand">Show Forums</div>
+				<div class="uix_nodeGridCollapse__trigger uix_nodeGridCollapse__trigger--collapse">Collapse Forums</div>
+			</div>
+			
+		</ol>
+	
+	<div class="clear"></div>
+	<span class="tlc"></span>
+	<span class="trc"></span>
+	<span class="blc"></span>
+	<span class="brc"></span>
+</li>
+
+
+<li class="node category level_1 node_1" id="dash-currency.1">
+
+	<div class="nodeInfo categoryNodeInfo categoryStrip ">
+		<span class="js-collapseNodeTrigger categoryStrip__collapseToggle" title="Toggle Visibility"><i class="uix_icon js-collapseIcon uix_icon-collapse uix_icon--fixedWidth"></i></span>
+		
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="categoryStripIcon hasGlyph" title="Unread messages"><i class="fa fa-folder"></i></span>
+
+		
+		<div class="categoryText">
+			<h3 class="nodeTitle"><a href="#dash-currency.1" data-description="#nodeDescription-1">Dash Currency</a></h3>
+			<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-1">Anything Dash related.</blockquote>
+		</div>
+	</div>
+
+	
+		<ol class="nodeList">
+			
+
+
+<li class="node forum level_2  node_2">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/general-discussion.2/" data-description="#nodeDescription-2">General Discussion</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-2">General Topics about Dash</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>2,771</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>33,018</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/r-ando.1522/" class="avatar Av1522s" data-avatarhtml="true"><img src="data/avatars/s/1/1522.jpg?1426865513" width="48" height="48" alt="r-ando" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160411/" title="Lost Dash Password">Lost Dash Password</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/r-ando.1522/" class="username" dir="auto">r-ando</a>,</span>
+					
+						<a href="posts/160411/" title="Lost Dash Password"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1515036660" data-diff="986" data-datestring="Jan 4, 2018" data-timestring="3:31 AM">Jan 4, 2018 at 3:31 AM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/general-discussion.2/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_141">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/budget-proposal-discussions.141/" data-description="#nodeDescription-141">Budget Proposal Discussions</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-141">Budget Proposal Discussions</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>890</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>17,489</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+			<ol class="subForumList">
+			
+				<li class="node forum level-n node_93">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/pre-budget-proposal-discussions.93/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Pre + Budget Proposal Discussions</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_140">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/approved-proposals-updates-news.140/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Approved Proposals / Updates + News</a></h4>
+	</div>
+	
+</li>
+			
+			</ol>
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/alejandroe.19804/" class="avatar Av19804s" data-avatarhtml="true"><img src="data/avatars/s/19/19804.jpg?1512338364" width="48" height="48" alt="AlejandroE" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160415/" title="ALL ABOUT DASH Resource channel for Latin American audience">ALL ABOUT DASH Resource channel for Latin American audience</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/alejandroe.19804/" class="username" dir="auto">AlejandroE</a>,</span>
+					
+						<a href="posts/160415/" title="ALL ABOUT DASH Resource channel for Latin American audience"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1515037627" data-diff="19" data-datestring="Jan 4, 2018" data-timestring="3:47 AM">Jan 4, 2018 at 3:47 AM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/budget-proposal-discussions.141/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node category_forum level_2 node_78">
+
+	<div class="nodeInfo categoryForumNodeInfo  unread">
+
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-folder"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="categories/the-dash-currency-foundation.78/" data-description="#nodeDescription-78">The Dash currency Foundation</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-78">Forum for the Dash currency foundation. Members who are affiliated will have a banner under their name stating so.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>26</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>332</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+			<ol class="subForumList">
+			
+				<li class="node forum level-n node_79">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/internal-operations.79/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Internal Operations</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_80">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/actions-and-projects.80/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Actions and Projects</a></h4>
+	</div>
+	
+</li>
+			
+			</ol>
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/ultimatecrypto.19443/" class="avatar Av19443s" data-avatarhtml="true"><img src="data/avatars/s/19/19443.jpg?1513714715" width="48" height="48" alt="UltimateCrypto" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/157071/" title="looking for input.">looking for input.</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/ultimatecrypto.19443/" class="username" dir="auto">UltimateCrypto</a>,</span>
+					
+						<a href="posts/157071/" title="looking for input."><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 25, 2017 at 3:37 PM">Dec 25, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+	</div>
+
+</li>
+
+
+<li class="node forum level_2  node_3">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/mining.3/" data-description="#nodeDescription-3">Mining</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-3">General discussion of Dash mining.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>841</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>11,654</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+			<ol class="subForumList">
+			
+				<li class="node forum level-n node_101">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/hardware-discussions-asic-gpu-cpu.101/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Hardware Discussions (ASIC / GPU / CPU)</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_17">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/mining-pools.17/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Mining Pools</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_70">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/questions-and-help.70/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Questions and Help</a></h4>
+	</div>
+	
+</li>
+			
+			</ol>
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/ibelink_1.4748/" class="avatar Av4748s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="iBeLink_1" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160287/" title="iBeLink™ DM11G ASIC Dash Miner Support Thread">iBeLink™ DM11G ASIC Dash Miner Support Thread</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/ibelink_1.4748/" class="username" dir="auto">iBeLink_1</a>,</span>
+					
+						<a href="posts/160287/" title="iBeLink™ DM11G ASIC Dash Miner Support Thread"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1515002421" data-diff="35225" data-datestring="Jan 3, 2018" data-timestring="6:00 PM">Jan 3, 2018 at 6:00 PM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/mining.3/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node category_forum level_2 node_85">
+
+	<div class="nodeInfo categoryForumNodeInfo  unread">
+
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-folder"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="categories/dash-guides.85/" data-description="#nodeDescription-85">Dash Guides</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-85">Dash guides ranging from how to set up Masternodes to compiling the wallet.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>168</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>2,766</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+			<ol class="subForumList">
+			
+				<li class="node forum level-n node_63">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/daemon-and-qt-wallet-guides.63/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Daemon and QT Wallet Guides</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_99">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/electrum-wallet-guides.99/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Electrum Wallet Guides</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_76">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/privatesend-guides.76/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		PrivateSend Guides</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_66">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/masternode-guides.66/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Masternode Guides</a></h4>
+	</div>
+	
+		<ol>
+			
+				<li class="node forum level-n node_72">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/tips-and-tricks.72/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Tip&#039;s and Tricks</a></h4>
+	</div>
+	
+</li>
+			
+		</ol>
+	
+</li>
+			
+				<li class="node forum level-n node_69">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/mining-guides.69/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Mining Guides</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_87">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/miscellaneous-dash-guides.87/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Miscellaneous Dash Guides</a></h4>
+	</div>
+	
+</li>
+			
+			</ol>
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/bernhard-maurer.21070/" class="avatar Av21070s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="Bernhard Maurer" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/157095/" title="Dash Core wallet does not start">Dash Core wallet does not start</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/bernhard-maurer.21070/" class="username" dir="auto">Bernhard Maurer</a>,</span>
+					
+						<a href="posts/157095/" title="Dash Core wallet does not start"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 25, 2017 at 6:52 PM">Dec 25, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+	</div>
+
+</li>
+
+
+<li class="node category_forum level_2 node_61">
+
+	<div class="nodeInfo categoryForumNodeInfo  unread">
+
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-folder"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="categories/dash-support.61/" data-description="#nodeDescription-61">Dash Support</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-61">Help and Questions for Dash</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>1,222</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>8,816</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+			<ol class="subForumList">
+			
+				<li class="node forum level-n node_64">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/daemon-and-qt-wallet-support.64/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Daemon and QT Wallet Support</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_100">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/electrum-wallet-support.100/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Electrum Wallet Support</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_77">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/privatesend-questions-and-help.77/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		PrivateSend Questions and Help</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_67">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/masternode-questions-and-help.67/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Masternode Questions and Help.</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_74">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/miscellaneous-dash-support-questions.74/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Miscellaneous Dash Support Questions</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_112">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/ios-dash-digital-wallet-support.112/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		iOS Dash Digital Wallet Support</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_137">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/android-dash-wallet-support.137/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Android Dash Wallet Support</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_139">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/copay-support.139/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Copay Support</a></h4>
+	</div>
+	
+</li>
+			
+			</ol>
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/udjinm6.811/" class="avatar Av811s" data-avatarhtml="true"><img src="data/avatars/s/0/811.jpg?1439085471" width="48" height="48" alt="UdjinM6" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160341/" title="&quot;wallet.dat file corrupt, salvage failed&quot; Problems . . .">&quot;wallet.dat file corrupt, salvage failed&quot; Problems . . .</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/udjinm6.811/" class="username" dir="auto">UdjinM6</a>,</span>
+					
+						<a href="posts/160341/" title="&quot;wallet.dat file corrupt, salvage failed&quot; Problems . . ."><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1515020762" data-diff="16884" data-datestring="Jan 3, 2018" data-timestring="11:06 PM">Jan 3, 2018 at 11:06 PM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+	</div>
+
+</li>
+
+
+<li class="node forum level_2  node_8">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/development-tech-discussion.8/" data-description="#nodeDescription-8">Development Tech Discussion</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-8">Progress and challenges with the Dash protocol.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>337</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>4,460</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+			<ol class="subForumList">
+			
+				<li class="node forum level-n node_45">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/projects.45/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Projects</a></h4>
+	</div>
+	
+</li>
+			
+			</ol>
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/grandmasterdash.3780/" class="avatar Av3780s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="GrandMasterDash" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/159503/" title="Developer wanted for Dash-based new crypto">Developer wanted for Dash-based new crypto</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/grandmasterdash.3780/" class="username" dir="auto">GrandMasterDash</a>,</span>
+					
+						<a href="posts/159503/" title="Developer wanted for Dash-based new crypto"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514820228" data-diff="217418" data-datestring="Jan 1, 2018" data-timestring="3:23 PM">Jan 1, 2018 at 3:23 PM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/development-tech-discussion.8/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+			
+			
+			<div class="uix_nodeGridCollapseWrap">
+				<div class="uix_nodeGridCollapseInner"></div>
+			</div>
+			
+			
+			
+			<div class="uix_nodeGridCollapse__triggerWrap">
+				<div class="uix_nodeGridCollapse__trigger uix_nodeGridCollapse__trigger--expand">Show Forums</div>
+				<div class="uix_nodeGridCollapse__trigger uix_nodeGridCollapse__trigger--collapse">Collapse Forums</div>
+			</div>
+			
+		</ol>
+	
+	<div class="clear"></div>
+	<span class="tlc"></span>
+	<span class="trc"></span>
+	<span class="blc"></span>
+	<span class="brc"></span>
+</li>
+
+
+<li class="node category level_1 node_105" id="media.105">
+
+	<div class="nodeInfo categoryNodeInfo categoryStrip ">
+		<span class="js-collapseNodeTrigger categoryStrip__collapseToggle" title="Toggle Visibility"><i class="uix_icon js-collapseIcon uix_icon-collapse uix_icon--fixedWidth"></i></span>
+		
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="categoryStripIcon hasGlyph" title="Unread messages"><i class="fa fa-folder"></i></span>
+
+		
+		<div class="categoryText">
+			<h3 class="nodeTitle"><a href="#media.105" data-description="#nodeDescription-105">Media</a></h3>
+			
+		</div>
+	</div>
+
+	
+		<ol class="nodeList">
+			
+
+
+<li class="node forum level_2  node_106">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/news/" data-description="#nodeDescription-106">Articles/News</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-106">Dash Articles/News</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>1,214</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>1,983</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/mark-mason.10533/" class="avatar Av10533s" data-avatarhtml="true"><img src="data/avatars/s/10/10533.jpg?1487938611" width="48" height="48" alt="Mark Mason" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160304/" title="Bank of England Considers Digital Currency, Underscoring Cryptocurrency’s New Popularity">Bank of England Considers Digital Currency, Underscoring Cryptocurrency’s New Popularity</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/mark-mason.10533/" class="username" dir="auto">Mark Mason</a>,</span>
+					
+						<a href="posts/160304/" title="Bank of England Considers Digital Currency, Underscoring Cryptocurrency’s New Popularity"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1515008871" data-diff="28775" data-datestring="Jan 3, 2018" data-timestring="7:47 PM">Jan 3, 2018 at 7:47 PM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/news/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_107">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/video/" data-description="#nodeDescription-107">Video Shows</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-107">Dash Video Shows</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>300</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>672</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/tungfa.269/" class="avatar Av269s" data-avatarhtml="true"><img src="data/avatars/s/0/269.jpg?1410754385" width="48" height="48" alt="tungfa" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160351/" title="Interview with Ryan Taylor C.E.O of Dash Core Group: IR4 Podcast #12">Interview with Ryan Taylor C.E.O of Dash Core Group: IR4 Podcast #12</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/tungfa.269/" class="username" dir="auto">tungfa</a>,</span>
+					
+						<a href="posts/160351/" title="Interview with Ryan Taylor C.E.O of Dash Core Group: IR4 Podcast #12"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1515024819" data-diff="12827" data-datestring="Jan 4, 2018" data-timestring="12:13 AM">Jan 4, 2018 at 12:13 AM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/video/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_108">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/audio/" data-description="#nodeDescription-108">Audio Podcasts</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-108">Dash Audio Podcasts</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>52</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>115</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/wearyhead.19949/" class="avatar Av19949s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_female_s.png" width="48" height="48" alt="WearyHead" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/150183/" title="The Crypto Show At LaBitConf In Bogata With Dash Caracas, Dash Brazil, Dash Columbia And Juan">The Crypto Show At LaBitConf In Bogata With Dash Caracas, Dash Brazil, Dash Columbia And Juan</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/wearyhead.19949/" class="username" dir="auto">WearyHead</a>,</span>
+					
+						<a href="posts/150183/" title="The Crypto Show At LaBitConf In Bogata With Dash Caracas, Dash Brazil, Dash Columbia And Juan"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 5, 2017 at 10:29 AM">Dec 5, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/audio/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+			
+			
+			<div class="uix_nodeGridCollapseWrap">
+				<div class="uix_nodeGridCollapseInner"></div>
+			</div>
+			
+			
+			
+			<div class="uix_nodeGridCollapse__triggerWrap">
+				<div class="uix_nodeGridCollapse__trigger uix_nodeGridCollapse__trigger--expand">Show Forums</div>
+				<div class="uix_nodeGridCollapse__trigger uix_nodeGridCollapse__trigger--collapse">Collapse Forums</div>
+			</div>
+			
+		</ol>
+	
+	<div class="clear"></div>
+	<span class="tlc"></span>
+	<span class="trc"></span>
+	<span class="blc"></span>
+	<span class="brc"></span>
+</li>
+
+
+<li class="node category level_1 node_6" id="economics.6">
+
+	<div class="nodeInfo categoryNodeInfo categoryStrip ">
+		<span class="js-collapseNodeTrigger categoryStrip__collapseToggle" title="Toggle Visibility"><i class="uix_icon js-collapseIcon uix_icon-collapse uix_icon--fixedWidth"></i></span>
+		
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="categoryStripIcon hasGlyph" title="Unread messages"><i class="fa fa-folder"></i></span>
+
+		
+		<div class="categoryText">
+			<h3 class="nodeTitle"><a href="#economics.6" data-description="#nodeDescription-6">Economics</a></h3>
+			<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-6">All roads lead to darkcoin. Or something like that.</blockquote>
+		</div>
+	</div>
+
+	
+		<ol class="nodeList">
+			
+
+
+<li class="node forum level_2  node_14">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/dash-websites.14/" data-description="#nodeDescription-14">Dash Websites</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-14">Official and Non Official Websites for Dash.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>165</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>1,850</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/zaledia.21770/" class="avatar Av21770s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="zaledia" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160277/" title="free email trading alerts">free email trading alerts</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/zaledia.21770/" class="username" dir="auto">zaledia</a>,</span>
+					
+						<a href="posts/160277/" title="free email trading alerts"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514997099" data-diff="40547" data-datestring="Jan 3, 2018" data-timestring="4:31 PM">Jan 3, 2018 at 4:31 PM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/dash-websites.14/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_5">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/exchanges.5/" data-description="#nodeDescription-5">Exchanges</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-5">List who's good, who's bad. Or advertise your new exchange here!</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>227</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>1,580</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/bitcointrader.20558/" class="avatar Av20558s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_s.png" width="48" height="48" alt="bitcointrader" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/159709/" title="Kraken stole my 1500 euro">Kraken stole my 1500 euro</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/bitcointrader.20558/" class="username" dir="auto">bitcointrader</a>,</span>
+					
+						<a href="posts/159709/" title="Kraken stole my 1500 euro"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514894238" data-diff="143408" data-datestring="Jan 2, 2018" data-timestring="11:57 AM">Jan 2, 2018 at 11:57 AM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/exchanges.5/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_7">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/economy.7/" data-description="#nodeDescription-7">Economy</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-7">Monetary value of Dash and current value towards merchants.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>131</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>1,178</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+			<ol class="subForumList">
+			
+				<li class="node forum level-n node_34">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/speculation.34/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Speculation</a></h4>
+	</div>
+	
+</li>
+			
+			</ol>
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/mintdice.20869/" class="avatar Av20869s" data-avatarhtml="true"><img src="data/avatars/s/20/20869.jpg?1515013237" width="48" height="48" alt="Mintdice" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160320/" title="Do Masternodes really help to stabilize the price?">Do Masternodes really help to stabilize the price?</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/mintdice.20869/" class="username" dir="auto">Mintdice</a>,</span>
+					
+						<a href="posts/160320/" title="Do Masternodes really help to stabilize the price?"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1515014657" data-diff="22989" data-datestring="Jan 3, 2018" data-timestring="9:24 PM">Jan 3, 2018 at 9:24 PM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/economy.7/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_9">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/marketplace.9/" data-description="#nodeDescription-9">MarketPlace</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-9">Sell or Buy stuff on the forums. Note: No drugs, porn, or weapons.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>583</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>3,771</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+			<ol class="subForumList">
+			
+				<li class="node forum level-n node_128">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/community-dash-jobs-and-gigs.128/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Community Dash Jobs and Gigs</a></h4>
+	</div>
+	
+</li>
+			
+			</ol>
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/vn5socks-net.17615/" class="avatar Av17615s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="vn5socks.net" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160232/" title="[Vn5socks.net] Service Seller Socks Good">[Vn5socks.net] Service Seller Socks Good</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/vn5socks-net.17615/" class="username" dir="auto">vn5socks.net</a>,</span>
+					
+						<a href="posts/160232/" title="[Vn5socks.net] Service Seller Socks Good"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514969113" data-diff="68533" data-datestring="Jan 3, 2018" data-timestring="8:45 AM">Jan 3, 2018 at 8:45 AM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/marketplace.9/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_46">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/merchant-directory.46/" data-description="#nodeDescription-46">Merchant Directory</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-46">Known and active merchants that accept Dash.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>98</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>849</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+			<ol class="subForumList">
+			
+				<li class="node forum level-n node_113">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/merchant-tools-apis.113/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Merchant Tools / APIs</a></h4>
+	</div>
+	
+</li>
+			
+			</ol>
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/tlc.18219/" class="avatar Av18219s" data-avatarhtml="true"><img src="data/avatars/s/18/18219.jpg?1514547380" width="48" height="48" alt="TLC" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160225/" title="Motorcycle rent for Dash. Chiang Mai, Thailand">Motorcycle rent for Dash. Chiang Mai, Thailand</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/tlc.18219/" class="username" dir="auto">TLC</a>,</span>
+					
+						<a href="posts/160225/" title="Motorcycle rent for Dash. Chiang Mai, Thailand"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514964552" data-diff="73094" data-datestring="Jan 3, 2018" data-timestring="7:29 AM">Jan 3, 2018 at 7:29 AM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/merchant-directory.46/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+			
+			
+			<div class="uix_nodeGridCollapseWrap">
+				<div class="uix_nodeGridCollapseInner"></div>
+			</div>
+			
+			
+			
+			<div class="uix_nodeGridCollapse__triggerWrap">
+				<div class="uix_nodeGridCollapse__trigger uix_nodeGridCollapse__trigger--expand">Show Forums</div>
+				<div class="uix_nodeGridCollapse__trigger uix_nodeGridCollapse__trigger--collapse">Collapse Forums</div>
+			</div>
+			
+		</ol>
+	
+	<div class="clear"></div>
+	<span class="tlc"></span>
+	<span class="trc"></span>
+	<span class="blc"></span>
+	<span class="brc"></span>
+</li>
+
+
+<li class="node category level_1 node_11" id="other.11">
+
+	<div class="nodeInfo categoryNodeInfo categoryStrip ">
+		<span class="js-collapseNodeTrigger categoryStrip__collapseToggle" title="Toggle Visibility"><i class="uix_icon js-collapseIcon uix_icon-collapse uix_icon--fixedWidth"></i></span>
+		
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="categoryStripIcon hasGlyph" title="Unread messages"><i class="fa fa-folder"></i></span>
+
+		
+		<div class="categoryText">
+			<h3 class="nodeTitle"><a href="#other.11" data-description="#nodeDescription-11">Other</a></h3>
+			<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-11">Anything not Darkcoin related.</blockquote>
+		</div>
+	</div>
+
+	
+		<ol class="nodeList">
+			
+
+
+<li class="node forum level_2  node_12">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/alternative-currencies.12/" data-description="#nodeDescription-12">Alternative Currencies</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-12">Any new or old currencies. Yes even Bitcoin.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>398</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>2,392</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/icoselector2018.19828/" class="avatar Av19828s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="ICOselector2018" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160349/" title="The Future way of Browsing without annoying ads!">The Future way of Browsing without annoying ads!</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/icoselector2018.19828/" class="username" dir="auto">ICOselector2018</a>,</span>
+					
+						<a href="posts/160349/" title="The Future way of Browsing without annoying ads!"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1515024116" data-diff="13530" data-datestring="Jan 4, 2018" data-timestring="12:01 AM">Jan 4, 2018 at 12:01 AM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/alternative-currencies.12/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_13">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/forum-feedback.13/" data-description="#nodeDescription-13">Forum Feedback</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-13">Suggestions for how the forum looks and feels.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>125</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>1,141</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/tungfa.269/" class="avatar Av269s" data-avatarhtml="true"><img src="data/avatars/s/0/269.jpg?1410754385" width="48" height="48" alt="tungfa" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/159187/" title="Why is the forum so messed up?">Why is the forum so messed up?</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/tungfa.269/" class="username" dir="auto">tungfa</a>,</span>
+					
+						<a href="posts/159187/" title="Why is the forum so messed up?"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514621663" data-diff="415983" data-datestring="Dec 30, 2017" data-timestring="8:14 AM">Dec 30, 2017 at 8:14 AM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/forum-feedback.13/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_18">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/privacy-news-tools.18/" data-description="#nodeDescription-18">Privacy News &amp; Tools</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-18">Sometimes it's better to use a little discretion.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>145</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>555</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+			<ol class="subForumList">
+			
+				<li class="node forum level-n node_92">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/legal.92/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Legal</a></h4>
+	</div>
+	
+</li>
+			
+				<li class="node forum level-n node_94">
+	<div class="unread">
+		<h4 class="nodeTitle"><a href="topic/onion.94/" class="menuRow">
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="subForumIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+		Onion</a></h4>
+	</div>
+	
+</li>
+			
+			</ol>
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/familyplanningoutreach.21348/" class="avatar Av21348s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_s.png" width="48" height="48" alt="FamilyPlanningOutreach" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/157105/" title="What VPN Do You Use?">What VPN Do You Use?</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/familyplanningoutreach.21348/" class="username" dir="auto">FamilyPlanningOutreach</a>,</span>
+					
+						<a href="posts/157105/" title="What VPN Do You Use?"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 25, 2017 at 8:30 PM">Dec 25, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/privacy-news-tools.18/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_20">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/off-topic.20/" data-description="#nodeDescription-20">Off Topic</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-20">Any topics that aren't related to Cryptocurrency or Dash in general. (Keep it clean)
+As in American Censorship clean --> Violence ok, no nudity.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>298</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>2,090</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/samui.21764/" class="avatar Av21764s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="samui" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160266/" title="Christmas Gifts for 2017">Christmas Gifts for 2017</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/samui.21764/" class="username" dir="auto">samui</a>,</span>
+					
+						<a href="posts/160266/" title="Christmas Gifts for 2017"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514991223" data-diff="46423" data-datestring="Jan 3, 2018" data-timestring="2:53 PM">Jan 3, 2018 at 2:53 PM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/off-topic.20/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+			
+			
+			<div class="uix_nodeGridCollapseWrap">
+				<div class="uix_nodeGridCollapseInner"></div>
+			</div>
+			
+			
+			
+			<div class="uix_nodeGridCollapse__triggerWrap">
+				<div class="uix_nodeGridCollapse__trigger uix_nodeGridCollapse__trigger--expand">Show Forums</div>
+				<div class="uix_nodeGridCollapse__trigger uix_nodeGridCollapse__trigger--collapse">Collapse Forums</div>
+			</div>
+			
+		</ol>
+	
+	<div class="clear"></div>
+	<span class="tlc"></span>
+	<span class="trc"></span>
+	<span class="blc"></span>
+	<span class="brc"></span>
+</li>
+
+
+<li class="node category level_1 node_21" id="dash-currency-worldwide.21">
+
+	<div class="nodeInfo categoryNodeInfo categoryStrip ">
+		<span class="js-collapseNodeTrigger categoryStrip__collapseToggle" title="Toggle Visibility"><i class="uix_icon js-collapseIcon uix_icon-collapse uix_icon--fixedWidth"></i></span>
+		
+		
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="categoryStripIcon hasGlyph" title="Unread messages"><i class="fa fa-folder"></i></span>
+
+		
+		<div class="categoryText">
+			<h3 class="nodeTitle"><a href="#dash-currency-worldwide.21" data-description="#nodeDescription-21">Dash currency Worldwide</a></h3>
+			<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-21">Languages from around the world discussing Dash.</blockquote>
+		</div>
+	</div>
+
+	
+		<ol class="nodeList">
+			
+
+
+<li class="node forum level_2  node_88">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/dash-worldwide-collaboration.88/" data-description="#nodeDescription-88">Dash Worldwide Collaboration</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-88">Collaboration on translations and ideas for Dash translations in other languages around the world.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>22</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>576</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/ashley-rikhotso.19475/" class="avatar Av19475s" data-avatarhtml="true"><img src="data/avatars/s/19/19475.jpg?1513908094" width="48" height="48" alt="Ashley Rikhotso" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/156072/" title="Dash for Africa">Dash for Africa</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/ashley-rikhotso.19475/" class="username" dir="auto">Ashley Rikhotso</a>,</span>
+					
+						<a href="posts/156072/" title="Dash for Africa"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 22, 2017 at 1:26 AM">Dec 22, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/dash-worldwide-collaboration.88/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_27">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-russian.27/" data-description="#nodeDescription-27">Русский  Russian</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-27">Обсуждение Dash на русском языке</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>476</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>6,716</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/skrutch.21516/" class="avatar Av21516s" data-avatarhtml="true"><img src="data/avatars/s/21/21516.jpg?1514476954" width="48" height="48" alt="Skrutch" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160407/" title="Вопросы от новичка (или что непонятно новичку)">Вопросы от новичка (или что непонятно новичку)</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/skrutch.21516/" class="username" dir="auto">Skrutch</a>,</span>
+					
+						<a href="posts/160407/" title="Вопросы от новичка (или что непонятно новичку)"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1515034854" data-diff="2792" data-datestring="Jan 4, 2018" data-timestring="3:00 AM">Jan 4, 2018 at 3:00 AM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-russian.27/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_124">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/india-%E0%A4%87%E0%A4%82%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE.124/" data-description="#nodeDescription-124">India इंडिया</a>
+				
+			</h3>
+
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>7</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>42</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/khawaja-nasiruddin.20855/" class="avatar Av20855s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="KHAWAJA NASIRUDDIN" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/154925/" title="Hello - Guide me for Cryptocurrency Market">Hello - Guide me for Cryptocurrency Market</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/khawaja-nasiruddin.20855/" class="username" dir="auto">KHAWAJA NASIRUDDIN</a>,</span>
+					
+						<a href="posts/154925/" title="Hello - Guide me for Cryptocurrency Market"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 18, 2017 at 6:38 PM">Dec 18, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/india-%E0%A4%87%E0%A4%82%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE.124/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_22">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/%E4%B8%AD%E6%96%87-chinese.22/" data-description="#nodeDescription-22">中文 Chinese</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-22">达世币中文论坛   達世幣中文論壇</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>149</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>550</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/disoho.21425/" class="avatar Av21425s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="Disoho" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/157825/" title="Welcome to Chinese Community - 创始人Evan Duffield致中国达世币爱好者的一封信">Welcome to Chinese Community - 创始人Evan Duffield致中国达世币爱好者的一封信</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/disoho.21425/" class="username" dir="auto">Disoho</a>,</span>
+					
+						<a href="posts/157825/" title="Welcome to Chinese Community - 创始人Evan Duffield致中国达世币爱好者的一封信"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 27, 2017 at 6:20 AM">Dec 27, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/%E4%B8%AD%E6%96%87-chinese.22/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_33">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/portugu%C3%AAs-portuguese.33/" data-description="#nodeDescription-33">Português Portuguese</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-33">Fórum Português para Dash Discussão</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>273</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>984</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/studioz.2150/" class="avatar Av2150s" data-avatarhtml="true"><img src="data/avatars/s/2/2150.jpg?1421626364" width="48" height="48" alt="studioz" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/155223/" title="DASH ULTRAPASSA U$1000!">DASH ULTRAPASSA U$1000!</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/studioz.2150/" class="username" dir="auto">studioz</a>,</span>
+					
+						<a href="posts/155223/" title="DASH ULTRAPASSA U$1000!"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 19, 2017 at 4:28 PM">Dec 19, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/portugu%C3%AAs-portuguese.33/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_28">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/espa%C3%B1ol-spanish.28/" data-description="#nodeDescription-28">Español Spanish</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-28">Foro de conversación sobre Dash en castellano</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>141</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>947</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/algodon-franelas.13317/" class="avatar Av13317s" data-avatarhtml="true"><img src="data/avatars/s/13/13317.jpg?1497107556" width="48" height="48" alt="algodon.franelas" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/159735/" title="Conferencias labitconf - Bogotá - Colombia">Conferencias labitconf - Bogotá - Colombia</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/algodon-franelas.13317/" class="username" dir="auto">algodon.franelas</a>,</span>
+					
+						<a href="posts/159735/" title="Conferencias labitconf - Bogotá - Colombia"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514915368" data-diff="122278" data-datestring="Jan 2, 2018" data-timestring="5:49 PM">Jan 2, 2018 at 5:49 PM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/espa%C3%B1ol-spanish.28/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_50">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/polska-polish.50/" data-description="#nodeDescription-50">Polska Polish</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-50">Ciemna strona internetu, Zapytaj, Podziel sie, Dolacz, Prosimy zachowac kulture y maniery.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>66</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>480</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/ddpunk.17520/" class="avatar Av17520s" data-avatarhtml="true"><img src="https://secure.gravatar.com/avatar/6f422dddbf512ef8383f903a389a1c69?s=48&amp;d=https%3A%2F%2Fwww.dash.org%2Fforum%2Fstyles%2Fuix%2Fxenforo%2Favatars%2Favatar_male_s.png" width="48" height="48" alt="ddpunk" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/146539/" title="Szukam wsparcia technicznego - konsultanta ($)">Szukam wsparcia technicznego - konsultanta ($)</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/ddpunk.17520/" class="username" dir="auto">ddpunk</a>,</span>
+					
+						<a href="posts/146539/" title="Szukam wsparcia technicznego - konsultanta ($)"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Nov 14, 2017 at 3:44 PM">Nov 14, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/polska-polish.50/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_24">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/deutsch-german.24/" data-description="#nodeDescription-24">Deutsch German</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-24">Deutsches Dash Diskussionsforum</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>137</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>494</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/eshank.19886/" class="avatar Av19886s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_s.png" width="48" height="48" alt="Eshank" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/158764/" title="An alle die den Antminer D3 gekauft haben, was nun ?">An alle die den Antminer D3 gekauft haben, was nun ?</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/eshank.19886/" class="username" dir="auto">Eshank</a>,</span>
+					
+						<a href="posts/158764/" title="An alle die den Antminer D3 gekauft haben, was nun ?"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514560966" data-diff="476680" data-datestring="Dec 29, 2017" data-timestring="3:22 PM">Dec 29, 2017 at 3:22 PM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/deutsch-german.24/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_29">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/fran%C3%A7ais-french.29/" data-description="#nodeDescription-29">Français French</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-29">Français foncé forum pièce de conversation</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>134</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>627</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/leonidas.7238/" class="avatar Av7238s" data-avatarhtml="true"><img src="data/avatars/s/7/7238.jpg?1491413499" width="48" height="48" alt="Leonidas" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160283/" title="Dash Force News - Nouvel Article">Dash Force News - Nouvel Article</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/leonidas.7238/" class="username" dir="auto">Leonidas</a>,</span>
+					
+						<a href="posts/160283/" title="Dash Force News - Nouvel Article"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514998951" data-diff="38695" data-datestring="Jan 3, 2018" data-timestring="5:02 PM">Jan 3, 2018 at 5:02 PM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/fran%C3%A7ais-french.29/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_30">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/italiano-italian.30/" data-description="#nodeDescription-30">Italiano Italian</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-30">Discussioni forum Dash italiana</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>25</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>90</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/julin-gys.4965/" class="avatar Av4965s" data-avatarhtml="true"><img src="data/avatars/s/4/4965.jpg?1508408825" width="48" height="48" alt="Julin GYS" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/160269/" title="Notizie del crittovaluta Dash">Notizie del crittovaluta Dash</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/julin-gys.4965/" class="username" dir="auto">Julin GYS</a>,</span>
+					
+						<a href="posts/160269/" title="Notizie del crittovaluta Dash"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514993506" data-diff="44140" data-datestring="Jan 3, 2018" data-timestring="3:31 PM">Jan 3, 2018 at 3:31 PM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/italiano-italian.30/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_82">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/svensk-swedish.82/" data-description="#nodeDescription-82">Svensk Swedish</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-82">A Dash forum for Swedish speakers.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>20</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>59</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/jarlmickel.19748/" class="avatar Av19748s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="JarlMickel" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/150350/" title="DASH meetup Malmö">DASH meetup Malmö</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/jarlmickel.19748/" class="username" dir="auto">JarlMickel</a>,</span>
+					
+						<a href="posts/150350/" title="DASH meetup Malmö"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 5, 2017 at 10:01 PM">Dec 5, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/svensk-swedish.82/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_95">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/%CE%B5%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AC-greek.95/" data-description="#nodeDescription-95">ελληνικά Greek</a>
+				
+			</h3>
+
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>2</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>4</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/trb.16298/" class="avatar Av16298s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="TRB" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/147932/" title="Listing of PR Outlets Greek">Listing of PR Outlets Greek</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/trb.16298/" class="username" dir="auto">TRB</a>,</span>
+					
+						<a href="posts/147932/" title="Listing of PR Outlets Greek"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Nov 21, 2017 at 4:51 PM">Nov 21, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/%CE%B5%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AC-greek.95/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_83">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/t%C3%BCrk-turkish.83/" data-description="#nodeDescription-83">Türk Turkish</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-83">A Dash forum for Turkish speakers.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>10</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>45</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/hossman.19680/" class="avatar Av19680s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="Hossman" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/150143/" title="Translate: English &gt; Turkish, Turkish &gt; English">Translate: English &gt; Turkish, Turkish &gt; English</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/hossman.19680/" class="username" dir="auto">Hossman</a>,</span>
+					
+						<a href="posts/150143/" title="Translate: English &gt; Turkish, Turkish &gt; English"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 5, 2017 at 7:55 AM">Dec 5, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/t%C3%BCrk-turkish.83/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_81">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/%C4%8De%C5%A1tina-czech.81/" data-description="#nodeDescription-81">čeština Czech</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-81">A Dash forum for Czech speakers.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>13</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>36</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/tungfa.269/" class="avatar Av269s" data-avatarhtml="true"><img src="data/avatars/s/0/269.jpg?1410754385" width="48" height="48" alt="tungfa" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/104332/" title="Dash Evolution first Prague meetup presentation">Dash Evolution first Prague meetup presentation</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/tungfa.269/" class="username" dir="auto">tungfa</a>,</span>
+					
+						<a href="posts/104332/" title="Dash Evolution first Prague meetup presentation"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Sep 20, 2016 at 9:49 AM">Sep 20, 2016</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/%C4%8De%C5%A1tina-czech.81/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_96">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/danske-danish.96/" data-description="#nodeDescription-96">Danske Danish</a>
+				
+			</h3>
+
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>1</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>2</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/bitcoindenmark.891/" class="avatar Av891s" data-avatarhtml="true"><img src="data/avatars/s/0/891.jpg?1402312688" width="48" height="48" alt="BITCOINDENMARK" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/115775/" title="Listing of PR Outlets Danish">Listing of PR Outlets Danish</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/bitcoindenmark.891/" class="username" dir="auto">BITCOINDENMARK</a>,</span>
+					
+						<a href="posts/115775/" title="Listing of PR Outlets Danish"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Mar 5, 2017 at 10:17 AM">Mar 5, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/danske-danish.96/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_84">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/former-yugoslavia-bosnia-croatia-serbia.84/" data-description="#nodeDescription-84">Former Yugoslavia - Bosnia,Croatia,Serbia</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-84">A Dash forum for Bosnian, Serbian, and Croatian speakers.</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>14</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>37</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/ivo.12962/" class="avatar Av12962s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_s.png" width="48" height="48" alt="Ivo" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/128773/" title="Ima li nas?">Ima li nas?</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/ivo.12962/" class="username" dir="auto">Ivo</a>,</span>
+					
+						<a href="posts/128773/" title="Ima li nas?"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Jun 4, 2017 at 12:08 AM">Jun 4, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/former-yugoslavia-bosnia-croatia-serbia.84/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_91">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/philippines-tagalog.91/" data-description="#nodeDescription-91">Philippines Tagalog</a>
+				
+			</h3>
+
+			
+				<blockquote class="nodeDescription nodeDescriptionTooltip baseHtml" id="nodeDescription-91">Hapon forum para sa Dash</blockquote>
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>11</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>70</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/philip-felipe.21486/" class="avatar Av21486s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="Philip Felipe" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/158763/" title="Genesis mining">Genesis mining</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/philip-felipe.21486/" class="username" dir="auto">Philip Felipe</a>,</span>
+					
+						<a href="posts/158763/" title="Genesis mining"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514560087" data-diff="477559" data-datestring="Dec 29, 2017" data-timestring="3:08 PM">Dec 29, 2017 at 3:08 PM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/philippines-tagalog.91/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_97">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/bahasa-indonesia.97/" data-description="#nodeDescription-97">Bahasa Indonesia</a>
+				
+			</h3>
+
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>4</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>30</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/cryptonaut.19338/" class="avatar Av19338s" data-avatarhtml="true"><img src="data/avatars/s/19/19338.jpg?1511442738" width="48" height="48" alt="Cryptonaut" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/151349/" title="Cryptonaut - Lacak portofolio mata uang kripto Anda dengan mudah">Cryptonaut - Lacak portofolio mata uang kripto Anda dengan mudah</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/cryptonaut.19338/" class="username" dir="auto">Cryptonaut</a>,</span>
+					
+						<a href="posts/151349/" title="Cryptonaut - Lacak portofolio mata uang kripto Anda dengan mudah"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 6, 2017 at 8:05 PM">Dec 6, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/bahasa-indonesia.97/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_98">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-arabic.98/" data-description="#nodeDescription-98">العربية Arabic</a>
+				
+			</h3>
+
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>2</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>4</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/bakri.18189/" class="avatar Av18189s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="BAKRI" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/143265/" title="Dash ما هو">Dash ما هو</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/bakri.18189/" class="username" dir="auto">BAKRI</a>,</span>
+					
+						<a href="posts/143265/" title="Dash ما هو"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Oct 21, 2017 at 2:09 PM">Oct 21, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-arabic.98/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_129">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/ti%E1%BA%BFng-vi%E1%BB%87t-vietnamese.129/" data-description="#nodeDescription-129">Tiếng Việt Vietnamese</a>
+				
+			</h3>
+
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>9</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>44</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/nntien.20737/" class="avatar Av20737s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="nntien" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/159409/" title="Chào mừng các bạn người Việt đến với Dash">Chào mừng các bạn người Việt đến với Dash</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/nntien.20737/" class="username" dir="auto">nntien</a>,</span>
+					
+						<a href="posts/159409/" title="Chào mừng các bạn người Việt đến với Dash"><abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1514790445" data-diff="247201" data-datestring="Jan 1, 2018" data-timestring="7:07 AM">Jan 1, 2018 at 7:07 AM</abbr></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/ti%E1%BA%BFng-vi%E1%BB%87t-vietnamese.129/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+
+
+<li class="node forum level_2  node_138">
+	
+
+	<div class="nodeInfo forumNodeInfo unread ">
+
+		
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+	<span class="nodeIcon hasGlyph" title="Unread messages"><i class="fa fa-comments"></i></span>
+
+
+		<div class="nodeText">
+			<h3 class="nodeTitle"><a href="topic/lithuania-lietuvi%C5%A1kai.138/" data-description="#nodeDescription-138">Lithuania - Lietuviškai</a>
+				
+			</h3>
+
+			
+
+			<div class="nodeStats pairsInline">
+				<dl><dt><i class="uix_icon uix_icon-statsDiscussions"></i></dt> <dd>2</dd></dl>
+				<dl><dt><i class="uix_icon uix_icon-statsMessages"></i></dt> <dd>2</dd></dl>
+				
+			</div>
+
+			
+		</div>
+
+		
+
+		
+
+		<div class="nodeLastPost secondaryContent">
+			
+				
+					<a href="members/orca.19470/" class="avatar Av19470s" data-avatarhtml="true"><img src="data/avatars/s/19/19470.jpg?1512830271" width="48" height="48" alt="ORCA" /></a>
+				
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="posts/153118/" title="Mining">Mining</a></span>
+				<span class="lastThreadMeta">
+					<span class="lastThreadUser"><a href="members/orca.19470/" class="username" dir="auto">ORCA</a>,</span>
+					
+						<a href="posts/153118/" title="Mining"><span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Dec 13, 2017 at 10:44 AM">Dec 13, 2017</span></a>
+					
+				</span>
+			
+		</div>
+
+		<div class="nodeControls">
+			<a href="topic/lithuania-lietuvi%C5%A1kai.138/index.rss" class="tinyIcon feedIcon" title="RSS">RSS</a>
+		</div>
+
+	</div>
+
+	
+
+</li>
+			
+			
+			<div class="uix_nodeGridCollapseWrap">
+				<div class="uix_nodeGridCollapseInner"></div>
+			</div>
+			
+			
+			
+			<div class="uix_nodeGridCollapse__triggerWrap">
+				<div class="uix_nodeGridCollapse__trigger uix_nodeGridCollapse__trigger--expand">Show Forums</div>
+				<div class="uix_nodeGridCollapse__trigger uix_nodeGridCollapse__trigger--collapse">Collapse Forums</div>
+			</div>
+			
+		</ol>
+	
+	<div class="clear"></div>
+	<span class="tlc"></span>
+	<span class="trc"></span>
+	<span class="blc"></span>
+	<span class="brc"></span>
+</li>
+	
+	</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+						
+							<!-- login form, to be moved to the upper drop-down -->
+							
+
+
+
+
+
+
+
+<form action="login/login" method="post" class="xenForm " id="login" style="display:none">
+
+	
+
+	<div class="ctrlWrapper">
+		<dl class="ctrlUnit">
+			<dt><label for="LoginControl">Your name or email address:</label></dt>
+			<dd><input type="text" name="login" id="LoginControl" class="textCtrl" tabindex="101" /></dd>
+		</dl>
+	
+	
+		<dl class="ctrlUnit">
+			<dt>
+				<label for="ctrl_password">Do you already have an account?</label>
+			</dt>
+			<dd>
+				<ul>
+					<li><label for="ctrl_not_registered"><input type="radio" name="register" value="1" id="ctrl_not_registered" tabindex="105" />
+						No, create an account now.</label></li>
+					<li><label for="ctrl_registered"><input type="radio" name="register" value="0" id="ctrl_registered" tabindex="105" checked="checked" class="Disabler" />
+						Yes, my password is:</label></li>
+					<li id="ctrl_registered_Disabler">
+						<input type="password" name="password" class="textCtrl" id="ctrl_password" tabindex="102" />
+						<div class="lostPassword"><a href="lost-password/" class="OverlayTrigger OverlayCloser" tabindex="106">Forgot your password?</a></div>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+	
+		
+		<dl class="ctrlUnit submitUnit">
+			<dt></dt>
+			<dd>
+				<input type="submit" class="button primary" value="Log in" tabindex="104" data-loginPhrase="Log in" data-signupPhrase="Sign up" />
+				<label for="ctrl_remember" class="rememberPassword"><input type="checkbox" name="remember" value="1" id="ctrl_remember" tabindex="103" /> Stay logged in</label>
+			</dd>
+		</dl>
+	</div>
+
+	<input type="hidden" name="cookie_check" value="1" />
+	<input type="hidden" name="redirect" value="/forum/" />
+	<input type="hidden" name="_xfToken" value="" />
+
+</form>
+						
+					</div>
+			
+					</div>
+					<!-- sidebar -->
+					<aside class="uix_mainSidebar">
+						<div class="inner_wrapper">
+							<div class="sidebar">
+								
+								
+								
+
+<div class="section loginButton">
+	<div class="secondaryContent">
+		<label id="SignupButton"><a href="login/" class="inner OverlayTrigger" data-cacheOverlay="false">Sign up now!</a></label>
+	</div>
+</div>
+
+
+
+
+
+
+								
+	
+	
+		
+			
+
+<!-- block: sidebar_online_staff -->
+
+<!-- end block: sidebar_online_staff -->
+
+<!-- block: sidebar_online_users -->
+<div class="section membersOnline userList">		
+	<div class="secondaryContent">
+		<h3><a href="online/" title="See all online users">Members Online Now</a></h3>
+		
+		
+		
+			
+			
+			<ol class="listInline">
+				
+					
+						<li>
+						
+							<a href="members/leogriz.16072/" dir="auto"
+								class="username">Leogriz</a>,
+						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="members/alejandroe.19804/" dir="auto"
+								class="username">AlejandroE</a>,
+						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="members/jahlexis-tafari-lugo.15868/" dir="auto"
+								class="username">Jahlexis Tafari Lugo</a>,
+						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="members/jamalulkhair-khairedin.11662/" dir="auto"
+								class="username">Jamalulkhair Khairedin</a>,
+						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="members/gdev.21797/" dir="auto"
+								class="username">GDev</a>,
+						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="members/juansgalt.2405/" dir="auto"
+								class="username">JuanSGalt</a>,
+						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="members/jimbursch.10886/" dir="auto"
+								class="username">jimbursch</a>,
+						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="members/ftoole.15987/" dir="auto"
+								class="username">Ftoole</a>,
+						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="members/yocko.10054/" dir="auto"
+								class="username">yocko</a>
+						
+						</li>
+					
+				
+				
+			</ol>
+		
+		
+		<div class="footnote">
+			Total: 153 (members: 10, guests: 127, robots: 16)
+		</div>
+	</div>
+</div>
+<!-- end block: sidebar_online_users -->
+		
+		
+			<div class="section threadList">
+				<div class="secondaryContent">
+					<h3><a href="find-new/posts" rel="nofollow">New Posts</a></h3>
+					
+
+<ul>
+
+	<li id="thread-22342" class="threadListItem" data-author="AlejandroE">
+
+		<a href="members/alejandroe.19804/" class="avatar Av19804s" data-avatarhtml="true"><img src="data/avatars/s/19/19804.jpg?1512338364" width="48" height="48" alt="AlejandroE" /></a>
+		
+		<div class="messageInfo">
+			
+			<div class="messageContent">
+				<div class="title">
+				
+					<a href="posts/160415/">ALL ABOUT DASH Resource channel for Latin American audience</a>
+				
+				</div>
+			</div>
+
+			<div class="additionalRow muted">
+				Latest: AlejandroE, <abbr class="DateTime" data-time="1515037627" data-diff="19" data-datestring="Jan 4, 2018" data-timestring="3:47 AM">Jan 4, 2018 at 3:47 AM</abbr>
+			</div>
+			
+			<div class="additionalRow muted">
+				<a href="topic/pre-budget-proposal-discussions.93/" class="forumLink">Pre + Budget Proposal Discussions</a>
+			</div>
+		</div>
+	</li>
+
+	<li id="thread-16788" class="threadListItem" data-author="JuanSGalt">
+
+		<a href="members/juansgalt.2405/" class="avatar Av2405s" data-avatarhtml="true"><img src="data/avatars/s/2/2405.jpg?1414464129" width="48" height="48" alt="JuanSGalt" /></a>
+		
+		<div class="messageInfo">
+			
+			<div class="messageContent">
+				<div class="title">
+				
+					<a href="posts/160414/">Pre Proposal: DASH to Sponsor Anarchapulco 2018?</a>
+				
+				</div>
+			</div>
+
+			<div class="additionalRow muted">
+				Latest: JuanSGalt, <abbr class="DateTime" data-time="1515037451" data-diff="195" data-datestring="Jan 4, 2018" data-timestring="3:44 AM">Jan 4, 2018 at 3:44 AM</abbr>
+			</div>
+			
+			<div class="additionalRow muted">
+				<a href="topic/pre-budget-proposal-discussions.93/" class="forumLink">Pre + Budget Proposal Discussions</a>
+			</div>
+		</div>
+	</li>
+
+	<li id="thread-24750" class="threadListItem" data-author="AlejandroE">
+
+		<a href="members/alejandroe.19804/" class="avatar Av19804s" data-avatarhtml="true"><img src="data/avatars/s/19/19804.jpg?1512338364" width="48" height="48" alt="AlejandroE" /></a>
+		
+		<div class="messageInfo">
+			
+			<div class="messageContent">
+				<div class="title">
+				
+					<a href="posts/160413/">Pre-Proposal: DASH Help - Venezuela (Customer Support Center)</a>
+				
+				</div>
+			</div>
+
+			<div class="additionalRow muted">
+				Latest: AlejandroE, <abbr class="DateTime" data-time="1515037037" data-diff="609" data-datestring="Jan 4, 2018" data-timestring="3:37 AM">Jan 4, 2018 at 3:37 AM</abbr>
+			</div>
+			
+			<div class="additionalRow muted">
+				<a href="topic/pre-budget-proposal-discussions.93/" class="forumLink">Pre + Budget Proposal Discussions</a>
+			</div>
+		</div>
+	</li>
+
+	<li id="thread-24758" class="threadListItem" data-author="Blake">
+
+		<a href="members/blake.11435/" class="avatar Av11435s" data-avatarhtml="true"><img src="data/avatars/s/11/11435.jpg?1495779594" width="48" height="48" alt="Blake" /></a>
+		
+		<div class="messageInfo">
+			
+			<div class="messageContent">
+				<div class="title">
+				
+					<a href="posts/160412/">(Pre-proposal)- DASH SOCIAL MEDIA MARKETING FOR MASSIVE ADOPTION &amp; UNDERSTANDING IN AFRICA.</a>
+				
+				</div>
+			</div>
+
+			<div class="additionalRow muted">
+				Latest: Blake, <abbr class="DateTime" data-time="1515036687" data-diff="959" data-datestring="Jan 4, 2018" data-timestring="3:31 AM">Jan 4, 2018 at 3:31 AM</abbr>
+			</div>
+			
+			<div class="additionalRow muted">
+				<a href="topic/pre-budget-proposal-discussions.93/" class="forumLink">Pre + Budget Proposal Discussions</a>
+			</div>
+		</div>
+	</li>
+
+	<li id="thread-24757" class="threadListItem" data-author="r-ando">
+
+		<a href="members/r-ando.1522/" class="avatar Av1522s" data-avatarhtml="true"><img src="data/avatars/s/1/1522.jpg?1426865513" width="48" height="48" alt="r-ando" /></a>
+		
+		<div class="messageInfo">
+			
+			<div class="messageContent">
+				<div class="title">
+				
+					<a href="posts/160411/">Lost Dash Password</a>
+				
+				</div>
+			</div>
+
+			<div class="additionalRow muted">
+				Latest: r-ando, <abbr class="DateTime" data-time="1515036660" data-diff="986" data-datestring="Jan 4, 2018" data-timestring="3:31 AM">Jan 4, 2018 at 3:31 AM</abbr>
+			</div>
+			
+			<div class="additionalRow muted">
+				<a href="topic/general-discussion.2/" class="forumLink">General Discussion</a>
+			</div>
+		</div>
+	</li>
+
+	<li id="thread-23706" class="threadListItem" data-author="yocko">
+
+		<a href="members/yocko.10054/" class="avatar Av10054s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="yocko" /></a>
+		
+		<div class="messageInfo">
+			
+			<div class="messageContent">
+				<div class="title">
+				
+					<a href="posts/160410/">Donating DASH from the budget to the Venezuelan people</a>
+				
+				</div>
+			</div>
+
+			<div class="additionalRow muted">
+				Latest: yocko, <abbr class="DateTime" data-time="1515036615" data-diff="1031" data-datestring="Jan 4, 2018" data-timestring="3:30 AM">Jan 4, 2018 at 3:30 AM</abbr>
+			</div>
+			
+			<div class="additionalRow muted">
+				<a href="topic/general-discussion.2/" class="forumLink">General Discussion</a>
+			</div>
+		</div>
+	</li>
+
+	<li id="thread-23682" class="threadListItem" data-author="Skrutch">
+
+		<a href="members/skrutch.21516/" class="avatar Av21516s" data-avatarhtml="true"><img src="data/avatars/s/21/21516.jpg?1514476954" width="48" height="48" alt="Skrutch" /></a>
+		
+		<div class="messageInfo">
+			
+			<div class="messageContent">
+				<div class="title">
+				
+					<a href="posts/160408/">Need install Dash core for payment</a>
+				
+				</div>
+			</div>
+
+			<div class="additionalRow muted">
+				Latest: Skrutch, <abbr class="DateTime" data-time="1515035039" data-diff="2607" data-datestring="Jan 4, 2018" data-timestring="3:03 AM">Jan 4, 2018 at 3:03 AM</abbr>
+			</div>
+			
+			<div class="additionalRow muted">
+				<a href="topic/general-discussion.2/" class="forumLink">General Discussion</a>
+			</div>
+		</div>
+	</li>
+
+	<li id="thread-5993" class="threadListItem" data-author="Skrutch">
+
+		<a href="members/skrutch.21516/" class="avatar Av21516s" data-avatarhtml="true"><img src="data/avatars/s/21/21516.jpg?1514476954" width="48" height="48" alt="Skrutch" /></a>
+		
+		<div class="messageInfo">
+			
+			<div class="messageContent">
+				<div class="title">
+				
+					<a href="posts/160407/">Вопросы от новичка (или что непонятно новичку)</a>
+				
+				</div>
+			</div>
+
+			<div class="additionalRow muted">
+				Latest: Skrutch, <abbr class="DateTime" data-time="1515034854" data-diff="2792" data-datestring="Jan 4, 2018" data-timestring="3:00 AM">Jan 4, 2018 at 3:00 AM</abbr>
+			</div>
+			
+			<div class="additionalRow muted">
+				<a href="topic/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-russian.27/" class="forumLink">Русский  Russian</a>
+			</div>
+		</div>
+	</li>
+
+	<li id="thread-24795" class="threadListItem" data-author="tungfa">
+
+		<a href="members/tungfa.269/" class="avatar Av269s" data-avatarhtml="true"><img src="data/avatars/s/0/269.jpg?1410754385" width="48" height="48" alt="tungfa" /></a>
+		
+		<div class="messageInfo">
+			
+			<div class="messageContent">
+				<div class="title">
+				
+					<a href="posts/160405/">PLEASE use Password Manager !!!</a>
+				
+				</div>
+			</div>
+
+			<div class="additionalRow muted">
+				Latest: tungfa, <abbr class="DateTime" data-time="1515032476" data-diff="5170" data-datestring="Jan 4, 2018" data-timestring="2:21 AM">Jan 4, 2018 at 2:21 AM</abbr>
+			</div>
+			
+			<div class="additionalRow muted">
+				<a href="topic/general-discussion.2/" class="forumLink">General Discussion</a>
+			</div>
+		</div>
+	</li>
+
+	<li id="thread-17614" class="threadListItem" data-author="rafa">
+
+		<a href="members/rafa.18276/" class="avatar Av18276s" data-avatarhtml="true"><img src="data/avatars/s/18/18276.jpg?1508805349" width="48" height="48" alt="rafa" /></a>
+		
+		<div class="messageInfo">
+			
+			<div class="messageContent">
+				<div class="title">
+				
+					<a href="posts/160403/">Pre-proposal – Add Dash for trading in Colibit (Cryptocurrency Exchange in Venezuela)</a>
+				
+				</div>
+			</div>
+
+			<div class="additionalRow muted">
+				Latest: rafa, <abbr class="DateTime" data-time="1515031938" data-diff="5708" data-datestring="Jan 4, 2018" data-timestring="2:12 AM">Jan 4, 2018 at 2:12 AM</abbr>
+			</div>
+			
+			<div class="additionalRow muted">
+				<a href="topic/pre-budget-proposal-discussions.93/" class="forumLink">Pre + Budget Proposal Discussions</a>
+			</div>
+		</div>
+	</li>
+
+</ul>
+				</div>
+			</div>
+		
+		
+			<div class="section profilePostList">
+				<div class="secondaryContent">
+					<h3><a href="find-new/profile-posts" rel="nofollow">New Profile Posts</a></h3>
+					
+<ul id="ProfilePostList" class="">
+
+	
+
+
+<li id="profile-post-2319" class="profilePostListItem   " data-author="Marta">
+
+	<a href="members/marta.21760/" class="avatar Av21760s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_female_s.png" width="48" height="48" alt="Marta" /></a>
+	
+	<div class="messageInfo">
+		
+		<div class="messageContent">
+			<span class="poster">
+				<a href="members/marta.21760/" class="username" dir="auto">Marta</a>
+				
+			</span>
+			<article><blockquote class="ugc baseHtml">I like</blockquote></article>
+		</div>
+
+		<div class="messageMeta">
+			<div class="privateControls">
+				<a href="profile-posts/2319/" title="Permalink" class="item muted"><abbr class="DateTime" data-time="1514987840" data-diff="49806" data-datestring="Jan 3, 2018" data-timestring="1:57 PM">Jan 3, 2018 at 1:57 PM</abbr></a>
+			</div>
+
+			<div class="publicControls">
+				<a href="profile-posts/2319/" class="item Tooltip OverlayTrigger" title="Interact" data-tipclass="flipped" data-offsetX="7" data-offsetY="-7">&#8226;&#8226;&#8226;</a>
+			</div>
+		</div>
+
+	</div>
+</li>
+
+	
+
+
+<li id="profile-post-2318" class="profilePostListItem   " data-author="MarOku">
+
+	<a href="members/maroku.19223/" class="avatar Av19223s" data-avatarhtml="true"><img src="data/avatars/s/19/19223.jpg?1511192389" width="48" height="48" alt="MarOku" /></a>
+	
+	<div class="messageInfo">
+		
+		<div class="messageContent">
+			<span class="poster">
+				<a href="members/maroku.19223/" class="username" dir="auto">MarOku</a>
+				
+			</span>
+			<article><blockquote class="ugc baseHtml">DASH Paper-Wallet: <a href="https://youtu.be/g4f9z7xsjKQ" rel="nofollow" class="externalLink" target="_blank">https://youtu.be/g4f9z7xsjKQ</a></blockquote></article>
+		</div>
+
+		<div class="messageMeta">
+			<div class="privateControls">
+				<a href="profile-posts/2318/" title="Permalink" class="item muted"><abbr class="DateTime" data-time="1514883588" data-diff="154058" data-datestring="Jan 2, 2018" data-timestring="8:59 AM">Jan 2, 2018 at 8:59 AM</abbr></a>
+			</div>
+
+			<div class="publicControls">
+				<a href="profile-posts/2318/" class="item Tooltip OverlayTrigger" title="Interact" data-tipclass="flipped" data-offsetX="7" data-offsetY="-7">&#8226;&#8226;&#8226;</a>
+			</div>
+		</div>
+
+	</div>
+</li>
+
+	
+
+
+<li id="profile-post-2317" class="profilePostListItem   " data-author="MarOku">
+
+	<a href="members/maroku.19223/" class="avatar Av19223s" data-avatarhtml="true"><img src="data/avatars/s/19/19223.jpg?1511192389" width="48" height="48" alt="MarOku" /></a>
+	
+	<div class="messageInfo">
+		
+		<div class="messageContent">
+			<span class="poster">
+				<a href="members/maroku.19223/" class="username" dir="auto">MarOku</a>
+				
+			</span>
+			<article><blockquote class="ugc baseHtml">The first lesson at Leuphana University: <a href="https://youtu.be/szN4e4YWCHQ" rel="nofollow" class="externalLink" target="_blank">https://youtu.be/szN4e4YWCHQ</a>  Editorial contribution in the local newspaper: <a href="https://goo.gl/TPe9c7" rel="nofollow" class="externalLink" target="_blank">https://goo.gl/TPe9c7</a></blockquote></article>
+		</div>
+
+		<div class="messageMeta">
+			<div class="privateControls">
+				<a href="profile-posts/2317/" title="Permalink" class="item muted"><abbr class="DateTime" data-time="1514883396" data-diff="154250" data-datestring="Jan 2, 2018" data-timestring="8:56 AM">Jan 2, 2018 at 8:56 AM</abbr></a>
+			</div>
+
+			<div class="publicControls">
+				<a href="profile-posts/2317/" class="item Tooltip OverlayTrigger" title="Interact" data-tipclass="flipped" data-offsetX="7" data-offsetY="-7">&#8226;&#8226;&#8226;</a>
+			</div>
+		</div>
+
+	</div>
+</li>
+
+	
+
+
+<li id="profile-post-2316" class="profilePostListItem   " data-author="Onyok">
+
+	<a href="members/onyok.21654/" class="avatar Av21654s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="Onyok" /></a>
+	
+	<div class="messageInfo">
+		
+		<div class="messageContent">
+			<span class="poster">
+				<a href="members/onyok.21654/" class="username" dir="auto">Onyok</a>
+				
+			</span>
+			<article><blockquote class="ugc baseHtml">how can I pay the pool fees for everyday payouts?</blockquote></article>
+		</div>
+
+		<div class="messageMeta">
+			<div class="privateControls">
+				<a href="profile-posts/2316/" title="Permalink" class="item muted"><abbr class="DateTime" data-time="1514872151" data-diff="165495" data-datestring="Jan 2, 2018" data-timestring="5:49 AM">Jan 2, 2018 at 5:49 AM</abbr></a>
+			</div>
+
+			<div class="publicControls">
+				<a href="profile-posts/2316/" class="item Tooltip OverlayTrigger" title="Interact" data-tipclass="flipped" data-offsetX="7" data-offsetY="-7">&#8226;&#8226;&#8226;</a>
+			</div>
+		</div>
+
+	</div>
+</li>
+
+	
+
+
+<li id="profile-post-2315" class="profilePostListItem   " data-author="Photosynthesis">
+
+	<a href="members/photosynthesis.20621/" class="avatar Av20621s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="Photosynthesis" /></a>
+	
+	<div class="messageInfo">
+		
+		<div class="messageContent">
+			<span class="poster">
+				<a href="members/photosynthesis.20621/" class="username" dir="auto">Photosynthesis</a>
+				
+			</span>
+			<article><blockquote class="ugc baseHtml">Master Node Owner/Operator</blockquote></article>
+		</div>
+
+		<div class="messageMeta">
+			<div class="privateControls">
+				<a href="profile-posts/2315/" title="Permalink" class="item muted"><abbr class="DateTime" data-time="1514861829" data-diff="175817" data-datestring="Jan 2, 2018" data-timestring="2:57 AM">Jan 2, 2018 at 2:57 AM</abbr></a>
+			</div>
+
+			<div class="publicControls">
+				<a href="profile-posts/2315/" class="item Tooltip OverlayTrigger" title="Interact" data-tipclass="flipped" data-offsetX="7" data-offsetY="-7">&#8226;&#8226;&#8226;</a>
+			</div>
+		</div>
+
+	</div>
+</li>
+
+</ul>
+				</div>
+			</div>
+		
+		<!-- block: forum_stats -->
+		<div class="section">
+			<div class="secondaryContent statsList" id="boardStats">
+				<h3>Forum Statistics</h3>
+				<div class="pairsJustified">
+					<dl class="discussionCount"><dt>Discussions:</dt>
+						<dd>11,903</dd></dl>
+					<dl class="messageCount"><dt>Messages:</dt>
+						<dd>140,591</dd></dl>
+					<dl class="memberCount"><dt>Members:</dt>
+						<dd>15,837</dd></dl>
+					<dl><dt>Latest Member:</dt>
+						<dd><a href="members/dashman.21795/" class="username" dir="auto">Dashman</a></dd></dl>
+					<!-- slot: forum_stats_extra -->
+				</div>
+			</div>
+		</div>
+		<!-- end block: forum_stats -->
+			
+	
+	<div class="section infoBlock sharePage">
+		<div class="secondaryContent">
+			<h3>Share This Page</h3>
+			
+				
+				
+					<div class="tweet shareControl">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal"
+							data-lang="en-US"
+							data-url="https://www.dash.org/forum/"
+							
+							>Tweet</a>
+					</div>
+						
+				
+					
+						
+			
+		</div>
+	</div>
+
+	
+
+								
+								
+							</div>
+						</div>
+					</aside>
+				</div>
+			
+			
+			
+				<div class="breadBoxBottom">
+
+<nav>
+
+	
+
+	
+
+	<fieldset class="breadcrumb">
+		<a href="misc/quick-navigation-menu" class="OverlayTrigger jumpMenuTrigger" data-cacheOverlay="true" title="Open quick navigation"><i class="uix_icon uix_icon-sitemap"></i><!--Jump to...--></a>
+
+		<div class="boardTitle"><strong>Dash Forum</strong></div>
+
+		<span class="crumbs">
+			
+				<span class="crust homeCrumb">
+					<a href="https://www.dash.org/forum" class="crumb"><span><i class="uix_icon uix_icon-home" title="Home"></i><span class="uix_breadcrumb__home__title">Home</span></span></a>
+					<span class="arrow"><span></span></span>
+				</span>
+			
+
+			
+				<span class="crust selectedTabCrumb">
+					<a href="https://www.dash.org/forum/" class="crumb"><span>Forums</span></a>
+					<span class="arrow"><span>&gt;</span></span>
+				</span>
+			
+
+			
+		</span>
+	</fieldset>
+</nav></div>
+			
+			
+			
+
+	<div class="sectionMain funbox">
+	<div class="funboxWrapper">
+	
+
+		
+			
+				<div id="copyright" style="float: right;">Ignore Threads by <a href="http://nobita.me" target="_blank">Nobita</a></div>
+
+
+				
+
+
+
+			
+		
+
+	
+	</div>
+	</div>
+
+			</div>
+	
+		</div>
+	</div>
+	
+
+</div>
+
+<footer>
+	
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+	<div class="pageWidth">
+		<div class="pageContent">
+			
+
+				
+				
+					<dl class="choosers chooser_widthToggle">
+						<dt>Toggle Width</dt>
+						<dd><a href="javascript: uix.toggleWidth.toggle()" class='Tooltip' title="Toggle Width" rel="nofollow"><span class="uix_icon js-widthIcon uix_icon-compressWidth"></span></a></dd>
+					</dl>
+				
+				
+					<dl class="choosers">
+						
+							<dt>Style</dt>
+							<dd><a href="misc/style?redirect=%2Fforum%2F" class="OverlayTrigger Tooltip" title="Style Chooser" rel="nofollow">Dash Forum - Right Sidebar</a></dd>
+						
+						
+							<dt>Language</dt>
+							<dd><a href="misc/language?redirect=%2Fforum%2F" class="OverlayTrigger Tooltip" title="Language Chooser" rel="nofollow">English (US)</a></dd>
+						
+					</dl>
+				
+				
+				
+				<ul class="footerLinks">
+					
+						<li><a href="https://www.dash.org/forum" class="homeLink">Home</a></li>
+						
+							<li><a href="misc/contact" class="OverlayTrigger" data-overlayOptions="{&quot;fixed&quot;:false}">Contact Us</a></li>
+						
+						<li><a href="help/">Help</a></li>
+					
+					
+						<li><a href="help/terms">Terms and Rules</a></li>
+						
+					
+					<li class="topLink"><a href="/forum/#XenForo"><i class="uix_icon uix_icon-jumpToTop"></i> <span class="uix_hide">Top</span></a></li>
+				</ul>
+				
+
+			
+
+			<span class="helper"></span>
+
+			
+		</div>
+	</div>
+</div>
+
+<div id="uix_stickyFooterSpacer"></div>
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+<div class="footerLegal">
+	<div class="pageWidth">
+		<div class="pageContent">
+			
+			
+				<ul class="uix_socialMediaLinks">
+	<li class="uix_socialLink uix_socialLink--facebook"><a href="https://www.facebook.com/DashPay" target="_blank"><i class="uix_icon uix_icon-facebook"></i></a></li>
+
+        <li class="uix_socialLink uix_socialLink--twitter"><a href="https://twitter.com/dashpay" target="_blank"><i class="uix_icon uix_icon-twitter"></i></a></li>
+
+        <li class="uix_socialLink uix_socialLink--youtube"><a href="https://www.youtube.com/dashorg" target="_blank"><i class="uix_icon uix_icon-youtube"></i></a></li>
+
+        
+
+        
+
+        
+
+        <li class="uix_socialLink uix_socialLink--googleplus"><a href="https://plus.google.com/115080614177201373926" target="_blank"><i class="uix_icon uix_icon-googlePlus"></i></a></li>
+
+        <li class="uix_socialLink uix_socialLink--linkedin"><a href="https://www.linkedin.com/company/dash---digitalcash-cryptocurrency-?trk=company_logo" target="_blank"><i class="uix_icon uix_icon-linkedIn"></i></a></li>
+
+        <li class="uix_socialLink uix_socialLink--instagram"><a href="https://instagram.com/dashpay" target="_blank"><i class="uix_icon uix_icon-instagram"></i></a></li>
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        <li class="uix_socialLink uix_socialLink--git"><a href="https://github.com/dashpay/dash" target="_blank"><i class="uix_icon uix_icon-git"></i></a></li>
+
+        <li class="uix_socialLink uix_socialLink--reddit"><a href="https://www.reddit.com/r/dashpay" target="_blank"><i class="uix_icon uix_icon-reddit"></i></a></li>
+
+        
+
+	
+	
+	    <li class="uix_socialLink uix_socialLink--contact"><a href="misc/contact" class="OverlayTrigger" data-overlayOptions="{&quot;fixed&quot;:false}"><i class="uix_icon uix_icon-email"></i></a></li>
+	
+	
+
+        
+
+
+
+<!--ADD LIST ITEMS HERE -->
+
+
+
+        
+</ul>
+			
+			<div id="copyright">
+				<a href="https://xenforo.com" class="concealed">Forum software by XenForo&trade; <span>&copy;2010-2017 XenForo Ltd.</span></a> 
+				<div class="thCopyrightNoticeStyle">Theme designed by <a href="https://www.themehouse.com/xenforo/themes" title="Premium XenForo Themes" rel="nofollow" target="_blank">Audentio Design</a>.</div>
+				
+			</div>
+			
+<div class="xcfw_copyright"><a href="http://xencentral.com" target="_blank">Feedback System by XenCentral.com</a></div>
+				
+			<span class="helper"></span>
+			
+		</div>
+	</div>
+</div>
+
+
+
+	<div id="uix_jumpToFixed">
+		
+			<a href="#XenForo" title="Top" data-position="top"><i class="uix_icon uix_icon-jumpToTop"></i></a>
+		
+		
+			<a href="#XenForo" title="Bottom" data-position="bottom"><i class="uix_icon uix_icon-jumpToBottom"></i></a>
+		
+	</div>
+
+</footer>
+
+<script>
+
+
+jQuery.extend(true, XenForo,
+{
+	visitor: { user_id: 0 },
+	serverTimeInfo:
+	{
+		now: 1515037646,
+		today: 1515024000,
+		todayDow: 4
+	},
+	_lightBoxUniversal: "0",
+	_enableOverlays: "1",
+	_animationSpeedMultiplier: "0.5",
+	_overlayConfig:
+	{
+		top: "10%",
+		speed: 100,
+		closeSpeed: 50,
+		mask:
+		{
+			color: "rgb(255, 255, 255)",
+			opacity: "0.6",
+			loadSpeed: 100,
+			closeSpeed: 50
+		}
+	},
+	_ignoredUsers: [],
+	_loadedScripts: {"node_list":true,"node_category":true,"node_forum":true,"thread_list_simple":true,"profile_post_list_simple":true,"bb_code":true,"sidebar_share_page":true,"login_bar":true,"moderator_bar":true,"uix_welcomeBlock":true,"xcfw_copyright":true},
+	_cookieConfig: { path: "/", domain: "", prefix: "xf_"},
+	_csrfToken: "",
+	_csrfRefreshUrl: "login/csrf-token-refresh",
+	_jsVersion: "adcfecd2",
+	_noRtnProtect: false,
+	_noSocialLogin: false
+});
+jQuery.extend(XenForo.phrases,
+{
+	cancel: "Cancel",
+
+	a_moment_ago:    "A moment ago",
+	one_minute_ago:  "1 minute ago",
+	x_minutes_ago:   "%minutes% minutes ago",
+	today_at_x:      "Today at %time%",
+	yesterday_at_x:  "Yesterday at %time%",
+	day_x_at_time_y: "%day% at %time%",
+
+	day0: "Sunday",
+	day1: "Monday",
+	day2: "Tuesday",
+	day3: "Wednesday",
+	day4: "Thursday",
+	day5: "Friday",
+	day6: "Saturday",
+
+	_months: "January,February,March,April,May,June,July,August,September,October,November,December",
+	_daysShort: "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+
+	following_error_occurred: "The following error occurred",
+	server_did_not_respond_in_time_try_again: "The server did not respond in time. Please try again.",
+	logging_in: "Logging in",
+	click_image_show_full_size_version: "Click this image to show the full-size version.",
+	show_hidden_content_by_x: "Show hidden content by {names}"
+});
+
+// Facebook Javascript SDK
+XenForo.Facebook.appId = "";
+XenForo.Facebook.forceInit = false;
+
+
+</script>
+
+
+
+
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "WebSite",
+	"url": "https://www.dash.org/forum/",
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "https://www.dash.org/forum/search/search?keywords={search_keywords}",
+		"query-input": "required name=search_keywords"
+	}
+}
+</script>
+
+
+
+
+</div> 
+
+<div class="uix_wrapperFix" style="height: 1px; margin-top: -1px;"></div>
+
+
+		</div> 
+	</div> 
+	
+
+
+<script>
+ $(document).ready(function() { $('map').imageMapResize(); });
+</script>
+
+<div class="breadcrumbMeta">
+	
+
+<nav>
+
+	
+
+	
+
+	<fieldset class="breadcrumb">
+		<a href="misc/quick-navigation-menu" class="OverlayTrigger jumpMenuTrigger" data-cacheOverlay="true" title="Open quick navigation"><i class="uix_icon uix_icon-sitemap"></i><!--Jump to...--></a>
+
+		<div class="boardTitle"><strong>Dash Forum</strong></div>
+
+		<span class="crumbs">
+			
+				<span class="crust homeCrumb">
+					<a href="https://www.dash.org/forum" class="crumb"><span><i class="uix_icon uix_icon-home" title="Home"></i><span class="uix_breadcrumb__home__title">Home</span></span></a>
+					<span class="arrow"><span></span></span>
+				</span>
+			
+
+			
+				<span class="crust selectedTabCrumb">
+					<a href="https://www.dash.org/forum/" class="crumb"><span>Forums</span></a>
+					<span class="arrow"><span>&gt;</span></span>
+				</span>
+			
+
+			
+		</span>
+	</fieldset>
+</nav>
+</div>
+
+<!-- UI.X Version: 1.5.12.0 //-->
+
+</body>
+</html>

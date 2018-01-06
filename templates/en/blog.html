@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>The Digital Cash Blog &mdash; Dash</title>
+		<meta name="description" content="Latest Dash news &amp; information">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero hero--blog" id="hero">
+	<div class="hero__background">
+			<img src="/assets/img/hero/blog.jpg" alt="" class="hero__background-image">
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/get-dash/" class="nav__link">Get Dash</a></li>
+			<li class="nav__item"><a href="/merchants/" class="nav__link">Merchants</a></li>
+			<li class="nav__item"><a href="/network/" class="nav__link">Network</a></li>
+			<li class="nav__item"><a href="/community/" class="nav__link">Resources</a></li>
+			<li class="nav__item"><a href="/team/" class="nav__link">Team</a></li>
+			<li class="nav__item"><a href="/blog/" class="nav__link">Blog</a></li>
+			<li class="nav__item"><a href="/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag gb"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/blog/" class="nav__link is-active">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/blog/" class="nav__link ">Espa帽ol <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/blog/" class="nav__link ">Fran莽ais <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/blog/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/blog/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/blog/" class="nav__link ">绠�浣撲腑鏂� <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/blog/" class="nav__link ">袪褍褋褋泻懈泄 <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/blog/" class="nav__link ">鏃ユ湰瑾� <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/blog/" class="nav__link ">頃滉淡鞏�<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/blog/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="" class="nav__link" title="Search">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">The Digital Cash Blog</h1>
+		<p class="hero__lead">Latest Dash news &amp; information</p>
+
+		<div class="hero__buttons">
+
+			<!--a href="#" class="btn-white-solid">Search Blog</a-->
+			<a href="/community/#community-news" class="btn-white-solid">Community News</a>
+
+		</div>
+	</div>
+
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+
+<!--
+
+__________ ____ ___.___.____     ________ ._.
+\______   \    |   \   |    |    \______ \| |
+ |    |  _/    |   /   |    |     |    |  \ |
+ |    |   \    |  /|   |    |___  |    `   \|
+ |______  /______/ |___|_______ \/_______  /_
+        \/                     \/        \/\/
+
+20170410_2224MST
+
+-->
+
+<div class="page page--blog">
+
+	<section class="section">
+		<div class="section__content content">
+			<div class="featurepost-grid">
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--image">
+						
+						<a href="/2017/12/24/xmas.html"><img src="/assets/img/blog/Merry X Mas.jpg" class="featurepost__image"></a>
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/2017/12/24/xmas.html">Merry Dashing X Mas</a></h2>
+
+					<em class="featurepost__date">Dec 24, 2017</em>
+
+					<p class="featurepost__description">As a personal favour to me:
+Please back up your wallets and secure + backup your encryption keys / Password
+1 more time ! And we can all move Happy and Secure into 2018 !
+Enjoy the Holidays
+Your Dash Team
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--image">
+						
+						<a href="/2017/12/22/ceoofdash.html"><img src="/assets/img/blog/bitcoin_machines_getty_letterbox.jpg" class="featurepost__image"></a>
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/2017/12/22/ceoofdash.html">The CEO of Dash- a major cryptocurrency -says the market is speculative and some of Bitcoin鈥檚 value may be 鈥榩hantom鈥�</a></h2>
+
+					<em class="featurepost__date">Dec 22, 2017</em>
+
+					<p class="featurepost__description">Cryptocurrency activity shifted into overdrive in the second half of this year.
+
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--image">
+						
+						<a href="/2017/12/21/wsj.html"><img src="/assets/img/blog/wsjDec21st.jpg" class="featurepost__image"></a>
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/2017/12/21/wsj.html">Dash appears in today鈥檚 WSJ Print Edition Infographic</a></h2>
+
+					<em class="featurepost__date">Dec 21, 2017</em>
+
+					<p class="featurepost__description">
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--image">
+						
+						<a href="/2017/12/21/deepdive.html"><img src="/assets/img/blog/deepdiveDec21st.jpg" class="featurepost__image"></a>
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/2017/12/21/deepdive.html">A Deeper Dive Into Dash and Its Explosive Year</a></h2>
+
+					<em class="featurepost__date">Dec 21, 2017</em>
+
+					<p class="featurepost__description">Dash (DASH)聽is having a phenomenal year 鈥� just one year ago, Dash was worth about $10 per coin. This past week, Dash broke the $1000 barrier and at press time is trading for $1531.
+
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--image">
+						
+						<a href="/2017/12/20/fees.html"><img src="/assets/img/blog/GettyImages-510365916-800x533.jpg" class="featurepost__image"></a>
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/2017/12/20/fees.html">Skyrocketing fees are fundamentally changing bitcoin</a></h2>
+
+					<em class="featurepost__date">Dec 20, 2017</em>
+
+					<p class="featurepost__description">Originally, one of bitcoin鈥檚 big selling points was that payments would be fast, convenient, and cheap. 鈥淭he cost of mediation increases transaction costs, limiting the minimum practical transaction size and cutting off the possibility for small casual transactions,鈥澛爓rote bitcoin founder Satoshi Nakamoto聽in the white paper announcing the technology.
+
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--image">
+						
+						<a href="/2017/12/19/release.html"><img src="/assets/img/blog/1222Dec19th.jpg" class="featurepost__image"></a>
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/2017/12/19/release.html">Dash Ver 12.2.2 Release</a></h2>
+
+					<em class="featurepost__date">Dec 19, 2017</em>
+
+					<p class="featurepost__description">Miners / MN鈥檚 / users Please Update !!
+(no protocol bump and no restart commands required - Dashman updated)
+https://www.dash.org/downloads/#wallets
+
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--image">
+						
+						<a href="/2017/12/17/cracks.html"><img src="/assets/img/blog/Dash_bull_Wikipedia.jpg" class="featurepost__image"></a>
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/2017/12/17/cracks.html">Interview: As Dash Cracks $1000, We Ask: What鈥檚 the Appeal?</a></h2>
+
+					<em class="featurepost__date">Dec 17, 2017</em>
+
+					<p class="featurepost__description">You could have picked up one DASH for around $15 USD in January 2017 鈥� but today, a single unit will cost you $1,060 鈥� an all-time high. Sure, that鈥檚 a familiar story in the 2017 crypto gold rush, but Dash has a tendency to stand out. It鈥檚 the first...</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--image">
+						
+						<a href="/2017/12/16/ryan.html"><img src="/assets/img/blog/ryanDec16th.jpg" class="featurepost__image"></a>
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/2017/12/16/ryan.html">Money20/20: Ryan Taylor, Dash Core</a></h2>
+
+					<em class="featurepost__date">Dec 16, 2017</em>
+
+					<p class="featurepost__description">
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--image">
+						
+						<a href="/2017/12/15/bradley.html"><img src="/assets/img/blog/Bradley_Zastrow.jpg" class="featurepost__image"></a>
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/2017/12/15/bradley.html">Welcome Bradley Zastrow - Director of Global Business Development</a></h2>
+
+					<em class="featurepost__date">Dec 15, 2017</em>
+
+					<p class="featurepost__description">Dash community,
+
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--image">
+						
+						<a href="/2017/12/14/cryptofunds.html"><img src="/assets/img/blog/cryptofundDec14.jpg" class="featurepost__image"></a>
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/2017/12/14/cryptofunds.html">Institutional Crypto Fund lists Dash as one of his Top 5</a></h2>
+
+					<em class="featurepost__date">Dec 14, 2017</em>
+
+					<p class="featurepost__description">Ville Oehman crypto fund manager at Helvetic Investments, says the fund sees a 鈥渓ot of potential鈥� in second-tier cryptocurrencies.
+
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--image">
+						
+						<a href="/2017/12/13/alwayshodl.html"><img src="/assets/img/blog/alwayshodlDec13.jpg" class="featurepost__image"></a>
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/2017/12/13/alwayshodl.html">Dash Merchandise now available at</a></h2>
+
+					<em class="featurepost__date">Dec 13, 2017</em>
+
+					<p class="featurepost__description">
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--image">
+						
+						<a href="/2017/12/12/hights.html"><img src="/assets/img/blog/highDec12.jpg" class="featurepost__image"></a>
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/2017/12/12/hights.html">Dash At Record Highs!</a></h2>
+
+					<em class="featurepost__date">Dec 12, 2017</em>
+
+					<p class="featurepost__description">It is not just Bitcoin that has experienced a great surge in price. Although not on the same scale as Bitcoin, Dash cryptocurrency is running all time highs, with it quickly approaching $730USD.
+
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			</div>
+
+			
+<div class="pagination">
+  
+
+  
+    
+      <em class="pagination__current">1</em>
+    
+  
+    
+      <a href="/blog/page2/" class="pagination__link">2</a>
+    
+  
+    
+      <a href="/blog/page3/" class="pagination__link">3</a>
+    
+  
+    
+      <a href="/blog/page4/" class="pagination__link">4</a>
+    
+  
+    
+      <a href="/blog/page5/" class="pagination__link">5</a>
+    
+  
+    
+      <a href="/blog/page6/" class="pagination__link">6</a>
+    
+  
+    
+      <a href="/blog/page7/" class="pagination__link">7</a>
+    
+  
+    
+      <a href="/blog/page8/" class="pagination__link">8</a>
+    
+  
+    
+      <a href="/blog/page9/" class="pagination__link">9</a>
+    
+  
+    
+      <a href="/blog/page10/" class="pagination__link">10</a>
+    
+  
+    
+      <a href="/blog/page11/" class="pagination__link">11</a>
+    
+  
+    
+      <a href="/blog/page12/" class="pagination__link">12</a>
+    
+  
+    
+      <a href="/blog/page13/" class="pagination__link">13</a>
+    
+  
+    
+      <a href="/blog/page14/" class="pagination__link">14</a>
+    
+  
+    
+      <a href="/blog/page15/" class="pagination__link">15</a>
+    
+  
+    
+      <a href="/blog/page16/" class="pagination__link">16</a>
+    
+  
+    
+      <a href="/blog/page17/" class="pagination__link">17</a>
+    
+  
+    
+      <a href="/blog/page18/" class="pagination__link">18</a>
+    
+  
+    
+      <a href="/blog/page19/" class="pagination__link">19</a>
+    
+  
+    
+      <a href="/blog/page20/" class="pagination__link">20</a>
+    
+  
+    
+      <a href="/blog/page21/" class="pagination__link">21</a>
+    
+  
+    
+      <a href="/blog/page22/" class="pagination__link">22</a>
+    
+  
+    
+      <a href="/blog/page23/" class="pagination__link">23</a>
+    
+  
+    
+      <a href="/blog/page24/" class="pagination__link">24</a>
+    
+  
+    
+      <a href="/blog/page25/" class="pagination__link">25</a>
+    
+  
+    
+      <a href="/blog/page26/" class="pagination__link">26</a>
+    
+  
+    
+      <a href="/blog/page27/" class="pagination__link">27</a>
+    
+  
+    
+      <a href="/blog/page28/" class="pagination__link">28</a>
+    
+  
+    
+      <a href="/blog/page29/" class="pagination__link">29</a>
+    
+  
+    
+      <a href="/blog/page30/" class="pagination__link">30</a>
+    
+  
+    
+      <a href="/blog/page31/" class="pagination__link">31</a>
+    
+  
+    
+      <a href="/blog/page32/" class="pagination__link">32</a>
+    
+  
+    
+      <a href="/blog/page33/" class="pagination__link">33</a>
+    
+  
+    
+      <a href="/blog/page34/" class="pagination__link">34</a>
+    
+  
+    
+      <a href="/blog/page35/" class="pagination__link">35</a>
+    
+  
+    
+      <a href="/blog/page36/" class="pagination__link">36</a>
+    
+  
+    
+      <a href="/blog/page37/" class="pagination__link">37</a>
+    
+  
+    
+      <a href="/blog/page38/" class="pagination__link">38</a>
+    
+  
+    
+      <a href="/blog/page39/" class="pagination__link">39</a>
+    
+  
+    
+      <a href="/blog/page40/" class="pagination__link">40</a>
+    
+  
+    
+      <a href="/blog/page41/" class="pagination__link">41</a>
+    
+  
+    
+      <a href="/blog/page42/" class="pagination__link">42</a>
+    
+  
+    
+      <a href="/blog/page43/" class="pagination__link">43</a>
+    
+  
+    
+      <a href="/blog/page44/" class="pagination__link">44</a>
+    
+  
+    
+      <a href="/blog/page45/" class="pagination__link">45</a>
+    
+  
+    
+      <a href="/blog/page46/" class="pagination__link">46</a>
+    
+  
+    
+      <a href="/blog/page47/" class="pagination__link">47</a>
+    
+  
+    
+      <a href="/blog/page48/" class="pagination__link">48</a>
+    
+  
+    
+      <a href="/blog/page49/" class="pagination__link">49</a>
+    
+  
+    
+      <a href="/blog/page50/" class="pagination__link">50</a>
+    
+  
+
+  
+    <a href="/blog/page2/" class="pagination__next">Next &raquo;</a>
+  
+</div>
+
+
+		</div>
+	</section>
+
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Get Dash
+    <ul>
+        <li><a href="/get-dash/">Download Wallet</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">Buy Dash</a></li>
+        <li><a href="/merchants/">Shop with Dash</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">Dash Debit Card</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Contribute
+    <ul>
+        <li><a href="/mining/" >Start Mining</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">Setup a Masternode</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">Setup a Wallet</a></li>
+        <li><a href="/governance/">Apply for Funding</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Network
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">Exchange Markets</a></li>
+        <li><a href="/governance/">Governance</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">Block Explorers</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">Network Stats</a></li>
+        <li><a href="/exchanges/" >Full list of Exchanges</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Resources
+    <ul>
+        <li><a href="/community/#discussion">Discussion</a></li>
+        <li><a href="/community/#social">Social Apps</a></li>
+        <li><a href="/community/#news">News &amp; Info</a></li>
+        <li><a href="/community/#development">Development Tools</a></li>
+        <li><a href="/community/#masternodes">Masternode Tools</a></li>
+        <li><a href="/legal/">Legal</a></li>
+        <li><a href="/graphics/">Graphics</a></li>
+        <li><a href="/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Project
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">Help &amp; Support</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">Project Information</a></li>
+        <li><a href="/team/">Team</a></li>
+        <li><a href="/update/">Update</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">Foundation</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">Wiki</a></li>
+        <li><a href="/school/">School</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Social
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash forums</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">Twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">YouTube</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">Google+</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">LinkedIn</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">Facebook</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/terms-of-use/">Terms of Use</a>
+  <a href="/sitemap.xml">Sitemap</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">Source code</a>
+  <a href="/contact/">Contact</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2017 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/get-dash/" class="overlay-menu__link">Get Dash</a></li>
+            <li class="overlay-menu__item"><a href="/merchants/" class="overlay-menu__link">Merchants</a></li>
+            <li class="overlay-menu__item"><a href="/network/" class="overlay-menu__link">Network</a></li>
+            <li class="overlay-menu__item"><a href="/community/" class="overlay-menu__link">Resources</a></li>
+            <li class="overlay-menu__item"><a href="/team/" class="overlay-menu__link">Team</a></li>
+            <li class="overlay-menu__item"><a href="/blog/" class="overlay-menu__link">Blog</a></li>
+            <li class="overlay-menu__item"><a href="/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/blog/" class="overlay-menu__link is-active"><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/blog/" class="overlay-menu__link "><span class="flag es"></span> Espa帽ol</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/blog/" class="overlay-menu__link "><span class="flag fr"></span> Fran莽ais</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/blog/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/blog/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/blog/" class="overlay-menu__link "><span class="flag cn"></span> 绠�浣撲腑鏂�</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/blog/" class="overlay-menu__link "><span class="flag ru"></span> 袪褍褋褋泻懈泄</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/blog/" class="overlay-menu__link "><span class="flag jp"></span>鏃ユ湰瑾�</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/blog/" class="overlay-menu__link "><span class="flag kr"></span>頃滉淡鞏�</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/blog/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/assets/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

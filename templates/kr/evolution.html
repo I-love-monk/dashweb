@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="kr">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>Dash 공식 웹사이트 | Dash 가상화폐 &mdash; Dash</title>
+		<meta name="description" content="Dash는 디지털 화폐">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/dist/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero" id="hero">
+	<div class="hero__background">
+		<img src="/assets/img/resized/evolution/bg1.png-f3ed610/800x450.png" srcset="/assets/img/resized/evolution/bg1.png-f3ed610/1920x1080.png 1920w, /assets/img/resized/evolution/bg1.png-f3ed610/1280x720.png 1280w, /assets/img/resized/evolution/bg1.png-f3ed610/1024x576.png 1024w, /assets/img/resized/evolution/bg1.png-f3ed610/1600x900.png 1600w, /assets/img/resized/evolution/bg1.png-f3ed610/800x450.png 800w" sizes="100vw, 100vw, 100vw, 100vw" class="hero__background-image" />
+
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/kr/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/kr/get-dash/" class="nav__link">Dash 얻기</a></li>
+			<li class="nav__item"><a href="/kr/merchants/" class="nav__link">가맹점</a></li>
+			<li class="nav__item"><a href="/kr/network/" class="nav__link">네트워크</a></li>
+			<li class="nav__item"><a href="/kr/community/" class="nav__link">리소스</a></li>
+			<li class="nav__item"><a href="/kr/team/" class="nav__link">팀</a></li>
+			<li class="nav__item"><a href="/kr/blog/" class="nav__link">블로그</a></li>
+			<li class="nav__item"><a href="/kr/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag kr"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/evolution/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/evolution/" class="nav__link ">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/evolution/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/evolution/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/evolution/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/evolution/" class="nav__link ">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/evolution/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/evolution/" class="nav__link ">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/evolution/" class="nav__link is-active">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/evolution/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/kr" class="nav__link" title="검색">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">DASH EVOLUTION</h1>
+		<p class="hero__lead">미래의 결제 엿보기</p>
+
+		<div class="hero__buttons">
+			<a href="https://dashpay.atlassian.net/wiki/x/DQBcAg"  class="btn-blue-solid" target="_blank">Evolution에 대해 자세히 보기</a>
+			<!--a href="/kr/contact/#mailing" class="btn-blue-solid btn-large">뉴스 구독</a-->
+			<a href="https://github.com/dashpay/dash-roadmap/blob/master/README.md"  target="_blank" class="btn-white-solid">Roadmap</a>
+		</div>
+	</div>
+
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<div class="page page--home">
+
+	<!--
+		WHAT IS DASH?
+		LINK TO VIDEO.
+	-->
+	<section class="section section--home-cta">
+		<div class="section__content">
+				<h2 class="section__title">사명</h2>
+				<div class="section__lead"><p>Evolution의 사명은 기술에 정통한 사람이 아니더라도 모든 사용자가 디지털 현금을 사용하고 접근하기 쉽게 만드는 것입니다. 누구나 블록체인에 계정을 설정하고 연락처를 추가하고 이름으로 결제할 수 있게 될 것입니다. 웹사이트 또는 모바일 앱을 통한 구매는 클릭 한 번만으로 가능할 만큼 간단합니다.</p>
+</div>
+
+				<div class="section__btn-grp">
+					<a href="https://www.youtube.com/watch?v=rcHC40YmS0g" class="btn-blue btn-large" target="_blank" data-js-popup="video">프로토타입 비디오</a>
+					<!--a href="https://dashpay.atlassian.net/wiki/x/ErwxBg" class="btn-blue-solid btn-large"  target="_blank">Sentinel</a-->
+				</div>
+		</div>
+	</section>
+
+	<!--
+		prototype
+	-->
+
+	<section class="home-get-started-cta evo-prototype-section">
+		<div class="content">
+			<h2>경량 지갑</h2>
+
+			<p>Evolution은 SPV 보안 및 브라우저 호환성을 갖춘 새로운 유형의 경량 지갑을 선보일 예정입니다. 이 지갑은 4,000개 이상의 노드로 구성된 P2P 네트워크에 직접 연결됩니다.</p>
+
+
+			<!--a href="/kr/get-dash/" class="btn-white-solid">Dash 프로토타입</a-->
+			<div class="section__btn-grp">
+				<a href="https://www.youtube.com/watch?v=7J4m04Tkfb4" class="btn-blue btn-large" target="_blank" data-js-popup="video">지갑 미리보기</a>
+			</div>
+			<img src="/assets/img/evolution/bigwallet.png" alt="">
+		</div>
+	</section>
+
+
+	<!--
+    EVOLUTION MERCHANTS
+	-->
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>소비자 친화적</h2>
+
+					<p>Evolution에서는 가맹점과 직접 연결하여 구매하거나 자동 인출을 설정하여 가입 서비스 요금을 지불할 수 있습니다. Dash를 통합한 모든 가맹점은 블록체인에서 검색할 수 있으며, 어떤 벤더가 양질의 제품과 서비스를 제공하는지 커뮤니티에서 판단할 수 있으므로 귀하는 구매를 평가할 수 있습니다.</p>
+
+
+					<!--a href="/kr/network" class="btn-blue">가맹점의 경우</a>
+					<a href="/kr/network" class="btn-blue">Woocommerce 플러그인</a-->
+				</div>
+				<div class="col-sm-6 home-network-graphic-live">
+					<img src="/assets/img/update/execution.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		CONSUMERS
+	-->
+	<section class="section--masternode">
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>가맹점 친화적</h2>
+
+					<p>간단하고 분권화된 API를 사용하여 몇 분만에 Dash 결제를 귀하의 사이트 또는 모바일 앱에 추가하십시오.
+복잡한 인프라는 잊고 타사에 의존하여 고객의 결제를 처리하고 블록체인을 사용하여 고객과 직접적인 관계를 구축하십시오.</p>
+
+
+					<!--a href="/forum/threads/january-2017-budget-report.12601/" target="_blank" class="btn-blue">더 알아보기</a-->
+				</div>
+				<div class="col-sm-6 home-architecture-graphic">
+					<img src="/assets/img/evolution/doc.png" alt="소비자 친화적">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		EVOLUTION ALPHA
+	-->
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>EVOLUTION 알파 버전</h2>
+
+					<p>이제 Dash 12.1이 출시되었으므로 다음 단계는 2017년 말에 Evolution 알파 버전을 출시하는 것입니다. 그 전에는 전체 백서를 포함하여 추가 릴리즈를 진행할 예정이므로 업데이트는 여기를 확인하십시오. 놓치지 마세요!</p>
+
+
+					<!--a href="/kr/network" class="btn-blue">네트워크 통계</a-->
+				</div>
+				<div class="col-sm-6 home-network-graphic-live">
+					<img src="/assets/img/evolution/evo_prototype.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		EVOLUTION EXPLORE
+
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-6">
+					<h2>Dash 탐색</h2>
+
+					<p>Dash Evolution 프로토타입의 모든 기능을 살펴보십시오. 등록, 계정 검증, 로그인, 동조자,  pay-to-alias 및 pay-with-dash 버튼 포함.</p>
+
+<p>원래의 연구 단계, 문서, 사양, 계획 및 다이어그램이 초안으로 작성된 이후로, Evolution의 구석구석이 세밀하게 디자인되고 구현된 전체 문서가 WiKi에 올리게 될 문서 모음으로 성장했습니다.</p>
+
+					<a href="/kr/community/#news" class="btn-blue">뉴스 구독</a>
+					<a href="https://twitter.com/dashpay" class="btn-blue">트위터 팔로잉</a>
+				</div>
+				<div class="col-sm-6 col-sm-pull-6 ">
+					<img src="/assets/img/home/budgets.png" alt="Dash 탐색">
+				</div>
+			</div>
+		</div>
+	</section>
+	-->
+	<!--
+		SOCIAL
+
+
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-6">
+					<h2>Dash 소셜</h2>
+
+					<p>어느 장치에서나 안전하게 액세스할 수 있는 계정을 만듭니다. 지인을 초대하고 지인과 연결하여 사용자 이름으로 대금을 결제하고 받습니다.
+연락처로 결제를 추적하고 수령인과 지급 내용을 공유합니다. 기밀성을 유지하기 위해 브라우저 기록을 지우는 것만큼 쉽게 거래 내역을 언제든 삭제합니다.</p>
+
+
+					<a href="/kr/community/#news" class="btn-blue">뉴스 구독</a>
+					<a href="https://twitter.com/dashpay" class="btn-blue">트위터 팔로잉</a>
+				</div>
+				<div class="col-sm-6 col-sm-pull-6 home-evolution-graphic">
+					<img src="/assets/img/evolution/social.jpg" alt="Dash 소셜">
+				</div>
+			</div>
+		</div>
+	</section>
+	-->
+	<!--
+		LATEST NEWS
+	-->
+	<section class="home-latest-news">
+		<div class="content">
+			<h2>최신 뉴스</h2>
+
+			<div class="row">
+				
+			</div>
+
+			<div>
+				<a href="/kr/blog/" class="btn-blue">모든 뉴스 보기</a>
+			</div>
+		</div>
+	</section>
+
+
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Dash 얻기
+    <ul>
+        <li><a href="/kr/get-dash/">지갑 다운로드</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">Dash 구매</a></li>
+        <li><a href="/kr/merchants/">Dash로 쇼핑</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">Dash 직불카드</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    기부
+    <ul>
+        <li><a href="/kr/mining/" >채굴 시작</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">마스터노드 설치</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">지갑 설치</a></li>
+        <li><a href="/kr/governance/">기금 신청</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    네트워크
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">거래소 시장</a></li>
+        <li><a href="/kr/governance/">거버넌스</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">블록 탐색기</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">네트워크 통계</a></li>
+        <li><a href="/kr/exchanges/" >거래소 전체 목록</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    리소스
+    <ul>
+        <li><a href="/kr/community/#discussion">토론</a></li>
+        <li><a href="/kr/community/#social">소셜 앱</a></li>
+        <li><a href="/kr/community/#news">뉴스 및 정보</a></li>
+        <li><a href="/kr/community/#development">개발 도구</a></li>
+        <li><a href="/kr/community/#masternodes">마스터노드 도구</a></li>
+        <li><a href="/kr/legal/">법무</a></li>
+        <li><a href="/kr/graphics/">그래픽</a></li>
+        <li><a href="/kr/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    프로젝트
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">도움 및 지원</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">프로젝트 정보</a></li>
+        <li><a href="/kr/team/">팀</a></li>
+        <li><a href="/kr/update/">업데이트</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">기반</a></li>
+        <li><a href="/kr/contact/">연락처</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">Wiki</a></li>
+        <li><a href="/kr/school/">School</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    소셜
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash 포럼</a></li>
+        <li><a href="/kr/blog/">블로그</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">트위터</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">유튜브</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">Google+</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">LinkedIn</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">페이스북</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/kr/terms-of-use/">이용 약관</a>
+  <a href="/sitemap.xml">사이트 맵</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">소스 코드</a>
+  <a href="/kr/contact/">연락처</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2018 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/kr/get-dash/" class="overlay-menu__link">Dash 얻기</a></li>
+            <li class="overlay-menu__item"><a href="/kr/merchants/" class="overlay-menu__link">가맹점</a></li>
+            <li class="overlay-menu__item"><a href="/kr/network/" class="overlay-menu__link">네트워크</a></li>
+            <li class="overlay-menu__item"><a href="/kr/community/" class="overlay-menu__link">리소스</a></li>
+            <li class="overlay-menu__item"><a href="/kr/team/" class="overlay-menu__link">팀</a></li>
+            <li class="overlay-menu__item"><a href="/kr/blog/" class="overlay-menu__link">블로그</a></li>
+            <li class="overlay-menu__item"><a href="/kr/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/evolution/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/evolution/" class="overlay-menu__link "><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/evolution/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/evolution/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/evolution/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/evolution/" class="overlay-menu__link "><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/evolution/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/evolution/" class="overlay-menu__link "><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/evolution/" class="overlay-menu__link is-active"><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/evolution/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/dist/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

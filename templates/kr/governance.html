@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="kr">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>Dash 공식 웹사이트 | Dash 가상화폐 &mdash; Dash</title>
+		<meta name="description" content="DGBB는 Dash가 자체 개발 자금을 조달할 수 있는 방법도 제공합니다. 다른 프로젝트는 기부나 사전 채굴된 기금에 의존해야 하지만 Dash는 자체 개발 기금으로 블록 보상의 10%를 사용합니다. 블록을 채굴할 때마다 보상의 45%가 채굴자에게 전달되고, 45%는 마스터노드로 이동하고, 나머지 10%는 월말까지 생성되지 않습니다. 그 달에 네트워크에 예산 제안을 할 수 있습니다. 해당 제안서가 마스터노드 네트워크의 최소 10%까지 승인되면 월말에 일련의 "수퍼블록"이 생성됩니다. 이 때, 지급되지 않은 블록 보상이 승인된 제안서에 사용됩니다. 따라서, 네트워크는 예산 프로젝트에 대한 블록 보상의 10%를 유보함으로써 자금을 조달합니다.
+">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/dist/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero" id="hero">
+	<div class="hero__background">
+		<img src="/assets/img/resized/hero/community.jpg-cb6c9e7/960x640.jpg" srcset="/assets/img/resized/hero/community.jpg-cb6c9e7/1920x1280.jpg 1920w, /assets/img/resized/hero/community.jpg-cb6c9e7/960x640.jpg 960w" sizes="100vw, 100vw" class="hero__background-image" />
+
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/kr/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/kr/get-dash/" class="nav__link">Dash 얻기</a></li>
+			<li class="nav__item"><a href="/kr/merchants/" class="nav__link">가맹점</a></li>
+			<li class="nav__item"><a href="/kr/network/" class="nav__link">네트워크</a></li>
+			<li class="nav__item"><a href="/kr/community/" class="nav__link">리소스</a></li>
+			<li class="nav__item"><a href="/kr/team/" class="nav__link">팀</a></li>
+			<li class="nav__item"><a href="/kr/blog/" class="nav__link">블로그</a></li>
+			<li class="nav__item"><a href="/kr/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag kr"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/governance/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/governance/" class="nav__link ">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/governance/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/governance/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/governance/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/governance/" class="nav__link ">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/governance/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/governance/" class="nav__link ">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/governance/" class="nav__link is-active">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/governance/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/kr" class="nav__link" title="검색">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">분권화 거버넌스 시스템</h1>
+		<p class="hero__lead">Decentralized Governance by Blockchain, or DGBB, is Dash's attempt to solve two important problems in cryptocurrency: 거버넌스 및 펀딩
+</p>
+
+		<div class="hero__buttons">
+			<a href="https://dashpay.atlassian.net/wiki/x/GACD" class="btn-white-solid" target="_blank">DGBB의 정의</a>
+			<a href="https://dashpay.atlassian.net/wiki/x/CIBuAQ" class="btn-white-solid" target="_blank">도구</a>
+		</div>
+	</div>
+
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+
+<div class="page page--home">
+
+	<!--
+		WHAT IS PLUGIN?
+	-->
+	<section class="section">
+		<div class="section__content">
+			<div class="section__lead"><p>정의에 따르면, 프로젝트에 대한 결정을 내릴 중앙 기관이 없기 때문에 분권화 프로젝트의 거버넌스는 어렵습니다. Dash에서는 이러한 결정이 네트워크, 즉 마스터노드의 소유자에 의해 결정됩니다. DGBB 시스템을 통해 마스터노드는 제안에 대해 찬성 또는 거절 투표를 할 수 있으며, 구현 여부는 Dash의 개발자에게 달려 있습니다. 핵심 사례는 2016년 초에 Dash의 Core Team이 블록 크기를 2 MB로 늘려야 하는지 여부를 묻는 제안서를 네트워크에 제출한 경우입니다. 24시간 이내에 이러한 변경을 승인하기 위한 합의에 도달했습니다. 비트코인과 비교하면, 비트코인은 블록 크기에 대한 논의가 거의 3년간 맹렬히 지속되었습니다.</p>
+</div>
+			<br>
+			<p>DGBB는 Dash가 자체 개발 자금을 조달할 수 있는 방법도 제공합니다. 다른 프로젝트는 기부나 사전 채굴된 기금에 의존해야 하지만 Dash는 자체 개발 기금으로 블록 보상의 10%를 사용합니다. 블록을 채굴할 때마다 보상의 45%가 채굴자에게 전달되고, 45%는 마스터노드로 이동하고, 나머지 10%는 월말까지 생성되지 않습니다. 그 달에 네트워크에 예산 제안을 할 수 있습니다. 해당 제안서가 마스터노드 네트워크의 최소 10%까지 승인되면 월말에 일련의 "수퍼블록"이 생성됩니다. 이 때, 지급되지 않은 블록 보상이 승인된 제안서에 사용됩니다. 따라서, 네트워크는 예산 프로젝트에 대한 블록 보상의 10%를 유보함으로써 자금을 조달합니다.
+</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="section__content">
+			<h2 class="section__title">거버넌스의 정의 및 Dash에 대한 의미</h2>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/jHsVU1LBuAY" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="">
+		<div class="content">
+			<h2 class="section__title">투표 방법</h2>
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>자동화된 투표</h2>
+					<p>가상화폐 플랫폼을 구축하는 가장 큰 과제 중 하나는 프로젝트 관리, 기금, 유지 보수 및 확장을 위한 분권화 거버넌스 시스템을 생성할 수 있도록 보장하는 것입니다. 이 핵심 요소는 현재까지 모든 통화에서 결여되어 있으며 핵심 프로토콜을 유지 관리하고 코인을 홍보하는 임무가 있지만 실제로 유의미한 방식으로 코인 소지자에게는 연결되지 않는 비영리 기반을 만드는 것이 자연스러운 대응입니다. 이 방법은 오래된 가상화폐 플랫폼의 경험에서 명백히 드러난 문제가 몇 가지 있습니다.
+</p>
+					<a href="https://youtu.be/52TzOgq15h8" class="btn-blue" target="_blank">
+						가이드 - 아만다 B.
+					</a>
+					<a href="https://dashpay.atlassian.net/wiki/x/DIBGB" class="btn-blue" target="_blank">
+						수동 투표(QT Wallet에서)
+					</a>
+					<a href="https://dashpay.atlassian.net/wiki/x/EIBGB" class="btn-blue" target="_blank">
+						DashCentral
+					</a>
+				</div>
+				<div class="col-sm-6">
+					<h2>거버넌스 도구</h2>
+					<p>이 시스템은 소프트웨어에서 특정 프로젝트에 대한 예산이 제안되고 마스터노드가 전체적으로 투표하는 분권화된 투표 메커니즘 설치로 작동됩니다. 각 프로젝트가 통과되면, 총 예산에 추가되고 작업을 수행하는 사람에게 블록체인으로부터 직접 지급됩니다. 이를 통해 핵심 개발자를 고용하여 분권화된 방식으로 작업 승인 후 직접 지급할 수 있습니다.
+</p>
+					<a href="https://proposal.dash.org" class="btn-blue" target="_blank">예산 제안서 생성기</a>
+					<a href="https://www.dashcentral.org/" class="btn-blue" target="_blank">DashCentral</a>
+					<a href="http://dashvotetracker.com" class="btn-blue" target="_blank">VoteTracker</a>
+					<a href="https://www.dashninja.pl/budgets.html" class="btn-blue" target="_blank">예산 모니터링</a>
+					<a href="#" class="btn-blue" target="_blank">제안서 상황</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="content">
+			<div>
+				<h2 class="section__title">제안서 자동화 서비스</h2>
+				<img src="/assets/img/update/Voting.png" alt="">
+			</div>
+			<div>
+				<a href="https://proposal.dash.org/" target="_blank" class="btn-blue">제안서</a>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Dash 얻기
+    <ul>
+        <li><a href="/kr/get-dash/">지갑 다운로드</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">Dash 구매</a></li>
+        <li><a href="/kr/merchants/">Dash로 쇼핑</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">Dash 직불카드</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    기부
+    <ul>
+        <li><a href="/kr/mining/" >채굴 시작</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">마스터노드 설치</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">지갑 설치</a></li>
+        <li><a href="/kr/governance/">기금 신청</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    네트워크
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">거래소 시장</a></li>
+        <li><a href="/kr/governance/">거버넌스</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">블록 탐색기</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">네트워크 통계</a></li>
+        <li><a href="/kr/exchanges/" >거래소 전체 목록</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    리소스
+    <ul>
+        <li><a href="/kr/community/#discussion">토론</a></li>
+        <li><a href="/kr/community/#social">소셜 앱</a></li>
+        <li><a href="/kr/community/#news">뉴스 및 정보</a></li>
+        <li><a href="/kr/community/#development">개발 도구</a></li>
+        <li><a href="/kr/community/#masternodes">마스터노드 도구</a></li>
+        <li><a href="/kr/legal/">법무</a></li>
+        <li><a href="/kr/graphics/">그래픽</a></li>
+        <li><a href="/kr/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    프로젝트
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">도움 및 지원</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">프로젝트 정보</a></li>
+        <li><a href="/kr/team/">팀</a></li>
+        <li><a href="/kr/update/">업데이트</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">기반</a></li>
+        <li><a href="/kr/contact/">연락처</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">Wiki</a></li>
+        <li><a href="/kr/school/">School</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    소셜
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash 포럼</a></li>
+        <li><a href="/kr/blog/">블로그</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">트위터</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">유튜브</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">Google+</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">LinkedIn</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">페이스북</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/kr/terms-of-use/">이용 약관</a>
+  <a href="/sitemap.xml">사이트 맵</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">소스 코드</a>
+  <a href="/kr/contact/">연락처</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2018 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/kr/get-dash/" class="overlay-menu__link">Dash 얻기</a></li>
+            <li class="overlay-menu__item"><a href="/kr/merchants/" class="overlay-menu__link">가맹점</a></li>
+            <li class="overlay-menu__item"><a href="/kr/network/" class="overlay-menu__link">네트워크</a></li>
+            <li class="overlay-menu__item"><a href="/kr/community/" class="overlay-menu__link">리소스</a></li>
+            <li class="overlay-menu__item"><a href="/kr/team/" class="overlay-menu__link">팀</a></li>
+            <li class="overlay-menu__item"><a href="/kr/blog/" class="overlay-menu__link">블로그</a></li>
+            <li class="overlay-menu__item"><a href="/kr/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/governance/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/governance/" class="overlay-menu__link "><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/governance/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/governance/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/governance/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/governance/" class="overlay-menu__link "><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/governance/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/governance/" class="overlay-menu__link "><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/governance/" class="overlay-menu__link is-active"><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/governance/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/dist/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="jp">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>DASH公式サイト | DASH暗号通貨 &mdash; Dash</title>
+		<meta name="description" content="他の仮想通貨が寄付や資金の予約採掘に頼っている時、DGBBシステムはもうDASHに発展資金を提供し始めていました。 DASHは10％のブロックを報酬資金として自身の開発に使用します。一つのブロックが掘られた場合、報酬の45％をマイナーに、45％をマスターノードに配分し、殘りの10％は月末に再構成されます。 この一ヶ月間で、誰でもネットワックに予算案を提出できます。 月末のシリーズ「スーパーブロック」の構成には、少なくとも10％のマスターノードが提案を同意する必要があります。 この時、報酬に配分されていないブロックの報酬（各ブロックの中の10％）が許可を得られた提案の資金に回します。 そうすると、10 %のブロックの報酬を使うことで、ネットワークが自分自身に資金を提供できます。
+">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/dist/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero" id="hero">
+	<div class="hero__background">
+		<img src="/assets/img/resized/hero/mining.jpeg-80f69e3/960x540.jpeg" srcset="/assets/img/resized/hero/mining.jpeg-80f69e3/1600x900.jpeg 1600w, /assets/img/resized/hero/mining.jpeg-80f69e3/960x540.jpeg 960w" sizes="100vw, 100vw" class="hero__background-image" />
+
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/jp/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/jp/get-dash/" class="nav__link">DASHについて</a></li>
+			<li class="nav__item"><a href="/jp/merchants/" class="nav__link">店舗</a></li>
+			<li class="nav__item"><a href="/jp/network/" class="nav__link">ネットワーク</a></li>
+			<li class="nav__item"><a href="/jp/community/" class="nav__link">コミュニティ</a></li>
+			<li class="nav__item"><a href="/jp/team/" class="nav__link">チーム</a></li>
+			<li class="nav__item"><a href="/jp/blog/" class="nav__link">ブログ</a></li>
+			<li class="nav__item"><a href="/jp/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag jp"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/mining/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/mining/" class="nav__link ">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/mining/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/mining/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/mining/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/mining/" class="nav__link ">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/mining/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/mining/" class="nav__link is-active">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/mining/" class="nav__link ">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/mining/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/jp" class="nav__link" title="検索">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">マイニング</h1>
+		<p class="hero__lead">ブロックチェーンはDASHの基礎です。つまり、あらゆる取引を記録する分散型元帳のことです。コンセンサスアルゴリズムはブロックチェーンの安全を保障し、“プルーフ・オブ ・ワーク”ともいわれます。（PoW）
+
+このような採掘をするには、特別な計算設備を用いた高度な数学的知識が求められます。これに相当する人は、新たなデータブロックに書き入れる資格を取得できます(鉱員と呼ぶ)。
+
+数学的な難題の解決がネットで承認された場合、新たなデータブロックがブロックチェーンに追加されるとともに、鉱員は報酬としてDASHを取得できます。
+</p>
+
+		<div class="hero__buttons">
+			<a href="https://dashpay.atlassian.net/wiki/x/QYAR" class="btn-white-solid" target="_blank">どうやって始めるか</a>
+			<a href="https://dashpay.atlassian.net/wiki/x/CQD7Ag" class="btn-white-solid" target="_blank">ASIC ハードウェア</a>
+		</div>
+	</div>
+
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+
+<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+
+
+<div class="page page--home">
+
+	<section class="section">
+		<div class="section__content">
+			<h2 class="section__title"">マイニングを始めるには</h2>
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>ASIC マイナーハードウェア</h2>
+					<div class="bottom-space"><p>特定用途向け集積回路(ASICs) で特化されたコンピュータは、DASHのProof of Work(プルーフ・オブ・ワーク)を一番効率的に解決するように作られました。現在、市場に出ているDASH特定用途向け集積回路(ASICs) は下記となります:</p>
+</div>
+
+					<a href="https://dashpay.atlassian.net/wiki/display/DOC/ASIC+Pinidea+X11+Miner+DR-1?src=contextnavpagetreemode" class="btn-blue" target="_blank">ASIC Pinidea X11 Miner DR-1</a>
+					<a href="https://dashpay.atlassian.net/wiki/display/DOC/ASIC+Pinidea+X11+USB+DU-1?src=contextnavpagetreemode" class="btn-blue" target="_blank">ASIC Pinidea X11 USB DU-1</a>
+					<a href="https://dashpay.atlassian.net/wiki/display/DOC/ASIC+iBeLink+DM384M+X11?src=contextnavpagetreemode" class="btn-blue" target="_blank">ASIC iBeLink DM384M X11</a>
+					<a href="https://dashpay.atlassian.net/wiki/display/DOC/ASIC+X11+Baikal+Mini+Miner?src=contextnavpagetreemode" class="btn-blue" target="_blank">ASIC X11 Baikal Mini Miner</a>
+					<a href="https://dashpay.atlassian.net/wiki/display/DOC/ASIC+Baikal+A900+X11?src=contextnavpagetreemode" class="btn-blue" target="_blank">ASIC Baikal A900 X11</a>
+
+				</div>
+				<div class="col-sm-6">
+					<h2>ガイド (CPU / GPU)</h2>
+					<div class="bottom-space"><p>CPU / GPU マイニングはもはやコスパのよい方法ではなくなりました。手続きは割と簡単で、あなたのCPUの一番早い採掘速度（ハッシュレート）を実現するため、手本も用意しています。しかし、マイニングに適するマイナーも増えるので、最新情報に遅れないよう、こちらのマイニングサイトを常にチェックしてください。</p>
+</div>
+					<a href="https://dashpay.atlassian.net/wiki/display/DOC/Cpu+Mining?src=contextnavpagetreemode" class="btn-blue" target="_blank">CPU マイニング</a>
+					<a href="https://dashpay.atlassian.net/wiki/display/DOC/Mining+Hardware+Listing?src=contextnavpagetreemode" class="btn-blue" target="_blank">AMD GPUが搭載されたWindows</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="b-mining-section bottom-space">
+		<div class="content">
+			<div>
+				<a href="https://dashpay.atlassian.net/wiki/display/DOC/Mining+vs.+Masternode" class="btn-white-solid" target="_blank">マイニング vs. マスターノード</a>
+			</div>
+			<p>DASHは、ビットコインと他の暗号通貨のように、あらゆる取引を記録する分散型元帳に基づいています。分散型元帳とは、よく知られているブロックチェーンのことです。ブロックチェーンの安全はコンセンサスアルゴリズムによって保障されます。DASHとビットコインを例にして考えましょう。このコンセンサス・アルゴリズムはプルーフ・オブ ・ワーク（PoW）ともいわれています。このような採掘をするには、特別な計算設備を用いた高度な数学的知識が求められます。これに相当する人は、新たなデータブロックに書き入れる資格を取得できます(鉱員と呼ぶ)。同じソフトを使う鉱員が問題を解決したと承認された場合、新たなデータブロックがブロックチェーンに追加し、鉱員は報酬としてDASHを取得できます。</p>
+
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="section__content">
+			<h2 class="section__title">マイニングプール</h2>
+			<ul class="member-list member-list--merchants">
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="https://aikapool.com/dash/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/aikapool.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Aikapool</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="https://www.antpool.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/antpool.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Antpool</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="http://partner.avalon-life.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/avalonlife.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Avalon-life</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="https://www2.coinmine.pl/dash" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/coinmain.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Coinmine.pl</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="http://coinotron.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/coinotron.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Coinotron.com</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="http://cryptopool.io/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/cryptopool.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Cryptopool</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="http://dash.cybtc.info/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/cybtc.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Cybtc.info</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="https://dash.suprnova.cc" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/suprnova.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Dash.suprnova.cc</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="https://www.genesis-mining.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/genesismining.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Genesismining</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="http://give-me-coins.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/givemecoins.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Give me coins</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="https://www.ipominer.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/ipominer.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Ipominer</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="https://dash.miningpoolhub.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/hub.png" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Mining Pool Hub</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="https://www.nicehash.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/nicehash.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Nicehash</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="https://github.com/dashpay/p2pool-dash" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/p2pool.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">P2pool-dash</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="https://poolmining.org/pool/dash" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/poolmining.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Poolmining</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="https://www.suchpool.pw/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/such.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Suchpool.pw</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="https://pool.viabtc.com/pool/dash/state/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/viaBTC.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">ViaBTC</div>
+</li>
+
+				
+					<li class="member" data-mh="merchant" style="height: 219px;">
+	<div class="member__avatar">
+		<div class="member__image-wrapper">
+			<a href="http://zpool.ca/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/mining/zpool.jpg" alt="suprnova">
+			</a>
+		</div>
+	</div>
+	<div class="member__name" data-mh="merchant-name" style="height: 35px;">Zpool</div>
+</li>
+
+				
+			</ul>
+
+			<p class="warning-bg">免責事項：上記リストはご参考までとなっております。上述のサービス代理店はDASHの開発チームによってテスト又は承認されてないので、情報の正確性は保障されません。ご自分の判断でサードパーティーサービスをご利用ください。このリストに入りたいと希望されるお客様は、お気軽にご連絡ください。<a href="/cdn-cgi/l/email-protection#97f4f8f9e3f6f4e3d7f3f6e4ffb9f8e5f0"><span class="__cf_email__" data-cfemail="d5b6babba1b4b6a195b1b4a6bdfbbaa7b2">[email&#160;protected]</span></a>
+</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="section__content">
+			<h2 class="bottom-space">プール統計</h2>
+			<table id="blocks">
+				<thead>
+					<tr>
+						<th>Height</th>
+						<th>Block Time</th>
+						<th>Transactions</th>
+						<th>Value Out</th>
+						<th>Difficulty</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+</div>
+
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    DASHについて
+    <ul>
+        <li><a href="/jp/get-dash/">ウォレットをダウンロードする</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">DASHを購入する</a></li>
+        <li><a href="/jp/merchants/">DASHで支払う</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">DASHデポジットカード</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    ガイドをサポートする
+    <ul>
+        <li><a href="/jp/mining/" >マイニングを始める</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">マスターノードの設置</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">ウォレットを作る</a></li>
+        <li><a href="/jp/governance/">予算を申し込む</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    ネットワーク
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">取引データ</a></li>
+        <li><a href="/jp/governance/">管理</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">ブロック研究開発</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">ネットワークデータ</a></li>
+        <li><a href="/jp/exchanges/" >Full list of Exchanges</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    コミュニティ
+    <ul>
+        <li><a href="/jp/community/#discussion">ディスカッション</a></li>
+        <li><a href="/jp/community/#social">SNSアプリ</a></li>
+        <li><a href="/jp/community/#news">ニュース &amp; メッセージ</a></li>
+        <li><a href="/jp/community/#development">開発ツール</a></li>
+        <li><a href="/jp/community/#masternodes">マスターノードツール</a></li>
+        <li><a href="/jp/legal/">Legal</a></li>
+        <li><a href="/jp/graphics/">Graphics</a></li>
+        <li><a href="/jp/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    プロジェクト
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">ヘルプ &amp; サポート</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">プロジェクト情報</a></li>
+        <li><a href="/jp/team/">チーム</a></li>
+        <li><a href="/jp/update/">アップグレード</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">基金会</a></li>
+        <li><a href="/jp/contact/">連絡先</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">ウィキペディア</a></li>
+        <li><a href="/jp/school/">School</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    SNS
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash forums</a></li>
+        <li><a href="/jp/blog/">ブログ</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">ツイッター</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">YouTube</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">グーグル</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">Linkedin</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">Facebook</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/jp/terms-of-use/">使用条例</a>
+  <a href="/sitemap.xml">ウェブサイト案内</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">ソースコード</a>
+  <a href="/jp/contact/">連絡先</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2018 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/jp/get-dash/" class="overlay-menu__link">DASHについて</a></li>
+            <li class="overlay-menu__item"><a href="/jp/merchants/" class="overlay-menu__link">店舗</a></li>
+            <li class="overlay-menu__item"><a href="/jp/network/" class="overlay-menu__link">ネットワーク</a></li>
+            <li class="overlay-menu__item"><a href="/jp/community/" class="overlay-menu__link">コミュニティ</a></li>
+            <li class="overlay-menu__item"><a href="/jp/team/" class="overlay-menu__link">チーム</a></li>
+            <li class="overlay-menu__item"><a href="/jp/blog/" class="overlay-menu__link">ブログ</a></li>
+            <li class="overlay-menu__item"><a href="/jp/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/mining/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/mining/" class="overlay-menu__link "><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/mining/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/mining/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/mining/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/mining/" class="overlay-menu__link "><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/mining/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/mining/" class="overlay-menu__link is-active"><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/mining/" class="overlay-menu__link "><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/mining/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script><script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/dist/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

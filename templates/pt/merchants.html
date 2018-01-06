@@ -1,0 +1,2330 @@
+<!doctype html>
+<html lang="pt">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>Comerciantes &mdash; Dash</title>
+		<meta name="description" content="Gastar Dash com comerciantes e serviços">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/dist/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero hero--space" id="hero">
+	<div class="hero__background">
+
+		<img src="/assets/img/hero/merchants.png" alt="" class="hero__background-image">
+
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/pt/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/pt/get-dash/" class="nav__link">Obter Dash</a></li>
+			<li class="nav__item"><a href="/pt/merchants/" class="nav__link">Comerciantes</a></li>
+			<li class="nav__item"><a href="/pt/network/" class="nav__link">Network</a></li>
+			<li class="nav__item"><a href="/pt/community/" class="nav__link">Comunidade</a></li>
+			<li class="nav__item"><a href="/pt/team/" class="nav__link">Team</a></li>
+			<li class="nav__item"><a href="/pt/blog/" class="nav__link">Blog</a></li>
+			<li class="nav__item"><a href="/pt/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag pt"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/merchants/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/merchants/" class="nav__link ">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/merchants/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/merchants/" class="nav__link is-active">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/merchants/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/merchants/" class="nav__link ">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/merchants/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/merchants/" class="nav__link ">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/merchants/" class="nav__link ">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/merchants/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/pt" class="nav__link" title="Buscar">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">Loja com Dash</h1>
+		<p class="hero__lead">Gaste seu Dash instantaneamente e com segurança nesses comerciantes e serviços</p>
+
+		<div class="hero__buttons">
+			<a href="https://discoverdash.com/" target="_blank" class="btn-white-solid">Mapa de Comerciantes</a>
+			<a href="../../payments" class="btn-white-solid">Integrar Dash</a>
+			<a href="https://dashpay.atlassian.net/wiki/x/GADeAQ" class="btn-white-solid"  target="_blank">Obter Lista</a>
+		</div>
+	</div>
+
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+
+<div class="page page--team">
+
+   <section class="section section--intro-lead section--merchants">
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Cardão de Debito<!-- <a class="permalink" title="Permalink" id="social"></a> --></h2>
+			</div>
+			<ul class="member-list member-list--merchants">
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://shakepay.co" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/shakepay_logo.png" alt="ShakePay">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">ShakePay</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://spectrocoin.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/SpectroCoin.jpg" alt="SpectroCoin">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">SpectroCoin</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://uquid.com/dash-debit-card" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/UQUID.jpg" alt="UQUID">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">UQUID</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://my.bitwa.la" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Bitwala.jpg" alt="Bitwala">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Bitwala</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://wirexapp.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Wirex.jpg" alt="Wirex">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Wirex</div>
+	
+</li>
+
+				
+			</ul>
+		</div>
+	</section>
+
+	<section class="section section--intro-lead section--merchants">
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Provedores Email</h2>
+			</div>
+			<ul class="member-list member-list--merchants">
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.claws-mail.org" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/ClawsMail.jpg" alt="ClawsMail">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">ClawsMail</div>
+	
+</li>
+
+				
+			</ul>
+		</div>
+	</section>
+
+	<section class="section section--intro-lead section--merchants">
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Provedores VPN</h2>
+			</div>
+			<ul class="member-list member-list--merchants">
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://bolehvpn.net" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/BolehVPN.jpg" alt="BolehVPN">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">BolehVPN</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://vikingvpn.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/VikingVPN.jpg" alt="VikingVPN">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">VikingVPN</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://multi-vpn.co.uk/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/MultiVPN.jpg" alt="MultiVPN">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">MultiVPN</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://airvpn.org/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/AirVPN.jpg" alt="AirVPN">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">AirVPN</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.seedstuff.ca" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/SeedStuff.jpg" alt="SeedStuff">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">SeedStuff</div>
+	
+</li>
+
+				
+			</ul>
+		</div>
+	</section>
+
+	<section class="section section--intro-lead section--merchants">
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Hosting e VPS</h2>
+			</div>
+			<ul class="member-list member-list--merchants">
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://lacicloud.net" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/LacieCloud.jpg" alt="Lacie Cloud">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Lacie Cloud</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.qhoster.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/qhoster.png" alt="QHoster">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">QHoster</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://www.flokinet.is/en/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/FlokiNet.jpg" alt="FlokiNet">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">FlokiNet</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://occuomegawqtkl6j.onion/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/OcculusOmega.png" alt="OcculusOmega">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">OcculusOmega</div>
+	
+	<div class="member__title" data-mh="merchant-title">(Tor service - url accessible using tor browser)</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://coinshost.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/coinshost_logo.png" alt="COINSHOST">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">COINSHOST</div>
+	
+	<div class="member__title" data-mh="merchant-title">Swiss approach to Web Hosting and DDoS Protection</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://koddos.net/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Koddos.jpg" alt="Koddos">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Koddos</div>
+	
+	<div class="member__title" data-mh="merchant-title">Ddos protection hosting</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://njal.la/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/njilla.jpg" alt="Njalla">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Njalla</div>
+	
+	<div class="member__title" data-mh="merchant-title">Domain registration service</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://nicevps.net" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/niceVPS.jpg" alt="NiceVPS">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">NiceVPS</div>
+	
+	<div class="member__title" data-mh="merchant-title">Hosting</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.centerserv.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/CenterServ.jpg" alt="CenterServ">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">CenterServ</div>
+	
+	<div class="member__title" data-mh="merchant-title">Cloud and Dedicated Servers</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://cleverhost.ca" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/cleverhost.jpg" alt="Cleverhost">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Cleverhost</div>
+	
+	<div class="member__title" data-mh="merchant-title">Web hosting service</div>
+	
+</li>
+
+				
+			</ul>
+		</div>
+	</section>
+
+	<section class="section section--intro-lead section--merchants">
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Web &amp; Graphic Design</h2>
+			</div>
+			<ul class="member-list member-list--merchants">
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://etherdesign.io" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/EtherDesign.jpg" alt="Ether Design">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Ether Design</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://isfx.co.uk/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/isfx.jpg" alt="ISFX Media">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">ISFX Media</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.WestCountyMedia.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/westcountymedia.jpg" alt="West County Media">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">West County Media</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://paart.one/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/paart.jpg" alt="paart GmbH">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">paart GmbH</div>
+	
+	<div class="member__title" data-mh="merchant-title">Advertisement Agnecy</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.philippengelhorn.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/PhilippEngelhornPhotography.jpg" alt="Philipp Engelhorn">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Philipp Engelhorn</div>
+	
+	<div class="member__title" data-mh="merchant-title">Photography</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://davebazzel.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/DaveBazzel.jpg" alt="Dave Bazzel">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Dave Bazzel</div>
+	
+	<div class="member__title" data-mh="merchant-title">Fine Art Photography</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://www.philpeterman.net" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Centerless.jpg" alt="Centerless.jpg">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Centerless.jpg</div>
+	
+	<div class="member__title" data-mh="merchant-title">360 Visual Tours</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://sergegree.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/sergegree.jpg" alt="Serge Gree">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Serge Gree</div>
+	
+	<div class="member__title" data-mh="merchant-title">Photography</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://www.keizerkarelwebdesign.nl/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/keizerkarel.jpg" alt="Keizerkarelwebdesign">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Keizerkarelwebdesign</div>
+	
+	<div class="member__title" data-mh="merchant-title">web Design</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.arniebermudez.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/arniebermudez.jpg" alt="Arnie Bermudez﻿">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Arnie Bermudez﻿</div>
+	
+	<div class="member__title" data-mh="merchant-title">Freelance illustrator</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.creatable.co.nz" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/creatable.jpg" alt="Creatable">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Creatable</div>
+	
+	<div class="member__title" data-mh="merchant-title">Boutique graphic design agency</div>
+	
+</li>
+
+				
+			</ul>
+		</div>
+	</section>
+
+	<section class="section section--intro-lead section--merchants">
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Cartões de Presente</h2>
+			</div>
+			<ul class="member-list member-list--merchants">
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.cryptodechange.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/CryptodeChange.jpg" alt="Crypto de Change">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Crypto de Change</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://giftoff.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/GiftOff.jpg" alt="Gift Off">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Gift Off</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://cryfter.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Cryfter.jpg" alt="Cryfter">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Cryfter</div>
+	
+</li>
+
+				
+			</ul>
+		</div>
+	</section>
+
+	<section class="section section--intro-lead section--merchants">
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Games</h2>
+			</div>
+			<ul class="member-list member-list--merchants">
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.nestorgames.com/#shopextd" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Nestorgames.jpg" alt="Nestorgames">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Nestorgames</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.retrotowers.co.uk" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/RetroTowers.jpg" alt="Retro Towers">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Retro Towers</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://key4co.in" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/key4coin_logo.png" alt="Key4Coin">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Key4Coin</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://coinwars.rocketempires.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/CoinWars.jpg" alt="Coin Wars">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Coin Wars</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.fx-lucky.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/FXLucky.jpg" alt="FX-Lucky">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">FX-Lucky</div>
+	
+</li>
+
+				
+			</ul>
+		</div>
+	</section>
+
+	<section class="section section--intro-lead section--merchants">
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Online Casinos</h2>
+			</div>
+			<ul class="member-list member-list--merchants">
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://dashvideocasino.com/videopoker" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/DashVideoCasino.jpg" alt="Dash Video Casino">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Dash Video Casino</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.DirectBet.eu/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/DirectBet.jpg" alt="DirectBet">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">DirectBet</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://fortunejack.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/FortuneJack.jpg" alt="FortuneJack">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">FortuneJack</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.crypto-games.net" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/CryptoGames.jpg" alt="CryptoGames">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">CryptoGames</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.palastcasino.com/en/index.html" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Palastcasino.jpg" alt="PalastCasino">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">PalastCasino</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://dashbets.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Dashbets_logo.png" alt="Dashbets">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Dashbets</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://dash-poker.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/dashpoker.jpg" alt="Dash Poker">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Dash Poker</div>
+	
+</li>
+
+				
+			</ul>
+		</div>
+	</section>
+
+	<section class="section section--intro-lead section--merchants">
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Lojas na Web</h2>
+			</div>
+			<ul class="member-list member-list--merchants">
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.aceondatarecovery.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Aceon.jpg" alt="Aceon">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Aceon</div>
+	
+	<div class="member__title" data-mh="merchant-title">Data Recovery</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://bravenewbookstore.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/BraveNewBooks.jpg" alt="Brave New Books">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Brave New Books</div>
+	
+	<div class="member__title" data-mh="merchant-title">Books</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://bitstickers.net" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/BitStickers.jpg" alt="Bitstickers">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Bitstickers</div>
+	
+	<div class="member__title" data-mh="merchant-title">Stickers</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.parallelminer.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/ParallelMiner.jpg" alt="Parallel Miner">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Parallel Miner</div>
+	
+	<div class="member__title" data-mh="merchant-title">Mining HW</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://algostrategic.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/AlgoStrategic.jpg" alt="Algo Strategic">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Algo Strategic</div>
+	
+	<div class="member__title" data-mh="merchant-title">Algorithmic Internet Marketing Agency</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://cryptosteel.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Cryptosteel.jpg" alt="Cryptosteel">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Cryptosteel</div>
+	
+	<div class="member__title" data-mh="merchant-title">Engraved Cold Storage</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.yipptee.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Yipptee.jpg" alt="Yipptee">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Yipptee</div>
+	
+	<div class="member__title" data-mh="merchant-title">T Shirts</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.baybil.net" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/baybil.jpg" alt="BayBil">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">BayBil</div>
+	
+	<div class="member__title" data-mh="merchant-title">Mining Equipment</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://cryptominershop.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/CryptoMinerShop.jpg" alt="Crypto Miner Shop">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Crypto Miner Shop</div>
+	
+	<div class="member__title" data-mh="merchant-title">Mining Equipment</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://bitlasers.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Bitlaser.jpg" alt="BitLasers">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">BitLasers</div>
+	
+	<div class="member__title" data-mh="merchant-title">Lasers and Accessories</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://www.pexpeppers.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/PexPepper.jpg" alt="PexPeppers">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">PexPeppers</div>
+	
+	<div class="member__title" data-mh="merchant-title">Hot Sauce</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://seymour-locksmiths.co.uk/hove/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/SeymourLocksmith.jpg" alt="Seymour Locksmith">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Seymour Locksmith</div>
+	
+	<div class="member__title" data-mh="merchant-title">Locksmith Service</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.misconductwineco.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/misconductwine_logo.jpg" alt="Misconduct Wine Company">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Misconduct Wine Company</div>
+	
+	<div class="member__title" data-mh="merchant-title">Winery</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://www.nelipott.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Nelipot.jpg" alt="Nelipott">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Nelipott</div>
+	
+	<div class="member__title" data-mh="merchant-title">Children Cloth</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://parisajeoul.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Parisajeoul.jpg" alt="Parisa Jeoul">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Parisa Jeoul</div>
+	
+	<div class="member__title" data-mh="merchant-title">Jewellery Store</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://healthiverse.net" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Healthiverse.jpg" alt="Healthiverse">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Healthiverse</div>
+	
+	<div class="member__title" data-mh="merchant-title">Health</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.aboveallhouseplans.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/AboveAllHousePlants.jpg" alt="Above All House Plans">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Above All House Plans</div>
+	
+	<div class="member__title" data-mh="merchant-title">House/ Garden</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://tuapoma.com/inenglish/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Tuapoma.jpg" alt="Tuapoma">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Tuapoma</div>
+	
+	<div class="member__title" data-mh="merchant-title">Classified Ads</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.thereefshop.com.au" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/TheReefShop.jpg" alt="The Reef Shop">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">The Reef Shop</div>
+	
+	<div class="member__title" data-mh="merchant-title">Aquarium Equipment</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.liborio.adv.br" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/LiborioLawOffice.jpg" alt="Ivan Liborio">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Ivan Liborio</div>
+	
+	<div class="member__title" data-mh="merchant-title">Law</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.fortgalt.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/FortGalt.jpg" alt="FortGalt">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">FortGalt</div>
+	
+	<div class="member__title" data-mh="merchant-title">Retreats Chile</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://bitfon.pl" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Bitfon.jpg" alt="BitFon">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">BitFon</div>
+	
+	<div class="member__title" data-mh="merchant-title">Phone credits</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.ecigar.in" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Ecigarttes.jpg" alt="Ecigar">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Ecigar</div>
+	
+	<div class="member__title" data-mh="merchant-title">Ecigarettes</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://eastlineranch.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Eastlineranch.jpg" alt="EastLineRanch">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">EastLineRanch</div>
+	
+	<div class="member__title" data-mh="merchant-title">Honey Products</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://mywabo.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Wabo.png" alt="My Wabo">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">My Wabo</div>
+	
+	<div class="member__title" data-mh="merchant-title">Water Bottles</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.petervan.co.uk" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/petervan.jpg" alt="PeterVan">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">PeterVan</div>
+	
+	<div class="member__title" data-mh="merchant-title">REMOVALS + MAN and VAN</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://www.custommuzzlebrakes.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/muzzle.jpg" alt="Custom Muzzle Brakes">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Custom Muzzle Brakes</div>
+	
+	<div class="member__title" data-mh="merchant-title">Custom Muzzle</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.buywithdash.org" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Buywithdash.jpg" alt="Buy with Dash">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Buy with Dash</div>
+	
+	<div class="member__title" data-mh="merchant-title">Buy with Dash</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://crypto-coffee.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/CryptoCoffee.jpg" alt="CryptoCoffee">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">CryptoCoffee</div>
+	
+	<div class="member__title" data-mh="merchant-title">Crypto Coffee</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://directvoltage.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/directvoltage_logo.png" alt="Directvoltage">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Directvoltage</div>
+	
+	<div class="member__title" data-mh="merchant-title">Directvoltage</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.txcrafting.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/sjtexascrafting.jpg" alt="S&J Texas Crafting">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">S&J Texas Crafting</div>
+	
+	<div class="member__title" data-mh="merchant-title">S&J Texas Crafting</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.afinoentertainment.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/alfino.jpg" alt="AFINO ENTERTAINMENT">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">AFINO ENTERTAINMENT</div>
+	
+	<div class="member__title" data-mh="merchant-title">AFINO ENTERTAINMENT</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.lifeartsoul.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/lifeartsoul.jpg" alt="Life Art Soul">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Life Art Soul</div>
+	
+	<div class="member__title" data-mh="merchant-title">Life Art Soul</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://eacoders.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/EACoders.jpg" alt="EA Coders">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">EA Coders</div>
+	
+	<div class="member__title" data-mh="merchant-title">Software Development</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://hackerz.online" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Hackersonline_logo.png" alt="Hackerz online">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Hackerz online</div>
+	
+	<div class="member__title" data-mh="merchant-title">Online gaming</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://fudmartng.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/FudMartng.jpg" alt="Fudmart Ng">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Fudmart Ng</div>
+	
+	<div class="member__title" data-mh="merchant-title">Online store</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.meci-group.com/membership/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/meci.jpg" alt="Meci group">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Meci group</div>
+	
+	<div class="member__title" data-mh="merchant-title">Meci group</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://windowdoctor.im/index.html" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/windowsdoctor.jpg" alt="Window Doctor">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Window Doctor</div>
+	
+	<div class="member__title" data-mh="merchant-title">Isle of Man. Windows and Doors repair service</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.dewadloper.nl/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/dewadloper.jpg" alt="Dewadloper">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Dewadloper</div>
+	
+	<div class="member__title" data-mh="merchant-title">B & B</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://contraband.store" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/contraband.jpg" alt="Organic Coffee">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Organic Coffee</div>
+	
+	<div class="member__title" data-mh="merchant-title">Organic Coffee</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.dashbargain.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/dashbargain.jpg" alt="Dash Bargain">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Dash Bargain</div>
+	
+	<div class="member__title" data-mh="merchant-title">Anything for coins</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://cnr-web.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/CNR.jpg" alt="CNR">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">CNR</div>
+	
+	<div class="member__title" data-mh="merchant-title">Consulting</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://zbotanicals.net/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Zbotanicles.jpg" alt="ZBOTANICALS">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">ZBOTANICALS</div>
+	
+	<div class="member__title" data-mh="merchant-title">Herbal products</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.motionimation.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/motionimage.jpg" alt="Motionimation">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Motionimation</div>
+	
+	<div class="member__title" data-mh="merchant-title">Graphics and animation studio</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://soapwallet.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/soapwallet.jpg" alt="Soapwallet">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Soapwallet</div>
+	
+	<div class="member__title" data-mh="merchant-title">Paper wallets inside all natural soaps</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://huxworth.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/huxworth.jpg" alt="Huxworth">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Huxworth</div>
+	
+	<div class="member__title" data-mh="merchant-title">Jewelry and luxury goods</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://allforcrypto.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/allforcrypto.jpg" alt="Allforcrypto">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Allforcrypto</div>
+	
+	<div class="member__title" data-mh="merchant-title">Online store</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.kilinski.biz/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/kilinski.jpg" alt="Kilinski">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Kilinski</div>
+	
+	<div class="member__title" data-mh="merchant-title">Interpreter, Poznań</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://www.secpoint.com/" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/secpoint.jpg" alt="Secpoint">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Secpoint</div>
+	
+	<div class="member__title" data-mh="merchant-title">IT Security products</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://www.commotron.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/commotron.jpg" alt="Commotron">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Commotron</div>
+	
+	<div class="member__title" data-mh="merchant-title">IT-Service</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://alwayshodl.com/collections/dash" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/alwayshodl.jpg" alt="Alwayshodl">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Alwayshodl</div>
+	
+	<div class="member__title" data-mh="merchant-title">Dash Merchandise</div>
+	
+</li>
+
+				
+			</ul>
+		</div>
+	</section>
+
+	<section class="section section--intro-lead section--merchants">
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Metais Preciosos</h2>
+			</div>
+			<ul class="member-list member-list--merchants">
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://www.coaex.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/coaex_logo.png" alt="Coaex">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Coaex</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="http://www.bitgild.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Bitgild.jpg" alt="Bitgild">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Bitgild</div>
+	
+</li>
+
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://www.goldmoney.com" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/Goldmoney.jpg" alt="Goldmoney">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Goldmoney</div>
+	
+</li>
+
+				
+			</ul>
+		</div>
+	</section>
+
+	<section class="section section--intro-lead section--merchants">
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Bill Payments</h2>
+			</div>
+			<ul class="member-list member-list--merchants">
+				
+				<li class="member" data-mh="merchant">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<a href="https://www.livingroomofsatoshi.com/?sc=dash" target="_blank" class="member__link">
+				<img class="member__image" src="/assets/img/merchants/livingroomofsatoshi_logo.png" alt="Living Room of Satoshi">
+			</a>
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="merchant-name">Living Room of Satoshi</div>
+	
+</li>
+
+				
+			</ul>
+		</div>
+	</section>
+
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Obter Dash
+    <ul>
+        <li><a href="/pt/get-dash/">Download da Carteira</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">Comprar Dash</a></li>
+        <li><a href="/pt/merchants/">Shop com Dash</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">Dash Cartão de Debito</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Contribuir
+    <ul>
+        <li><a href="/pt/mining/" >Começãr a Minerar</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">Configurar um Masternode</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">Configurar uma Carteira virtual</a></li>
+        <li><a href="/pt/governance/">Solicitar financiamento</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Network
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">Exchange Markets</a></li>
+        <li><a href="/pt/governance/">Governança</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">Block Explorers</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">Network Stats</a></li>
+        <li><a href="/pt/exchanges/" >Full list of Exchanges</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Comunidade
+    <ul>
+        <li><a href="/pt/community/#discussion">Discussão</a></li>
+        <li><a href="/pt/community/#social">Social Apps</a></li>
+        <li><a href="/pt/community/#news">News &amp; Info</a></li>
+        <li><a href="/pt/community/#development">Ferramentas de Desenvolvimento</a></li>
+        <li><a href="/pt/community/#masternodes">Ferramentas Masternode</a></li>
+        <li><a href="/pt/legal/">Legal</a></li>
+        <li><a href="/pt/graphics/">Graphics</a></li>
+        <li><a href="/pt/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Projeto
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">Help &amp; Suporte</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">Projeto Informação</a></li>
+        <li><a href="/pt/team/">Team</a></li>
+        <li><a href="/pt/update/">Update</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">Fundação</a></li>
+        <li><a href="/pt/contact/">Contato</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">Wiki</a></li>
+        <li><a href="/pt/school/">School</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Social
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash forums</a></li>
+        <li><a href="/pt/blog/">Blog</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">Twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">YouTube</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">Google+</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">LinkedIn</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">Facebook</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/pt/terms-of-use/">Termos de uso</a>
+  <a href="/sitemap.xml">Sitemap</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">Source code</a>
+  <a href="/pt/contact/">Contato</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2018 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/pt/get-dash/" class="overlay-menu__link">Obter Dash</a></li>
+            <li class="overlay-menu__item"><a href="/pt/merchants/" class="overlay-menu__link">Comerciantes</a></li>
+            <li class="overlay-menu__item"><a href="/pt/network/" class="overlay-menu__link">Network</a></li>
+            <li class="overlay-menu__item"><a href="/pt/community/" class="overlay-menu__link">Comunidade</a></li>
+            <li class="overlay-menu__item"><a href="/pt/team/" class="overlay-menu__link">Team</a></li>
+            <li class="overlay-menu__item"><a href="/pt/blog/" class="overlay-menu__link">Blog</a></li>
+            <li class="overlay-menu__item"><a href="/pt/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/merchants/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/merchants/" class="overlay-menu__link "><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/merchants/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/merchants/" class="overlay-menu__link is-active"><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/merchants/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/merchants/" class="overlay-menu__link "><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/merchants/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/merchants/" class="overlay-menu__link "><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/merchants/" class="overlay-menu__link "><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/merchants/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/dist/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

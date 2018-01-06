@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="kr">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>DASH에 법이 적용되는 방식 &mdash; Dash</title>
+		<meta name="description" content="지갑 다운로드 및 거래소에서 Dash 얻기">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/dist/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero" id="hero">
+	<div class="hero__background">
+		
+		<img src="/assets/img/resized/hero/legal.jpeg-c5ff9bd/425x282.jpeg" class="hero__background-image" />
+
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/kr/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/kr/get-dash/" class="nav__link">Dash 얻기</a></li>
+			<li class="nav__item"><a href="/kr/merchants/" class="nav__link">가맹점</a></li>
+			<li class="nav__item"><a href="/kr/network/" class="nav__link">네트워크</a></li>
+			<li class="nav__item"><a href="/kr/community/" class="nav__link">리소스</a></li>
+			<li class="nav__item"><a href="/kr/team/" class="nav__link">팀</a></li>
+			<li class="nav__item"><a href="/kr/blog/" class="nav__link">블로그</a></li>
+			<li class="nav__item"><a href="/kr/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag kr"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/legal/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/legal/" class="nav__link ">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/legal/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/legal/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/legal/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/legal/" class="nav__link ">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/legal/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/legal/" class="nav__link ">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/legal/" class="nav__link is-active">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/legal/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/kr" class="nav__link" title="검색">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">DASH에 법이 적용되는 방식</h1>
+		<p class="hero__lead">DASH DAO의 목적은 DASH를 홍보 및 보호하고 표준화하는 것입니다. 우리는 DASH의 일부 측면이 미국 법률에서 어떻게 다뤄지고 있는지에 대한 문의를 받았습니다.  이 문서의 목적은 이러한 가장 일반적인 문의 사항을 처리하고 해당 법률이 DASH에 적용된다고 생각하는 방식을 설명하는 것입니다.  이것은 법적 견해로써 의미가 없으므로 여기에 의존하기 전에 귀하의 변호사와 상의해야 합니다. 그러나 법에 대한 우리의 입장과 법을 어떻게 적절히 해석해야 하는지에 대한 견해를 밝히는 데 의미가 있습니다.</p>
+
+		<section>
+			<div class="hero__buttons hero__buttons--get-dash">
+				<a  href="#tax" class="btn-blue-solid btn-large">세금 처리</a>
+				<a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=105746151#FIAT-DASHCompliance/ATMCompliance-Introduction" class="btn-large btn-white-solid" target="_blank">컴플라이언스 FIAT - DASH</a>
+			</div>
+		</section>
+	</div>
+
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+
+<div class="page page--home">
+
+	<section>
+		<div class="content">
+
+			<h2  class="bottom-space big-accent">Cogent Law Package:
+</h2>
+
+			<div class="row bottom-space">
+				<ul class="member-list member-list--legal bottom-space">
+					<li class="member" style="height: 280px;">
+						<div class="member__avatar">
+							<div class="member__image-wrapper">
+								<img class="member__image" src="/assets/img/legal/im_1.png" alt="Alfacashier">
+							</div>
+						</div>
+						<div class="member__name" style="height: 35px;">BSA AML COMPLIANCE</div>
+
+					</li>
+					<li class="member" style="height: 280px;">
+						<div class="member__avatar">
+							<div class="member__image-wrapper">
+								<img class="member__image" src="/assets/img/legal/im_2.png" alt="Changelly">
+							</div>
+						</div>
+						<div class="member__name" style="height: 35px;">KYC CDD Policy</div>
+					</li>
+					<li class="member" style="height: 280px;">
+						<div class="member__avatar">
+							<div class="member__image-wrapper">
+								<img class="member__image" src="/assets/img/legal/im_3.png" alt="Shapeshift">
+
+							</div>
+						</div>
+						<div class="member__name" style="height: 35px;">AML Program</div>
+					</li>
+					<li class="member" style="height: 280px;">
+						<div class="member__avatar">
+							<div class="member__image-wrapper">
+								<a href="https://arbitrcoin.com/" target="_blank" class="member__link">
+									<img class="member__image" src="/assets/img/legal/im_4.png" alt="Shapeshift">
+
+								</a>
+							</div>
+						</div>
+						<div class="member__name" style="height: 35px;">Risk Assessment</div>
+					</li>
+					<li class="member" style="height: 280px;">
+						<div class="member__avatar">
+							<div class="member__image-wrapper">
+								<img class="member__image" src="/assets/img/legal/im_5.png" alt="Shapeshift">
+
+							</div>
+						</div>
+						<div class="member__name" style="height: 35px;">Surveillance and Monitoring Policy</div>
+					</li>
+					<li class="member" style="height: 280px;">
+						<div class="member__avatar">
+							<div class="member__image-wrapper">
+								<img class="member__image" src="/assets/img/legal/im_6.png" alt="Shapeshift">
+							</div>
+						</div>
+						<div class="member__name" style="height: 35px;">Different Reports to file in different situations</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="home-latest-news">
+		<div class="content">
+			<h2 id="tax"  class="section__title">마스터노드 운영자의 DASH 세금 처리란 무엇인가?</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<p class="bottom-space">블록 보상 / 지분형 DASH / 자본 이득 / 1차부채 / 2차부채 / .... 는 이 섹션에서 우리가 답하는 포인트입니다.
+</p>
+					<h3 class="bottom-space">미국 세법에서는 마스터노드 운영자가 어떻게 취급되는가?</h3>
+					<a href="https://dashpay.atlassian.net/wiki/display/DOC/How+the+Law+Applies+to+DASH#HowtheLawAppliestoDASH-WhatistheTaxTreatmentoftheMasternodeOperators’DASH?" class="btn-blue-solid" target="_blank">전체 목록</a>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="news-post">
+								<a href="https://www.youtube.com/watch?v=bE7pxHtAiNol" target="_blank">
+									<div class="news-image">
+										<img src="/assets/img/legal/dash-detailed.png">
+									</div>
+									<div class="news-body">
+										<h3 class="news-title">Can Masternode Operators be Criminally Liable for the Transactions They Relay?</h3>
+
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="news-post">
+								<a href="https://www.youtube.com/watch?v=bE7pxHtAiNol" target="_blank">
+									<div class="news-image">
+										<img src="/assets/img/legal/dash-detailed.png">
+									</div>
+									<div class="news-body">
+										<h3 class="news-title">Can Masternode Operators be Criminally Liable for the Transactions They Relay?</h3>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section--info-grid" id="getdash-info">
+		<div class="section__content">
+			<h2 class="section__title">마스터노드의 세금 처리</h2>
+			<div class="info-grid content">
+				<div class="info-grid__content">
+
+					<article class="info-grid__item" data-mh="get-dash-info-grid" id="getdash-wallet-setup">
+
+						<h3 class="info-grid__item-title">가상화폐 키오스크 운영을 위한 빠른 가이드</h3>
+						<a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=105746151#FIAT-DASHCompliance/ATMCompliance-STEP1)" target="_blank" class="info-grid__item-link">더 알아보기</a>
+					</article>
+
+					<article class="info-grid__item" data-mh="get-dash-info-grid" id="getdash-buy">
+						<h3 class="info-grid__item-title">오디오 가이드</h3>
+						<p class="info-grid__item-text">현지 통화를 Dash로 전환 및 지갑으로 보내기</p>
+						<a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=105746151#FIAT-DASHCompliance/ATMCompliance-STEP2)" target="_blank" class="info-grid__item-link">더 알아보기</a>
+					</article>
+
+					<article class="info-grid__item" data-mh="get-dash-info-grid" id="getdash-trade">
+						<h3 class="info-grid__item-title">일부 보고서와 친해지기</h3>
+						<a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=105746151#FIAT-DASHCompliance/ATMCompliance-STEP3)" target="_blank" class="info-grid__item-link">더 알아보기</a>
+					</article>
+
+					<article class="info-grid__item" data-mh="get-dash-info-grid" id="getdash-trade">
+						<h3 class="info-grid__item-title">설명서와 친해지기</h3>
+						<a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=105746151#FIAT-DASHCompliance/ATMCompliance-STEP3)" target="_blank" class="info-grid__item-link">더 알아보기</a>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Dash 얻기
+    <ul>
+        <li><a href="/kr/get-dash/">지갑 다운로드</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">Dash 구매</a></li>
+        <li><a href="/kr/merchants/">Dash로 쇼핑</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">Dash 직불카드</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    기부
+    <ul>
+        <li><a href="/kr/mining/" >채굴 시작</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">마스터노드 설치</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">지갑 설치</a></li>
+        <li><a href="/kr/governance/">기금 신청</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    네트워크
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">거래소 시장</a></li>
+        <li><a href="/kr/governance/">거버넌스</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">블록 탐색기</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">네트워크 통계</a></li>
+        <li><a href="/kr/exchanges/" >거래소 전체 목록</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    리소스
+    <ul>
+        <li><a href="/kr/community/#discussion">토론</a></li>
+        <li><a href="/kr/community/#social">소셜 앱</a></li>
+        <li><a href="/kr/community/#news">뉴스 및 정보</a></li>
+        <li><a href="/kr/community/#development">개발 도구</a></li>
+        <li><a href="/kr/community/#masternodes">마스터노드 도구</a></li>
+        <li><a href="/kr/legal/">법무</a></li>
+        <li><a href="/kr/graphics/">그래픽</a></li>
+        <li><a href="/kr/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    프로젝트
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">도움 및 지원</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">프로젝트 정보</a></li>
+        <li><a href="/kr/team/">팀</a></li>
+        <li><a href="/kr/update/">업데이트</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">기반</a></li>
+        <li><a href="/kr/contact/">연락처</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">Wiki</a></li>
+        <li><a href="/kr/school/">School</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    소셜
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash 포럼</a></li>
+        <li><a href="/kr/blog/">블로그</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">트위터</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">유튜브</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">Google+</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">LinkedIn</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">페이스북</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/kr/terms-of-use/">이용 약관</a>
+  <a href="/sitemap.xml">사이트 맵</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">소스 코드</a>
+  <a href="/kr/contact/">연락처</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2018 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/kr/get-dash/" class="overlay-menu__link">Dash 얻기</a></li>
+            <li class="overlay-menu__item"><a href="/kr/merchants/" class="overlay-menu__link">가맹점</a></li>
+            <li class="overlay-menu__item"><a href="/kr/network/" class="overlay-menu__link">네트워크</a></li>
+            <li class="overlay-menu__item"><a href="/kr/community/" class="overlay-menu__link">리소스</a></li>
+            <li class="overlay-menu__item"><a href="/kr/team/" class="overlay-menu__link">팀</a></li>
+            <li class="overlay-menu__item"><a href="/kr/blog/" class="overlay-menu__link">블로그</a></li>
+            <li class="overlay-menu__item"><a href="/kr/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/legal/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/legal/" class="overlay-menu__link "><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/legal/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/legal/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/legal/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/legal/" class="overlay-menu__link "><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/legal/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/legal/" class="overlay-menu__link "><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/legal/" class="overlay-menu__link is-active"><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/legal/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/dist/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="kr">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>Dash 공식 웹사이트 | Dash 가상화폐 &mdash; Dash</title>
+		<meta name="description" content="Dash는 디지털 화폐">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero hero--home" id="hero">
+	<div class="hero__background">
+		<img src="/assets/img/resized/hero/home.jpg-3ccf164/800x515.jpg" srcset="/assets/img/resized/hero/home.jpg-3ccf164/1920x1236.jpg 1920w, /assets/img/resized/hero/home.jpg-3ccf164/1280x824.jpg 1280w, /assets/img/resized/hero/home.jpg-3ccf164/1024x659.jpg 1024w, /assets/img/resized/hero/home.jpg-3ccf164/1600x1030.jpg 1600w, /assets/img/resized/hero/home.jpg-3ccf164/800x515.jpg 800w" sizes="100vw, 100vw, 100vw, 100vw" class="hero__background-image" />
+
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/kr/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/kr/get-dash/" class="nav__link">Dash 얻기</a></li>
+			<li class="nav__item"><a href="/kr/merchants/" class="nav__link">가맹점</a></li>
+			<li class="nav__item"><a href="/kr/network/" class="nav__link">네트워크</a></li>
+			<li class="nav__item"><a href="/kr/community/" class="nav__link">리소스</a></li>
+			<li class="nav__item"><a href="/kr/team/" class="nav__link">팀</a></li>
+			<li class="nav__item"><a href="/kr/blog/" class="nav__link">블로그</a></li>
+			<li class="nav__item"><a href="/kr/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag kr"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/" class="nav__link ">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/" class="nav__link ">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/" class="nav__link ">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/" class="nav__link is-active">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/kr" class="nav__link" title="검색">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href=".././assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">Dash는 디지털 화폐</h1>
+		<p class="hero__lead">혁신적인 디지털 화폐 시스템.<br />디지털 현금을 만나보세요.</p>
+
+		<div class="hero__buttons">
+			<a href="/kr/get-dash/" class="btn-blue-solid btn-large">Dash 얻기</a>
+			<a href="/kr/wallets/" class="btn-blue-solid btn-large">모든 지갑</a>
+		</div>
+	</div>
+
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+
+<div class="page page--home">
+
+	<!--
+		WHAT IS DASH?
+		LINK TO VIDEO.
+	-->
+	<section class="section section--home-cta">
+		<div class="section__content">
+				<h2 class="section__title">Dash는 어디서든 사용할 수 있는 디지털 현금</h2>
+				<div class="section__lead"><p>Dash를 사용하면 전세계 수천 명의 사용자가 호스팅하는 안전한 오픈 소스 플랫폼을 사용하여 온라인 또는 매장에서 비공개 결제를 할 수 있습니다.</p>
+</div>
+
+				<div class="section__btn-grp">
+					<a href="https://www.youtube.com/watch?v=S0oNO3mbBE8" class="btn-blue btn-large" target="_blank" data-js-popup="video" data-lang="kr">개요 비디오</a>
+					<a href="/kr/get-dash/" class="btn-blue-solid btn-large">지갑 다운로드</a>
+				</div>
+		</div>
+	</section>
+
+	<!--
+		MERCHANTS
+	-->
+	<section>
+		<div class="content">
+			<div>
+				<h2>Dash로 직접 쇼핑</h2>
+
+				<p>즉시 및 비공개 구매, Dash 지갑에서 직접 처리</p>
+
+			</div>
+
+			<div class="ctabox ctabox--gray-light-bg" data-js-ctabox>
+				<div class="ctabox__inner">
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://shakepay.co" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/shakepay_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">Shake Pay</h4>
+								<p class="ctabox__description">Dash-Visa Debit Card</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://www.livingroomofsatoshi.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/livingroomofsatoshi_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+							<h4 class="ctabox__title">Living Room of..</h4>
+							<p class="ctabox__description">Pay bills in Australia</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://www.claws-mail.org/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/ClawsMail.jpg" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+							<h4 class="ctabox__title">ClawsMail</h4>
+							<p class="ctabox__description">Secure, Private VPN</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://node40.com" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/node40.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">Node40</h4>
+								<p class="ctabox__description">Masternode Hosting</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://shapeshift.io" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/shapeshift_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">ShapeShift</h4>
+								<p class="ctabox__description">Exchange Dash for Bitcoin</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://www.qhoster.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/qhoster.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+							<h4 class="ctabox__title">Qhoster</h4>
+							<p class="ctabox__description">Quality Hosting</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="http://www.isg3d.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/isg3d_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">ISG3D</h4>
+								<p class="ctabox__description">3D Printing Services</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://www.coaex.com" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/coaex_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">CoaEX</h4>
+								<p class="ctabox__description">Precious Metals</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="http://bravenewbookstore.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/bravenewbooks_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">BraveNewBooks</h4>
+								<p class="ctabox__description">Book Store</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://giftoff.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/giftoff_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">GiftOff</h4>
+								<p class="ctabox__description">Gift Cards</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://key4co.in" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/key4coin_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">Key4Coin</h4>
+								<p class="ctabox__description">Game Keys</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://misconductwineco.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/misconductwine_logo.jpg" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">Misconduct Wine</h4>
+								<p class="ctabox__description">Premium micro-lot wines</p>
+							</div>
+						</a>
+					</article>
+				</div>
+			</div>
+
+			<div>
+				<a href="/merchants/" target="_blank" class="btn-blue">더 많은 가맹점</a>
+				<a href="https://dashpay.atlassian.net/wiki/display/DOC/Merchant+Directory+Listing" target="_blank" class="btn-blue">가맹점되기</a>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		DASH FEATURES
+		PRIVATE | INSTANT | SECURE
+	-->
+	<section>
+		<div class="content">
+			<div class="row features-collection">
+				<div class="col-sm-4">
+					<img src="/assets/img/home/instant.svg" height="100" alt="즉시">
+					<h2>즉시</h2>
+					<p>귀하의 시간은 소중합니다.  InstantSend 결제는 1초 이내에 완료됩니다.</p>
+
+				</div>
+				<div class="col-sm-4">
+					<img src="/assets/img/home/private.svg" height="100" alt="비공개">
+					<h2>비공개</h2>
+					<p>귀하의 재정 정보를 보호하십시오.  PrivateSend는 귀하의 활동 내역과 잔고가 비공개임을 보장합니다.</p>
+
+				</div>
+				<div class="col-sm-4">
+					<img src="/assets/img/home/secure.svg" height="100" alt="보안">
+					<h2>보안</h2>
+					<p>의지할 수 있는 보안.  1,000 기가해시의 X11 ASIC 컴퓨팅 파워와 전세계에서 호스팅되는 4,100대 이상의 서버로 거래가 완료됩니다.</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		NETWORK ARCHITECTURE
+	-->
+	<section class="section--masternode">
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>차세대 P2P 네트워크</h2>
+
+					<p>Dash의 코어는 완전한 인센티브제의 독창적인 P2P 네트워크입니다.  채굴자는 블록체인 확보에 대해 보상을 받으며 마스터노드는 블록체인의 유효성 검사, 저장 및 사용자에 대한 서비스 제공에 대해 보상을 받습니다.</p>
+
+<p>마스터노드는 저가형 네트워크 공격 위협을 제거하면서 즉각적인 트랜잭션, 개인 정보 보호 및 거버넌스와 같은 다양한 분권 서비스를 제공하기 위해 쿼럼이라는 매우 안전한 클러스터에서 작동하는 네트워크 서버의 새로운 계층을 대표합니다.</p>
+
+
+					<a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=8585240" target="_blank" class="btn-blue">더 알아보기</a>
+				</div>
+				<div class="col-sm-6 home-architecture-graphic">
+					<img src="/assets/img/home/globe.png" alt="차세대 P2P 네트워크">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		SELF GOVERNING | SELF FUNDING
+	-->
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-6">
+					<h2>첫 자체 거버닝, 자체 펀딩 프로토콜</h2>
+
+					<p>Dash에서는 모든 사람이 의견을 내고 네트워크에 직접 프로젝트를 제안할 수 있습니다.  마케팅부터 개발까지 Dash의 성장과 개선에 도움이 되는 것이라면 무엇이든 자금을 지원 받을 수 있습니다.  이것은 Dash 펀드가 자체 성장과 채택, 합의가 보장되며, 모든 사람이 네트워크에 대한 책임이 있음을 의미합니다.</p>
+
+<p>공금 제안서를 제출하고 펀딩을 위해 귀하의 아이디어를 네트워크에 제시하고 설득하십시오. 또는 마스터노드를 운영하는 경우 투표하십시오!</p>
+
+
+					<a href="http://dashvotetracker.com/" target="_blank" class="btn-blue">제안서</a>
+
+					<a href="https://dashcentral.org/" target="_blank" class="btn-blue">제안서 제출</a>
+				</div>
+				<div class="col-sm-6 col-sm-pull-6 home-budgets-graphic">
+					<img src="/assets/img/home/budgets.png" alt="첫 자체 거버닝, 자체 펀딩 프로토콜">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		FASTEST GROWING NETWORK
+	-->
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>가장 빠르게 성장하는 네트워크</h2>
+
+					<p>인센티브 제도 덕분에 Dash의 네트워크는 2014년 론칭 이후 4,100개의 마스터노드로 성장했으며, Dash의 P2P 네트워크는 전세계 가장 큰 네트워크 중 하나입니다.</p>
+
+<p>노드가 많을수록 안전한 서비스가 제공되고 최종 사용자가 연중무휴로 전세계 어디에서나 전자 화폐에 액세스할 수 있습니다.</p>
+
+
+					<a href="/kr/network" class="btn-blue">네트워크 통계</a>
+				</div>
+				<!--div class="col-sm-6 home-network-graphic">
+					<img src="/assets/img/home/graph.png" alt="가장 빠르게 성장하는 네트워크">
+				</div-->
+				<div class="col-sm-6 home-network-graphic-live">
+					<img src="/assets/img/masternode_count-crop-813x525.png" alt="가장 빠르게 성장하는 네트워크">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		EVOLUTION
+	-->
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-6">
+					<h2>디지털 통화 발전</h2>
+
+					<p>향후 계획? 우리는 이웃집 할머니도 이용할 만큼 디지털 통화가 쉽게 사용되기를 바랍니다.</p>
+
+<p>Dash Evolution을 통해서는 어떤 장치에서든 Dash를 등록하고 액세스할 수 있으며 완벽하게 분권화된 방식으로 PayPal만큼 거래가 용이합니다. 지켜보십시오…</p>
+
+					<a href="/kr/evolution/" target="_blank" class="btn-blue">더 알아보기</a>
+				</div>
+				<div class="col-sm-6 col-sm-pull-6 home-evolution-graphic">
+					<img src="/assets/img/home/evo.png" alt="Dash Evolution">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		LATEST NEWS
+	-->
+	<section class="home-latest-news">
+		<div class="content">
+			<h2>최신 뉴스</h2>
+
+			<div class="row">
+				
+			</div>
+
+			<div>
+				<a href="/kr/blog/" class="btn-blue">모든 뉴스 보기</a>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		GET STARTED
+	-->
+	<section class="home-get-started-cta">
+		<div class="content">
+			<h2>시작하기</h2>
+
+			<p>지갑 다운로드 및 디지털 현금 사용 시작!</p>
+
+
+			<a href="/kr/get-dash/" class="btn-white-solid">Dash 얻기</a>
+
+			<img src="/assets/img/home/macbook.png" alt="">
+		</div>
+	</section>
+
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Dash 얻기
+    <ul>
+        <li><a href="/kr/get-dash/">지갑 다운로드</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">Dash 구매</a></li>
+        <li><a href="/kr/merchants/">Dash로 쇼핑</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">Dash 직불카드</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    기부
+    <ul>
+        <li><a href="/kr/mining/" >채굴 시작</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">마스터노드 설치</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">지갑 설치</a></li>
+        <li><a href="/kr/governance/">기금 신청</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    네트워크
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">거래소 시장</a></li>
+        <li><a href="/kr/governance/">거버넌스</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">블록 탐색기</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">네트워크 통계</a></li>
+        <li><a href="/kr/exchanges/" >거래소 전체 목록</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    리소스
+    <ul>
+        <li><a href="/kr/community/#discussion">토론</a></li>
+        <li><a href="/kr/community/#social">소셜 앱</a></li>
+        <li><a href="/kr/community/#news">뉴스 및 정보</a></li>
+        <li><a href="/kr/community/#development">개발 도구</a></li>
+        <li><a href="/kr/community/#masternodes">마스터노드 도구</a></li>
+        <li><a href="/kr/legal/">법무</a></li>
+        <li><a href="/kr/graphics/">그래픽</a></li>
+        <li><a href="/kr/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    프로젝트
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">도움 및 지원</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">프로젝트 정보</a></li>
+        <li><a href="/kr/team/">팀</a></li>
+        <li><a href="/kr/update/">업데이트</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">기반</a></li>
+        <li><a href="/kr/contact/">연락처</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">Wiki</a></li>
+        <li><a href="/kr/school/">School</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    소셜
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash 포럼</a></li>
+        <li><a href="/kr/blog/">블로그</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">트위터</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">유튜브</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">Google+</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">LinkedIn</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">페이스북</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/kr/terms-of-use/">이용 약관</a>
+  <a href="/sitemap.xml">사이트 맵</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">소스 코드</a>
+  <a href="/kr/contact/">연락처</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2018 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href=".././assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/kr/get-dash/" class="overlay-menu__link">Dash 얻기</a></li>
+            <li class="overlay-menu__item"><a href="/kr/merchants/" class="overlay-menu__link">가맹점</a></li>
+            <li class="overlay-menu__item"><a href="/kr/network/" class="overlay-menu__link">네트워크</a></li>
+            <li class="overlay-menu__item"><a href="/kr/community/" class="overlay-menu__link">리소스</a></li>
+            <li class="overlay-menu__item"><a href="/kr/team/" class="overlay-menu__link">팀</a></li>
+            <li class="overlay-menu__item"><a href="/kr/blog/" class="overlay-menu__link">블로그</a></li>
+            <li class="overlay-menu__item"><a href="/kr/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/" class="overlay-menu__link "><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/" class="overlay-menu__link "><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/" class="overlay-menu__link "><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/" class="overlay-menu__link is-active"><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/assets/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

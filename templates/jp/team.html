@@ -1,0 +1,2084 @@
+<!doctype html>
+<html lang="jp">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>DASHチーム &mdash; Dash</title>
+		<meta name="description" content="DASHチームはDASHネットワークに雇われ、DASHコア技術の開発を目的とし、ブロックチェーンから毎月資金を受け取ります。">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/dist/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero hero--team" id="hero">
+	<div class="hero__background">
+		<img src="/assets/img/hero/team.jpg" alt="" class="hero__background-image">
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/jp/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/jp/get-dash/" class="nav__link">DASHについて</a></li>
+			<li class="nav__item"><a href="/jp/merchants/" class="nav__link">店舗</a></li>
+			<li class="nav__item"><a href="/jp/network/" class="nav__link">ネットワーク</a></li>
+			<li class="nav__item"><a href="/jp/community/" class="nav__link">コミュニティ</a></li>
+			<li class="nav__item"><a href="/jp/team/" class="nav__link">チーム</a></li>
+			<li class="nav__item"><a href="/jp/blog/" class="nav__link">ブログ</a></li>
+			<li class="nav__item"><a href="/jp/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag jp"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/team/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/team/" class="nav__link ">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/team/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/team/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/team/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/team/" class="nav__link ">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/team/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/team/" class="nav__link is-active">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/team/" class="nav__link ">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/team/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/jp" class="nav__link" title="検索">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">DASHチーム</h1>
+		<p class="hero__lead">DASHチームはDASHネットワークに雇われ、DASHコア技術の開発を目的とし、ブロックチェーンから毎月資金を受け取ります。</p>
+
+		<div class="hero__buttons">
+
+			<a href="https://www.dashcentral.org/p/core-team" target="_blank" class="btn-white-solid">コア提案</a>
+			<a href="http://dashvotetracker.com/history.html?ProposalID=12" target="_blank" class="btn-white-solid">提案が承認されました</a>
+			<a href="/jp/contact/" class="btn-white-solid">チームに入る</a>
+		</div>
+	</div>
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+
+
+
+
+
+<div class="page page--team">
+
+	<section class="section section--intro-lead">
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Dash Core DAO Management</h2>
+			</div>
+			<ul class="member-list">
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/ryan.png" alt="Ryan Taylor">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Ryan Taylor</div>
+	<div class="member__title" data-mh="member-title">CEO</div>
+
+	<div class="member__description"></div>
+
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/ryanptaylor"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/babygiraffe.1654/" target="_blank">babygiraffe</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/andy_f.png" alt="Andy Freer">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Andy Freer</div>
+	<div class="member__title" data-mh="member-title">CTO</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#f0919e9489b094918398de9f8297"><span class="__cf_email__" data-cfemail="b5d4dbd1ccf5d1d4c6dd9bdac7d2">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/andyfreer"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/andydark.2146/" target="_blank">andydark</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/udjinm6.png" alt="UdjinM6">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">UdjinM6</div>
+	<div class="member__title" data-mh="member-title">Lead Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#e89d8c82818685dea88c899b80c6879a8f"><span class="__cf_email__" data-cfemail="c7b2a3adaea9aaf187a3a6b4afe9a8b5a0">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/udjinm6"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/udjinm6.811/" target="_blank">udjinm6</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/holger.png" alt="Holger Schinzel">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Holger Schinzel</div>
+	<div class="member__title" data-mh="member-title">Quality Assurance, Automation, Testing</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#94fcfbf8f3f1e6d4f0f5e7fcbafbe6f3"><span class="__cf_email__" data-cfemail="c5adaaa9a2a0b785a1a4b6adebaab7a2">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/schinzelh"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/flare.783/" target="_blank">flare</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/philipp.png" alt="Philipp Engelhorn">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Philipp Engelhorn</div>
+	<div class="member__title" data-mh="member-title">Press &amp; Multitool</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#1c6c6e796f6f5c787d6f7432736e7b"><span class="__cf_email__" data-cfemail="f18183948282b195908299df9e8396">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/tungfa"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/tungfa.269/" target="_blank">tungfa</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/fernando.png" alt="Fernando Gutierrez">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Fernando Gutierrez</div>
+	<div class="member__title" data-mh="member-title">Multitool</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#3b5d5e49555a555f547b5f5a48531554495c"><span class="__cf_email__" data-cfemail="402625322e212e242f00242133286e2f3227">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/fernandog"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/fernando.650/" target="_blank">fernando</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/robert.wiecko.jpg" alt="Robert Wiecko">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Robert Wiecko</div>
+	<div class="member__title" data-mh="member-title">Project Manager</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#0e7c616c6b7c7a4e6a6f7d6620617c69"><span class="__cf_email__" data-cfemail="85f7eae7e0f7f1c5e1e4f6edabeaf7e2">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/robertwiecko"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/kot.3244/" target="_blank">kot</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/evan.png" alt="Evan Duffield">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Evan Duffield</div>
+	<div class="member__title" data-mh="member-title">Strategy Advisor</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#97f2e1f6f9d7f3f6e4ffb9f8e5f0"><span class="__cf_email__" data-cfemail="4e2b382f200e2a2f3d2660213c29">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/eduffield"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/eduffield.104/" target="_blank">eduffield</a></div>
+	
+
+
+</li>
+
+				
+			</ul>
+		</div>
+
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Developers</h2>
+			</div>
+			<ul class="member-list">
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/kelly.jpg" alt="Kelly Kopp-Schuetz">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Kelly Kopp-Schuetz</div>
+	<div class="member__title" data-mh="member-title">Human Resources Director</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#dcb7b9b0b0a59cb8bdafb4f2b3aebb"><span class="__cf_email__" data-cfemail="254e4049495c654144564d0b4a5742">[email&#160;protected]</span></a></div>
+	
+
+	
+
+	
+
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/Bradley_Zastrow.jpg" alt="Bradley Zastrow">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Bradley Zastrow</div>
+	<div class="member__title" data-mh="member-title">Business Development</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#a0c2d2c1c4ccc5d98edac1d3d4d2cfd7e0c4c1d3c88ecfd2c7"><span class="__cf_email__" data-cfemail="e1839380858d8498cf9b809295938e96a185809289cf8e9386">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/bradleyzastrow"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/bradley-zastrow.20550/" target="_blank">Bradley Zastrow</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/nathan.jpeg" alt="Nathan Marley">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Nathan Marley</div>
+	<div class="member__title" data-mh="member-title">Lead Evolution Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#2846495c404946684c495b4006475a4f"><span class="__cf_email__" data-cfemail="7816190c101916381c190b1056170a1f">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/nmarley"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/nmarley.1605/" target="_blank">nmarley</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/crowning.png" alt="Crowning">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Crowning</div>
+	<div class="member__title" data-mh="member-title">Core Development / Testing</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#adcedfc2dac3c4c3caedc9ccdec583c2dfca"><span class="__cf_email__" data-cfemail="d6b5a4b9a1b8bfb8b196b2b7a5bef8b9a4b1">[email&#160;protected]</span></a></div>
+	
+
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/crowning.1102/" target="_blank">crowning</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/chaeplin.jpeg" alt="Chae-Pil Lim">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Chae-Pil Lim</div>
+	<div class="member__title" data-mh="member-title">Core Development</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#9efdf6fffbeef2f7f0def9f3fff7f2b0fdf1f3"><span class="__cf_email__" data-cfemail="debdb6bfbbaeb2b7b09eb9b3bfb7b2f0bdb1b3">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/chaeplin"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/chaeplin.206/" target="_blank">chaeplin</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/chuckwilliams.jpg" alt="Chuck Williams">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Chuck Williams</div>
+	<div class="member__title" data-mh="member-title">Head of UI/UX Development</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#adcec5d8cec6edc9ccdec583c2dfca"><span class="__cf_email__" data-cfemail="4e2d263b2d250e2a2f3d2660213c29">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/chuckwilliams"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/chuck-williams.10154/" target="_blank">ChuckWilliams</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/thelazier.jpeg" alt="TheLazieR">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">TheLazieR</div>
+	<div class="member__title" data-mh="member-title">Core Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#1f6b777a737e65767a6d5f78727e7673317c7072"><span class="__cf_email__" data-cfemail="daaeb2bfb6bba0b3bfa89abdb7bbb3b6f4b9b5b7">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/thelazier"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/thelazier.2745/" target="_blank">thelazier</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/cofresi.png" alt="Cofresi">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Cofresi</div>
+	<div class="member__title" data-mh="member-title">Evolution Backend Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#adcec2cbdfc8dec4edc9ccdec583c2dfca"><span class="__cf_email__" data-cfemail="bbd8d4ddc9dec8d2fbdfdac8d395d4c9dc">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/cofresi"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/cofres%C3%AD.2052/" target="_blank">cofresi</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/anon.png" alt="Quantum Explorer">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Quantum Explorer</div>
+	<div class="member__title" data-mh="member-title">iOS Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#6e1f1b0f001a1b030b161e02011c0b1c0a0f1d062e09030f0702400d0103"><span class="__cf_email__" data-cfemail="9dece8fcf3e9e8f0f8e5edf1f2eff8eff9fceef5ddfaf0fcf4f1b3fef2f0">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/quantumexplorer"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/quantumexplorer.2025/" target="_blank">quantumexplorer</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/tomasz.png" alt="Tomasz Ludek">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Tomasz Ludek</div>
+	<div class="member__title" data-mh="member-title">Android Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#71051e1c10020b31151002195f1e0316"><span class="__cf_email__" data-cfemail="5622393b37252c163237253e78392431">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/tomaszludek"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/tomasz-ludek.4173/" target="_blank">tomasz-ludek</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/anon.png" alt="4095">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">4095</div>
+	<div class="member__title" data-mh="member-title">Evolution Frontend Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#64541c0202022414160b100b0a09050d084a070b09"><span class="__cf_email__" data-cfemail="05357d6363634575776a716a6b68646c692b666a68">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/0xfff"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/0xfff.6497/" target="_blank">4095</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/alex_werner.png" alt="Alex Werner">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Alex Werner</div>
+	<div class="member__title" data-mh="member-title">Evolution Backend Lead</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#1b7a777e63356c7e69757e695b7f7a68733574697c"><span class="__cf_email__" data-cfemail="81e0ede4f9aff6e4f3efe4f3c1e5e0f2e9afeef3e6">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/awerner"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+	<div class="member__detail member__detail--twitter"><a href="https://twitter.com/obusco" target="_blank">https://twitter.com/obusco</a></div>
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/obusco.6751/" target="_blank">obusco</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/joshua.png" alt="Joshua Seigler">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Joshua Seigler</div>
+	<div class="member__title" data-mh="member-title">Evolution Frontend Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#f69c99859e8397b685939f919a9384d8989382"><span class="__cf_email__" data-cfemail="573d38243f22361724323e303b322579393223">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/joshuaseigler"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/j0shua.4693/" target="_blank">j0shua</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/akhavr.jpeg" alt="Akhavr">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Akhavr</div>
+	<div class="member__title" data-mh="member-title">Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#c1a0aaa9a0b7b381a6aca0a8adefa2aeac"><span class="__cf_email__" data-cfemail="04656f6c657276446369656d682a676b69">[email&#160;protected]</span></a></div>
+	
+
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/akhavr.2324/" target="_blank">akhavr</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/LeeWong.jpg" alt="Lee Wong">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Lee Wong</div>
+	<div class="member__title" data-mh="member-title">Evolution Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#dcb0b9b9abb3b2bb9cb8bdafb4f2b3aebb"><span class="__cf_email__" data-cfemail="58343d3d2f37363f183c392b3076372a3f">[email&#160;protected]</span></a></div>
+	
+
+	
+
+	
+
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/pierre.png" alt="Pierre van Rooyen">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Pierre van Rooyen</div>
+	<div class="member__title" data-mh="member-title">Evolution Backend Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#52223b37202037123633213a7c3d2035"><span class="__cf_email__" data-cfemail="b8c8d1ddcacaddf8dcd9cbd096d7cadf">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/pvrooyen"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/pierre.12961/" target="_blank">pierre</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/jahr.png" alt="gladcow">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">gladcow</div>
+	<div class="member__title" data-mh="member-title">Core Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#7d0e180f1a18043d191c0e1553120f1a"><span class="__cf_email__" data-cfemail="f281978095978bb29693819adc9d8095">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/gladcow"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/jahr.13007/" target="_blank">jahr</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/oleg.png" alt="Oleg Girko">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Oleg Girko</div>
+	<div class="member__title" data-mh="member-title">Dash Core Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#99f6f5d9fdf8eaf1b7f6ebfe"><span class="__cf_email__" data-cfemail="a6c9cae6c2c7d5ce88c9d4c1">[email&#160;protected]</span></a></div>
+	
+
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/ol.13002/" target="_blank">ol</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/darren.jpg" alt="Darren Tapp">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Darren Tapp</div>
+	<div class="member__title" data-mh="member-title">Research</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#6a0e0b18180f042a0e0b19024405180d"><span class="__cf_email__" data-cfemail="46222734342328062227352e68293421">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/darren_tapp"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/darren.5875/" target="_blank">darren</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/WillWray.jpg" alt="Will Wray">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Will Wray</div>
+	<div class="member__title" data-mh="member-title">Core C++ Dev</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#7c0b1510103c181d0f1452130e1b"><span class="__cf_email__" data-cfemail="087f616464486c697b6026677a6f">[email&#160;protected]</span></a></div>
+	
+
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/doodlefax.14057/" target="_blank">doodlefax</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/meian.jpg" alt="Ian Marshall">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Ian Marshall</div>
+	<div class="member__title" data-mh="member-title">Evolution DashDrive Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#244d454a644045574c0a4b5643"><span class="__cf_email__" data-cfemail="29404847694d485a4107465b4e">[email&#160;protected]</span></a></div>
+	
+
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/imarshall.14947/" target="_blank">imarshall</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/codablocker.jpeg" alt="Alexander Block">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Alexander Block</div>
+	<div class="member__title" data-mh="member-title">Core Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#56373a332e373832332478343a39353d163237253e78392431"><span class="__cf_email__" data-cfemail="43222f263b222d2726316d212f2c2028032722302b6d2c3124">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/codablock"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/codablock.12000/" target="_blank">codablock</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/anon.png" alt="Ilya Savinov">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Ilya Savinov</div>
+	<div class="member__title" data-mh="member-title">Core Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#036a6f7a62436762706b2d6c7164"><span class="__cf_email__" data-cfemail="046d687d65446065776c2a6b7663">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/schnibble"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/schnibble.13003/" target="_blank">schnibble</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/kamuela.jpg" alt="Kamuela Franco">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Kamuela Franco</div>
+	<div class="member__title" data-mh="member-title">Evolution Backend Developer</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#ff949e928a9a939ed1998d9e919c90bf9b9e8c97d1908d98"><span class="__cf_email__" data-cfemail="711a101c04141d105f1703101f121e31151002195f1e0316">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/kamuela"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/kamuela.18261/" target="_blank">kamuela</a></div>
+	
+
+
+</li>
+
+				
+			</ul>
+		</div>
+ 
+		<div class="section__content content">
+			<div class="section__intro">
+				<h2 class="section__title">Testing + Support</h2>
+			</div>
+			<ul class="member-list">
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/moo.png" alt="MooCowMoo">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">MooCowMoo</div>
+	<div class="member__title" data-mh="member-title">Support / Testing</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#a1cccecee1c5c0d2c98fced3c6"><span class="__cf_email__" data-cfemail="701d1f1f30141103185e1f0217">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/moocowmoo"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/moocowmoo.1413/" target="_blank">moocowmoo</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/alexandre.png" alt="Alexandre Devilliers">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Alexandre Devilliers</div>
+	<div class="member__title" data-mh="member-title">Testing and Deployment</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#c8ada4aaadbaadbca0b288aca9bba0a6a1a6a2a9e6b8a4"><span class="__cf_email__" data-cfemail="06636a64637463726e7c466267756e686f686c6728766a">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/elbereth"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/elbereth.175/" target="_blank">elbereth</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/ivanborovkov.jpg" alt="Ivan Borovkov">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Ivan Borovkov</div>
+	<div class="member__title" data-mh="member-title">Network Operations</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#751c03141b351114061d5b1a0712"><span class="__cf_email__" data-cfemail="e38a95828da38782908bcd8c9184">[email&#160;protected]</span></a></div>
+	
+
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/v2nek.18326/" target="_blank">v2nek</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/coingun.png" alt="Jeff Smith">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Jeff Smith</div>
+	<div class="member__title" data-mh="member-title">Network Operations</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#87ede2e1e1c7e3e6f4efa9e8f5e0"><span class="__cf_email__" data-cfemail="6b010e0d0d2b0f0a18034504190c">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/coingun"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/coingun.1715/" target="_blank">coingun</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/LeonWhite.jpg" alt="Leon White">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Leon White</div>
+	<div class="member__title" data-mh="member-title">Documentation & Wiki</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#3a565f5554144d52534e5f7a5e5b49521455485d"><span class="__cf_email__" data-cfemail="48242d2726663f20213c2d082c293b2066273a2f">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/strophy"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/strophy.4735/" target="_blank">strophy</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/kira.jpg" alt="Kira Bronskaia">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Kira Bronskaia</div>
+	<div class="member__title" data-mh="member-title">Quality Assurance, Automation, Testing</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#6f04061d0e410d1d00011c040e160e2f0b0e1c0741001d08"><span class="__cf_email__" data-cfemail="167d7f64773874647978657d776f77567277657e38796471">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/kapusha"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/kira.17471/" target="_blank">Kira</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/rainbow_dash.jpg" alt="Luba S.">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Luba S.</div>
+	<div class="member__title" data-mh="member-title">Project Manager</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#a1cdd4c3c0e1c5c0d2c98fced3c6"><span class="__cf_email__" data-cfemail="c1adb4a3a081a5a0b2a9efaeb3a6">[email&#160;protected]</span></a></div>
+	
+
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/luba.14579/" target="_blank">luba</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/balu.png" alt="Balu">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Balu</div>
+	<div class="member__title" data-mh="member-title">Project Manager</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#ceacafa2bb8eaaafbda6e0a1bca9"><span class="__cf_email__" data-cfemail="1e7c7f726b5e7a7f6d7630716c79">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/balu"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/balu.2312/" target="_blank">balu</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/janusz.jpg" alt="Janusz Piasecki">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Janusz Piasecki</div>
+	<div class="member__title" data-mh="member-title">Project Manager</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#b3d9d2ddc6c0c99dc3dad2c0d6d0d8daf3d7d2c0db9ddcc1d4"><span class="__cf_email__" data-cfemail="670d060912141d49170e061402040c0e270306140f49081500">[email&#160;protected]</span></a></div>
+	
+
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/janusz.17557/" target="_blank">janusz</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/itscrazybro.png" alt="Matt Meek">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Matt Meek</div>
+	<div class="member__title" data-mh="member-title">Business Development</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#c4a9a5b0b084a0a5b7aceaabb6a3"><span class="__cf_email__" data-cfemail="1d707c69695d797c6e7533726f7a">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/itscrazybro"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/itscrazybro.322/" target="_blank">itscrazybro</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/david.jpg" alt="David Dinkins">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">David Dinkins</div>
+	<div class="member__title" data-mh="member-title">Writer / Editor</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#adc9ccdbc4c9edc9ccdec5ddccd483c4c2"><span class="__cf_email__" data-cfemail="41252037282501252032293120386f282e">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/ddink7"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/david.1517/" target="_blank">david</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/perry_sm.jpg" alt="Perry Woodin">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Perry Woodin</div>
+	<div class="member__title" data-mh="member-title">Advisor</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#25554057575c654b4a414011150b464a48"><span class="__cf_email__" data-cfemail="d1a1b4a3a3a891bfbeb5b4e5e1ffb2bebc">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/perrywoodin"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/raico.jpg" alt="Raico">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Raico</div>
+	<div class="member__title" data-mh="member-title">Dash China Coordinator</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#6a180b0309052a0e0b19024405180d"><span class="__cf_email__" data-cfemail="7b091a1218143b1f1a08135514091c">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/raico"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/raico.1053/" target="_blank">raico</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/Alexy.jpg" alt="Alexy">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Alexy</div>
+	<div class="member__title" data-mh="member-title">Dash China Coordinator</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#157479706d6c557174667d3b7a6772"><span class="__cf_email__" data-cfemail="6e0f020b16172e0a0f1d0640011c09">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/alexy_ys"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/alexy.2413/" target="_blank">alexy</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/alex_ru.jpg" alt="Alex-ru">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Alex-ru</div>
+	<div class="member__title" data-mh="member-title">Dash Russia Coordinator</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#7f1e131a07510d0a3f1b1e0c1751100d18"><span class="__cf_email__" data-cfemail="147578716c3a6661547075677c3a7b6673">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/alex_ru"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/alex-ru.1771/" target="_blank">alex-ru</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/essra.jpg" alt="Jan Heinrich Meyer">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Jan Heinrich Meyer</div>
+	<div class="member__title" data-mh="member-title">German Dash Representative</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#dfbaacacadbe9fbbbeacb7f1b0adb8"><span class="__cf_email__" data-cfemail="21445252534061454052490f4e5346">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/essra"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/essra.17463/" target="_blank">essra</a></div>
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/eth.png" alt="Etherdesign">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Etherdesign</div>
+	<div class="member__title" data-mh="member-title">Graphic Design / UX</div>
+
+	<div class="member__description"></div>
+
+	
+
+	
+
+	
+
+	
+
+
+</li>
+
+				
+					<li class="member" data-mh="member">
+
+	<div class="member__avatar">
+		
+		<div class="member__image-wrapper">
+			<img class="member__image" src="/assets/img/team/splawik21.png" alt="Slawek">
+		</div>
+		
+	</div>
+
+	<div class="member__name" data-mh="member-name">Slawek</div>
+	<div class="member__title" data-mh="member-title">Testing and Deployment</div>
+
+	<div class="member__description"></div>
+
+	
+	<div class="member__detail member__detail--email"><a href="/cdn-cgi/l/email-protection#84f7f4e8e5f3edefb6b5c4f4f6ebf0ebeae9e5ede8aae7ebe9"><span class="__cf_email__" data-cfemail="a7d4d7cbc6d0cecc9596e7d7d5c8d3c8c9cac6cecb89c4c8ca">[email&#160;protected]</span></a></div>
+	
+
+	
+	<div class="member__detail member__detail--pgp"><a href="https://keybase.io/splawik21"  target="_blank">Keybase Identity</a></div>
+	
+
+	
+
+	
+	<h5>Dashforum:
+</h5>
+	<div class="member__detail member__detail--dashforum"><a href="/forum/members/splawik21.264/" target="_blank">splawik21</a></div>
+	
+
+
+</li>
+
+				
+			</ul>
+		</div>
+	</section>
+
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    DASHについて
+    <ul>
+        <li><a href="/jp/get-dash/">ウォレットをダウンロードする</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">DASHを購入する</a></li>
+        <li><a href="/jp/merchants/">DASHで支払う</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">DASHデポジットカード</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    ガイドをサポートする
+    <ul>
+        <li><a href="/jp/mining/" >マイニングを始める</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">マスターノードの設置</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">ウォレットを作る</a></li>
+        <li><a href="/jp/governance/">予算を申し込む</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    ネットワーク
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">取引データ</a></li>
+        <li><a href="/jp/governance/">管理</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">ブロック研究開発</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">ネットワークデータ</a></li>
+        <li><a href="/jp/exchanges/" >Full list of Exchanges</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    コミュニティ
+    <ul>
+        <li><a href="/jp/community/#discussion">ディスカッション</a></li>
+        <li><a href="/jp/community/#social">SNSアプリ</a></li>
+        <li><a href="/jp/community/#news">ニュース &amp; メッセージ</a></li>
+        <li><a href="/jp/community/#development">開発ツール</a></li>
+        <li><a href="/jp/community/#masternodes">マスターノードツール</a></li>
+        <li><a href="/jp/legal/">Legal</a></li>
+        <li><a href="/jp/graphics/">Graphics</a></li>
+        <li><a href="/jp/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    プロジェクト
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">ヘルプ &amp; サポート</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">プロジェクト情報</a></li>
+        <li><a href="/jp/team/">チーム</a></li>
+        <li><a href="/jp/update/">アップグレード</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">基金会</a></li>
+        <li><a href="/jp/contact/">連絡先</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">ウィキペディア</a></li>
+        <li><a href="/jp/school/">School</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    SNS
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash forums</a></li>
+        <li><a href="/jp/blog/">ブログ</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">ツイッター</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">YouTube</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">グーグル</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">Linkedin</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">Facebook</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/jp/terms-of-use/">使用条例</a>
+  <a href="/sitemap.xml">ウェブサイト案内</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">ソースコード</a>
+  <a href="/jp/contact/">連絡先</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2018 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/jp/get-dash/" class="overlay-menu__link">DASHについて</a></li>
+            <li class="overlay-menu__item"><a href="/jp/merchants/" class="overlay-menu__link">店舗</a></li>
+            <li class="overlay-menu__item"><a href="/jp/network/" class="overlay-menu__link">ネットワーク</a></li>
+            <li class="overlay-menu__item"><a href="/jp/community/" class="overlay-menu__link">コミュニティ</a></li>
+            <li class="overlay-menu__item"><a href="/jp/team/" class="overlay-menu__link">チーム</a></li>
+            <li class="overlay-menu__item"><a href="/jp/blog/" class="overlay-menu__link">ブログ</a></li>
+            <li class="overlay-menu__item"><a href="/jp/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/team/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/team/" class="overlay-menu__link "><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/team/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/team/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/team/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/team/" class="overlay-menu__link "><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/team/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/team/" class="overlay-menu__link is-active"><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/team/" class="overlay-menu__link "><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/team/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script><script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/dist/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

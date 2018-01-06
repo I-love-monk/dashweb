@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="cn">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>达世币博客 &mdash; Dash</title>
+		<meta name="description" content="达世币的最新消息">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero hero--blog" id="hero">
+	<div class="hero__background">
+			<img src="/assets/img/hero/blog.jpg" alt="" class="hero__background-image">
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/cn/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/cn/get-dash/" class="nav__link">了解达世币</a></li>
+			<li class="nav__item"><a href="/cn/merchants/" class="nav__link">商家</a></li>
+			<li class="nav__item"><a href="/cn/network/" class="nav__link">网络</a></li>
+			<li class="nav__item"><a href="/cn/community/" class="nav__link">社区</a></li>
+			<li class="nav__item"><a href="/cn/team/" class="nav__link">团队</a></li>
+			<li class="nav__item"><a href="/cn/blog/" class="nav__link">博客</a></li>
+			<li class="nav__item"><a href="/cn/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag cn"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/blog/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/blog/" class="nav__link ">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/blog/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/blog/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/blog/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/blog/" class="nav__link is-active">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/blog/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/blog/" class="nav__link ">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/blog/" class="nav__link ">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/blog/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/cn" class="nav__link" title="搜索">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">达世币博客</h1>
+		<p class="hero__lead">达世币的最新消息</p>
+
+		<div class="hero__buttons">
+
+			<!--a href="#" class="btn-white-solid">搜索博客</a-->
+			<a href="/cn/community/#community-news" class="btn-white-solid">社区新闻</a>
+
+		</div>
+	</div>
+
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+
+<!--
+
+__________ ____ ___.___.____     ________ ._.
+\______   \    |   \   |    |    \______ \| |
+ |    |  _/    |   /   |    |     |    |  \ |
+ |    |   \    |  /|   |    |___  |    `   \|
+ |______  /______/ |___|_______ \/_______  /_
+        \/                     \/        \/\/
+
+20170410_2224MST
+
+-->
+
+<div class="page page--blog">
+
+	<section class="section">
+		<div class="section__content content">
+			<div class="featurepost-grid">
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--no-image">
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/cn/2016/06/24/e8-be-be-e4-b8-96-e5-b8-81-e7-9a-84dao-e6-98-af-e5-a6-82-e4-bd-95-e5-b7-a5-e4-bd-9c-e7-9a-84-e8-be-be-e4-b8-96-e5-b8-81-e8-a7-a3-e8-af-bb.html">达世币的DAO是如何工作的 - 达世币:解读</a></h2>
+
+					<em class="featurepost__date">Jun 24, 2016</em>
+
+					<p class="featurepost__description">什么是"去中心化的自治组织", 达世币的DAO是怎样的,它是如何工作的,谁可以加入其中? 你也许会对答案感到惊讶. Join Amanda B. Johnson 为你呈现第二期的 达世币:解读
+发送标题为subscribe的邮件至<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="02636f636c6663426663716a2c6d7065">[email&#160;protected]</a>, 就可轻松订阅每周发布的视频. — 没错, 就是如此简单.
+
+&nbsp;
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--no-image">
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/cn/2016/06/22/e6-98-af-e4-bb-80-e4-b9-88-e9-98-bb-e7-a2-8d-e4-ba-86-e6-95-b0-e5-ad-97-e8-b4-a7-e5-b8-81-e4-be-9d-e7-84-b6-e6-b2-a1-e6-9c-89-e8-a2-ab-e5-b9-bf-e6-b3-9b-e4-bd-bf-e7-94-a8.html">是什么阻碍了数字货币依然没有被广泛使用? | 达世币: 解读</a></h2>
+
+					<em class="featurepost__date">Jun 22, 2016</em>
+
+					<p class="featurepost__description">是数字货币的"杀手锏应用"还没有被创造出来吗? 还是说很显然本身就是杀手锏应用的数字货币还不具备让非技术型人们使用的易用性? Amanda B. Johnson在"达世币:解读"的第一章中向我们讲述了作为一个普通人——比如妈妈, 对即将来临的达世币进化版提出了什么宝贵意见.
+&nbsp;
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--no-image">
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/cn/2016/03/15/e8-be-be-e4-b8-96-e5-b8-812016-e5-b9-b4-e5-8f-91-e5-b1-95-e8-b7-af-e7-ba-bf.html">达世币2016年发展路线</a></h2>
+
+					<em class="featurepost__date">Mar 15, 2016</em>
+
+					<p class="featurepost__description">新的一年到来了，达世币也在不久前庆祝了两岁的生日，核心团队认为现在是对2016年蓝图深度战略评估的好时机。在我们不断根据新想法及机遇调整达世币的计划与战略的同时，拥有长期计划能使团队保持对重要事项的专注，并确保努力的成果与长期战略一致。拥有新的预算系统之后，很多之前无法实现的项目现在已变得可能，所以我们有必要对达世币新一年的战略、目标及计划进行更加深度的审视。 2016年达世币的蓝图与去年12月30日发布的“达世币战略说明书”一致，分为四个主要战略板块。而传播作为第五个方面，会与每一个主板块中的具体目标相结合。正如之前所说，我们为这份蓝图的制定花费了大量时间，但依然想提醒社区的各位，它们可能会变化。我们始终欢迎来自社区的反馈意见，蓝图也会随着不同想法和机遇的出现不断完善。之后，我们会不断回顾这份蓝图用来指导决策的制定，并评估是否需要对其作出修改。 接下来的一年有很多令人兴奋的构想在计划中。核心团队及其他项目成员将在这份积极而又可行的计划激励下努力实现目标。达世币在2016年有很多好势头，如果社区成功履行计划，达世币无疑将成为虚拟货币市场创新的领头羊。 言归正传，接下来是达世币2016年蓝图： 市场营销及传媒 参加在迈阿密举行的北美比特币大会（2016年1月21-22日） 多参加有影响力的行业会议和活动 正式开展公关活动，启发并培养公众对于达世币功能及优点的认识 提高媒体曝光度，并通过广告和公关活动增加在主流媒体的渗透力 推出升级版的达世币网站（新的界面设计和信息架构） 将关键服务迁移至官网：dash.org,并将其作为项目的一部分进行管理（在社区的帮助下） 在官网上实现并主办达世币相关的网络研讨会 &nbsp; 软件开发 完成达世币进化版的开源设计 开发达世币进化版的原型 实现硬件钱包支持主节点，从而为使用者提供更高的安全性 2MB区块扩容的准备工作 制定PrivacyProtect的开发计划(匿名发送 v2) 尽快实现PrivacyProctect 更加轻量级的客户端，实现对移动端的隐私保护 提升即时支付（InstantX）的处理效率和安全 通过远程过程调用协议（RPC）请求命令对即时支付实现有效监控 移动钱包实现接收即时支付交易 实现Dash驱动、主节点仲裁链、用户账户、分布式应用程序接口，以及REST程序接口。 在版本12.2中我们将实现2MB区块扩容 &nbsp; 业务发展 为用户优化法币与达世币兑换方法 在兑换业务、做市、经济业务方面发展高质量的合作伙伴，提高市场流动性和市场准入 如果没有合适的合作伙伴，准备开展自己的兑换业务 构建达世币ATM机网络 游说已有的比特币提款机厂商加载达世币选项 为支持达世币的厂商开展达世币ATM连锁项目，在他们所在区域开始进行达世币机器的设置 建立合作关系，提高硬件钱包的整合，为达世币用户提供快捷的安全存储 扩大商户接受度，给用户更多支付的选择，为达世币的差异化特征（如：即时、隐私）寻找有代表性的用例 与已支持虚拟货币业务的商家磋商，进而扩展达世币业务 项目组织 对外部项目和活动进行全过程项目管理 对软件开发过程进行项目管理支持 对组织管理架构进行必要的发展和优化，以确保其高效，并在项目不断进展的过程中符合行业内的最佳实践 引入资金管理流程，使核心团队及社区更好地管理预算使用过程，并确保所有使用资源的信息透明 在沟通方面进行改进 对现有流程进行改进 发布管理 部署管理 支持（事故和问题管理） 识别关键角色、资源和个人，并将他们作为榜样 其他与市场相关的活动以及目标:...</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--no-image">
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/cn/%E5%95%86%E4%B8%9A%E5%90%88%E4%BD%9C/%E5%BC%80%E5%8F%91%E5%8A%A8%E6%80%81/%E6%96%B0%E9%97%BB%E5%AA%92%E4%BD%93/%E7%BB%BC%E8%BF%B0/2016/03/02/e8-be-be-e4-b8-96-e5-b8-81-2016-e5-8f-91-e5-b1-95-e8-b7-af-e7-ba-bf.html">达世币 2016 发展路线</a></h2>
+
+					<em class="featurepost__date">Mar 02, 2016</em>
+
+					<p class="featurepost__description">新的一年到来了，达世币也在不久前庆祝了两岁的生日，核心团队认为现在是对2016年蓝图深度战略评估的好时机。在我们不断根据新想法及机遇调整达世币的计划与战略的同时，拥有长期计划能使团队保持对重要事项的专注，并确保努力的成果与长期战略一致。拥有新的预算系统之后，很多之前无法实现的项目现在已变得可能，所以我们有必要对达世币新一年的战略、目标及计划进行更加深度的审视。 2016年达世币的蓝图与去年12月30日发布的“达世币战略说明书”一致，分为四个主要战略板块。而传播作为第五个方面，会与每一个主板块中的具体目标相结合。正如之前所说，我们为这份蓝图的制定花费了大量时间，但依然想提醒社区的各位，它们可能会变化。我们始终欢迎来自社区的反馈意见，蓝图也会随着不同想法和机遇的出现不断完善。之后，我们会不断回顾这份蓝图用来指导决策的制定，并评估是否需要对其作出修改。 接下来的一年有很多令人兴奋的构想在计划中。核心团队及其他项目成员将在这份积极而又可行的计划激励下努力实现目标。达世币在2016年有很多好势头，如果社区成功履行计划，达世币无疑将成为虚拟货币市场创新的领头羊。 言归正传，接下来是达世币2016年蓝图： 业务发展 为用户优化法币与达世币兑换方法: 在兑换业务、做市、经济业务方面发展高质量的合作伙伴，提高市场流动性和市场准入 如果没有合适的合作伙伴，准备开展自己的兑换业务 构建达世币ATM机网络 游说已有的比特币提款机厂商加载达世币选项 为支持达世币的厂商开展达世币ATM连锁项目，在他们所在区域开始进行达世币机器的设置 建立合作关系，提高硬件钱包的整合，为达世币用户提供快捷的安全存储 扩大商户接受度，给用户更多支付的选择，为达世币的差异化特征（如：即时、隐私）寻找有代表性的用例 与已支持虚拟货币业务的商家磋商，进而扩展达世币业务 软件开发 完成达世币进化版的开源设计 开发达世币进化版的原型 实现硬件钱包支持主节点，从而为使用者提供更高的安全性 2MB区块扩容的准备工作 制定隐私保护的开发计划(匿名发送 v2) 尽快实现隐私保护 更加轻量级的客户端，实现对移动端的隐私保护 提升即时支付（InstantX）的处理效率和安全 通过远程过程调用协议（RPC）请求命令对即时支付实现有效监控 移动钱包实现接收即时支付交易 实现Dash驱动、主节点仲裁链、用户账户、分布式应用程序接口，以及REST程序接口。 在版本12.2中我们将实现2MB区块扩容 市场营销及传媒 参加在迈阿密举行的北美比特币大会（2016年1月21-22日） 多参加有影响力的行业会议和活动 正式开展公关活动，启发并培养公众对于达世币功能及优点的认识 提高媒体曝光度，并通过广告和公关活动增加在主流媒体的渗透力 推出升级版的达世币网站（新的界面设计和信息架构） 将关键服务迁移至官网：dash.org,并将其作为项目的一部分进行管理（在社区的帮助下） 在官网上实现并主办达世币相关的网络研讨会 项目组织 对外部项目和活动进行全过程项目管理 对软件开发过程进行项目管理支持 对组织管理架构进行必要的发展和优化，以确保其高效，并在项目不断进展的过程中符合行业内的最佳实践 引入资金管理流程，使核心团队及社区更好地管理预算使用过程，并确保所有使用资源的信息透明 在沟通方面进行改进 对现有流程进行改进 发布管理 部署管理 支持（事故和问题管理） 识别关键角色、资源和个人，并将他们作为榜样 &nbsp; 其他与市场相关的活动以及目标: YouTube...</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--no-image">
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/cn/%E5%95%86%E4%B8%9A%E5%90%88%E4%BD%9C/%E5%BC%80%E5%8F%91%E5%8A%A8%E6%80%81/%E6%96%B0%E9%97%BB%E5%AA%92%E4%BD%93/2016/02/19/dash-2016-roadmap.html">Dash 2016 Roadmap</a></h2>
+
+					<em class="featurepost__date">Feb 19, 2016</em>
+
+					<p class="featurepost__description">新的一年到来了，达世币也在不久前庆祝了两岁的生日，核心团队认为现在是对2016年蓝图深度战略评估的好时机。在我们不断根据新想法及机遇调整达世币的计划与战略的同时，拥有长期计划能使团队保持对重要事项的专注，并确保努力的成果与长期战略一致。拥有新的预算系统之后，很多之前无法实现的项目现在已变得可能，所以我们有必要对达世币新一年的战略、目标及计划进行更加深度的审视。 2016年达世币的蓝图与去年12月30日发布的“达世币战略说明书”一致，分为四个主要战略板块。而传播作为第五个方面，会与每一个主板块中的具体目标相结合。正如之前所说，我们为这份蓝图的制定花费了大量时间，但依然想提醒社区的各位，它们可能会变化。我们始终欢迎来自社区的反馈意见，蓝图也会随着不同想法和机遇的出现不断完善。之后，我们会不断回顾这份蓝图用来指导决策的制定，并评估是否需要对其作出修改。 接下来的一年有很多令人兴奋的构想在计划中。核心团队及其他项目成员将在这份积极而又可行的计划激励下努力实现目标。达世币在2016年有很多好势头，如果社区成功履行计划，达世币无疑将成为虚拟货币市场创新的领头羊。 言归正传，接下来是达世币2016年蓝图： 业务发展 为用户优化法币与达世币兑换方法: 在兑换业务、做市、经济业务方面发展高质量的合作伙伴，提高市场流动性和市场准入 如果没有合适的合作伙伴，准备开展自己的兑换业务 构建达世币ATM机网络 游说已有的比特币提款机厂商加载达世币选项 为支持达世币的厂商开展达世币ATM连锁项目，在他们所在区域开始进行达世币机器的设置 建立合作关系，提高硬件钱包的整合，为达世币用户提供快捷的安全存储 扩大商户接受度，给用户更多支付的选择，为达世币的差异化特征（如：即时、隐私）寻找有代表性的用例 与已支持虚拟货币业务的商家磋商，进而扩展达世币业务 软件开发 完成达世币进化版的开源设计 开发达世币进化版的原型 实现硬件钱包支持主节点，从而为使用者提供更高的安全性 2MB区块扩容的准备工作 制定隐私保护的开发计划(匿名发送 v2) 尽快实现隐私保护 更加轻量级的客户端，实现对移动端的隐私保护 提升即时支付（InstantX）的处理效率和安全 通过远程过程调用协议（RPC）请求命令对即时支付实现有效监控 移动钱包实现接收即时支付交易 实现Dash驱动、主节点仲裁链、用户账户、分布式应用程序接口，以及REST程序接口。 在版本12.2中我们将实现2MB区块扩容 市场营销及传媒 参加在迈阿密举行的北美比特币大会（2016年1月21-22日） 多参加有影响力的行业会议和活动 正式开展公关活动，启发并培养公众对于达世币功能及优点的认识 提高媒体曝光度，并通过广告和公关活动增加在主流媒体的渗透力 推出升级版的达世币网站（新的界面设计和信息架构） 将关键服务迁移至官网：dash.org,并将其作为项目的一部分进行管理（在社区的帮助下） 在官网上实现并主办达世币相关的网络研讨会 项目组织 对外部项目和活动进行全过程项目管理 对软件开发过程进行项目管理支持 对组织管理架构进行必要的发展和优化，以确保其高效，并在项目不断进展的过程中符合行业内的最佳实践 引入资金管理流程，使核心团队及社区更好地管理预算使用过程，并确保所有使用资源的信息透明 在沟通方面进行改进 对现有流程进行改进 发布管理 部署管理 支持（事故和问题管理） 识别关键角色、资源和个人，并将他们作为榜样 &nbsp; 其他与市场相关的活动以及目标: YouTube...</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--no-image">
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/cn/2015/08/03/e6-9a-97-e9-bb-91-e5-b8-81-e7-8e-b0-e5-b7-b2-e8-bf-9b-e5-8c-96-e4-b8-ba-e8-be-be-e4-b8-96-e5-b8-81.html">暗黑币现已进化为达世币</a></h2>
+
+					<em class="featurepost__date">Aug 03, 2015</em>
+
+					<p class="featurepost__description">
+我们的愿景一直都是为大众提供一个匿名且即时的支付平台（即，数字货币）。这是我们的信仰，也是我们最主要的目标。然而，最近暗黑币的名字却成为我们继续发展的阻碍，变的越来越明显，所以为了完成我们伟大的使命，我们必须重塑品牌即重命名暗黑币。
+我们今天将暗黑币命名为达世币，可以理解为通达世界的数字货币。仅仅是名字改为达世币，其他所有的技术特色和功能都保留原来的设计（匿名发送和即时交易）。我们只是更改了名字，其他技术不受影响。币和区块链都保留没变，请大家放心，达世币还在你的钱包里而且是安全的，今天我们针对重命名发布了一个新钱包，但原来的暗黑币钱包软件一样可以使用，直到最近将要发布的强制更新版本出来为止。
+这个公告提前几天发布给用户和服务提供商是为了让大家有充足的时间去准备更新，但也提供了一个缓冲的时间让所有的人都适应新的命名。
+我们非常兴奋和大家一起分享重命名的过程及未来会带来更多的突破发展。
+论坛和社交媒体资料也需要同步更新，我们在改进中：
+官方论坛: https://www.dashtalk.org
+Reddit: https://www.reddit.com/r/dashpay
+Twitter: https://twitter.com/dashpay
+Facebook: https://www.facebook.com/DashPay
+Google+: https://plus.google.com/115080614177201373926/posts
+Instagram: https://instagram.com/Dashpay
+&nbsp;
+
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--no-image">
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/cn/2015/08/03/e4-bd-a0-e5-a5-bd-e4-b8-ad-e5-9b-bd.html">你好 中国</a></h2>
+
+					<em class="featurepost__date">Aug 03, 2015</em>
+
+					<p class="featurepost__description">[caption id="attachment_3481" align="aligncenter" width="600"] Shanghai Viewfrom Pary Hyatt/ 91st Floor[/caption]
+Dashpay.io中文版终于上线了。由于插件模块对中文有兼容问题，这比我们预期完成中文版建设花了更长的时间，但我们已找到了解决方案。
+
+像往常一样，所有的中文工作均有Alexy和Raico完成。在我们需要帮助时，他们永远在身边。当然还有Tungfa，虽然他不会说中文，但无论对中文社区还是翻译工作都提供了巨大的帮助。
+
+中国是我们长期策略的关键。我们一直在和Alexy，Raico以及其他几名中文社区成员保持联系，他们已经对推广达世币提供了巨大的帮助。我们希望将来位于中国本地的官网可以帮助他们取得进一步的成果。
+更多语言版本
+
+
+我 们已经完成了汉语，俄语，西班牙语版本的翻译工。我们需要多国语言版，使更多人了解达世币，但这不是一蹴而成的。为了帮助用户了解动态，翻译工作也要持续 更新。我们考虑葡萄牙语，德语，法语版的上线是十分有必要的，但是否成功完全要看志愿者们是否能够提供相应的帮助。如果您认为您有能力，请联系我(<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f49291869a959a909bb49095879c84958dda9d9b">[email&#160;protected]</a>)近一步详谈。
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			<!-- limit:10 -->
+				<article class="featurepost">
+
+					<div class="featurepost__preview featurepost__preview--no-image">
+						
+					</div>
+
+					<h2 class="featurepost__title"><a href="/cn/%E7%BB%BC%E8%BF%B0/2015/06/14/e5-b0-86-e6-9a-97-e9-bb-91-e5-b8-81-e9-92-b1-e5-8c-85-e8-bd-ac-e6-8d-a2-e6-88-90-e8-be-be-e4-b8-96-e5-b8-81-e9-92-b1-e5-8c-85.html">将暗黑币钱包转换成达世币钱包</a></h2>
+
+					<em class="featurepost__date">Jun 14, 2015</em>
+
+					<p class="featurepost__description">如果您拥有旧的暗黑币钱包，无需将币发送给新的达世币钱包，您只需要在官方网站下载最新版本的达世币钱包程序，并且读取旧的wallet.dat文件即可。若您仍有疑问，请查看以下相应操作系统教程。
+</p>
+
+					<div class="featurepost__divider"></div>
+				</article>
+			
+			</div>
+
+			
+
+		</div>
+	</section>
+
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    了解达世币
+    <ul>
+        <li><a href="/cn/get-dash/">下载钱包</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">购买达世币</a></li>
+        <li><a href="/cn/merchants/">达世币消费</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">达世币借记卡</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    帮助教程
+    <ul>
+        <li><a href="/cn/mining/" >开始挖矿</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">架设主节点</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">创建钱包</a></li>
+        <li><a href="/cn/governance/">申请预算资金</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    网络
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">交易数据</a></li>
+        <li><a href="/cn/governance/">管理</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">区块研发</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">网络数据</a></li>
+        <li><a href="/cn/exchanges/" >Full list of Exchanges</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    社区
+    <ul>
+        <li><a href="/cn/community/#discussion">讨论</a></li>
+        <li><a href="/cn/community/#social">社交应用</a></li>
+        <li><a href="/cn/community/#news">新闻 &amp; 信息</a></li>
+        <li><a href="/cn/community/#development">开发工具</a></li>
+        <li><a href="/cn/community/#masternodes">主节点工具</a></li>
+        <li><a href="/cn/legal/">Legal</a></li>
+        <li><a href="/cn/graphics/">Graphics</a></li>
+        <li><a href="/cn/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    项目
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">帮助 &amp; 支持</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">项目信息</a></li>
+        <li><a href="/cn/team/">团队</a></li>
+        <li><a href="/cn/update/">升级</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">基金会</a></li>
+        <li><a href="/cn/contact/">联系方式</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">维基</a></li>
+        <li><a href="/cn/school/">School</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    社交
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash forums</a></li>
+        <li><a href="/cn/blog/">博客</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">推特</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">YouTube</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">谷歌</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">领英</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">脸书</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/cn/terms-of-use/">使用条款</a>
+  <a href="/sitemap.xml">网站导览</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">源代码</a>
+  <a href="/cn/contact/">联系方式</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2017 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="../../assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/cn/get-dash/" class="overlay-menu__link">了解达世币</a></li>
+            <li class="overlay-menu__item"><a href="/cn/merchants/" class="overlay-menu__link">商家</a></li>
+            <li class="overlay-menu__item"><a href="/cn/network/" class="overlay-menu__link">网络</a></li>
+            <li class="overlay-menu__item"><a href="/cn/community/" class="overlay-menu__link">社区</a></li>
+            <li class="overlay-menu__item"><a href="/cn/team/" class="overlay-menu__link">团队</a></li>
+            <li class="overlay-menu__item"><a href="/cn/blog/" class="overlay-menu__link">博客</a></li>
+            <li class="overlay-menu__item"><a href="/cn/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/blog/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/blog/" class="overlay-menu__link "><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/blog/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/blog/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/blog/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/blog/" class="overlay-menu__link is-active"><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/blog/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/blog/" class="overlay-menu__link "><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/blog/" class="overlay-menu__link "><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/blog/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script><script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/assets/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

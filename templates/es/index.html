@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>Sitio Web Oficial de Dash | Moneda Digital Privada &mdash; Dash</title>
+		<meta name="description" content="Dash es Dinero Digital">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero hero--home" id="hero">
+	<div class="hero__background">
+		<img src="/assets/img/resized/hero/home.jpg-3ccf164/800x515.jpg" srcset="/assets/img/resized/hero/home.jpg-3ccf164/1920x1236.jpg 1920w, /assets/img/resized/hero/home.jpg-3ccf164/1280x824.jpg 1280w, /assets/img/resized/hero/home.jpg-3ccf164/1024x659.jpg 1024w, /assets/img/resized/hero/home.jpg-3ccf164/1600x1030.jpg 1600w, /assets/img/resized/hero/home.jpg-3ccf164/800x515.jpg 800w" sizes="100vw, 100vw, 100vw, 100vw" class="hero__background-image" />
+
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/es/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/es/get-dash/" class="nav__link">Obtenga Dash</a></li>
+			<li class="nav__item"><a href="/es/merchants/" class="nav__link">Comercios</a></li>
+			<li class="nav__item"><a href="/es/network/" class="nav__link">Moneda</a></li>
+			<li class="nav__item"><a href="/es/community/" class="nav__link">Comunidad</a></li>
+			<li class="nav__item"><a href="/es/team/" class="nav__link">Equipo</a></li>
+			<li class="nav__item"><a href="/es/blog/" class="nav__link">Blog</a></li>
+			<li class="nav__item"><a href="/es/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag es"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/" class="nav__link is-active">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/" class="nav__link ">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/" class="nav__link ">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/" class="nav__link ">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/es" class="nav__link" title="Buscar">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href=".././assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">¡Dash es Dinero Digital!</h1>
+		<p class="hero__lead">El primer sistema de dinero digital totalmente descentralizado. <br /> Conozca el Dinero en Efectivo Digital.</p>
+
+		<div class="hero__buttons">
+			<a href="/es/get-dash/" class="btn-blue-solid btn-large">Obtenga Dash</a>
+			<a href="/es/wallets/" class="btn-blue-solid btn-large">Todos los monederos</a>
+		</div>
+	</div>
+
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+
+<div class="page page--home">
+
+	<!--
+		WHAT IS DASH?
+		LINK TO VIDEO.
+	-->
+	<section class="section section--home-cta">
+		<div class="section__content">
+				<h2 class="section__title">Dash es dinero en efectivo digital que puede gastar en línea</h2>
+				<div class="section__lead"><p>Use Dash para hacer pagos instantáneos y privados en línea o en tiendas físicas, usando nuestra segura plataforma de código abierto, mantenida por miles de usuarios alrededor del mundo</p>
+</div>
+
+				<div class="section__btn-grp">
+					<a href="https://www.youtube.com/watch?v=Sji-_R8ucNo" class="btn-blue btn-large" target="_blank" data-js-popup="video" data-lang="es">Descripción general en video</a>
+					<a href="/es/get-dash/" class="btn-blue-solid btn-large">Descargue el Monedero</a>
+				</div>
+		</div>
+	</section>
+
+	<!--
+		MERCHANTS
+	-->
+	<section>
+		<div class="content">
+			<div>
+				<h2>Compre en línea pagando con Dash</h2>
+
+				<p>Compre de manera instantánea y privada, directamente desde su monedero Dash</p>
+
+			</div>
+
+			<div class="ctabox ctabox--gray-light-bg" data-js-ctabox>
+				<div class="ctabox__inner">
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://shakepay.co" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/shakepay_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">Shake Pay</h4>
+								<p class="ctabox__description">Dash-Visa Debit Card</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://www.livingroomofsatoshi.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/livingroomofsatoshi_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+							<h4 class="ctabox__title">Living Room of..</h4>
+							<p class="ctabox__description">Pay bills in Australia</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://www.claws-mail.org/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/ClawsMail.jpg" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+							<h4 class="ctabox__title">ClawsMail</h4>
+							<p class="ctabox__description">Secure, Private VPN</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://node40.com" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/node40.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">Node40</h4>
+								<p class="ctabox__description">Masternode Hosting</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://shapeshift.io" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/shapeshift_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">ShapeShift</h4>
+								<p class="ctabox__description">Exchange Dash for Bitcoin</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://www.qhoster.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/qhoster.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+							<h4 class="ctabox__title">Qhoster</h4>
+							<p class="ctabox__description">Quality Hosting</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="http://www.isg3d.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/isg3d_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">ISG3D</h4>
+								<p class="ctabox__description">3D Printing Services</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://www.coaex.com" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/coaex_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">CoaEX</h4>
+								<p class="ctabox__description">Precious Metals</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="http://bravenewbookstore.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/bravenewbooks_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">BraveNewBooks</h4>
+								<p class="ctabox__description">Book Store</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://giftoff.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/giftoff_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">GiftOff</h4>
+								<p class="ctabox__description">Gift Cards</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://key4co.in" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/key4coin_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">Key4Coin</h4>
+								<p class="ctabox__description">Game Keys</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://misconductwineco.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/misconductwine_logo.jpg" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">Misconduct Wine</h4>
+								<p class="ctabox__description">Premium micro-lot wines</p>
+							</div>
+						</a>
+					</article>
+				</div>
+			</div>
+
+			<div>
+				<a href="/merchants/" target="_blank" class="btn-blue">Más Comerciantes</a>
+				<a href="https://dashpay.atlassian.net/wiki/x/IgAFBQ" target="_blank" class="btn-blue">Conviértase en Comerciante</a>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		DASH FEATURES
+		PRIVATE | INSTANT | SECURE
+	-->
+	<section>
+		<div class="content">
+			<div class="row features-collection">
+				<div class="col-sm-4">
+					<img src="/assets/img/home/instant.svg" height="100" alt="Instantáneo">
+					<h2>Instantáneo</h2>
+					<p>Dash es instantáneo</p>
+
+				</div>
+				<div class="col-sm-4">
+					<img src="/assets/img/home/private.svg" height="100" alt="Privado">
+					<h2>Privado</h2>
+					<p>Dash es privado</p>
+
+				</div>
+				<div class="col-sm-4">
+					<img src="/assets/img/home/secure.svg" height="100" alt="Seguro">
+					<h2>Seguro</h2>
+					<p>Dash es seguro</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		NETWORK ARCHITECTURE
+	-->
+	<section class="section--masternode">
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>Arquitectura de red Next-Gen</h2>
+
+					<p>La esencia de la tecnología única de Dash es un diseño de red P2P (Peer-to-Peer) en dos niveles. Esta tecnología premia a los usuarios que ejecutan un tipo especial de nodo llamado Nodo Maestro y lo mantienen 24/7 con hardware dedicado. La red requiere que quienes mantienen los Nodos Maestros deban proporcionar una prueba criptográfica de que poseen 1,000.00 Dash por Nodo Maestro. Esto asegura la red contra ataques de tipo “gemelo” al hacer este tipo de ataques prohibitivamente caros
+Los Nodos Maestros trabajan juntos en grupos y no se pueden falsificar como los nodos en otras monedas digitales. Esto significa que pueden ofrecer nuevos tipos de servicios decentralizados como transacciones instantáneas, anonimización y gobernanza, sin la amenaza de ataques a la red de bajo costo.</p>
+
+
+					<a href="https://dashpay.atlassian.net/wiki/x/VIHPB" target="_blank" class="btn-blue">Conozca más</a>
+				</div>
+				<div class="col-sm-6 home-architecture-graphic">
+					<img src="/assets/img/home/globe.png" alt="Arquitectura de red Next-Gen">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		SELF GOVERNING | SELF FUNDING
+	-->
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-6">
+					<h2>Primera gobernanza autónoma y protocolo de financiación autónomo.</h2>
+
+					<p>Cualquier proyecto importante en Dash es aprobado y financiado por un sistema decentralizado público, que financia los proyectos de manera autónoma basado en los votos de la red de Nodos Maestros. Esto significa que Dash puede financiar su propio crecimiento y adopción, se garantiza el consenso y todo el mundo es responsable de la red. No sólo eso, sino que un atacante no puede jugar contra el sistema si no compra más de la mitad de la oferta de monedas.</p>
+
+
+					<a href="http://dashvotetracker.com/" target="_blank" class="btn-blue">Propuestas</a>
+
+					<a href="https://dashcentral.org/" target="_blank" class="btn-blue">Presente una propuesta</a>
+				</div>
+				<div class="col-sm-6 col-sm-pull-6 home-budgets-graphic">
+					<img src="/assets/img/home/budgets.png" alt="Primera gobernanza autónoma y protocolo de financiación autónomo.">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		FASTEST GROWING NETWORK
+	-->
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>La Red de más rápido crecimiento</h2>
+
+					<p>Gracias a los incentivos la red Dash ha crecido hasta los 4,100 Nodos Maestros, lo que significa que Dash es la única moneda que puede competir con Bitcoin en poder de procesamiento de transacciones y en capacidad de ampliación futura.</p>
+
+
+					<a href="/es/network" class="btn-blue">Estadísticas de la red</a>
+				</div>
+				<!--div class="col-sm-6 home-network-graphic">
+					<img src="/assets/img/home/graph.png" alt="La Red de más rápido crecimiento">
+				</div-->
+				<div class="col-sm-6 home-network-graphic-live">
+					<img src="/assets/img/masternode_count-crop-813x525.png" alt="La Red de más rápido crecimiento">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		EVOLUTION
+	-->
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-6">
+					<h2>Evolución de la moneda digital</h2>
+
+					<p>¿Qué es lo siguiente? Estamos trabajando en un nuevo servicio descentralizado alojado en la red de Nodos Maestros que abrirá Dash a la web y al móvil, va a ser tan fácil de usar como PayPal pero de manera totalmente descentralizada. Manténgase al tanto…</p>
+
+					<a href="/es/evolution/" target="_blank" class="btn-blue">Conozca más</a>
+				</div>
+				<div class="col-sm-6 col-sm-pull-6 home-evolution-graphic">
+					<img src="/assets/img/home/evo.png" alt="Dash Evolution">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		LATEST NEWS
+	-->
+	<section class="home-latest-news">
+		<div class="content">
+			<h2>Últimas noticias</h2>
+
+			<div class="row">
+				
+				<div class="col-sm-6 col-md-3">
+					<div class="news-post">
+						<a href="/es/general%20@es/opini%C3%B3n%20@es/2016/07/13/ethereum-tenedor-y-de-bitcoin-tamano-de-bloque-diferentes-dramas-misma-causa-dash-detallado.html">
+							<div class="news-image">
+								
+							</div>
+							<div class="news-body">
+								<h3 class="news-title">Ethereum Tenedor y de Bitcoin Tamaño de bloque: Diferentes dramas, misma causa | DASH: Detallado</h3>
+								<div class="date">Jul 13, 2016</div>
+								<p>
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<div class="col-sm-6 col-md-3">
+					<div class="news-post">
+						<a href="/es/general%20@es/opini%C3%B3n%20@es/2016/06/24/como-funciona-la-dao-de-dash-dash-en-detalle.html">
+							<div class="news-image">
+								
+							</div>
+							<div class="news-body">
+								<h3 class="news-title">¿Cómo funciona la DAO de Dash? | DASH: En detalle</h3>
+								<div class="date">Jun 24, 2016</div>
+								<p>¿Qué es un “organismo autónomo descentralizado? ¿Cómo funciona Dash, qué hace, y quién puede unirse? Te pueden sorprender las respuestas. Únete a Amanda B. Johnson en este segundo episodio de DASH: En detalle.
+¡Suscríbete para recibir esta serie d...</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<div class="col-sm-6 col-md-3">
+					<div class="news-post">
+						<a href="/es/general%20@es/2016/06/22/lo-que-se-interpone-entre-digital-moneda-adopcion-masiva-dash-detallado.html">
+							<div class="news-image">
+								
+							</div>
+							<div class="news-body">
+								<h3 class="news-title">Lo que se interpone entre Digital Moneda &amp; 'adopción masiva'? | DASH: Detallado</h3>
+								<div class="date">Jun 22, 2016</div>
+								<p>No sólo ha sido inventado de "aplicación asesina" moneda digital todavía? O es su aplicación asesina obvia - uhhh, moneda - simplemente no pero accesibles suficiente para que el experto no irritable? Amanda B. Johnson habla de lo que tu mamá tiene...</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<div class="col-sm-6 col-md-3">
+					<div class="news-post">
+						<a href="/es/general%20@es/2016/04/09/recomendacion-de-seguridad-para-paper-dash-org.html">
+							<div class="news-image">
+								
+							</div>
+							<div class="news-body">
+								<h3 class="news-title">Recomendación de seguridad para paper.dash.org</h3>
+								<div class="date">Apr 09, 2016</div>
+								<p>Hola a todos,
+Por desgracia se estropeó el servicio http://paper.dash.org el 4 de enero y el proceso de creación  para generar una cartera ha sido inseguro desde entonces. No hay robos de DASH conocidos que se hayan producido por culpa de este fal...</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+			</div>
+
+			<div>
+				<a href="/es/blog/" class="btn-blue">Ver todas las noticias</a>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		GET STARTED
+	-->
+	<section class="home-get-started-cta">
+		<div class="content">
+			<h2>Comience</h2>
+
+			<p>¡Descargue el monedero y empiece a usar el dinero en efectivo digital!</p>
+
+
+			<a href="/es/get-dash/" class="btn-white-solid">Obtenga Dash</a>
+
+			<img src="/assets/img/home/macbook.png" alt="">
+		</div>
+	</section>
+
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Obtenga Dash
+    <ul>
+        <li><a href="/es/get-dash/">Descargue el Monedero</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">Adquiera Dash</a></li>
+        <li><a href="/es/merchants/">Compre con Dash</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">Tarjeta de Débito</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Participar
+    <ul>
+        <li><a href="/es/mining/" >Comience a Minar</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">Configure un Nodo Maestro</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">Configure un Monedero</a></li>
+        <li><a href="/es/governance/">Solicite Financiamiento</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Moneda
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">Mercados de Intercambio</a></li>
+        <li><a href="/es/governance/">Gobernanza</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">Exploradores de Bloques</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">Estadísticas de la Red</a></li>
+        <li><a href="/es/exchanges/" >Lista completa de Exchanges</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Comunidad
+    <ul>
+        <li><a href="/es/community/#discussion">Discusión</a></li>
+        <li><a href="/es/community/#social">Apps sociales</a></li>
+        <li><a href="/es/community/#news">Noticias &amp; Información</a></li>
+        <li><a href="/es/community/#development">Herramientas de desarrollo</a></li>
+        <li><a href="/es/community/#masternodes">Herramientas de los Nodos Maestros</a></li>
+        <li><a href="/es/legal/">Legal</a></li>
+        <li><a href="/es/graphics/">Gráficos</a></li>
+        <li><a href="/es/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Proyecto
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">Ayuda</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">Información</a></li>
+        <li><a href="/es/team/">Equipo</a></li>
+        <li><a href="/es/update/">Update</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">Fundación</a></li>
+        <li><a href="/es/contact/">Contacto</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">Wiki</a></li>
+        <li><a href="/es/school/">Escuela</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    Redes Sociales
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash forums</a></li>
+        <li><a href="/es/blog/">Blog</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">Twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">YouTube</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">Google+</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">LinkedIn</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">Facebook</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/es/terms-of-use/">Términos de uso</a>
+  <a href="/sitemap.xml">Mapa del sitio web</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">Source code</a>
+  <a href="/es/contact/">Contacto</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2018 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href=".././assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/es/get-dash/" class="overlay-menu__link">Obtenga Dash</a></li>
+            <li class="overlay-menu__item"><a href="/es/merchants/" class="overlay-menu__link">Comercios</a></li>
+            <li class="overlay-menu__item"><a href="/es/network/" class="overlay-menu__link">Moneda</a></li>
+            <li class="overlay-menu__item"><a href="/es/community/" class="overlay-menu__link">Comunidad</a></li>
+            <li class="overlay-menu__item"><a href="/es/team/" class="overlay-menu__link">Equipo</a></li>
+            <li class="overlay-menu__item"><a href="/es/blog/" class="overlay-menu__link">Blog</a></li>
+            <li class="overlay-menu__item"><a href="/es/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/" class="overlay-menu__link is-active"><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/" class="overlay-menu__link "><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/" class="overlay-menu__link "><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/" class="overlay-menu__link "><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/assets/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>

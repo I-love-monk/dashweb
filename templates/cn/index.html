@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="cn">
+	<head>
+		<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+		<meta charset="UTF-8">
+		<title>达世币官网 | 达世币加密数字货币 &mdash; Dash</title>
+		<meta name="description" content="达世币是一种数字货币">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="alternate" type="application/rss+xml" title="Dash Blog" href="/rss/dash_blog_rss.xml">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.min.css">
+		<!-- Analytics -->
+		<script type="text/javascript">
+	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//analytics.dash.org/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	</head>
+
+	<body>
+
+		<div class="hero hero--home" id="hero">
+	<div class="hero__background">
+		<img src="/assets/img/resized/hero/home.jpg-3ccf164/800x515.jpg" srcset="/assets/img/resized/hero/home.jpg-3ccf164/1920x1236.jpg 1920w, /assets/img/resized/hero/home.jpg-3ccf164/1280x824.jpg 1280w, /assets/img/resized/hero/home.jpg-3ccf164/1024x659.jpg 1024w, /assets/img/resized/hero/home.jpg-3ccf164/1600x1030.jpg 1600w, /assets/img/resized/hero/home.jpg-3ccf164/800x515.jpg 800w" sizes="100vw, 100vw, 100vw, 100vw" class="hero__background-image" />
+
+	</div>
+
+	<!-- Navigation -->
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href="/assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<!--
+    To change the logo color, pass the parameter in the include.
+    include nav-desktop.html logo-color="blue"
+-->
+
+
+
+<button class="burger" type="button" data-js-open-menu aria-label="Menu" aria-controls="overlaynavigation" aria-expanded="false"><div class="burger__burger"></div></button>
+
+<header id="top" class="content">
+
+    <a href="/cn/" class="logo"><img class="logo__img" src="/assets/img/logo-white.png" alt="Dash"></a>
+    <nav class="nav nav--white">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/cn/get-dash/" class="nav__link">了解达世币</a></li>
+			<li class="nav__item"><a href="/cn/merchants/" class="nav__link">商家</a></li>
+			<li class="nav__item"><a href="/cn/network/" class="nav__link">网络</a></li>
+			<li class="nav__item"><a href="/cn/community/" class="nav__link">社区</a></li>
+			<li class="nav__item"><a href="/cn/team/" class="nav__link">团队</a></li>
+			<li class="nav__item"><a href="/cn/blog/" class="nav__link">博客</a></li>
+			<li class="nav__item"><a href="/cn/evolution/" class="nav__link">Evolution</a></li>
+            
+            <li class="nav__item nav__item--languages">
+                <a href="#" class="nav__link" style="text-transform:uppercase;"><span class="flag cn"></span></a>
+                <ul class="nav__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="nav__subitem">
+                        <a href="/" class="nav__link ">English <span class="flag gb"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                       <a href="/es/" class="nav__link ">Español <span class="flag es"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/fr/" class="nav__link ">Français <span class="flag fr"></span></a>
+                    </li>
+                     <li class="nav__subitem">
+                        <a href="/pt/" class="nav__link ">Portugese <span class="flag pt"></span></a>
+                    </li>
+                    <!--<li class="nav__subitem">-->
+                    <!--    <a href="/it/" class="nav__link ">Italiano <span class="flag it"></span></a>-->
+                    <!--</li>-->
+                    <li class="nav__subitem">
+                        <a href="/cn/" class="nav__link is-active">简体中文 <span class="flag cn"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/ru/" class="nav__link ">Русский <span class="flag ru"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/jp/" class="nav__link ">日本語 <span class="flag jp"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/kr/" class="nav__link ">한국어<span class="flag kr"></span></a>
+                    </li>
+                    <li class="nav__subitem">
+                        <a href="/de/" class="nav__link ">Deutsch<span class="flag de"></span></a>
+                    </li>
+                </ul>
+            </li>
+            
+
+           <!--  <li class="nav__item nav__item--search"><a href="/cn" class="nav__link" title="搜索">S</a></li> -->
+        </ul>
+    </nav>
+
+</header>
+
+	<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href=".././assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+	<!-- Hero content -->
+	<div class="hero__content">
+		<h1 class="hero__title">达世币是一种数字货币</h1>
+		<p class="hero__lead">一个革命性的数字货币系统. <br />见证数字货币</p>
+
+		<div class="hero__buttons">
+			<a href="/cn/get-dash/" class="btn-blue-solid btn-large">了解达世币</a>
+			<a href="/cn/wallets/" class="btn-blue-solid btn-large">所有钱包</a>
+		</div>
+	</div>
+
+	<!-- Hero stripe -->
+	<div class="hero__stripe"></div>
+</div>
+
+
+<div class="page page--home">
+
+	<!--
+		WHAT IS DASH?
+		LINK TO VIDEO.
+	-->
+	<section class="section section--home-cta">
+		<div class="section__content">
+				<h2 class="section__title">达世币是一种可线上操作的数字货币</h2>
+				<div class="section__lead"><p>用户可以使用达世币进行安全的在线即时支付, 商户则可以为店内添加由全球千万用户所建立的开源支付平台.</p>
+</div>
+
+				<div class="section__btn-grp">
+					<a href="https://www.youtube.com/watch?v=S0oNO3mbBE8" class="btn-blue btn-large" target="_blank" data-js-popup="video" data-lang="cn">预览视频</a>
+					<a href="/cn/get-dash/" class="btn-blue-solid btn-large">下载钱包</a>
+				</div>
+		</div>
+	</section>
+
+	<!--
+		MERCHANTS
+	-->
+	<section>
+		<div class="content">
+			<div>
+				<h2>直接使用达世币购物</h2>
+
+				<p>通过达世币钱包进行即时、安全的交易</p>
+
+			</div>
+
+			<div class="ctabox ctabox--gray-light-bg" data-js-ctabox>
+				<div class="ctabox__inner">
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://shakepay.co" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/shakepay_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">Shake Pay</h4>
+								<p class="ctabox__description">Dash-Visa Debit Card</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://www.livingroomofsatoshi.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/livingroomofsatoshi_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+							<h4 class="ctabox__title">Living Room of..</h4>
+							<p class="ctabox__description">Pay bills in Australia</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://www.claws-mail.org/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/ClawsMail.jpg" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+							<h4 class="ctabox__title">ClawsMail</h4>
+							<p class="ctabox__description">Secure, Private VPN</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://node40.com" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/node40.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">Node40</h4>
+								<p class="ctabox__description">Masternode Hosting</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://shapeshift.io" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/shapeshift_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">ShapeShift</h4>
+								<p class="ctabox__description">Exchange Dash for Bitcoin</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://www.qhoster.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/qhoster.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+							<h4 class="ctabox__title">Qhoster</h4>
+							<p class="ctabox__description">Quality Hosting</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="http://www.isg3d.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/isg3d_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">ISG3D</h4>
+								<p class="ctabox__description">3D Printing Services</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://www.coaex.com" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/coaex_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">CoaEX</h4>
+								<p class="ctabox__description">Precious Metals</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="http://bravenewbookstore.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/bravenewbooks_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">BraveNewBooks</h4>
+								<p class="ctabox__description">Book Store</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://giftoff.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/giftoff_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">GiftOff</h4>
+								<p class="ctabox__description">Gift Cards</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://key4co.in" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/key4coin_logo.png" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">Key4Coin</h4>
+								<p class="ctabox__description">Game Keys</p>
+							</div>
+						</a>
+					</article>
+					<article class="ctabox__cta" data-js-ctabox-item>
+						<a href="https://misconductwineco.com/" target="_blank" class="ctabox__link">
+							<div class="ctabox__imagewrapper">
+								<img src="/assets/img/merchants/misconductwine_logo.jpg" class="ctabox__image">
+							</div>
+							<div class="ctabox__text">
+								<h4 class="ctabox__title">Misconduct Wine</h4>
+								<p class="ctabox__description">Premium micro-lot wines</p>
+							</div>
+						</a>
+					</article>
+				</div>
+			</div>
+
+			<div>
+				<a href="/merchants/" target="_blank" class="btn-blue">更多商家</a>
+				<a href="https://dashpay.atlassian.net/wiki/display/DOC/Merchant+Directory+Listing" target="_blank" class="btn-blue">成为加盟商家</a>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		DASH FEATURES
+		PRIVATE | INSTANT | SECURE
+	-->
+	<section>
+		<div class="content">
+			<div class="row features-collection">
+				<div class="col-sm-4">
+					<img src="/assets/img/home/instant.svg" height="100" alt="即时性">
+					<h2>即时性</h2>
+					<p>珍惜您宝贵的时间. 即时支付功能可在一秒之内确认支付.</p>
+
+				</div>
+				<div class="col-sm-4">
+					<img src="/assets/img/home/private.svg" height="100" alt="隐私性">
+					<h2>隐私性</h2>
+					<p>保护您的财务信息. 隐私发送功能确保您的理财活动记录和财务余额信息的隐私性.</p>
+
+				</div>
+				<div class="col-sm-4">
+					<img src="/assets/img/home/secure.svg" height="100" alt="安全性">
+					<h2>安全性</h2>
+					<p>具备可信赖的安全性. 交易经由拥有1,000G算力的X11 ASIC矿机以及全球超过4,100台的服务器确认.</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		NETWORK ARCHITECTURE
+	-->
+	<section class="section--masternode">
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>下一代P2P网络</h2>
+
+					<p>达世币核心由独特的激励制P2P网络构成. 矿工们维护区块链安全得到奖励；而主节点持有者则是为用户验证交易、存储数据以及提供多种服务而获得奖励.</p>
+
+<p>主节点代表着新一层级的网络. 它们可组成高度安全的集群 – 仲裁链, 提供多种类的去中心化服务, 如即时交易、匿名性、去中心化管理等等, 同时它还可以防止低成本的网络攻击.</p>
+
+
+					<a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=8585240" target="_blank" class="btn-blue">更多资讯</a>
+				</div>
+				<div class="col-sm-6 home-architecture-graphic">
+					<img src="/assets/img/home/globe.png" alt="下一代P2P网络">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		SELF GOVERNING | SELF FUNDING
+	-->
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-6">
+					<h2>全球首个管理自主、资金自足的系统</h2>
+
+					<p>每个人都有权直接向达世币网络提交项目方案. 任何有助于达世币发展的提案, 例如市场营销和研发等等, 都可能获得资金支持. 也就是说, 达世币为自己的发展和应用推广注资, 由此保证了网络共识的达成和网络用户的可靠性.</p>
+
+<p>请向网络提交方案, 为您的建议争取资金支持. 如果您拥有主节点, 欢迎为提案投票！</p>
+
+
+					<a href="http://dashvotetracker.com/" target="_blank" class="btn-blue">提案</a>
+
+					<a href="https://dashcentral.org/" target="_blank" class="btn-blue">上交提案</a>
+				</div>
+				<div class="col-sm-6 col-sm-pull-6 home-budgets-graphic">
+					<img src="/assets/img/home/budgets.png" alt="全球首个管理自主、资金自足的系统">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		FASTEST GROWING NETWORK
+	-->
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>发展速度最快的网络</h2>
+
+					<p>得益于达世币的奖励机制, 它的网络主节点自2014年发行以来已经增长到了4100个, 这意味着达世币P2P网络已经成为全球最大的网络之一.</p>
+
+<p>更多的节点意味着更高的安全性能, 达世币能为更多来自全球各地的终端用户提供全天候的数字货币服务.</p>
+
+
+					<a href="/cn/network" class="btn-blue">网络数据</a>
+				</div>
+				<!--div class="col-sm-6 home-network-graphic">
+					<img src="/assets/img/home/graph.png" alt="发展速度最快的网络">
+				</div-->
+				<div class="col-sm-6 home-network-graphic-live">
+					<img src="/assets/img/masternode_count-crop-813x525.png" alt="发展速度最快的网络">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		EVOLUTION
+	-->
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-6">
+					<h2>数字货币Evolution</h2>
+
+					<p>Evolution还有什么新动向？我们将通过它把达世币打造成奶奶们都会用的加密数字货币.</p>
+
+<p>达世币Evolution可以帮助您通过任何设备登录达世币网络, 并轻而易举地完成交易. 其方式类似于PayPal, 但是完全地去中心化. 敬请期待…</p>
+
+					<a href="/cn/evolution/" target="_blank" class="btn-blue">更多资讯</a>
+				</div>
+				<div class="col-sm-6 col-sm-pull-6 home-evolution-graphic">
+					<img src="/assets/img/home/evo.png" alt="Dash Evolution">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		LATEST NEWS
+	-->
+	<section class="home-latest-news">
+		<div class="content">
+			<h2>最新消息</h2>
+
+			<div class="row">
+				
+				<div class="col-sm-6 col-md-3">
+					<div class="news-post">
+						<a href="/cn/2016/06/24/e8-be-be-e4-b8-96-e5-b8-81-e7-9a-84dao-e6-98-af-e5-a6-82-e4-bd-95-e5-b7-a5-e4-bd-9c-e7-9a-84-e8-be-be-e4-b8-96-e5-b8-81-e8-a7-a3-e8-af-bb.html">
+							<div class="news-image">
+								
+							</div>
+							<div class="news-body">
+								<h3 class="news-title">达世币的DAO是如何工作的 - 达世币:解读</h3>
+								<div class="date">Jun 24, 2016</div>
+								<p>什么是"去中心化的自治组织", 达世币的DAO是怎样的,它是如何工作的,谁可以加入其中? 你也许会对答案感到惊讶. Join Amanda B. Johnson 为你呈现第二期的 达世币:解读
+发送标题为subscribe的邮件至<span class="__cf_email__" data-cfemail="33525e525d5752735752405b1d5c4154">[email&#160;protected]</span>, 就可轻松订阅每周发布的视频. — 没错, 就是如此简单.
+
+&nbsp;
+</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<div class="col-sm-6 col-md-3">
+					<div class="news-post">
+						<a href="/cn/2016/06/22/e6-98-af-e4-bb-80-e4-b9-88-e9-98-bb-e7-a2-8d-e4-ba-86-e6-95-b0-e5-ad-97-e8-b4-a7-e5-b8-81-e4-be-9d-e7-84-b6-e6-b2-a1-e6-9c-89-e8-a2-ab-e5-b9-bf-e6-b3-9b-e4-bd-bf-e7-94-a8.html">
+							<div class="news-image">
+								
+							</div>
+							<div class="news-body">
+								<h3 class="news-title">是什么阻碍了数字货币依然没有被广泛使用? | 达世币: 解读</h3>
+								<div class="date">Jun 22, 2016</div>
+								<p>是数字货币的"杀手锏应用"还没有被创造出来吗? 还是说很显然本身就是杀手锏应用的数字货币还不具备让非技术型人们使用的易用性? Amanda B. Johnson在"达世币:解读"的第一章中向我们讲述了作为一个普通人——比如妈妈, 对即将来临的达世币进化版提出了什么宝贵意见.
+&nbsp;
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<div class="col-sm-6 col-md-3">
+					<div class="news-post">
+						<a href="/cn/2016/03/15/e8-be-be-e4-b8-96-e5-b8-812016-e5-b9-b4-e5-8f-91-e5-b1-95-e8-b7-af-e7-ba-bf.html">
+							<div class="news-image">
+								
+							</div>
+							<div class="news-body">
+								<h3 class="news-title">达世币2016年发展路线</h3>
+								<div class="date">Mar 15, 2016</div>
+								<p>新的一年到来了，达世币也在不久前庆祝了两岁的生日，核心团队认为现在是对2016年蓝图深度战略评估的好时机。在我们不断根据新想法及机遇调整达世币的计划与战略的同时，拥有长期计划能使团队保持对重要事项的专注，并确保努力的成果与长期战略一致。拥有新的预算系统之后，很多之前无法实现的项目现在已变得可能，所以我们有必要对达世币新一年的战略、目标及计划进行更加深度的审视。
+2016年达世币的蓝图与去年12月30日发布的“达世币战略说明书”一致，分为四个主要战略板块。而传播作为第五个方面，会与每一个主板...</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<div class="col-sm-6 col-md-3">
+					<div class="news-post">
+						<a href="/cn/%E5%95%86%E4%B8%9A%E5%90%88%E4%BD%9C/%E5%BC%80%E5%8F%91%E5%8A%A8%E6%80%81/%E6%96%B0%E9%97%BB%E5%AA%92%E4%BD%93/%E7%BB%BC%E8%BF%B0/2016/03/02/e8-be-be-e4-b8-96-e5-b8-81-2016-e5-8f-91-e5-b1-95-e8-b7-af-e7-ba-bf.html">
+							<div class="news-image">
+								
+							</div>
+							<div class="news-body">
+								<h3 class="news-title">达世币 2016 发展路线</h3>
+								<div class="date">Mar 02, 2016</div>
+								<p>新的一年到来了，达世币也在不久前庆祝了两岁的生日，核心团队认为现在是对2016年蓝图深度战略评估的好时机。在我们不断根据新想法及机遇调整达世币的计划与战略的同时，拥有长期计划能使团队保持对重要事项的专注，并确保努力的成果与长期战略一致。拥有新的预算系统之后，很多之前无法实现的项目现在已变得可能，所以我们有必要对达世币新一年的战略、目标及计划进行更加深度的审视。
+2016年达世币的蓝图与去年12月30日发布的“达世币战略说明书”一致，分为四个主要战略板块。而传播作为第五个方面，会与每一个主板...</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+			</div>
+
+			<div>
+				<a href="/cn/blog/" class="btn-blue">浏览所有新闻</a>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		GET STARTED
+	-->
+	<section class="home-get-started-cta">
+		<div class="content">
+			<h2>开启达世币之旅</h2>
+
+			<p>下载钱包, 并开始使用达世币！</p>
+
+
+			<a href="/cn/get-dash/" class="btn-white-solid">了解达世币</a>
+
+			<img src="/assets/img/home/macbook.png" alt="">
+		</div>
+	</section>
+
+</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav class="footer__nav content">
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    了解达世币
+    <ul>
+        <li><a href="/cn/get-dash/">下载钱包</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=48693287" target="_blank">购买达世币</a></li>
+        <li><a href="/cn/merchants/">达世币消费</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Debit+Cards" target="_blank">达世币借记卡</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    帮助教程
+    <ul>
+        <li><a href="/cn/mining/" >开始挖矿</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/1146943/Masternodes" target="_blank">架设主节点</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146941" target="_blank">创建钱包</a></li>
+        <li><a href="/cn/governance/">申请预算资金</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    网络
+    <ul>
+        <li><a href="https://dashpay.atlassian.net/wiki/spaces/DOC/pages/48693298/Exchanges" target="_blank">交易数据</a></li>
+        <li><a href="/cn/governance/">管理</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/x/CwDeAQ" target="_blank">区块研发</a></li>
+        <li><a href="http://178.254.23.111/~pub/Dash/Dash_Info.html" target="_blank">网络数据</a></li>
+        <li><a href="/cn/exchanges/" >Full list of Exchanges</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    社区
+    <ul>
+        <li><a href="/cn/community/#discussion">讨论</a></li>
+        <li><a href="/cn/community/#social">社交应用</a></li>
+        <li><a href="/cn/community/#news">新闻 &amp; 信息</a></li>
+        <li><a href="/cn/community/#development">开发工具</a></li>
+        <li><a href="/cn/community/#masternodes">主节点工具</a></li>
+        <li><a href="/cn/legal/">Legal</a></li>
+        <li><a href="/cn/graphics/">Graphics</a></li>
+        <li><a href="/cn/merchandise/">Merchandise</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    项目
+    <ul>
+        <li><a href="https://www.dash.org/forum/categories/dash-support.61/" target="_blank">帮助 &amp; 支持</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/pages/viewpage.action?pageId=1146914" target="_blank">项目信息</a></li>
+        <li><a href="/cn/team/">团队</a></li>
+        <li><a href="/cn/update/">升级</a></li>
+        <li><a href="https://www.dashfoundation.io/" target="_blank">基金会</a></li>
+        <li><a href="/cn/contact/">联系方式</a></li>
+        <li><a href="https://dashpay.atlassian.net/wiki/display/DOC/Site+map" target="_blank">维基</a></li>
+        <li><a href="/cn/school/">School</a></li>
+    </ul>
+  </section>
+
+  <section class="footer__section col-lg-2 col-md-4 col-sm-6" data-mh="footer">
+    社交
+    <ul class="footer__social">
+        <li><a href="/forum/" target="_blank">Dash forums</a></li>
+        <li><a href="/cn/blog/">博客</a></li>
+        <li><a href="https://www.reddit.com/r/dashpay" target="_blank">Reddit</a></li>
+        <li><a href="https://twitter.com/dashpay" target="_blank">推特</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAzD2v9Yx4a4iS2_-unODkA" target="_blank">YouTube</a></li>
+        <li><a href="https://plus.google.com/u/0/communities/101869723775111070721/stream/03b94d84-f61a-49f2-bb7d-9ac82e1ed7f2" target="_blank">谷歌</a></li>
+        <li><a href="https://www.linkedin.com/groups?home=&gid=8179817&trk=groups_most_recent-h-logo&goback=%2Egmp_8179817" target="_blank">领英</a></li>
+        <li><a href="https://facebook.com/dashpay" target="_blank">脸书</a></li>
+        <li><a href="https://github.com/dashpay/dash" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+</nav>
+<div class="footer__menu content">
+  <div class="footer__languagePicker"></div>
+  <a href="/cn/terms-of-use/">使用条款</a>
+  <a href="/sitemap.xml">网站导览</a>
+  <a href="https://github.com/dashpay/dash-website" target="_blank">源代码</a>
+  <a href="/cn/contact/">联系方式</a>
+</div>
+<div class="footer__legal">
+  <div class="content">
+    <span class="footer__copyright">&copy; 2017 The Dash Network</span>
+    <!-- <a href="#">Github Source</a> -->
+  </div>
+</div>
+
+		</footer>
+
+		<!-- Mobile Nav -->
+		<div class="overlay" id="overlay" data-js-overlay-menu>
+			<!--
+	Include this file in your templates so you can reference assets with relative urls 
+	include base.html
+	example: href=".././assets/css/style.css"
+-->
+
+
+
+
+
+
+
+
+<nav class="overlay-menu" id="overlaynavigation" aria-hidden="true">
+
+    <div class="overlay-menu__nav">
+        <a href="/" class="overlay-menu__logo">
+            <img src="/assets/img/logo-white.png" alt="Dash" class="logo">
+        </a>
+        <ul class="overlay-menu__list">
+            <li class="overlay-menu__item"><a href="/cn/get-dash/" class="overlay-menu__link">了解达世币</a></li>
+            <li class="overlay-menu__item"><a href="/cn/merchants/" class="overlay-menu__link">商家</a></li>
+            <li class="overlay-menu__item"><a href="/cn/network/" class="overlay-menu__link">网络</a></li>
+            <li class="overlay-menu__item"><a href="/cn/community/" class="overlay-menu__link">社区</a></li>
+            <li class="overlay-menu__item"><a href="/cn/team/" class="overlay-menu__link">团队</a></li>
+            <li class="overlay-menu__item"><a href="/cn/blog/" class="overlay-menu__link">博客</a></li>
+            <li class="overlay-menu__item"><a href="/cn/evolution/" class="overlay-menu__link">Evolution</a></li>
+            
+            <li class="overlay-menu__item overlay-menu__item--languages">
+                <ul class="overlay-menu__sublist">
+                    <!-- TODO: dynamically generate this list -->
+
+                    <li class="overlay-menu__subitem">
+                        <a href="/" class="overlay-menu__link "><span class="flag us"></span> English</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/es/" class="overlay-menu__link "><span class="flag es"></span> Español</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                        <a href="/fr/" class="overlay-menu__link "><span class="flag fr"></span> Français</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/pt/" class="overlay-menu__link "><span class="flag pt"></span> Portugese</a>
+                    </li>
+                    <!--<li class="overlay-menu__subitem">-->
+                    <!--    <a href="/it/" class="overlay-menu__link "><span class="flag it"></span> Italiano</a>-->
+                    <!--</li>-->
+                    <li class="overlay-menu__subitem">
+                    <a href="/cn/" class="overlay-menu__link is-active"><span class="flag cn"></span> 简体中文</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/ru/" class="overlay-menu__link "><span class="flag ru"></span> Русский</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/jp/" class="overlay-menu__link "><span class="flag jp"></span>日本語</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/kr/" class="overlay-menu__link "><span class="flag kr"></span>한국어</a>
+                    </li>
+                    <li class="overlay-menu__subitem">
+                    <a href="/de/" class="overlay-menu__link "><span class="flag de"></span>Deutsch</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+		</div>
+
+		<!-- Fallback analytics -->
+		<noscript>
+	<img src="https://analytics.dash.org/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+
+		<!-- JavaScript -->
+		<script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script><script src="//cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js" integrity="sha384-MYg5v6RiLsgqDiKOs6hcDXVblLg+Ls5F/jimSFosIUeDjW5VYViY1eMBMazbV5Mr" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" integrity="sha384-dfOR5hjVOg6B2OvgyHIS71mJWX5TgNQeFGo5cNNVglSep7ZvYcByrpEya6xbwwyB" crossorigin="anonymous"></script>
+		<script src="/assets/js/main.min.js"></script>
+		<script>
+  window.globals = {
+	siteApi : "/api/v1"
+  };
+</script>
+
+
+	</body>
+</html>
